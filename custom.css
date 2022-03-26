@@ -9,6 +9,8 @@ body.mdui-drawer-body-left {
     opacity: 0.85;
 }
 
-article.nexmoe-py ul li{
-    width: calc(24.285714285714286% - 5px) !important;
+@media screen and (min-width: 769px) {
+    article.nexmoe-py ul li{
+        width: calc(24.285714285714286% - 5px) !important;
+    }
 }
