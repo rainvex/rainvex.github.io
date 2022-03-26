@@ -1394,8 +1394,8 @@ photos img {
   color: #ae17ff;
 }
 .nexmoe-rainbow a:nth-child(7n+2) {
-  background-color: rgba(255,118,30,0.15);
-  color: #ff761e;
+  background-color: rgba(252,43,221,0.15);
+  color: #fc2bdd;
 }
 .nexmoe-rainbow a:nth-child(7n+3) {
   background-color: rgba(255,185,0,0.15);
@@ -1423,7 +1423,7 @@ photos img {
 }
 .nexmoe-rainbow-fill a:nth-child(7n+2) {
   color: #fff;
-  background-color: rgba(255,118,30,0.7);
+  background-color: rgba(252,43,221,0.7);
 }
 .nexmoe-rainbow-fill a:nth-child(7n+3) {
   color: #fff;
