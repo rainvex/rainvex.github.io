@@ -1,0 +1,14 @@
+body.mdui-drawer-body-left {
+    background-image: url('https://cdn.jsdelivr.net/gh/rainvex/rainvex.github.io@latest/images/kamen-rider-50th.png') !important;
+    background-position: 60%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#nexmoe-content{
+    opacity: 0.85;
+}
+
+article.nexmoe-py ul li{
+    width: calc(24.285714285714286% - 5px) !important;
+}
