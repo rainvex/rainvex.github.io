@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+    
+    <title>Typora+PicGo+腾讯云COS搭建图床 - 夜雨声烦</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="rainvex,blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    
+    
+
+    <link rel="shortcut icon" href="/favicon" type="image/jpg" />
+    <meta name="description" content="Typora+PicGo+腾讯云COS搭建图床就在前不久，Gitee图床废了！博客文章中使用到的所有图片全部变成了Gitee的图标，甚至很多使用Gitee作为图床的开源项目文档也受到了影响，还有一些作者引流、打赏的二维码图片都变成了Gitee图标，直接影响了他们的收入。如果图床中图片太多，要想转移、更改文章中图片的工作量也是非常巨大的。那么为什么Gitee图床会无缘无故废掉了呢？Gitee因为访问">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Typora+PicGo+腾讯云COS搭建图床">
+<meta property="og:url" content="https://rainvex.cn/categories/%E6%95%99%E7%A8%8B/Typora-PicGo-%E8%85%BE%E8%AE%AF%E4%BA%91COS%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A.html">
+<meta property="og:site_name" content="夜雨声烦">
+<meta property="og:description" content="Typora+PicGo+腾讯云COS搭建图床就在前不久，Gitee图床废了！博客文章中使用到的所有图片全部变成了Gitee的图标，甚至很多使用Gitee作为图床的开源项目文档也受到了影响，还有一些作者引流、打赏的二维码图片都变成了Gitee图标，直接影响了他们的收入。如果图床中图片太多，要想转移、更改文章中图片的工作量也是非常巨大的。那么为什么Gitee图床会无缘无故废掉了呢？Gitee因为访问">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041625484.png">
+<meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041626746.png">
+<meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041631045.png">
+<meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041640308.png">
+<meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041644008.png">
+<meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041647489.png">
+<meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041656639.png">
+<meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041709082.png">
+<meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041710570.png">
+<meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041711879.png">
+<meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041730364.png">
+<meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041717992.png">
+<meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041721073.png">
+<meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041725138.png">
+<meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041743450.png">
+<meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041634859.png">
+<meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041735888.png">
+<meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041757997.png">
+<meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041757934.png">
+<meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041802302.png">
+<meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041808632.png">
+<meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041811256.png">
+<meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041814365.png">
+<meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041815517.png">
+<meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041817436.png">
+<meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041830418.png">
+<meta property="article:published_time" content="2022-04-04T06:29:40.000Z">
+<meta property="article:modified_time" content="2022-04-04T10:45:56.706Z">
+<meta property="article:author" content="夜雨声烦">
+<meta property="article:tag" content="Typora">
+<meta property="article:tag" content="PicGo">
+<meta property="article:tag" content="图床">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041625484.png">
+    <link rel="stylesheet" href="/lib/jquery.fancybox.min.css?v=1649069224158">
+    
+        <link rel="stylesheet" href="//at.alicdn.com/t/font_3276118_n91whib3ny.css">
+    
+    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1649069224158">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1649069224158">
+    <link rel="stylesheet" href="/css/style.css?v=1649069224158">
+     
+    
+        <link rel="stylesheet" href="/custom.css">
+    
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body class="mdui-drawer-body-left">
+    
+    <div id="nexmoe-background">
+        <div class="nexmoe-bg" style="background-image: url(https://cdn.jsdelivr.net/gh/rainvex/rainvex.github.io@latest/images/kamen-rider-50th.png)"></div>
+        <div class="mdui-appbar mdui-shadow-0">
+            <div class="mdui-toolbar">
+                <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
+                <div class="mdui-toolbar-spacer"></div>
+                <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+                <a href="/" title="夜雨声烦" class="mdui-btn mdui-btn-icon"><img src="https://cdn.jsdelivr.net/gh/rainvex/rainvex.github.io@latest/images/avatar.jpg" alt="夜雨声烦"></a>
+            </div>
+        </div>
+    </div>
+    <div id="nexmoe-header">
+        <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="夜雨声烦">
+            <img src="https://cdn.jsdelivr.net/gh/rainvex/rainvex.github.io@latest/images/avatar.jpg" alt="夜雨声烦" alt="夜雨声烦">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>文章</span>4</div>
+        <div><span>标签</span>9</div>
+        <div><span>分类</span>3</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/archives.html" title="文章归档">
+            <i class="mdui-list-item-icon nexmoefont icon-container"></i>
+            <div class="mdui-list-item-content">
+                文章归档
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/riders.html" title="仮面ライダー">
+            <i class="mdui-list-item-icon nexmoefont icon-J"></i>
+            <div class="mdui-list-item-content">
+                仮面ライダー
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/about.html" title="关于博客">
+            <i class="mdui-list-item-icon nexmoefont icon-cola"></i>
+            <div class="mdui-list-item-content">
+                关于博客
+            </div>
+        </a>
+        
+    </div>
+    <aside id="nexmoe-sidebar">
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+        
+            <form id="search_form">
+                <label><input class="st-default-search-input" id="search_value" name="q" type="search" placeholder="搜索" style="
+                    font-size: 15px !important;
+                    height: 56px !important;
+                    background-image: none;
+                "></label>
+            </form>
+         
+    </div>
+</div>
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="http://wpa.qq.com/msgrd?v=3&uin=1835217729&site=qq&menu=yes" target="_blank" mdui-tooltip="{content: 'QQ'}" style="color: rgb(249, 174, 8);background-color: rgba(249, 174, 8, .15);">
+            <i class="nexmoefont icon-QQ"></i>
+        </a><a class="mdui-ripple" href="https://space.bilibili.com/385436797?spm_id_from=333.1007.0.0" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(249, 114, 154);background-color: rgba(249, 114, 154, .15);">
+            <i class="nexmoefont icon-bilibili"></i>
+        </a><a class="mdui-ripple" href="https://github.com/rainvex/" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a><a class="mdui-ripple" href="https://juejin.cn/user/3404513411086718" target="_blank" mdui-tooltip="{content: '掘金'}" style="color: rbg(0, 102, 255);background-color: rgba(0, 102, 255, .15);">
+            <i class="nexmoefont icon-juejin"></i>
+        </a>
+    </div>
+</div>
+    
+    
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章分类</h3>
+    <div class="nexmoe-widget">
+
+      <ul class="category-list">
+
+        
+
+
+        
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/Linux/">Linux</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/后端/">后端</a>
+          <span class="category-list-count">2</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/教程/">教程</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+      </ul>
+
+    </div>
+  </div>
+
+
+    
+    
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章归档</h3>
+    <div class="nexmoe-widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/">2022</a><span class="archive-list-count">4</span></li></ul>
+    </div>
+  </div>
+
+
+
+    
+    
+  <div class="nexmoe-widget-wrap">
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="/tags/CentOS/" style="font-size: 10px;">CentOS</a> <a href="/tags/Java/" style="font-size: 15px;">Java</a> <a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/PicGo/" style="font-size: 10px;">PicGo</a> <a href="/tags/Spring5/" style="font-size: 10px;">Spring5</a> <a href="/tags/Typora/" style="font-size: 10px;">Typora</a> <a href="/tags/%E5%90%8E%E7%AB%AF/" style="font-size: 10px;">后端</a> <a href="/tags/%E5%9B%BE%E5%BA%8A/" style="font-size: 10px;">图床</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 20px;">笔记</a>
+    </div>
+    
+  </div>
+
+    
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2022 夜雨声烦
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+        <script data-ad-client="ca-pub-2058306854838448" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    </div>
+</div><!-- .nexmoe-drawer -->
+    </div>
+    <div id="nexmoe-content">
+        <div class="nexmoe-primary">
+            <div class="nexmoe-post">
+
+  <article>
+      
+          <div class="nexmoe-post-cover" style="padding-bottom: 31.818181818181817%;"> 
+              <img data-src="https://cdn.jsdelivr.net/gh/rainvex/rainvex.github.io@latest/images/cover/typora.png" data-sizes="auto" alt="Typora+PicGo+腾讯云COS搭建图床" class="lazyload">
+              <h1>Typora+PicGo+腾讯云COS搭建图床</h1>
+          </div>
+      
+      
+      <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2022年04月04日</a>
+</div>
+
+      
+
+      <h1 id="Typora-PicGo-腾讯云COS搭建图床"><a href="#Typora-PicGo-腾讯云COS搭建图床" class="headerlink" title="Typora+PicGo+腾讯云COS搭建图床"></a>Typora+PicGo+腾讯云COS搭建图床</h1><p>就在前不久，Gitee图床废了！博客文章中使用到的所有图片全部变成了Gitee的图标，甚至很多使用Gitee作为图床的开源项目文档也受到了影响，还有一些作者引流、打赏的二维码图片都变成了Gitee图标，直接影响了他们的收入。如果图床中图片太多，要想转移、更改文章中图片的工作量也是非常巨大的。那么为什么Gitee图床会无缘无故废掉了呢？Gitee因为访问外链太多，给图片添加了防盗链，从而导致不能直接通过url访问到图片，具体原理可以参考<a target="_blank" rel="noopener" href="https://juejin.cn/post/7079321533558030349">这篇文章</a>。</p>
+<p>知晓情况后的我立马跑去之前发布过文章的平台中进行查看，发现平台上的文章并没有受影响，应该是在我们写完文章发布时平台都将这些图片存放到了自己的服务器上，但是本地的文章就无一幸免了，不出意外的图片全变成了Gitee图标😭。后来考虑到Github图床访问太慢于是就决定使用腾讯云的对象存储COS重新搭建一个图床来使用了，毕竟白嫖人家的CDN带宽和容量空间确实不太好🤭，而且使用对象存储也不贵，我们还可以在上面存储文件之类的</p>
+<p>那么，接下来就正式开始使用Typora+PicGo+腾讯云COS搭建图床了</p>
+<h2 id="1-下载Typora和PicGo"><a href="#1-下载Typora和PicGo" class="headerlink" title="1.下载Typora和PicGo"></a>1.下载Typora和PicGo</h2><h3 id="1-1-下载Typora"><a href="#1-1-下载Typora" class="headerlink" title="1.1 下载Typora"></a>1.1 下载Typora</h3><p>Typora从1.0.0版本以后开始收费了，功能更加齐全稳定，如果有更多的需求，还是建议购买，不过测试版的功能已经满足了用户大部分的需求了，如果需要最后一个免费使用的版本，可以点击[网盘链接](链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1eesTkZ0TWtoIPbUcyvGPfw?pwd=fr4c)%E8%BF%9B%E8%A1%8C%E4%B8%8B%E8%BD%BD%EF%BC%88%E6%8F%90%E5%8F%96%E7%A0%81">https://pan.baidu.com/s/1eesTkZ0TWtoIPbUcyvGPfw?pwd=fr4c)进行下载（提取码</a>: fr4c），也可以从官网中找到所有的老版本，然后下载Old Beta 0.11.18版，只要以后不更新即可白嫖</p>
+<p>Typora<a target="_blank" rel="noopener" href="https://typora.io/">官网下载链接</a></p>
+<p>安装过程就是一直下一步，更改文件下载路径即可</p>
+<h3 id="1-2-下载PicGo"><a href="#1-2-下载PicGo" class="headerlink" title="1.2 下载PicGo"></a>1.2 下载PicGo</h3><p>进入<a target="_blank" rel="noopener" href="https://molunerfinn.com/PicGo/">PicGo官网</a>，点击免费下载即可进入到PicGo在Github上的项目<a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/picgo/releases">下载地址</a></p>
+<p>然后找到最新的稳定正式版</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041625484.png" alt="image-20220404162505254" class="lazyload"></p>
+<p>找到安装包下载链接，点击下载即可</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041626746.png" alt="image-20220404162605642" class="lazyload"></p>
+<p>安装同样很简单，这里就在赘述</p>
+<h2 id="2-设置Typora"><a href="#2-设置Typora" class="headerlink" title="2.设置Typora"></a>2.设置Typora</h2><p>首先，打开刚刚下载的Markdown编辑器Typora，点击<code>文件</code>&gt;<code>偏好设置</code>&gt;<code>图像</code></p>
+<p>然后进行以下设置</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041631045.png" alt="image-20220404163134962" class="lazyload"></p>
+<h2 id="3-开通配置腾讯云对象存储"><a href="#3-开通配置腾讯云对象存储" class="headerlink" title="3.开通配置腾讯云对象存储"></a>3.开通配置腾讯云对象存储</h2><p>进入<a target="_blank" rel="noopener" href="https://cloud.tencent.com/">腾讯云官网</a>，注册登录腾讯云账号，如还未进行实名认证，需要先实名认证</p>
+<p>然后，在首页找到<code>产品</code>&gt;<code>存储</code>&gt;<code>对象存储</code>，点击对象存储</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041640308.png" alt="image-20220404164027060" class="lazyload"></p>
+<p>然后，进入到对象存储页面，点击立即使用</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041644008.png" alt="image-20220404164425628" class="lazyload"></p>
+<p>然后，进入到对象存储的控制台，如果是第一次使用，这里会显示开通对象存储COS服务，点击开通即可</p>
+<p>开通成功后，点击图中的<strong>创建存储桶</strong></p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041647489.png" alt="image-20220404164750370" class="lazyload"></p>
+<p>然后进入到存储桶列表页面，在该界面再次点击创建存储桶</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041656639.png" alt="image-20220404165643505" class="lazyload"></p>
+<p>然后，对存储桶进行以下设置</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041709082.png" alt="image-20220404170912979" class="lazyload"></p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041710570.png" alt="image-20220404171049488" class="lazyload"></p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041711879.png" alt="image-20220404171144792" class="lazyload"></p>
+<p>创建成功后，会进入到刚刚创建的存储桶的文件列表中，即我们存放文件的地方，在这里我们可以新建文件夹来存储相关类型的文件，便于管理；这儿我们新建一个名为<strong>images</strong>的文件夹，表示存放图片</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041730364.png" alt="image-20220404173037257" class="lazyload"></p>
+<p>点击图中上方的返回桶列表，然后在左侧菜单栏找到密钥管理，点击<strong>访问密钥</strong></p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041717992.png" alt="image-20220404171751864" class="lazyload"></p>
+<p>点击访问密钥后，进入到以下界面，在高风险提示中，如果不会子账号的相关操作，点击<strong>继续使用</strong>主账号也行</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041721073.png" alt="image-20220404172134964" class="lazyload"></p>
+<p>然后，点击<strong>新建密钥</strong></p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041725138.png" alt="image-20220404172554016" class="lazyload"></p>
+<p>新建密钥成功后，我们就得到了需要的<strong>AAPID</strong>、<strong>SecretId</strong>和<strong>SecretKey</strong>的值</p>
+<p>然后，返回到存储桶列表，点击刚刚创建的存储桶</p>
+<p>然后在这个存储桶的概览中找到基本信息，获取到<strong>存储桶名称</strong>、<strong>所属地域</strong></p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041743450.png" alt="image-20220404174359355" class="lazyload"></p>
+<h2 id="4-设置PicGo"><a href="#4-设置PicGo" class="headerlink" title="4.设置PicGo"></a>4.设置PicGo</h2><p>打开PicGo，点击PicGo设置，根据个人需要进行一些简单设置，也可以和我设置一样</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041634859.png" alt="image-20220404163413743" class="lazyload"></p>
+<p>点击<code>图床设置</code>&gt;<code>腾讯云COS</code>将上方我们获取到的<strong>SecretId</strong>、<strong>SecretKey</strong>、<strong>APPID</strong>、<strong>存储空间名</strong>、**存储区域(地域)**分别填入下方</p>
+<p>由于刚刚我们在存储桶的文件列表新建了一个<strong>images</strong>文件夹来存放图片，那么在下方的存储路径我们就需要指定相应文件夹</p>
+<p>然后点击确定，并设为默认图床</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041735888.png" alt="image-20220404173544803" class="lazyload"></p>
+<h2 id="5-验证是否成功"><a href="#5-验证是否成功" class="headerlink" title="5.验证是否成功"></a>5.验证是否成功</h2><p>在Typora中，仍是<code>偏好设置</code>&gt;<code>图像</code>，点击验证图片上传</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041757997.png" alt="image-20220404175711915" class="lazyload"></p>
+<p>如果出现以下提示即代表搭建图床成功</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041757934.png" alt="image-20220404175755855" class="lazyload"></p>
+<h2 id="6-Gitee图床文件转移"><a href="#6-Gitee图床文件转移" class="headerlink" title="6.Gitee图床文件转移"></a>6.Gitee图床文件转移</h2><p><strong>注：如果之前并没未使用过Gitee作为图床可忽略</strong></p>
+<p>在已有的Gitee图床中将所有文件下载下来并解压</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041802302.png" alt="image-20220404180232224" class="lazyload"></p>
+<p>然后进入创建好的存储桶的文件列表中，进入到<strong>images</strong>文件夹</p>
+<p>然后点击<strong>上传文件</strong></p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041808632.png" alt="image-20220404180802570" class="lazyload"></p>
+<p>在窗口中点击<strong>选择文件</strong>，然后选中刚刚下载下来的Gitee图床中所有图片文件</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041811256.png" alt="image-20220404181121149" class="lazyload"></p>
+<p>选择好所有文件后，点击参数配置</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041814365.png" alt="image-20220404181433278" class="lazyload"></p>
+<p>设置对象属性，对这些文件进行以下设置（可根据需要自行修改）</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041815517.png" alt="image-20220404181536403" class="lazyload"></p>
+<p>然后点击<strong>上传</strong>等待上传成功即可</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041817436.png" alt="image-20220404181742322" class="lazyload"></p>
+<p>然后，根据刚刚在Typora验证图片上传成功后的提示可以知道我们刚刚搭建的对象存储的<code>url</code>地址，比如，上传成功后的<code>url</code>地址为<code>https://xxxx.myqcloud.com/images/202204041817436.png</code>，我们只需复制<code>https://xxxx.myqcloud.com/images/</code>这一部分</p>
+<p>然后，打开我们需要更改图片地址的文章，复制之前Gitee图床的<code>url</code>地址（同样也只需要复制xxxx.png即文件名前面一部分）</p>
+<p>然后，按下<code>Ctrl</code>+<code>H</code>，使用对象存储的url地址替换掉Gitee图床的url地址</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041830418.png" alt="image-20220404183046353" class="lazyload"></p>
+<p>注：因为我们在PicGo设置中设置了图片上传使用时间戳重命名，所有图片名称都是没变的，所以我们只需更改url路径即可</p>
+<p><strong>结语：</strong>其实整个过程是很简单的，如果对于对象存储想有更高级的使用，比如给对象存储设置防盗链、存储桶的权限管理、域名与传输管理等，可参考一下腾讯云中的官方文档，仔细研究一下还是很容易看懂的。可能很多人害怕对象存储的费用很高，其实不用担心，费用真的很少，他是默认按量计费，我用了半个月才用了几分钱（可能我请求量之类的比较少），如果存放在对象存储上的文件访问的比较少，可以将它们设置为低频存储之类，费用就会更少</p>
+<p>到此，Typora+PicGo+腾讯云COS搭建图床和图床文件转移就结束了！有不足之处望指出！😄</p>
+
+  </article>
+
+  
+      
+    <div class="nexmoe-post-copyright">
+        <strong>本文作者：</strong>夜雨声烦<br>
+        <strong>本文链接：</strong><a href="https://rainvex.cn/categories/%E6%95%99%E7%A8%8B/Typora-PicGo-%E8%85%BE%E8%AE%AF%E4%BA%91COS%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A.html" title="https:&#x2F;&#x2F;rainvex.cn&#x2F;categories&#x2F;%E6%95%99%E7%A8%8B&#x2F;Typora-PicGo-%E8%85%BE%E8%AE%AF%E4%BA%91COS%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A.html" target="_blank" rel="noopener">https:&#x2F;&#x2F;rainvex.cn&#x2F;categories&#x2F;%E6%95%99%E7%A8%8B&#x2F;Typora-PicGo-%E8%85%BE%E8%AE%AF%E4%BA%91COS%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A.html</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+        
+    </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+    
+        <a class="nexmoefont icon-appstore-fill -link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
+    
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/PicGo/" rel="tag">PicGo</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/Typora/" rel="tag">Typora</a> <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E5%9B%BE%E5%BA%8A/" rel="tag">图床</a>
+    
+</div>
+
+  
+      <div class="nexmoe-post-footer">
+          <section class="nexmoe-comment">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '69cbf602523b689899a5',
+        clientSecret: '19d380055880ff95f571399ce3da7d76f0515c8c',
+        id: window.location.pathname,
+        repo: 'rainvex.github.io',
+        owner: 'rainvex',
+        admin: 'rainvex'
+    })
+    gitalk.render('gitalk')
+</script>
+</section>
+      </div>
+  
+</div>
+            <div class="nexmoe-post-right">
+              <div class="nexmoe-fixed">
+                  <div class="nexmoe-tool"> 
+                    
+                      
+                        
+                          
+                          
+                              <button class="mdui-fab catalog" style="overflow:unset;">
+                                  <i class="nexmoefont icon-i-catalog"></i>
+                                  <div class="nexmoe-toc">
+                                      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Typora-PicGo-%E8%85%BE%E8%AE%AF%E4%BA%91COS%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A"><span class="toc-number">1.</span> <span class="toc-text">Typora+PicGo+腾讯云COS搭建图床</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E4%B8%8B%E8%BD%BDTypora%E5%92%8CPicGo"><span class="toc-number">1.1.</span> <span class="toc-text">1.下载Typora和PicGo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E4%B8%8B%E8%BD%BDTypora"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.1 下载Typora</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E4%B8%8B%E8%BD%BDPicGo"><span class="toc-number">1.1.2.</span> <span class="toc-text">1.2 下载PicGo</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E8%AE%BE%E7%BD%AETypora"><span class="toc-number">1.2.</span> <span class="toc-text">2.设置Typora</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%BC%80%E9%80%9A%E9%85%8D%E7%BD%AE%E8%85%BE%E8%AE%AF%E4%BA%91%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8"><span class="toc-number">1.3.</span> <span class="toc-text">3.开通配置腾讯云对象存储</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E8%AE%BE%E7%BD%AEPicGo"><span class="toc-number">1.4.</span> <span class="toc-text">4.设置PicGo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%AA%8C%E8%AF%81%E6%98%AF%E5%90%A6%E6%88%90%E5%8A%9F"><span class="toc-number">1.5.</span> <span class="toc-text">5.验证是否成功</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-Gitee%E5%9B%BE%E5%BA%8A%E6%96%87%E4%BB%B6%E8%BD%AC%E7%A7%BB"><span class="toc-number">1.6.</span> <span class="toc-text">6.Gitee图床文件转移</span></a></li></ol></li></ol>
+                                  </div>
+                              </button>
+                          
+                          
+                      
+                    
+                      <a href="#nexmoe-content" class="toc-link" aria-label="回到顶部" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+     
+    <div id="nexmoe-search-space">
+        <div class="search-container">
+            <div class="search-header">
+                <div class="search-input-container">
+                    <input class="search-input" type="text" placeholder="搜索" oninput="sinput();">
+                </div>
+                <a class="search-close" onclick="sclose();">×</a>
+            </div>
+            <div class="search-body"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js?v=1"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+ 
+
+<script async src="/js/app.js?v=1649069224172"></script>
+
+
+	<script async src="/js/search.js?v=1649069224172"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
+<script>
+	$(".justified-gallery").justifiedGallery({
+		rowHeight: 160,
+		margins: 10,
+	});
+</script>
+
+
+    
+
+
+
+
+
+    <!-- baidu Analytics -->
+<script>
+    var _hmt = _hmt || [];
+    (function() {var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?09155030c63c73fbb962f7c640bfacc3';
+    var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+</body>
+
+</html>
