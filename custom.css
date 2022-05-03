@@ -9,6 +9,12 @@ body.mdui-drawer-body-left {
     opacity: 0.85;
 }
 
+article code {
+    background-color: rgba(174, 23, 255, 0.1);
+    font-size: 95%;
+    color: rgb(166, 0, 255);
+}
+
 @media screen and (min-width: 769px) {
     article.nexmoe-py ul li{
         width: calc(24.285714285714286% - 5px) !important;
