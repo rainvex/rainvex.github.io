@@ -324,7 +324,7 @@ body {
   font-family: Roboto, Noto, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: rgba(0, 0, 0, .87);
-  background-color: #fff;
+  background-image: url(https://cdn.jsdelivr.net/gh/rainvex/rainvex.github.io@latest/images/kamen-rider-50th.png);
 }
 @media (min-width: 600px) {
   body {

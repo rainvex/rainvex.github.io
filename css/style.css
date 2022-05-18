@@ -838,6 +838,7 @@ a {
 body {
   max-width: 1100px;
   margin: auto !important;
+  background-image: url("https://cdn.jsdelivr.net/gh/rainvex/rainvex.github.io@latest/images/kamen-rider-50th.png");
 }
 .medium-zoom-overlay {
   z-index: 9999;
@@ -848,7 +849,6 @@ body {
   box-shadow: 0 1em 3em 0.5em rgba(0,0,0,0.25);
 }
 #nexmoe-background .nexmoe-bg {
-  opacity: 0.2;
   background-size: cover;
   filter: blur(30px);
   height: 100vh;
@@ -1064,6 +1064,7 @@ body {
 }
 #nexmoe-content {
   position: relative;
+  opacity: 0.8;
 }
 #nexmoe-content .nexmoe-primary {
   box-shadow: 0 0 1rem rgba(161,177,204,0.4);
