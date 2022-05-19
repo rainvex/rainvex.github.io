@@ -61,13 +61,13 @@
 <meta property="article:tag" content="SpringMVC">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204172045557.png">
-    <link rel="stylesheet" href="/lib/jquery.fancybox.min.css?v=1652951812847">
+    <link rel="stylesheet" href="/lib/jquery.fancybox.min.css?v=1652978490562">
     
         <link rel="stylesheet" href="//at.alicdn.com/t/font_3276118_n91whib3ny.css">
     
-    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1652951812847">
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1652951812847">
-    <link rel="stylesheet" href="/css/style.css?v=1652951812847">
+    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1652978490562">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1652978490562">
+    <link rel="stylesheet" href="/css/style.css?v=1652978490562">
      
     
         <link rel="stylesheet" href="/custom.css">
@@ -931,7 +931,111 @@
 
   
       <div class="nexmoe-post-footer">
-          
+          <section class="nexmoe-comment">
+    <div class="valine" id="vcomments"></div>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script>
+    // 使用方法 https://valine.js.org/quickstart.html
+    new Valine({
+        el: '.valine',
+        appId: 'qVqqbsCeflqS5kWNGj9PG6vj-gzGzoHsz',
+        appKey: 'ay3rK2tO7yUmvc9jC4ufdYv8',
+        emojiCDN: 'https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/emoji/', 
+        emojiMaps: {     
+            "嘿嘿":"嘿嘿.svg",    
+            "哈哈":"哈哈.svg",
+            "大笑":"大笑.svg",
+            "呵呵":"呵呵.svg",
+            "嘻嘻":"嘻嘻.svg",
+            "微笑":"微笑.svg",   
+            "斜眼笑":"斜眼笑.svg",
+            "羞涩微笑":"羞涩微笑.svg",     
+            "聚会笑脸":"聚会笑脸.svg",
+            "喜笑颜开":"喜笑颜开.svg",
+            "微笑天使":"微笑天使.svg",
+            "傲慢":"傲慢.svg",            
+            "闭嘴":"闭嘴.svg",
+            "不满":"不满.svg",
+            "不说":"不说.svg",
+            "打呵欠":"打呵欠.svg",  
+            "单眼吐舌":"单眼吐舌.svg",
+            "倒脸":"倒脸.svg",
+            "得意":"得意.svg",
+            "翻白眼":"翻白眼.svg",
+            "飞吻":"飞吻.svg",
+            "感冒":"感冒.svg",                    
+            "含泪的笑脸":"含泪的笑脸.svg",
+            "好吃":"好吃.svg",
+            "好崇拜哦":"好崇拜哦.svg",
+            "花痴":"花痴.svg",
+            "极度痛苦":"极度痛苦.svg",            
+            "苦笑":"苦笑.svg",            
+            "冷漠":"冷漠.svg",
+            "脸红":"脸红.svg",
+            "眯眼吐舌":"眯眼吐舌.svg",  
+            "生气":"生气.svg",            
+            "挑眉":"挑眉.svg",
+            "吐舌":"吐舌.svg",
+            "无语":"无语.svg",                  
+            "吓死了":"吓死了.svg",
+            "想一想":"想一想.svg",
+            "笑哭了":"笑哭了.svg", 
+            "羞涩亲亲":"羞涩亲亲.svg",                  
+            "眨眼":"眨眼.svg",
+            "龇牙咧嘴":"龇牙咧嘴.svg",
+            "安静的脸":"安静的脸.svg",
+            "抱抱":"抱抱.svg",
+            "沉思":"沉思.svg",
+            "吃惊":"吃惊.svg",            
+            "打喷嚏":"打喷嚏.svg",
+            "带单片眼镜的脸":"带单片眼镜的脸.svg",
+            "放声大哭":"放声大哭.svg",           
+            "害怕":"害怕.svg",
+            "汗":"汗.svg",        
+            "困":"困.svg",
+            "困扰":"困扰.svg",
+            "累":"累.svg",
+            "流口水":"流口水.svg",
+            "墨镜笑脸":"墨镜笑脸.svg",  
+            "呕吐":"呕吐.svg",
+            "睡着了":"睡着了.svg",
+            "松了口气":"松了口气.svg",
+            "痛苦":"痛苦.svg",
+            "头昏眼花":"头昏眼花.svg",        
+            "晕头转向":"晕头转向.svg",
+            "非礼勿视":"非礼勿视.svg",
+            "非礼勿听":"非礼勿听.svg",
+            "手掌":"手掌.svg",
+            "OK":"OK.svg",
+            "挥手":"挥手.svg",
+            "出拳":"出拳.svg",
+            "捏合的手势":"捏合的手势.svg",
+            "捏手指":"捏手指.svg",
+            "举双手":"举双手.svg",
+            "鼓掌":"鼓掌.svg",
+            "胜利手势":"胜利手势.svg",
+            "拇指向上":"拇指向上.svg",
+            "拇指向下":"拇指向下.svg",
+            "高压":"高压.svg",
+            "火焰":"火焰.svg",
+            "爆竹":"爆竹.svg",
+            "焰火":"焰火.svg",
+            "拉炮彩带":"拉炮彩带.svg",
+            "气球":"气球.svg",
+            "烟花":"烟花.svg",
+            "闪亮":"闪亮.svg",
+            "闪亮的星星":"闪亮的星星.svg",
+            "圣诞树":"圣诞树.svg",
+            "五彩纸屑球":"五彩纸屑球.svg",
+            "南瓜灯":"南瓜灯.svg",           
+            "雪花":"雪花.svg",           
+            "红包":"红包.svg",
+            "水滴":"水滴.svg",
+            "浪花":"浪花.svg"
+        }
+    })
+</script>
+</section>
       </div>
   
 </div>
@@ -979,10 +1083,10 @@
 
  
 
-<script async src="/js/app.js?v=1652951813876"></script>
+<script async src="/js/app.js?v=1652978490634"></script>
 
 
-	<script async src="/js/search.js?v=1652951813876"></script>
+	<script async src="/js/search.js?v=1652978490634"></script>
 
 
 <script src="/js/jquery.justifiedGallery.min.js"></script>
