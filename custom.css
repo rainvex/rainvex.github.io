@@ -1,12 +1,67 @@
 body.mdui-drawer-body-left {
-    background-image: url('https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/kamen-rider-50th.png') !important;
-    background-position: 60%;
+    background-image: url('https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/bg1.jpg') !important;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.mdui-list-item-content {
+    font-size: 17px;
+    font-weight: 550;
+}
+
+#nexmoe-header .nexmoe-avatar {
+    box-shadow: 0 0.3rem 2rem rgba(94, 66, 93, 0.8);
+}
+
+#nexmoe-header .nexmoe-count div {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: center;
+    color: #008efe;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#nexmoe-header .nexmoe-count div span {
+    color: #e5e5e5;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#nexmoe-header .nexmoe-list .nexmoe-list-item {
+    color: #e5e5e5;
+    padding: 0 30px;
+}
+
+#nexmoe-header .nexmoe-list .nexmoe-list-item i {
+    color: #e5e5e5;
+    font-size: 24px;
+}
+
+#nexmoe-header .nexmoe-widget-wrap {
+    background-color: #ededed;
+}
+
+#nexmoe-header .nexmoe-copyright {
+    color: #e5e5e5;
+    font-size: 13px;
+}
+
+#nexmoe-header .nexmoe-copyright a {
+    font-weight: bold;
 }
 
 #nexmoe-content{
-    opacity: 0.85;
+    opacity: 0.93;
+}
+
+
+#nexmoe-content .nexmoe-primary {
+    background-color: #ededed;
 }
 
 article code {
