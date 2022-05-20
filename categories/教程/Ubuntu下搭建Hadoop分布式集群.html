@@ -58,13 +58,13 @@
 <meta property="article:tag" content="Hadoop">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205011514184.png">
-    <link rel="stylesheet" href="/lib/jquery.fancybox.min.css?v=1652978490638">
+    <link rel="stylesheet" href="/lib/jquery.fancybox.min.css?v=1653019145491">
     
-        <link rel="stylesheet" href="//at.alicdn.com/t/font_3276118_n91whib3ny.css">
+        <link rel="stylesheet" href="//at.alicdn.com/t/font_3276118_jw6v5jzqnx.css">
     
-    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1652978490638">
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1652978490638">
-    <link rel="stylesheet" href="/css/style.css?v=1652978490638">
+    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1653019145491">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1653019145491">
+    <link rel="stylesheet" href="/css/style.css?v=1653019145491">
      
     
         <link rel="stylesheet" href="/custom.css">
@@ -223,10 +223,18 @@
         Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
         & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
         
+            <div style="font-size: 12px;padding: 3px;margin-bottom: 10px;">
+                <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+                本站总访问量 <a id="busuanzi_value_site_pv"></a> 次<br />
+                本站访客数 <a id="busuanzi_value_site_uv"></a>人次
+            </div>
+        
+        <img src="https://note.bequick.run/images/github_io.svg" width="120px"/>
+        
     </div>
 </div><!-- .nexmoe-drawer -->
     </div>
-    <div id="nexmoe-content" style="opacity: 0.85 !important;">
+    <div id="nexmoe-content">
         <div class="nexmoe-primary">
             <div class="nexmoe-post">
 
@@ -240,6 +248,8 @@
       
       <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
     <a><i class="nexmoefont icon-calendar-fill"></i>2022年04月30日</a>
+    <a><i class="nexmoefont icon-areachart"></i>5.3k 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 24 分钟</a>
 </div>
 
       
@@ -293,8 +303,11 @@
 <p><strong>注：</strong>两个虚拟机都需要进行<strong>同样</strong>的操作</p>
 <p>输入<code>sudo vi /etc/hosts</code>，将<strong>hosts</strong>文件中的<code>127.0.1.1</code>那一行内容删除</p>
 <p>然后添加</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs shell">(你自己的虚拟机的ip地址加上主机名)<br>192.168.228.128   master<br>192.168.228.129   slave <br>虚拟机的IP地址需要使用ifconfig命令查询得到<br></code></pre></td></tr></table></figure>
-
+<pre><code class="shell">(你自己的虚拟机的ip地址加上主机名)
+192.168.228.128   master
+192.168.228.129   slave 
+虚拟机的IP地址需要使用ifconfig命令查询得到
+</code></pre>
 <p>然后重启虚拟机，再打开终端，即可发现虚拟机主机名已改变</p>
 <p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204302338066.png" alt="image-20220430233810751" class="lazyload"></p>
 <p><strong>③测试</strong></p>
@@ -337,8 +350,17 @@
 <p><strong>Tips：</strong>mv指令：<strong>移动文件与目录或重命名</strong><br>基本语法：<br><code>mv oldNameFile newNameFile</code>(功能描述：<strong>重命名</strong>)<br><code>mv /temp/movefile /targetFolder</code>(功能描述：<strong>移动文件</strong>)</p>
 <h3 id="3-3-配置环境变量"><a href="#3-3-配置环境变量" class="headerlink" title="3.3 配置环境变量"></a>3.3 配置环境变量</h3><p>在终端中输入<code>sudo vi /etc/profile</code>编辑profile文件（这种方式是为该系统下所有用户配置，若只想为当前用户配置则编辑<code>~/.bashrc</code>）</p>
 <p>在profile文件末尾追加：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">JDK8</span><br>export JAVA_HOME=/usr/java/jdk/jdk8<br>export JRE_HOME=$JAVA_HOME/jre    <br>export CLASSPATH=$JAVA_HOME/lib:$JRE_HOME/lib<br>export PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin<br><span class="hljs-meta prompt_"></span><br><span class="hljs-meta prompt_"># </span><span class="language-bash">JDK 11后的环境变量配置方法</span><br>export JAVA_HOME=/usr/java/jdk-11.0.12<br>export CLASSPATH=$JAVA_HOME/lib<br>export PATH=$PATH:$JAVA_HOME/bin<br></code></pre></td></tr></table></figure>
+<pre><code class="shell"># JDK8
+export JAVA_HOME=/usr/java/jdk/jdk8
+export JRE_HOME=$JAVA_HOME/jre    
+export CLASSPATH=$JAVA_HOME/lib:$JRE_HOME/lib
+export PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin
 
+# JDK 11后的环境变量配置方法
+export JAVA_HOME=/usr/java/jdk-11.0.12
+export CLASSPATH=$JAVA_HOME/lib
+export PATH=$PATH:$JAVA_HOME/bin
+</code></pre>
 <p>然后按<code>ESC</code>返回正常模式，再按<code>:</code>键，输入<code>wq</code>保存退出</p>
 <p>输入<code>source /etc/profile</code>使配置的环境变量生效</p>
 <h3 id="3-4-测试是否安装成功"><a href="#3-4-测试是否安装成功" class="headerlink" title="3.4 测试是否安装成功"></a>3.4 测试是否安装成功</h3><p>输入命令<code>java -version</code>，出现以下提示说明成功</p>
@@ -352,8 +374,11 @@
 <p>使用<code>sudo mv /usr/hadoop/hadoop-3.2.3 /usr/hadoop/hadoop</code>将其重命名</p>
 <h3 id="4-3-配置环境变量"><a href="#4-3-配置环境变量" class="headerlink" title="4.3 配置环境变量"></a>4.3 配置环境变量</h3><p>在终端中输入<code>sudo vi /etc/profile</code>编辑profile文件（与jdk一样，这种方式是为该系统下所有用户配置，若只想为当前用户配置则编辑<code>~/.bashrc</code>）</p>
 <p>在profile文件末尾追加：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs shell">export HADOOP_HOME=/usr/hadoop/hadoop<br>export CLASSPATH=$HADOOP_HOME/bin/hadoop <br>export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native<br>export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin<br></code></pre></td></tr></table></figure>
-
+<pre><code class="shell">export HADOOP_HOME=/usr/hadoop/hadoop
+export CLASSPATH=$HADOOP_HOME/bin/hadoop 
+export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
+export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
+</code></pre>
 <p>然后按<code>ESC</code>返回正常模式，再按<code>:</code>键，输入<code>wq</code>保存退出</p>
 <p>输入<code>source /etc/profile</code>使配置的环境变量生效，或是重启一下虚拟机（<strong>建议</strong>，不重启的话重新开一个终端进行测试会和测试jdk一样报错hadoop找不到的错误）</p>
 <p>输入<code>hadoop version</code>，出现以下类似信息说明成功</p>
@@ -365,22 +390,111 @@
 <h4 id="4-4-1-配置环境变量hadoop-env-sh"><a href="#4-4-1-配置环境变量hadoop-env-sh" class="headerlink" title="4.4.1 配置环境变量hadoop-env.sh"></a>4.4.1 配置环境变量hadoop-env.sh</h4><p>在<code>/usr/hadoop/hadoop/etc/hadoop</code>（注意位置！！）文件夹中使用终端打开</p>
 <p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205011524402.png" alt="image-20220501152420189" class="lazyload"></p>
 <p>使用命令<code>vi hadoop-env.sh</code>，打开并编辑这个文件，在末尾添加：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">你自己jdk的保存位置，也是你配置jdk环境变量时的java_home的值</span><br>export JAVA_HOME=/usr/java/jdk/jdk8<br>export HADOOP_OPTS=&quot;-Djava.library.path=$&#123;HADOOP_HOME&#125;/lib/native&quot;  # 这个是后面我遇到问题加的，建议直接加上<br></code></pre></td></tr></table></figure>
-
+<pre><code class="shell"># 你自己jdk的保存位置，也是你配置jdk环境变量时的java_home的值
+export JAVA_HOME=/usr/java/jdk/jdk8
+export HADOOP_OPTS=&quot;-Djava.library.path=$&#123;HADOOP_HOME&#125;/lib/native&quot;  # 这个是后面我遇到问题加的，建议直接加上
+</code></pre>
 <p>按<code>esc</code>回到正常模式，输入<code>:wq</code>保存退出</p>
 <h4 id="4-4-2-配置环境变量yarn-env-sh"><a href="#4-4-2-配置环境变量yarn-env-sh" class="headerlink" title="4.4.2 配置环境变量yarn-env.sh"></a>4.4.2 配置环境变量yarn-env.sh</h4><p>这个和配置hadoop-env.sh一样，在末尾添加<code>export JAVA_HOME=/usr/java/jdk/jdk8</code>即可</p>
 <h4 id="4-4-3-配置核心组件core-site-xml"><a href="#4-4-3-配置核心组件core-site-xml" class="headerlink" title="4.4.3 配置核心组件core-site.xml"></a>4.4.3 配置核心组件core-site.xml</h4><p>使用文本编辑器打开并编辑core-site.xml文件，在<configuration>标签中添加：</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">property</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>fs.defaultFS<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>hdfs://master:9000<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">property</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>hadoop.tmp.dir<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>/usr/hadoop/hadoop/tmp<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>  <span class="hljs-comment">&lt;!--不需要我们提前建好文件夹，如果没有，等会儿格式化名称节点时它会帮我们自动创建--&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span><br></code></pre></td></tr></table></figure>
-
+<pre><code class="xml">&lt;property&gt;
+    &lt;name&gt;fs.defaultFS&lt;/name&gt;
+    &lt;value&gt;hdfs://master:9000&lt;/value&gt;
+&lt;/property&gt;
+&lt;property&gt;
+    &lt;name&gt;hadoop.tmp.dir&lt;/name&gt;
+    &lt;value&gt;/usr/hadoop/hadoop/tmp&lt;/value&gt;  &lt;!--不需要我们提前建好文件夹，如果没有，等会儿格式化名称节点时它会帮我们自动创建--&gt;
+&lt;/property&gt;
+</code></pre>
 <h4 id="4-4-4-配置文件系统hdfs-site-xml"><a href="#4-4-4-配置文件系统hdfs-site-xml" class="headerlink" title="4.4.4 配置文件系统hdfs-site.xml"></a>4.4.4 配置文件系统hdfs-site.xml</h4><p>使用文本编辑器打开并编辑hdfs-site.xml文件，在<configuration>标签中添加：</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">property</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>dfs.replication<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span><br>    <span class="hljs-comment">&lt;!--对于Hadoop的分布式文件系统HDFS而言，一般都是采用冗余存储，冗余因子通常为3，也就是说，一份数据保存三份副本。但是，本教程只有一个Slave节点作为数据节点，即集群中只有一个数据节点，数据只能保存一份，所以，dfs.replication的值还是设置为 1--&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">property</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>dfs.namenode.name.dir<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>/usr/hadoop/hadoop/tmp/dfs/name<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>  <span class="hljs-comment">&lt;!--不需要我们提前建好文件夹，如果没有，等会儿格式化名称节点时它会帮我们自动创建--&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">property</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>dfs.datanode.data.dir<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>/usr/hadoop/hadoop/tmp/dfs/data<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span>  <span class="hljs-comment">&lt;!--不需要我们提前建好文件夹，如果没有，等会儿格式化名称节点时它会帮我们自动创建--&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">property</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>dfs.namenode.http-address<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>master:50070<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span><br></code></pre></td></tr></table></figure>
-
+<pre><code class="xml">&lt;property&gt;
+    &lt;name&gt;dfs.replication&lt;/name&gt;
+    &lt;value&gt;1&lt;/value&gt;
+    &lt;!--对于Hadoop的分布式文件系统HDFS而言，一般都是采用冗余存储，冗余因子通常为3，也就是说，一份数据保存三份副本。但是，本教程只有一个Slave节点作为数据节点，即集群中只有一个数据节点，数据只能保存一份，所以，dfs.replication的值还是设置为 1--&gt;
+&lt;/property&gt;
+&lt;property&gt;
+    &lt;name&gt;dfs.namenode.name.dir&lt;/name&gt;
+    &lt;value&gt;/usr/hadoop/hadoop/tmp/dfs/name&lt;/value&gt;  &lt;!--不需要我们提前建好文件夹，如果没有，等会儿格式化名称节点时它会帮我们自动创建--&gt;
+&lt;/property&gt;
+&lt;property&gt;
+    &lt;name&gt;dfs.datanode.data.dir&lt;/name&gt;
+    &lt;value&gt;/usr/hadoop/hadoop/tmp/dfs/data&lt;/value&gt;  &lt;!--不需要我们提前建好文件夹，如果没有，等会儿格式化名称节点时它会帮我们自动创建--&gt;
+&lt;/property&gt;
+&lt;property&gt;
+    &lt;name&gt;dfs.namenode.http-address&lt;/name&gt;
+    &lt;value&gt;master:50070&lt;/value&gt;
+&lt;/property&gt;
+</code></pre>
 <h4 id="4-4-5-配置文件系统yarn-site-xml"><a href="#4-4-5-配置文件系统yarn-site-xml" class="headerlink" title="4.4.5 配置文件系统yarn-site.xml"></a>4.4.5 配置文件系统yarn-site.xml</h4><p>使用文本编辑器打开并编辑yarn-site.xml文件，在<configuration>标签中添加：</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">property</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>yarn.nodemanager.aux-services<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>mapreduce_shuffle<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">property</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>yarn.resourcemanager.hostname<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>master<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">property</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>yarn.resourcemanager.address<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>master:18040<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">property</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>yarn.resourcemanager.scheduler.address<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>master:18030<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">property</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>yarn.resourcemanager.resource-tracker.address<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>master:18025<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">property</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>yarn.resourcemanager.admin.address<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>master:18141<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">property</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>yarn.resourcemanager.webapp.address<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>master:18088<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">property</span>&gt;</span><br>    <span class="hljs-comment">&lt;!--这一点是后面我测试的时候出错添加的，如果不加后面测试可能会出现找不到或无法加载主类 org.apache.hadoop.mapreduce.v2.app.MRAppMaster的错误--&gt;</span><br>    <span class="hljs-comment">&lt;!--这个配置的值可以通过hadoop classpath命令获取，然后将其复制到此处，后面的mapred-site.xml文件中也添加了这个配置，但是name不一样--&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>yarn.application.classpath<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>/usr/hadoop/hadoop/etc/hadoop:/usr/hadoop/hadoop/share/hadoop/common/lib/*:/usr/hadoop/hadoop/share/hadoop/common/*:/usr/hadoop/hadoop/share/hadoop/hdfs:/usr/hadoop/hadoop/share/hadoop/hdfs/lib/*:/usr/hadoop/hadoop/share/hadoop/hdfs/*:/usr/hadoop/hadoop/share/hadoop/mapreduce/lib/*:/usr/hadoop/hadoop/share/hadoop/mapreduce/*:/usr/hadoop/hadoop/share/hadoop/yarn:/usr/hadoop/hadoop/share/hadoop/yarn/lib/*:/usr/hadoop/hadoop/share/hadoop/yarn/*<br><span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span><br></code></pre></td></tr></table></figure>
-
+<pre><code class="xml">&lt;property&gt;
+    &lt;name&gt;yarn.nodemanager.aux-services&lt;/name&gt;
+    &lt;value&gt;mapreduce_shuffle&lt;/value&gt;
+&lt;/property&gt;
+&lt;property&gt;
+    &lt;name&gt;yarn.resourcemanager.hostname&lt;/name&gt;
+    &lt;value&gt;master&lt;/value&gt;
+&lt;/property&gt;
+&lt;property&gt;
+    &lt;name&gt;yarn.resourcemanager.address&lt;/name&gt;
+    &lt;value&gt;master:18040&lt;/value&gt;
+&lt;/property&gt;
+&lt;property&gt;
+    &lt;name&gt;yarn.resourcemanager.scheduler.address&lt;/name&gt;
+    &lt;value&gt;master:18030&lt;/value&gt;
+&lt;/property&gt;
+&lt;property&gt;
+    &lt;name&gt;yarn.resourcemanager.resource-tracker.address&lt;/name&gt;
+    &lt;value&gt;master:18025&lt;/value&gt;
+&lt;/property&gt;
+&lt;property&gt;
+    &lt;name&gt;yarn.resourcemanager.admin.address&lt;/name&gt;
+    &lt;value&gt;master:18141&lt;/value&gt;
+&lt;/property&gt;
+&lt;property&gt;
+    &lt;name&gt;yarn.resourcemanager.webapp.address&lt;/name&gt;
+    &lt;value&gt;master:18088&lt;/value&gt;
+&lt;/property&gt;
+&lt;property&gt;
+    &lt;!--这一点是后面我测试的时候出错添加的，如果不加后面测试可能会出现找不到或无法加载主类 org.apache.hadoop.mapreduce.v2.app.MRAppMaster的错误--&gt;
+    &lt;!--这个配置的值可以通过hadoop classpath命令获取，然后将其复制到此处，后面的mapred-site.xml文件中也添加了这个配置，但是name不一样--&gt;
+    &lt;name&gt;yarn.application.classpath&lt;/name&gt;
+&lt;value&gt;/usr/hadoop/hadoop/etc/hadoop:/usr/hadoop/hadoop/share/hadoop/common/lib/*:/usr/hadoop/hadoop/share/hadoop/common/*:/usr/hadoop/hadoop/share/hadoop/hdfs:/usr/hadoop/hadoop/share/hadoop/hdfs/lib/*:/usr/hadoop/hadoop/share/hadoop/hdfs/*:/usr/hadoop/hadoop/share/hadoop/mapreduce/lib/*:/usr/hadoop/hadoop/share/hadoop/mapreduce/*:/usr/hadoop/hadoop/share/hadoop/yarn:/usr/hadoop/hadoop/share/hadoop/yarn/lib/*:/usr/hadoop/hadoop/share/hadoop/yarn/*
+&lt;/value&gt;
+&lt;/property&gt;
+</code></pre>
 <h4 id="4-4-6-配置计算框架mapred-site-xml"><a href="#4-4-6-配置计算框架mapred-site-xml" class="headerlink" title="4.4.6 配置计算框架mapred-site.xml"></a>4.4.6 配置计算框架mapred-site.xml</h4><p>使用文本编辑器打开并编辑mapred-site.xml文件，在<configuration>标签中添加：</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">property</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>mapreduce.framework.name<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>yarn<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">property</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>mapreduce.jobhistory.address<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>master:10020<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">property</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>mapreduce.jobhistory.webapp.address<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>master:19888<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">property</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>yarn.app.mapreduce.am.env<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>HADOOP_MAPRED_HOME=/usr/hadoop/hadoop<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">property</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>mapreduce.map.env<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>HADOOP_MAPRED_HOME=/usr/hadoop/hadoop<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">property</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>mapreduce.reduce.env<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>HADOOP_MAPRED_HOME=/usr/hadoop/hadoop<span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">property</span>&gt;</span><br>    <span class="hljs-comment">&lt;!--这一点是后面我测试的时候出错添加的，如果不加可能会出现找不到或无法加载主类 org.apache.hadoop.mapreduce.v2.app.MRAppMaster的错误--&gt;</span><br>    <span class="hljs-comment">&lt;!--这个配置的值可以通过hadoop classpath命令获取，然后将其复制到此处--&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>mapreduce.application.classpath<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">value</span>&gt;</span>/usr/hadoop/hadoop/etc/hadoop:/usr/hadoop/hadoop/share/hadoop/common/lib/*:/usr/hadoop/hadoop/share/hadoop/common/*:/usr/hadoop/hadoop/share/hadoop/hdfs:/usr/hadoop/hadoop/share/hadoop/hdfs/lib/*:/usr/hadoop/hadoop/share/hadoop/hdfs/*:/usr/hadoop/hadoop/share/hadoop/mapreduce/lib/*:/usr/hadoop/hadoop/share/hadoop/mapreduce/*:/usr/hadoop/hadoop/share/hadoop/yarn:/usr/hadoop/hadoop/share/hadoop/yarn/lib/*:/usr/hadoop/hadoop/share/hadoop/yarn/*<br><span class="hljs-tag">&lt;/<span class="hljs-name">value</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span><br></code></pre></td></tr></table></figure>
-
+<pre><code class="xml">&lt;property&gt;
+    &lt;name&gt;mapreduce.framework.name&lt;/name&gt;
+    &lt;value&gt;yarn&lt;/value&gt;
+&lt;/property&gt;
+&lt;property&gt;
+    &lt;name&gt;mapreduce.jobhistory.address&lt;/name&gt;
+    &lt;value&gt;master:10020&lt;/value&gt;
+&lt;/property&gt;
+&lt;property&gt;
+    &lt;name&gt;mapreduce.jobhistory.webapp.address&lt;/name&gt;
+    &lt;value&gt;master:19888&lt;/value&gt;
+&lt;/property&gt;
+&lt;property&gt;
+    &lt;name&gt;yarn.app.mapreduce.am.env&lt;/name&gt;
+    &lt;value&gt;HADOOP_MAPRED_HOME=/usr/hadoop/hadoop&lt;/value&gt;
+&lt;/property&gt;
+&lt;property&gt;
+    &lt;name&gt;mapreduce.map.env&lt;/name&gt;
+    &lt;value&gt;HADOOP_MAPRED_HOME=/usr/hadoop/hadoop&lt;/value&gt;
+&lt;/property&gt;
+&lt;property&gt;
+    &lt;name&gt;mapreduce.reduce.env&lt;/name&gt;
+    &lt;value&gt;HADOOP_MAPRED_HOME=/usr/hadoop/hadoop&lt;/value&gt;
+&lt;/property&gt;
+&lt;property&gt;
+    &lt;!--这一点是后面我测试的时候出错添加的，如果不加可能会出现找不到或无法加载主类 org.apache.hadoop.mapreduce.v2.app.MRAppMaster的错误--&gt;
+    &lt;!--这个配置的值可以通过hadoop classpath命令获取，然后将其复制到此处--&gt;
+    &lt;name&gt;mapreduce.application.classpath&lt;/name&gt;
+&lt;value&gt;/usr/hadoop/hadoop/etc/hadoop:/usr/hadoop/hadoop/share/hadoop/common/lib/*:/usr/hadoop/hadoop/share/hadoop/common/*:/usr/hadoop/hadoop/share/hadoop/hdfs:/usr/hadoop/hadoop/share/hadoop/hdfs/lib/*:/usr/hadoop/hadoop/share/hadoop/hdfs/*:/usr/hadoop/hadoop/share/hadoop/mapreduce/lib/*:/usr/hadoop/hadoop/share/hadoop/mapreduce/*:/usr/hadoop/hadoop/share/hadoop/yarn:/usr/hadoop/hadoop/share/hadoop/yarn/lib/*:/usr/hadoop/hadoop/share/hadoop/yarn/*
+&lt;/value&gt;
+&lt;/property&gt;
+</code></pre>
 <h4 id="4-4-7-配置主从结点"><a href="#4-4-7-配置主从结点" class="headerlink" title="4.4.7 配置主从结点"></a>4.4.7 配置主从结点</h4><p>使用文本编辑器打开并编辑workers文件（hadoop版本3.x以下是slaves文件），将其中的localhost修改为slave即可</p>
 <h3 id="4-5-复制到从节点slave"><a href="#4-5-复制到从节点slave" class="headerlink" title="4.5 复制到从节点slave"></a>4.5 复制到从节点slave</h3><p>我们在<code>/usr/hadoop</code>文件夹中使用终端打开，然后使用命令<code>scp -r hadoop 你的用户名@slave:/usr/hadoop/</code>将配置好的hadoop整个文件夹复制到从节点slave中（因为我们已经配置好了ssh免密登录，所以可以直接复制过去，<strong>记得复制过去后在slave中也要配置好hadoop的环境变量！！！</strong>）</p>
 <p>由于我master和slave节点对jdk和hadoop的存放位置及配置都一样，所以在slave中我就不需要再做其它修改了</p>
@@ -450,6 +564,9 @@
         el: '.valine',
         appId: 'qVqqbsCeflqS5kWNGj9PG6vj-gzGzoHsz',
         appKey: 'ay3rK2tO7yUmvc9jC4ufdYv8',
+        enableQQ:true,
+        meta:['nick','mail'],
+        placeholder:'留下你的足迹',
         emojiCDN: 'https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/emoji/', 
         emojiMaps: {     
             "嘿嘿":"嘿嘿.svg",    
@@ -590,13 +707,17 @@
 <script src="/js/mdui.min.js"></script>
 <script src="/js/jquery.min.js"></script>
 <script src="/js/jquery.fancybox.min.js"></script>
+<script src="https://cdn.staticfile.org/highlight.js/10.0.0/highlight.min.js"></script>
+<script>
+	hljs.initHighlightingOnLoad();
+</script>
 
  
 
-<script async src="/js/app.js?v=1652978490645"></script>
+<script async src="/js/app.js?v=1653019145522"></script>
 
 
-	<script async src="/js/search.js?v=1652978490645"></script>
+	<script async src="/js/search.js?v=1653019145522"></script>
 
 
 <script src="/js/jquery.justifiedGallery.min.js"></script>
@@ -624,6 +745,18 @@
     })();
 </script>
 
-</body>
+<!-- hexo injector body_end start -->
+<script src="/lib/codeBlock/clipboard.min.js"></script>
+
+<script src="/lib/codeBlock/codeBlockFuction.js"></script>
+
+<script src="/lib/codeBlock/codeLang.js"></script>
+
+<script src="/lib/codeBlock/codeCopy.js"></script>
+
+<script src="/lib/codeBlock/codeShrink.js"></script>
+
+<link rel="stylesheet" href="/lib/codeBlock/matery.css">
+<!-- hexo injector body_end end --></body>
 
 </html>
