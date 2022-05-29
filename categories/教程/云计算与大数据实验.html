@@ -66,26 +66,27 @@
 <meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205281616285.png">
 <meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205281616543.png">
 <meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205281618278.png">
+<meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205291838015.png">
 <meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205281620190.png">
 <meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205281624983.png">
 <meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205281637265.png">
 <meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205281640745.png">
 <meta property="og:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205281645829.png">
 <meta property="article:published_time" content="2022-05-28T09:27:34.000Z">
-<meta property="article:modified_time" content="2022-05-28T09:36:55.168Z">
+<meta property="article:modified_time" content="2022-05-29T10:56:46.287Z">
 <meta property="article:author" content="夜雨声烦">
 <meta property="article:tag" content="Linux">
 <meta property="article:tag" content="Ubuntu">
 <meta property="article:tag" content="Hadoop">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205271849078.png">
-    <link rel="stylesheet" href="/lib/jquery.fancybox.min.css?v=1653804117097">
+    <link rel="stylesheet" href="/lib/jquery.fancybox.min.css?v=1653821916789">
     
         <link rel="stylesheet" href="//at.alicdn.com/t/font_3276118_10vt4tg3xvcr.css">
     
-    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1653804117097">
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1653804117097">
-    <link rel="stylesheet" href="/css/style.css?v=1653804117097">
+    <link rel="stylesheet" href="/lib/mdui_043tiny/css/mdui.css?v=1653821916789">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1653821916789">
+    <link rel="stylesheet" href="/css/style.css?v=1653821916789">
      
     
         <link rel="stylesheet" href="/custom.css">
@@ -270,16 +271,16 @@
       
       <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
     <a><i class="nexmoefont icon-calendar-fill"></i>2022年05月28日</a>
-    <a><i class="nexmoefont icon-areachart"></i>7.3k 字</a>
-    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 35 分钟</a>
+    <a><i class="nexmoefont icon-areachart"></i>7.6k 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 36 分钟</a>
 </div>
 
       
 
       <h1 id="云计算与大数据实验"><a href="#云计算与大数据实验" class="headerlink" title="云计算与大数据实验"></a>云计算与大数据实验</h1><p>该教程是本学期大数据与云计算课程的课程实验，希望能帮助到不知道如何下手的同学，同样也是对自己学习过程的记录，方便以后的学习</p>
 <p><strong>声明：该教程只是为了帮助大家完成本学期的实验，请不要直接将教程中的内容直接复制作为实验报告，务必按照自己的实际情况进行操作和编写，如若出现因复制教程内容导致实验报告雷同被查的情况，一概不负责</strong></p>
-<h2 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h2><p>开始之前，需要先完成Ubuntu系统下的Hadoop分布式集群安装，如果还未完成，可以先参考之前的<a href="https://rainvex.cn/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4.html">这篇文章</a></p>
-<p>此外，在Windows上也要完成Hadoop环境的配置，因为在后续实验中我们需要在Windows上使用IDEA编写测试类来对Ubuntu中Hadoop的HDFS文件系统进行操作，所以Windows也要配置好Hadoop环境，不然会报<code>HADOOP_HOME</code>找不到之类的错误（默认大家都已经安装了JDK）</p>
+<h2 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h2><p>开始之前，需要先完成Ubuntu系统下的Hadoop分布式集群安装，如果还未完成，可以先参考之前的<a href="https://rainvex.cn/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4.html">这篇文章</a>；如果一开始就使用的是单机版Hadoop，可以直接做实验，不用管前面这些配置，也不用跑去虚拟机上搭建一个分布式Hadoop集群</p>
+<p>如果一开始就自己搭建了分布式Hadoop集群，那么在Windows上也要完成Hadoop环境的配置，因为在后续实验中我们需要在Windows上使用IDEA编写测试类来对Ubuntu中Hadoop的HDFS文件系统进行操作，所以Windows也要配置好Hadoop环境，不然会报<code>HADOOP_HOME</code>找不到之类的错误（Hadoop需要依赖JDK，就默认大家都已经安装了JDK）</p>
 <h3 id="1-1-Windows中安装Hadoop"><a href="#1-1-Windows中安装Hadoop" class="headerlink" title="1.1 Windows中安装Hadoop"></a>1.1 Windows中安装Hadoop</h3><p>如果是直接使用老师发的配置好的hadoop压缩包则只需要查看如何配置好环境变量即可，另外，<strong>建议</strong>Windows中安装的Hadoop和Ubuntu中安装的Hadoop<strong>版本一样</strong>，以免引起不必要的麻烦或是可能因版本不同引起造成的冲突问题</p>
 <h4 id="1-1-1-下载Hadoop"><a href="#1-1-1-下载Hadoop" class="headerlink" title="1.1.1 下载Hadoop"></a>1.1.1 下载Hadoop</h4><p>这个在之前的<a href="https://rainvex.cn/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4.html">Ubuntu下搭建Hadoop分布式集群</a>教程中已经提到过，就不再赘述了</p>
 <p>注：我使用的是Hadoop3.2.3</p>
@@ -308,11 +309,6 @@
 <p>由于我们并不是在Windows上使用Hadoop，所以其实在Windows上配置Hadoop环境只需修改需要的即可，比如我们的实验是操作HDFS，那么配置<code>core-site.xml</code>、<code>hdfs-site.xml</code>、<code>mapred-site.xml</code>即可，好像还是几乎都要配置😂（算了，都配置吧🙄），但是有些配置项确实可以不需要</p>
 <h5 id="①-配置核心组件core-site-xml"><a href="#①-配置核心组件core-site-xml" class="headerlink" title="① 配置核心组件core-site.xml"></a>① 配置核心组件core-site.xml</h5><p>使用文本编辑器打开并编辑core-site.xml文件，在<code>&lt;configuration&gt;</code>标签中添加：</p>
 <pre><code class="xml">&lt;configuration&gt;
-  &lt;!--指定fs的缺省名称--&gt;
-  &lt;property&gt;
-    &lt;name&gt;fs.default.name&lt;/name&gt;
-    &lt;value&gt;hdfs://localhost:9000&lt;/value&gt;
-  &lt;/property&gt;
   &lt;!--指定HDFS的（NameNode）的缺省路径地址,localhost：是计算机名，也可以是ip地址--&gt;
   &lt;property&gt;
       &lt;name&gt;fs.defaultFS&lt;/name&gt;
@@ -432,7 +428,7 @@
 <p>到此，Windows上配置Hadoop环境就完成了，这其实也算是一个hadoop单机版的安装步骤了</p>
 <h3 id="1-2-Ping"><a href="#1-2-Ping" class="headerlink" title="1.2 Ping"></a>1.2 Ping</h3><p>请确保Windows和Ubuntu能够互相<code>ping</code>通</p>
 <p>然后，正式开始实验内容</p>
-<h2 id="二、实验一：HDFS的文件操作命令及API编程"><a href="#二、实验一：HDFS的文件操作命令及API编程" class="headerlink" title="二、实验一：HDFS的文件操作命令及API编程"></a>二、实验一：HDFS的文件操作命令及API编程</h2><h3 id="2-1-HDFS的基本文件操作命令"><a href="#2-1-HDFS的基本文件操作命令" class="headerlink" title="2.1 HDFS的基本文件操作命令"></a>2.1 HDFS的基本文件操作命令</h3><p>该小节在Ubuntu中进行操作，如果只安装了单机版当我没说🙄</p>
+<h2 id="二、实验一：HDFS的文件操作命令及API编程"><a href="#二、实验一：HDFS的文件操作命令及API编程" class="headerlink" title="二、实验一：HDFS的文件操作命令及API编程"></a>二、实验一：HDFS的文件操作命令及API编程</h2><h3 id="2-1-HDFS的基本文件操作命令"><a href="#2-1-HDFS的基本文件操作命令" class="headerlink" title="2.1 HDFS的基本文件操作命令"></a>2.1 HDFS的基本文件操作命令</h3><p>该小节在Ubuntu中进行操作，如果只安装了单机版当我没说🙄，直接在Windows上操作，把操作的目录名和路径改为windows上的习惯即可</p>
 <p>这一小节是书上实验要求的</p>
 <p>① 使用<code>start-all.sh</code>启动 hadoop，通过<code>jps</code>命令查看启动进程，下面所有操作都建立在Ubuntu中的Hadoop启动成功的条件下；通过web方式查看namenode和jobtracker，在浏览器输入<code>master:50070</code>和<code>master:18088</code>即可访问，这儿不再赘述</p>
 <p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205272112426.png" alt="image-20220527211236064" class="lazyload"></p>
@@ -443,7 +439,7 @@
 <p>④ 使用命令<code>hadoop fs -mkdir -p /user/xk</code>在HDFS的user目录下创建一个名字盘拼音的目录，并使用<code>hadoop fs -ls -R /</code>查看，加上<code>-R</code>指令就是表示递归查看，会把每一层的每一个文件都显示出来，前面创建目录的<code>-p</code>也基本是同一个意思，表示递归创建</p>
 <p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205281334179.png" alt="image-20220528133456084" class="lazyload"></p>
 <p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205281335326.png" alt="image-20220528133550169" class="lazyload"></p>
-<p>⑤ 在Ubuntu的&#x2F;usr目录下创建一个test目录，进入test目录，执行<code>echo &quot;hello world&quot; ＞ testl．txt</code>命令创建 test1.txt文件，并输入hello world内容，然后使用cat命令查看内容（创建位置和目录名字随自己而定）</p>
+<p>⑤ 在Ubuntu的<code>/usr</code>目录下创建一个test目录，进入test目录，执行<code>echo &quot;hello world&quot; ＞ testl．txt</code>命令创建 test1.txt文件，并输入hello world内容，然后使用cat命令查看内容（创建位置和目录名字随自己而定）</p>
 <p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205281340282.png" alt="image-20220528134008138" class="lazyload"></p>
 <p>⑥ 将刚才在本地创建的 test1.txt文件上传（put）到HDFS下名字的目录下，并查看HDFS的&#x2F;user&#x2F;xk目录下是否有test1.txt文件。命令为<code>hadoop fs -put 要上传的文件 要上传到的位置</code></p>
 <p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205281342400.png" alt="image-20220528134253086" class="lazyload"></p>
@@ -520,6 +516,7 @@
 &lt;/dependencies&gt;
 </code></pre>
 <p>③ 导入依赖后，新建一个包，再在包下新建一个类<code>ResultFilter</code>（需不需要建包自己随意，只是方便管理），然后复制代码…（真就为了效率直接复制，这也是我自己辛辛苦苦自己打的😭）</p>
+<p><strong>同志们，下面的每个程序导包都仔细点，基本都是<code>org.apache.hadoop</code>下的，但还是需要仔细点，可能在不同包下还有相同的类名</strong></p>
 <pre><code class="java">public class ResultFilter &#123;
     public static void main(String[] args) throws IOException &#123;
         Configuration configuration = new Configuration();
@@ -598,9 +595,9 @@
 <p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205281422323.png" alt="image-20220528142227183" class="lazyload"></p>
 <p>⑦ 将创建好的文件上传到HDFS上，上传后可以通过上面2.1节提到的方法查看是否上传成功</p>
 <p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205281423768.png" alt="image-20220528142331644" class="lazyload"></p>
-<p>⑧ 在终端中运行命令<code>hadoop jar jar名字 要执行的类名 要检索的文件所在的目录 输出目录 要检索的字符串 每个输出文件所包含的最大行数</code>，我的命令就是<code>hadoop jar BigData.jar experimentone.ResultFilter /user/xk output world 3</code>，表示我要运行的jar包名为BigData.jar，要运行的类名为experimentone包下的ResultFilter类，要检索的文件所在目录是HDFS上的<code>/user/xk</code>，检索输出的文件保存在名为output的目录，要检索的字符串为world，输出文件的最大行数为3</p>
+<p>⑧ 在终端中运行命令<code>hadoop jar jar包名字 要执行的类名 要检索的文件所在的目录 输出目录 要检索的字符串 每个输出文件所包含的最大行数</code>，我的命令就是<code>hadoop jar BigData.jar experimentone.ResultFilter /user/xk output world 3</code>，表示我要运行的jar包名为BigData.jar，要运行的类名为experimentone包下的ResultFilter类，要检索的文件所在目录是HDFS上的<code>/user/xk</code>，检索输出的文件保存在名为output的目录，要检索的字符串为world，输出文件的最大行数为3（注意自己jar包存放位置，我是因为jar包和终端所在位置都在Desktop才这样写，如果jar包存放位置和终端所处位置不一样，则需要在jar包名字前加上路径，比如<code>/usr/xk/BigData.jar</code>）</p>
 <p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205281431237.png" alt="image-20220528143122096" class="lazyload"></p>
-<p>运行成功后Ubuntu桌面多出了一个output目录，里面包含三个文件，分别名为1、2、3，里面的内容就是我检索的目录中所有文件里包含了world的那一行的内容，且每个文件的最大行数为3（我所有操作都是在桌面位置的终端进行，至于output为什么会在桌面，我猜测可能默认是在当前位置创建，如果想制定具体创建位置和目录名，可以在命令中写详细点）</p>
+<p>运行成功后Ubuntu桌面（不一定是桌面，如果你没指定具体路径，它默认是在你终端现处位置的目录下创建output）多出了一个output目录，里面包含三个文件（文件个数与查询出来的内容总行数、规定的每个文件最大行数有关），分别名为1、2、3，里面的内容就是我检索的目录中所有文件里包含了world的那一行的内容，且每个文件的最大行数为3（我所有操作都是在桌面位置的终端进行，所以output会在桌面，如果想指定具体创建位置和目录名，可以在命令中写详细点）</p>
 <p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205281433142.png" alt="image-20220528143353939" class="lazyload"></p>
 <h4 id="2-2-2-CreateDirectory"><a href="#2-2-2-CreateDirectory" class="headerlink" title="2.2.2 CreateDirectory"></a>2.2.2 CreateDirectory</h4><p>这个是老师给出拓展实验之一，实验目的就是<strong>在HDFS上面创建一个目录</strong></p>
 <p>省去上面提到的导入依赖的步骤，直接在包下新建一个名为<code>CreateDirectory</code>的类</p>
@@ -811,9 +808,9 @@
         job.setReducerClass(IntSumReducer.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
-        //添加我们要统计的文件
+        //添加hdfs上我们要统计的文件
         FileInputFormat.addInputPath(job,new Path(&quot;hdfs://192.168.228.128:9000/user/xk/test.txt&quot;));
-        //设置统计结果输出目录
+        //设置统计结果输出目录（依然是存放在hdfs上的）
         FileOutputFormat.setOutputPath(job,new Path(&quot;hdfs://192.168.228.128:9000/user/xk/output&quot;));
         System.exit(job.waitForCompletion(true) ? 0 : 1);
     &#125;
@@ -849,6 +846,8 @@
 <p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205281616543.png" alt="image-20220528161658397" class="lazyload"></p>
 <p>通过web端查看，可以看到多出一个output目录</p>
 <p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205281618278.png" alt="image-20220528161848081" class="lazyload"></p>
+<p>output的生成位置取决于在程序中的此处的设置：</p>
+<p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205291838015.png" alt="image-20220529183816805" class="lazyload"></p>
 <p>进入到output目录中，可以看到两个文件</p>
 <p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205281620190.png" alt="image-20220528162015041" class="lazyload"></p>
 <p>我们将这个目录下载下来查看</p>
@@ -856,7 +855,7 @@
 <h3 id="3-2-InvertedIndex"><a href="#3-2-InvertedIndex" class="headerlink" title="3.2 InvertedIndex"></a>3.2 InvertedIndex</h3><p>这是实验二老师给出的扩展实验</p>
 <p>开始实验之前，请先将课上老师发的三个文件复制到Ubuntu中</p>
 <p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205281637265.png" alt="image-20220528163756886" class="lazyload"></p>
-<p>然后，在Ubuntu中在HDFS上创建几个目录，<code>InvertedIndex</code>和<code>InvertedIndex/input</code></p>
+<p>然后，在Ubuntu中的HDFS上创建几个目录，<code>InvertedIndex</code>和<code>InvertedIndex/input</code></p>
 <p>然后，将那三个文件上传到input目录中</p>
 <p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205281640745.png" alt="image-20220528164046576" class="lazyload"></p>
 <p>然后在项目中新建几个类，分别为<code>InvertedIndexCombiner</code>、<code>InvertedIndexMapper</code>、<code>InvertedIndexReducer</code>、<code>InvertedIndexRunner</code></p>
@@ -956,7 +955,7 @@
 <p>我们同样也可以下载下来查看</p>
 <p><img data-fancybox="gallery" data-sizes="auto" data-src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205281645829.png" alt="image-20220528164553511" class="lazyload"></p>
 <p>到此，本学期所有的课程实验就都完成了，其实这些实验都很简单，毕竟代码都是现成的，我们只需要能运行出来就行，就是配置环境麻烦</p>
-<p>最后，希望大家都能准确无误地运行出来，有问题和疑惑可以QQ私聊我或在下面评论</p>
+<p>最后，希望大家都能准确无误地运行出来，有问题和疑惑可以QQ私聊我，评论区我就关了，因为有人恶意使用匿名乱发消息</p>
 
   </article>
 
@@ -1036,10 +1035,10 @@
 
  
 
-<script async src="/js/app.js?v=1653804117163"></script>
+<script async src="/js/app.js?v=1653821916858"></script>
 
 
-	<script async src="/js/search.js?v=1653804117163"></script>
+	<script async src="/js/search.js?v=1653821916858"></script>
 
 
 <script src="/js/jquery.justifiedGallery.min.js"></script>
