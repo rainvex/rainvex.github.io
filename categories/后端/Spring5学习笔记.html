@@ -26,9 +26,9 @@
   
   <!-- Custom Files headBegin end-->
     <link rel="shortcut icon" type='image/x-icon' href="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/avatar.jpg">
-  <link rel="preload" href="/css/style.89a78c16.css" as="style">
-  <link rel="preload" href="https://cdn.sakurasep.top/fonts-cdn/canva/MaShanZheng-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="https://cdn.sakurasep.top/fonts-cdn/MiSans/MiSans-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="/css/style.659c7404.css" as="style">
+  <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="夜雨声烦" type="application/atom+xml">
@@ -45,7 +45,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-03-27T14:10:43.000Z">
-<meta property="article:modified_time" content="2022-05-18T07:37:01.607Z">
+<meta property="article:modified_time" content="2022-08-22T05:38:01.552Z">
 <meta property="article:author" content="夜雨声烦">
 <meta property="article:tag" content="笔记">
 <meta property="article:tag" content="Java">
@@ -57,15 +57,11 @@
     #safearea {
   display: none;
 }
-.post-story + .post-story {
-  content-visibility: auto;
-  contain-intrinsic-size: 10px 500px;
-}
 :root {
-  --color-site-body: #f7f9fe;
-  --color-site-bg: #f7f9fe;
-  --color-site-inner: #fff;
-  --color-site-footer: #fff;
+  --color-site-body: #f4f4f4;
+  --color-site-bg: #f4f4f4;
+  --color-site-inner: #787878;
+  --color-site-footer: #787878;
   --color-card: #fff;
   --color-text: #444;
   --color-block: #f6f6f6;
@@ -79,8 +75,8 @@
   --color-h6: #666;
   --color-p: #444;
   --color-list: #666;
-  --color-list-hl: #30ad91;
-  --color-meta: #666;
+  --color-list-hl: #6e08c2;
+  --color-meta: #888;
   --color-read-bkg: #e0d8c8;
   --color-read-post: #f8f1e2;
   --color-copyright-bkg: #f5f5f5;
@@ -101,7 +97,7 @@
   background: transparent;
 }
 *::-webkit-scrollbar-thumb {
-  background: #3dd9b6;
+  background: #8a0af3;
   cursor: pointer;
   border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -113,21 +109,21 @@ html {
   color: var(--color-text);
   width: 100%;
   height: 100%;
-  font-family: MiSans, Menlo, Monaco, monospace, sans-serif;
+  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
   font-size: 16px;
 }
 html >::-webkit-scrollbar {
-  height: 5px;
-  width: 5px;
+  height: 4px;
+  width: 4px;
 }
 html >::-webkit-scrollbar-track-piece {
   background: transparent;
 }
 html >::-webkit-scrollbar-thumb {
-  background: #3dd9b6;
+  background: #8a0af3;
   cursor: pointer;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
 }
 html >::-webkit-scrollbar-thumb:hover {
   background: #ff5722;
@@ -153,7 +149,7 @@ body.modal-active {
   }
 }
 a {
-  color: #2092ec;
+  color: #4dec1c;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.28s ease;
@@ -435,7 +431,7 @@ button {
   margin-top: 32px;
 }
 .cover-wrapper .cover-body .title {
-  font-family: MaShanZheng, Helvetica, monospace;
+  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
   font-size: 3.125rem;
   line-height: 1.2;
   text-shadow: 0 1px 2px rgba(0,0,0,0.1);
@@ -689,7 +685,7 @@ button {
 .cover-wrapper.dock .menu .list-h a.active i+p,
 .cover-wrapper.featured .menu .list-h a.active i+p,
 .cover-wrapper.focus .menu .list-h a.active i+p {
-  color: #3dd9b6;
+  color: #8a0af3;
 }
 .cover-wrapper.dock .menu .list-h a.active img+p,
 .cover-wrapper.featured .menu .list-h a.active img+p,
@@ -734,7 +730,7 @@ button {
     background: transparent;
   }
   .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb {
-    background: #3dd9b6;
+    background: #8a0af3;
     cursor: pointer;
     border-radius: 0;
     -webkit-border-radius: 0;
@@ -819,26 +815,26 @@ button {
     --color-mode: 'dark';
   }
   :root:not([color-scheme]) {
-    --color-site-body: #121212;
-    --color-read-bkg: #21252b;
-    --color-read-post: #282c34;
-    --color-site-bg: #21252b;
+    --color-site-body: #1f1f1f;
+    --color-read-bkg: #1f1f1f;
+    --color-read-post: #262626;
+    --color-site-bg: #1f1f1f;
     --color-site-inner: rgba(238,238,238,0.871);
-    --color-site-footer: #abb2bf;
-    --color-card: #282c34;
-    --color-text: #abb2bf;
-    --color-block: #21252b;
+    --color-site-footer: rgba(170,170,170,0.871);
+    --color-card: #262626;
+    --color-text: rgba(238,238,238,0.871);
+    --color-block: #434343;
     --color-codeblock: #1f1f1f;
     --color-inlinecode: #d56d28;
-    --color-h1: #979 a-duotone;
-    --color-h2: #979 a-duotone;
-    --color-h3: #979 a-duotone;
-    --color-h4: #979 a-duotone;
-    --color-h5: #979 a-duotone;
-    --color-h6: #979 a-duotone;
-    --color-p: #abb2bf;
+    --color-h1: rgba(255,255,255,0.871);
+    --color-h2: rgba(255,255,255,0.871);
+    --color-h3: rgba(255,255,255,0.6);
+    --color-h4: rgba(255,255,255,0.6);
+    --color-h5: rgba(255,255,255,0.6);
+    --color-h6: rgba(255,255,255,0.6);
+    --color-p: rgba(217,217,217,0.871);
     --color-list: rgba(217,217,217,0.871);
-    --color-list-hl: #63e0c4;
+    --color-list-hl: #a13af5;
     --color-meta: rgba(191,191,191,0.871);
     --color-link: rgba(191,191,191,0.871);
     --color-copyright-bkg: #21252b;
@@ -847,10 +843,10 @@ button {
     filter: brightness(70%) !important;
   }
   :root:not([color-scheme]) .blur {
-    background: rgba(33,37,43,0.9) !important;
+    background: rgba(31,31,31,0.9) !important;
   }
   :root:not([color-scheme]) .white-box.blur {
-    background: rgba(40,44,52,0.9) !important;
+    background: rgba(38,38,38,0.9) !important;
   }
   :root:not([color-scheme]) .nav-main .u-search-input {
     background: var(--color-card) !important;
@@ -891,26 +887,26 @@ button {
   }
 }
 [color-scheme='dark'] {
-  --color-site-body: #121212;
-  --color-read-bkg: #21252b;
-  --color-read-post: #282c34;
-  --color-site-bg: #21252b;
+  --color-site-body: #1f1f1f;
+  --color-read-bkg: #1f1f1f;
+  --color-read-post: #262626;
+  --color-site-bg: #1f1f1f;
   --color-site-inner: rgba(238,238,238,0.871);
-  --color-site-footer: #abb2bf;
-  --color-card: #282c34;
-  --color-text: #abb2bf;
-  --color-block: #21252b;
+  --color-site-footer: rgba(170,170,170,0.871);
+  --color-card: #262626;
+  --color-text: rgba(238,238,238,0.871);
+  --color-block: #434343;
   --color-codeblock: #1f1f1f;
   --color-inlinecode: #d56d28;
-  --color-h1: #979 a-duotone;
-  --color-h2: #979 a-duotone;
-  --color-h3: #979 a-duotone;
-  --color-h4: #979 a-duotone;
-  --color-h5: #979 a-duotone;
-  --color-h6: #979 a-duotone;
-  --color-p: #abb2bf;
+  --color-h1: rgba(255,255,255,0.871);
+  --color-h2: rgba(255,255,255,0.871);
+  --color-h3: rgba(255,255,255,0.6);
+  --color-h4: rgba(255,255,255,0.6);
+  --color-h5: rgba(255,255,255,0.6);
+  --color-h6: rgba(255,255,255,0.6);
+  --color-p: rgba(217,217,217,0.871);
   --color-list: rgba(217,217,217,0.871);
-  --color-list-hl: #63e0c4;
+  --color-list-hl: #a13af5;
   --color-meta: rgba(191,191,191,0.871);
   --color-link: rgba(191,191,191,0.871);
   --color-copyright-bkg: #21252b;
@@ -919,10 +915,10 @@ button {
   filter: brightness(70%) !important;
 }
 [color-scheme='dark'] .blur {
-  background: rgba(33,37,43,0.9) !important;
+  background: rgba(31,31,31,0.9) !important;
 }
 [color-scheme='dark'] .white-box.blur {
-  background: rgba(40,44,52,0.9) !important;
+  background: rgba(38,38,38,0.9) !important;
 }
 [color-scheme='dark'] .nav-main .u-search-input {
   background: var(--color-card) !important;
@@ -967,15 +963,15 @@ button {
   }
 }
 @font-face {
-  font-family: 'MiSans';
-  src: url("https://cdn.sakurasep.top/fonts-cdn/MiSans/MiSans-Regular.woff");
+  font-family: 'UbuntuMono';
+  src: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
 }
 @font-face {
-  font-family: 'MaShanZheng';
-  src: url("https://cdn.sakurasep.top/fonts-cdn/canva/MaShanZheng-Regular.woff2");
+  font-family: 'Varela Round';
+  src: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/VarelaRound/VarelaRound-Regular.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
@@ -1098,7 +1094,7 @@ button {
   line-height: 64px;
   padding: 0 24px;
   font-size: 1.25rem;
-  font-family: MaShanZheng, Helvetica, monospace;
+  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
 }
 .l_header #wrapper .nav-main .title img {
   height: 64px;
@@ -1109,7 +1105,7 @@ button {
 }
 .l_header .nav-sub .title {
   font-weight: bold;
-  font-family: MiSans, Menlo, Monaco, monospace, sans-serif;
+  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
   line-height: 1.2;
   max-height: 64px;
   white-space: normal;
@@ -1179,7 +1175,7 @@ button {
   -moz-transition: all 0.28s ease;
   -o-transition: all 0.28s ease;
   -ms-transition: all 0.28s ease;
-  color: #3dd9b6;
+  color: #8a0af3;
 }
 .l_header .switcher >li >a:hover {
   border: none;
@@ -1359,7 +1355,7 @@ ul.m-pc >li>a {
 }
 ul.m-pc >li>a:active,
 ul.m-pc >li>a.active {
-  border-bottom: 2px solid #3dd9b6;
+  border-bottom: 2px solid #8a0af3;
 }
 ul.m-pc li:hover >ul.list-v,
 ul.list-v li:hover >ul.list-v {
@@ -1498,7 +1494,7 @@ ul.list-v >li>a:hover {
 }
 .l_header ul.nav-list-h>li >a:active,
 .l_header ul.nav-list-h>li >a.active {
-  color: #3dd9b6;
+  color: #8a0af3;
 }
 .l_header ul.nav-list-h>li:hover>a {
   color: var(--color-list-hl);
@@ -1809,8 +1805,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.89a78c16.css" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.89a78c16.css"></noscript>
+  <link rel="stylesheet" href="/css/style.659c7404.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.659c7404.css"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1888,19 +1884,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/parallax.js?time=1661141841236","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/rightMenu.js?time=1661141841236","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/rightMenus.js?time=1661141841236","sites":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/sites.js?time=1661141841236","friends":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/friends.js?time=1661141841236","contributors":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/contributors.js?time=1661141841236","search":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/search/hexo.js?time=1661141841236"},"css":{"style":"/css/style.89a78c16.css"}},
-    default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1661141841236),
+    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.1aa99ff1.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.659c7404.css"}},
+    default: {"avatar":null,"link":null,"cover":null,"image":null},
+    lastupdate: new Date(1661171524429),
     sidebar: {
-      for_page: ["blogger","notice","navigation","webinfo","lastupdate"],
-      for_post: ["toc","webinfo"],
+      for_page: ["blogger","navigation","music","webinfo","category","tagcloud","lastupdate"],
+      for_post: ["toc"],
       webinfo: {
         lastupd: {
           enable: true,
           friendlyShow: true
         },
         runtime: {
-          data: "2019/07/27",
+          data: "2020/08/22",
           unit: "天"
         }
       }
@@ -1916,7 +1912,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
       
       
-      rightmenus: {"enable":true,"order":["plugins.navigation","hr","plugins.inputBox","plugins.seletctText","plugins.elementCheck","plugins.elementImage","menus.link","hr","menus.darkMode","plugins.articlePage","music"],"options":{"iconPrefix":"fa-duotone PETERRIVE","articleShowLink":true,"musicAlwaysShow":true},"plugins":{"navigation":[{"id":"left","name":"转到上一页","icon":"fa-duotone fa-arrow-left PETERRIVE","event":"history.back()","group":"navigation"},{"id":"right","name":"转到下一页","icon":"fa-duotone fa-arrow-right PETERRIVE","event":"history.forward()","group":"navigation"},{"id":"redo","name":"刷新当前页面","icon":"fa-duotone fa-redo PETERRIVE","event":"window.location.reload()","group":"navigation"},{"id":"up","name":"回到顶部","icon":"fa-duotone fa-arrow-up PETERRIVE","event":"VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)","group":"navigation"},{"id":"home","name":"回到首页","icon":"fa-duotone fa-home PETERRIVE","link":"/","group":"navigation"}],"inputBox":[{"id":"copyPaste","name":"粘贴文本","icon":"fa-duotone PETERRIVE fa-paste","event":"copyPaste","group":"inputBox"},{"id":"copyAll","name":"全选文本","icon":"fa-duotone PETERRIVE fa-object-ungroup","event":"copyAll","group":"inputBox"},{"id":"copyCut","name":"剪切文本","icon":"fa-duotone PETERRIVE fa-cut","event":"copyCut","group":"inputBox"}],"seletctText":[{"id":"copyText","name":"复制文本","icon":"fa-duotone PETERRIVE fa-copy","event":"copyText","group":"seletctText"},{"id":"searchWord","name":"站内搜索","icon":"fa-duotone PETERRIVE fa-search","event":"OpenSearch(__text__)","group":"seletctText"},{"id":"bingSearch","name":"必应搜索","icon":"fa-duotone PETERRIVE fa-search","event":"window.open(`https://cn.bing.com/search?q=${__text__}`)","group":"seletctText"}],"elementCheck":[{"id":"openTab","name":"新标签页打开","icon":"fa-duotone PETERRIVE fa-external-link-square-alt","event":"window.open(__link__)","group":"elementCheck"},{"id":"copyLink","name":"复制链接地址","icon":"fa-duotone PETERRIVE fa-link","event":"copyLink","group":"elementCheck"},{"id":"copyImg","name":"复制图片文件","icon":"fa-duotone PETERRIVE fa-image","event":"copyImg","group":"elementCheck"}],"elementImage":[{"id":"copyImg","name":"复制图片","icon":"fa-solid fa-image","event":"copyImg","group":"elementImage"},{"id":"googleImg","name":"谷歌识图","icon":"fa-solid fa-images","event":"window.open(`https://www.google.com.hk/searchbyimage?image_url=${__link__}`)","group":"elementImage"}],"articlePage":[{"id":"printMode","name":"打印页面","icon":"fa-duotone fa-print TURQUOISE","event":"printMode","group":"articlePage"},{"id":"readMode","name":"阅读模式","icon":"fa-duotone fa-book-open EMERALD","event":"readMode","group":"articlePage"}]},"menus":{"link":[{"id":"friends","name":"我的朋友们","icon":"fa-duotone fa-flower-daffodil AMETHYST","link":"/friends/","group":"link"},{"id":"archive","name":"文章归档","icon":"fa-duotone fa-globe-asia CONCRETE","link":"/archives/","group":"link"},{"id":"about","name":"关于我","icon":"fa-duotone fa-gingerbread-man WISTERIA","link":"/about/","group":"link"}],"darkMode":[{"id":"darkMode","name":"暗黑模式","icon":"fa-duotone fa-eclipse-alt WISTERIA","event":"volantis.dark.toggle()","group":"darkMode"}]}}
+      rightmenus: {"enable":true,"order":["plugins.navigation","hr","plugins.inputBox","plugins.seletctText","plugins.elementCheck","plugins.elementImage","menus.link","hr","menus.darkMode","plugins.articlePage","music"],"options":{"iconPrefix":"fa-solid","articleShowLink":true,"musicAlwaysShow":true},"plugins":{"navigation":[{"id":"left","name":"转到上一页","icon":"fa-solid fa-arrow-left","event":"history.back()","group":"navigation"},{"id":"right","name":"转到下一页","icon":"fa-solid fa-arrow-right","event":"history.forward()","group":"navigation"},{"id":"redo","name":"刷新当前页面","icon":"fa-solid fa-redo","event":"window.location.reload()","group":"navigation"},{"id":"up","name":"回到顶部","icon":"fa-solid fa-arrow-up","event":"VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)","group":"navigation"},{"id":"home","name":"回到首页","icon":"fa-solid fa-home","link":"/","group":"navigation"}],"inputBox":[{"id":"copyPaste","name":"粘贴文本","icon":"fa-solid fa-paste","event":"copyPaste","group":"inputBox"},{"id":"copyAll","name":"全选文本","icon":"fa-solid fa-object-ungroup","event":"copyAll","group":"inputBox"},{"id":"copyCut","name":"剪切文本","icon":"fa-solid fa-cut","event":"copyCut","group":"inputBox"}],"seletctText":[{"id":"copyText","name":"复制文本","icon":"fa-solid fa-copy","event":"copyText","group":"seletctText"},{"id":"searchWord","name":"站内搜索","icon":"fa-solid fa-search","event":"OpenSearch(__text__)","group":"seletctText"},{"id":"bingSearch","name":"必应搜索","icon":"fa-solid fa-search","event":"window.open(`https://cn.bing.com/search?q=${__text__}`)","group":"seletctText"},{"id":"googleSearch","name":"谷歌搜索","icon":"fa-solid fa-search","event":"window.open(`https://www.google.com/search?q=${__text__}`)","group":"seletctText"}],"elementCheck":[{"id":"openTab","name":"新标签页打开","icon":"fa-solid fa-external-link-square-alt","event":"window.open(__link__)","group":"elementCheck"},{"id":"copyLink","name":"复制链接地址","icon":"fa-solid fa-link","event":"copyLink","group":"elementCheck"}],"elementImage":[{"id":"copyImg","name":"复制图片","icon":"fa-solid fa-image","event":"copyImg","group":"elementImage"},{"id":"googleImg","name":"谷歌识图","icon":"fa-solid fa-images","event":"window.open(`https://www.google.com.hk/searchbyimage?image_url=${__link__}`)","group":"elementImage"}],"articlePage":[{"id":"printMode","name":"打印页面","icon":"fa-solid fa-print","event":"printMode","group":"articlePage"},{"id":"readMode","name":"阅读模式","icon":"fa-solid fa-book-open","event":"readMode","group":"articlePage"}]},"menus":{"link":[{"id":"github","name":"本站源码","icon":"fa-solid fa-code-branch SUNFLOWER","link":"https://github.com/rainvex","group":"link"},{"id":"friends","name":"我的朋友们","icon":"fa-solid fa-flower-daffodil AMETHYST","link":"friends/","group":"link"},{"id":"archive","name":"文章归档","icon":"fa-solid fa-globe-asia CONCRETE","link":"archives/","group":"link"},{"id":"about","name":"关于我","icon":"fa-solid fa-gingerbread-man WISTERIA","link":"about/","group":"link"}],"darkMode":[{"id":"darkMode","name":"暗黑模式","icon":"fa-solid fa-eclipse-alt WISTERIA","event":"volantis.dark.toggle()","group":"darkMode"}]}}
       
     }
   }
@@ -2293,11 +2289,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   /******************************************************************************/
   //图像加载出错时的处理
   function errorImgAvatar(img) {
-    img.src = "https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg";
+    img.src = "";
     img.onerror = null;
   }
   function errorImgCover(img) {
-    img.src = "https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg";
+    img.src = "";
     img.onerror = null;
   }
   /******************************************************************************/
@@ -2354,7 +2350,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-home"
                   >
-                  <i class='fa-light fa-home SUNFLOWER faa-vertical fa-fw'></i>主页
+                  <i class='fa-light fa-house fa-fw'></i>主页
                 </a>
                 
               </li>
@@ -2369,7 +2365,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                   
                   >
-                  <i class='fa-light fa-book-reader GREENSEA faa-vertical fa-fw'></i>文章
+                  <i class='fa-light fa-book-open-reader fa-fw'></i>文章
                 </a>
                 
                   <ul class="list-v">
@@ -2384,7 +2380,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-categories"
                   >
-                  <i class='fa-light fa-folder-open TURQUOISE faa-vertical fa-fw'></i>分类
+                  <i class='fa-light fa-folder-open fa-fw'></i>分类
                 </a>
                 
               </li>
@@ -2401,7 +2397,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-tags"
                   >
-                  <i class='fa-light fa-tags PETERRIVE faa-vertical fa-fw'></i>标签
+                  <i class='fa-light fa-tags fa-fw'></i>标签
                 </a>
                 
               </li>
@@ -2418,7 +2414,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-archives"
                   >
-                  <i class='fa-light fa-archive GREENSEA faa-vertical fa-fw'></i>归档
+                  <i class='fa-light fa-box-archive fa-fw'></i>归档
                 </a>
                 
               </li>
@@ -2439,7 +2435,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                   
                   >
-                  <i class='fa-light fa-cube NEPHRITIS faa-vertical fa-fw'></i>导航
+                  <i class='fa-light fa-cube fa-fw'></i>导航
                 </a>
                 
                   <ul class="list-v">
@@ -2454,7 +2450,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-friends"
                   >
-                  <i class='fa-light fa-link POMEGRANATE faa-vertical fa-fw'></i>友链
+                  <i class='fa-light fa-link fa-fw'></i>友链
                 </a>
                 
               </li>
@@ -2471,7 +2467,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-info"
                   >
-                  <i class='fa-light fa-comment-alt-dots GREENSEA faa-vertical fa-fw'></i>留言板
+                  <i class='fa-light fa-message-dots fa-fw'></i>留言板
                 </a>
                 
               </li>
@@ -2488,7 +2484,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-about"
                   >
-                  <i class='fa-light fa-info-circle SUNFLOWER faa-vertical fa-fw'></i>关于
+                  <i class='fa-light fa-circle-info fa-fw'></i>关于
                 </a>
                 
               </li>
@@ -2505,13 +2501,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/bangumis/" title="追番"
+                href="/anime/" title="番剧"
                   
                   
                   
-                    active-action="action-bangumis"
+                    active-action="action-anime"
                   >
-                  <i class='fa-light fa-video EMERALD faa-vertical fa-fw'></i>追番
+                  <i class='fa-light fa-video fa-spin fa-fw'></i>番剧
                 </a>
                 
               </li>
@@ -2532,7 +2528,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                   
                   >
-                  <i class='fa-light fa-tools ALIZARIN faa-vertical fa-fw'></i>功能
+                  <i class='fa-light fa-screwdriver-wrench fa-fw'></i>功能
                 </a>
                 
                   <ul class="list-v">
@@ -2541,15 +2537,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box header toggle-mode-btn">
-                  <i class='fa-light fa-moon POMEGRANATE faa-vertical fa-fw'></i>深色模式
+                  <i class='fa-light fa-moon fa-fw'></i>深色模式
                 </a>
               <li>
-            
-          
-                    
-                      
-            
-              <hr>
             
           
                     
@@ -2558,7 +2548,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
                 <li>
                   <a class="menuitem flat-box">
-                    <i class='fa-light fa-compact-disc EMERALD faa-vertical fa-fw music'></i>背景音乐
+                    <i class='fa-light fa-compact-disc fa-fw music'></i>背景音乐
                   </a>
                   <ul class="list-v">
                     <li>
@@ -2592,14 +2582,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                     
                       
             
-              <li class='header'>
-                <i class='fa-solid fa-info-circle fa-fw'></i>番剧
-              </li>
-            
-          
-                    
-                      
-            
               <hr>
             
           
@@ -2614,7 +2596,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-atomxml"
                   >
-                  <i class='fa-light fa-rss SUNFLOWER faa-vertical fa-fw'></i>RSS 订阅
+                  <i class='fa-light fa-rss fa-fw'></i>RSS 订阅
                 </a>
                 
               </li>
@@ -2656,7 +2638,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-home"
                   >
-                  <i class='fa-light fa-home SUNFLOWER faa-vertical fa-fw'></i>主页
+                  <i class='fa-light fa-house fa-fw'></i>主页
                 </a>
                 
               </li>
@@ -2671,7 +2653,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                   
                   >
-                  <i class='fa-light fa-book-reader GREENSEA faa-vertical fa-fw'></i>文章
+                  <i class='fa-light fa-book-open-reader fa-fw'></i>文章
                 </a>
                 
                   <ul class="list-v">
@@ -2686,7 +2668,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-categories"
                   >
-                  <i class='fa-light fa-folder-open TURQUOISE faa-vertical fa-fw'></i>分类
+                  <i class='fa-light fa-folder-open fa-fw'></i>分类
                 </a>
                 
               </li>
@@ -2703,7 +2685,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-tags"
                   >
-                  <i class='fa-light fa-tags PETERRIVE faa-vertical fa-fw'></i>标签
+                  <i class='fa-light fa-tags fa-fw'></i>标签
                 </a>
                 
               </li>
@@ -2720,7 +2702,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-archives"
                   >
-                  <i class='fa-light fa-archive GREENSEA faa-vertical fa-fw'></i>归档
+                  <i class='fa-light fa-box-archive fa-fw'></i>归档
                 </a>
                 
               </li>
@@ -2741,7 +2723,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                   
                   >
-                  <i class='fa-light fa-cube NEPHRITIS faa-vertical fa-fw'></i>导航
+                  <i class='fa-light fa-cube fa-fw'></i>导航
                 </a>
                 
                   <ul class="list-v">
@@ -2756,7 +2738,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-friends"
                   >
-                  <i class='fa-light fa-link POMEGRANATE faa-vertical fa-fw'></i>友链
+                  <i class='fa-light fa-link fa-fw'></i>友链
                 </a>
                 
               </li>
@@ -2773,7 +2755,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-info"
                   >
-                  <i class='fa-light fa-comment-alt-dots GREENSEA faa-vertical fa-fw'></i>留言板
+                  <i class='fa-light fa-message-dots fa-fw'></i>留言板
                 </a>
                 
               </li>
@@ -2790,7 +2772,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-about"
                   >
-                  <i class='fa-light fa-info-circle SUNFLOWER faa-vertical fa-fw'></i>关于
+                  <i class='fa-light fa-circle-info fa-fw'></i>关于
                 </a>
                 
               </li>
@@ -2807,13 +2789,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/bangumis/" title="追番"
+                href="/anime/" title="番剧"
                   
                   
                   
-                    active-action="action-bangumis"
+                    active-action="action-anime"
                   >
-                  <i class='fa-light fa-video EMERALD faa-vertical fa-fw'></i>追番
+                  <i class='fa-light fa-video fa-spin fa-fw'></i>番剧
                 </a>
                 
               </li>
@@ -2834,7 +2816,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                   
                   >
-                  <i class='fa-light fa-tools ALIZARIN faa-vertical fa-fw'></i>功能
+                  <i class='fa-light fa-screwdriver-wrench fa-fw'></i>功能
                 </a>
                 
                   <ul class="list-v">
@@ -2843,7 +2825,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box header toggle-mode-btn">
-                  <i class='fa-light fa-moon POMEGRANATE faa-vertical fa-fw'></i>深色模式
+                  <i class='fa-light fa-moon fa-fw'></i>深色模式
                 </a>
               <li>
             
@@ -2851,21 +2833,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                     
                       
             
-              <hr>
-            
-          
-                    
-                      
-            
               
-            
-          
-                    
-                      
-            
-              <li class='header'>
-                <i class='fa-solid fa-info-circle fa-fw'></i>番剧
-              </li>
             
           
                     
@@ -2885,7 +2853,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-atomxml"
                   >
-                  <i class='fa-light fa-rss SUNFLOWER faa-vertical fa-fw'></i>RSS 订阅
+                  <i class='fa-light fa-rss fa-fw'></i>RSS 订阅
                 </a>
                 
               </li>
@@ -2923,7 +2891,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='top'>
     
     
-      <p class="title">夜雨声烦的博客</p>
+      <p class="title">夜雨声烦</p>
     
     
       <p class="subtitle">Rainvex</p>
@@ -2952,14 +2920,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               
               active-action="action-tags">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f396.svg'><p>标签</p>
+              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f5d2.svg'><p>标签</p>
             </a>
           
             <a href="/archives/"
               
               
               active-action="action-archives">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f389.svg'><p>归档</p>
+              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f5de.svg'><p>归档</p>
             </a>
           
             <a href="/friends/"
@@ -2992,7 +2960,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable article-type-post" id="post" itemscope itemprop="blogPost">
   <link itemprop="mainEntityOfPage" href="http://rainvex.com/categories/后端/Spring5学习笔记.html">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="夜雨声烦">
@@ -3022,7 +2990,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
 <div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
   <a itemprop="url" class='author' href="/" rel="nofollow">
-    <img itemprop="image" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/avatar.jpg" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/avatar.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <img itemprop="image" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/image/avatar.jpg" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/image/avatar.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
     <p itemprop="name">夜雨声烦</p>
   </a>
 </div>
@@ -3033,13 +3001,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
   <div class="new-meta-item wordcount">
     <a class='notlink'>
-      <i class="fa-light fa-keyboard EMERALD fa-fw" aria-hidden="true"></i>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
       <p>字数：22.2k 字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
     <a class='notlink'>
-      <i class="fa-light fa-hourglass-half EMERALD fa-fw" aria-hidden="true"></i>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
       <p>时长：100 分钟</p>
     </a>
   </div>
@@ -3050,7 +3018,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
             
   <div class='new-meta-item category'>
-    <i class="fa-light fa-folder-open EMERALD faa-vertical fa-fw" aria-hidden="true"></i>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
     <a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a>
     
       <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -3063,10 +3031,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateModified" datetime="2022-05-18T15:37:01+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-03-27T22:10:43+08:00">
   <a class='notlink'>
-    <i class="fa-light fa-edit WISTERIA faa-vertical fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年5月18日</p>
+    <i class="fa-solid fa-calendar-days fa-fw" aria-hidden="true"></i>
+    <p>发布于：2022年3月27日</p>
   </a>
 </div>
 
@@ -3079,10 +3047,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <div class="new-meta-item browse">
   <a class='notlink'>
     <p>
-      <i class="fa-light fa-eye SUNFLOWER faa-vertical fa-fw" aria-hidden="true"></i>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
       
-      <span id="lc-pv" data-title="Spring框架笔记" data-path="/categories/%E5%90%8E%E7%AB%AF/Spring5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0">
-        <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
+      <span data-path="/categories/%E5%90%8E%E7%AB%AF/Spring5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0" class="waline-pageview-count">
+        <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
       </span>
       
       <span>次浏览</span>
@@ -3103,7 +3071,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h1 id="Spring5学习笔记"><a href="#Spring5学习笔记" class="headerlink" title="Spring5学习笔记"></a>Spring5学习笔记</h1><div class="story post-story"><h2 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h2><h3 id="1-Spring5框架概述"><a href="#1-Spring5框架概述" class="headerlink" title="1.Spring5框架概述"></a>1.Spring5框架概述</h3><pre><code class="java">1、Spring 是轻量级的开源的 JavaEE 框架
+    <h1 id="Spring5学习笔记"><a href="#Spring5学习笔记" class="headerlink" title="Spring5学习笔记"></a>Spring5学习笔记</h1><h2 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h2><h3 id="1-Spring5框架概述"><a href="#1-Spring5框架概述" class="headerlink" title="1.Spring5框架概述"></a>1.Spring5框架概述</h3><pre><code class="java">1、Spring 是轻量级的开源的 JavaEE 框架
 2、Spring 可以解决企业应用开发的复杂性
 3、Spring 有两个核心部分：IOC 和 Aop
 （1）IOC：控制反转，把创建对象过程交给 Spring 进行管理
@@ -3117,7 +3085,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 （6）降低 API 开发难度
 </code></pre>
 <p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202203082023865.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202203082023865.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220308202302709"></p>
-</div><div class="story post-story"><h2 id="二、入门案例"><a href="#二、入门案例" class="headerlink" title="二、入门案例"></a>二、入门案例</h2><h3 id="1-下载"><a href="#1-下载" class="headerlink" title="1.下载"></a>1.下载</h3><p>官网：<a target="_blank" rel="noopener" href="https://spring.io/">https://spring.io/</a></p>
+<h2 id="二、入门案例"><a href="#二、入门案例" class="headerlink" title="二、入门案例"></a>二、入门案例</h2><h3 id="1-下载"><a href="#1-下载" class="headerlink" title="1.下载"></a>1.下载</h3><p>官网：<a target="_blank" rel="noopener" href="https://spring.io/">https://spring.io/</a></p>
 <p>可直接访问下载网址：<a target="_blank" rel="noopener" href="https://repo.spring.io/ui/native/release/org/springframework/spring/">https://repo.spring.io/ui/native/release/org/springframework/spring/</a></p>
 <p>第一步：</p>
 <p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202202271816635.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202202271816635.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220227181557405"></p>
@@ -3154,7 +3122,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_39903133/article/details/87258360">https://blog.csdn.net/weixin_39903133/article/details/87258360</a></p>
 <p>测试通过结果：</p>
 <p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202203012107116.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202203012107116.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220301210735063"></p>
-</div><div class="story post-story"><h2 id="三、IOC"><a href="#三、IOC" class="headerlink" title="三、IOC"></a>三、IOC</h2><p>IOC：控制反转(Inversion of Control，缩写为lOC)，是<strong>面向对象</strong>编程中的一种<strong>设计原则</strong>，可以用来<strong>减低计算机代码之间的耦合度</strong>。其中最常见的方式叫做<strong>依赖注入</strong>（Dependency Injection，简称DI），还有一种方式叫“<strong>依赖查找</strong>”（Dependency Lookup）。通过控制反转，对象在被创建的时候，由一个调控系统内所有对象的外界实体将其所依赖的对象的引用传递给它。也可以说，依赖被注入到对象中。（简单理解：控制反转，把对象创建和对象之间的调用过程，交给 Spring 进行管理）</p>
+<h2 id="三、IOC"><a href="#三、IOC" class="headerlink" title="三、IOC"></a>三、IOC</h2><p>IOC：控制反转(Inversion of Control，缩写为lOC)，是<strong>面向对象</strong>编程中的一种<strong>设计原则</strong>，可以用来<strong>减低计算机代码之间的耦合度</strong>。其中最常见的方式叫做<strong>依赖注入</strong>（Dependency Injection，简称DI），还有一种方式叫“<strong>依赖查找</strong>”（Dependency Lookup）。通过控制反转，对象在被创建的时候，由一个调控系统内所有对象的外界实体将其所依赖的对象的引用传递给它。也可以说，依赖被注入到对象中。（简单理解：控制反转，把对象创建和对象之间的调用过程，交给 Spring 进行管理）</p>
 <h3 id="3-1-IOC-底层原理"><a href="#3-1-IOC-底层原理" class="headerlink" title="3.1 IOC 底层原理"></a>3.1 IOC 底层原理</h3><ul>
 <li>xml 解析</li>
 <li>工厂模式</li>
@@ -3988,7 +3956,7 @@ public void testService()&#123;
     //abc
 &#125;
 </code></pre>
-</div><div class="story post-story"><h2 id="四、AOP"><a href="#四、AOP" class="headerlink" title="四、AOP"></a>四、AOP</h2><h3 id="4-1-基本概念"><a href="#4-1-基本概念" class="headerlink" title="4.1 基本概念"></a>4.1 基本概念</h3><p><strong>概念：</strong>AOP（Aspect Oriented Programming），意为：<strong>面向切面（方面）编程</strong>，通过<strong>预编译</strong>方式和运行期间<strong>动态代理</strong>实现程序功能的统一维护的一种技术。AOP是OOP的延续，是软件开发中的一个热点，也是Spring框架中的一个重要内容，是<strong>函数式编程的一种衍生范型</strong>。</p>
+<h2 id="四、AOP"><a href="#四、AOP" class="headerlink" title="四、AOP"></a>四、AOP</h2><h3 id="4-1-基本概念"><a href="#4-1-基本概念" class="headerlink" title="4.1 基本概念"></a>4.1 基本概念</h3><p><strong>概念：</strong>AOP（Aspect Oriented Programming），意为：<strong>面向切面（方面）编程</strong>，通过<strong>预编译</strong>方式和运行期间<strong>动态代理</strong>实现程序功能的统一维护的一种技术。AOP是OOP的延续，是软件开发中的一个热点，也是Spring框架中的一个重要内容，是<strong>函数式编程的一种衍生范型</strong>。</p>
 <p><strong>优点：</strong>利用AOP可以<strong>对业务逻辑的各个部分进行隔离</strong>，从而使得业务逻辑各部分之间的<strong>耦合度降低</strong>，提高程序的<strong>可重用性</strong>，同时<strong>提高了开发的效率</strong>。</p>
 <p><strong>主要意图</strong>：将日志记录，性能统计，安全控制，事务处理，异常处理等代码从业务逻辑代码中划分出来，通过对这些行为的分离，我们希望可以将它们独立到非指导业务逻辑的方法中，进而改变这些行为的时候不影响业务逻辑的代码（即<strong>不通过修改源代码方式，在主干功能里面添加新功能</strong>）。</p>
 <p>例子：</p>
@@ -4430,7 +4398,7 @@ public void test1()&#123;
     //book buy...
 &#125;
 </code></pre>
-</div><div class="story post-story"><h2 id="五、JdbcTemplate"><a href="#五、JdbcTemplate" class="headerlink" title="五、JdbcTemplate"></a>五、JdbcTemplate</h2><h3 id="5-1-概述和准备工作"><a href="#5-1-概述和准备工作" class="headerlink" title="5.1 概述和准备工作"></a>5.1 概述和准备工作</h3><h4 id="5-1-1-概述"><a href="#5-1-1-概述" class="headerlink" title="5.1.1 概述"></a>5.1.1 概述</h4><p>什么是 JdbcTemplate？Spring 框架对 <strong>JDBC 进行封装</strong>，使用 JdbcTemplate <strong>方便实现对数据库操作</strong></p>
+<h2 id="五、JdbcTemplate"><a href="#五、JdbcTemplate" class="headerlink" title="五、JdbcTemplate"></a>五、JdbcTemplate</h2><h3 id="5-1-概述和准备工作"><a href="#5-1-概述和准备工作" class="headerlink" title="5.1 概述和准备工作"></a>5.1 概述和准备工作</h3><h4 id="5-1-1-概述"><a href="#5-1-1-概述" class="headerlink" title="5.1.1 概述"></a>5.1.1 概述</h4><p>什么是 JdbcTemplate？Spring 框架对 <strong>JDBC 进行封装</strong>，使用 JdbcTemplate <strong>方便实现对数据库操作</strong></p>
 <h4 id="5-2-2-准备工作"><a href="#5-2-2-准备工作" class="headerlink" title="5.2.2 准备工作"></a>5.2.2 准备工作</h4><h5 id="1-引入jar包"><a href="#1-引入jar包" class="headerlink" title="1.引入jar包"></a>1.引入jar包</h5><p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202203061355606.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202203061355606.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220306135513471"></p>
 <pre><code class="xml">&lt;!--maven依赖--&gt;
 &lt;dependency&gt;
@@ -4799,7 +4767,7 @@ public void testJdbcTemplate8() &#123;
     userService.batchDelete(list);
 &#125;
 </code></pre>
-</div><div class="story post-story"><h2 id="六、事务"><a href="#六、事务" class="headerlink" title="六、事务"></a>六、事务</h2><h3 id="6-1-事务概念"><a href="#6-1-事务概念" class="headerlink" title="6.1 事务概念"></a>6.1 事务概念</h3><p>1、什么事务</p>
+<h2 id="六、事务"><a href="#六、事务" class="headerlink" title="六、事务"></a>六、事务</h2><h3 id="6-1-事务概念"><a href="#6-1-事务概念" class="headerlink" title="6.1 事务概念"></a>6.1 事务概念</h3><p>1、什么事务</p>
 <ul>
 <li>事务是<strong>数据库操作最基本单元</strong>，逻辑上一组操作，<strong>要么都成功，如果有一个失败所有操作都失败</strong></li>
 <li>典型场景：银行转账<ul>
@@ -5100,7 +5068,7 @@ public class SpringConfig &#123;
 &#125;
 //通过测试可以发现数据库中的数据因为出现异常发生事务回滚，所以数据均没有发生改变
 </code></pre>
-</div><div class="story post-story"><h2 id="七、Spring5新功能"><a href="#七、Spring5新功能" class="headerlink" title="七、Spring5新功能"></a>七、Spring5新功能</h2><p>整个 Spring5 框架的代码<strong>基于 Java8</strong>，运行时<strong>兼容 JDK9</strong>，许多不建议使用的类和方法已从代码库中删除</p>
+<h2 id="七、Spring5新功能"><a href="#七、Spring5新功能" class="headerlink" title="七、Spring5新功能"></a>七、Spring5新功能</h2><p>整个 Spring5 框架的代码<strong>基于 Java8</strong>，运行时<strong>兼容 JDK9</strong>，许多不建议使用的类和方法已从代码库中删除</p>
 <h3 id="7-1-整合日志框架"><a href="#7-1-整合日志框架" class="headerlink" title="7.1 整合日志框架"></a>7.1 整合日志框架</h3><p>Spring 5.0 框架自带了通用的日志封装</p>
 <ul>
 <li>Spring5 已经移除 Log4jConfigListener，官方建议使用 Log4j2</li>
@@ -5601,7 +5569,6 @@ public class UserController &#123;
 &#125;
 </code></pre>
 
-</div>
   </div>
   
   
@@ -5611,22 +5578,27 @@ public class UserController &#123;
       
        <!-- 相关文章 -->
       
+        
+  <div class="related_posts">
+    <section class='header'>
+      <i class="fa-solid fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
+    </section>
+    <section class='body'>
+      <div class="vlts-rps"><a class="item" href="\categories\后端\Mybatis学习笔记.html" title="Mybatis学习笔记" rel="bookmark "><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205052130167.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205052130167.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><span class="title">Mybatis学习笔记</span></a><a class="item" href="\categories\后端\Mybatis-plus学习笔记.html" title="Mybatis-plus学习笔记" rel="bookmark "><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202207031603695.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202207031603695.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><span class="title">Mybatis-plus学习笔记</span></a><a class="item" href="\categories\后端\SpringMVC学习笔记.html" title="SpringMVC笔记" rel="bookmark "><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204172045557.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204172045557.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><span class="title">SpringMVC笔记</span></a></div></section></div>
+      
       <!-- 版权声明组件 -->
       
-        
-          <div class='copyright'>
-            <blockquote>
-              
-                
-                  <p>博客内容遵循 <a href="/page/cc">署名-相同方式共享 4.0 国际 (CC BY-SA 4.0)</a> 协议。</p>
-
-                
-              
-            </blockquote>
-          </div>
-        
-      
       <!-- 打赏组件 -->
+      
+        <div class='donate'>
+          <div class='imgs'>
+            
+              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/qrcode/github@volantis.png'>
+            
+              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/qrcode/github@volantis.png'>
+            
+          </div>
+        </div>
       
     </div>
   
@@ -5640,7 +5612,7 @@ public class UserController &#123;
         
           
   <div class='new-meta-item category'>
-    <i class="fa-light fa-folder-open EMERALD faa-vertical fa-fw" aria-hidden="true"></i>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
     <a class="category-link" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a>
     
       <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -5655,17 +5627,17 @@ public class UserController &#123;
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%AC%94%E8%AE%B0/" rel="nofollow"><i class="fa-light fa-hashtag EMERALD fa-fw" aria-hidden="true"></i><p>笔记</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Java/" rel="nofollow"><i class="fa-light fa-hashtag EMERALD fa-fw" aria-hidden="true"></i><p>Java</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Spring5/" rel="nofollow"><i class="fa-light fa-hashtag EMERALD fa-fw" aria-hidden="true"></i><p>Spring5</p></a></div>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%AC%94%E8%AE%B0/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>笔记</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Java/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Java</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Spring5/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Spring5</p></a></div>
   <span hidden itemprop="keywords">笔记 Java Spring5</span>
 
 
         
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-05-18T15:37:01+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-08-22T13:38:01+08:00">
   <a class='notlink'>
-    <i class="fa-light fa-edit WISTERIA faa-vertical fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年5月18日</p>
+    <i class="fa-solid fa-pen-to-square fa-fw" aria-hidden="true"></i>
+    <p>更新于：2022年8月22日</p>
   </a>
 </div>
 
@@ -5713,7 +5685,25 @@ public class UserController &#123;
       
     
       
+        
+        <div class='hoverbox'>
+          <a class='share'><img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/wechat.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
+          <div class='target'>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVgAAAFYCAAAAAAzB7ucAAAEZ0lEQVR42u3aQZLjMAgF0L7/pXv2M9Vl+CA5XfO0S+LY4skLoPj6to6sLwRgwVpgwYK1wF6B/QrXPzf86/un/1Wvf/pf9X7dfaUeYMGCBQsWLFiwYO/ClhPgh+tTwBR8Ct2N7/E5YMGCBQsWLFiwYF+BTRP0pwdPIbcBjr0IYMGCBQsWLFiwYH8VbBdkWgh079/dB1iwYMGCBQsWLNj/AzYNsJvIVw+wWwCABQsWLFiwYMGC/d2w7QGFMOGfFhhT+FMNdLBgwYIFCxYsWLB3YbtrOwH/tM+xB1iwYMGCBQsWLNgrsFtrCr/VYO8WMusOYMGCBQsWLFiwYK/AVhu+KVx3gCKF2oJPDxIsWLBgwYIFCxbsXdhqoj+Fr/6+tZ/u/btx/Ph/sGDBggULFixYsFdhpw3oasK+9Xv6/am4wIIFCxYsWLBgwd6F3U7Q0w2dStynhUX1e7BgwYIFCxYsWLCfARvfeNjQ7sKniX53cKP8PViwYMGCBQsWLNgrsGnCPh34qAaeQm4l/NUDAAsWLFiwYMGCBfsu7KnG91ZBspXgnyp4wIIFCxYsWLBgwd6BTQcr0gC6a6uBnt6/DQ4WLFiwYMGCBQv2Cmw1QU8HIqaN7a1BirQQAgsWLFiwYMGCBfuZsNXGc/VB24MgKWh6cNMXAyxYsGDBggULFuxd2GlBsDVIkSbs07XVYAcLFixYsGDBggV7BzZt/G43mLsHtFVYdB0enwMWLFiwYMGCBQv2Kmw3gU4D2yoY0oKmewDtuMGCBQsWLFiwYMG+AtttNKfQaWBpIt99gaoHWC4QwIIFCxYsWLBgwa7CTgcv0g1PP0+fOy1YfjwAsGDBggULFixYsFdgqw3k7cR/mqDHCfzpgQ+wYMGCBQsWLFiwV2DTDaWDEGkgW+BbBcWP14MFCxYsWLBgwYL9KNhpIj89uGqDevvgui8KWLBgwYIFCxYs2Duw24F1ByvSQmJtwCJ8gR4LBLBgwYIFCxYsWLBHYU83qtPrpw349Pfv5gILFixYsGDBggX7DmzayO5eVy1Ithrm3cLie2mBBQsWLFiwYMGCfRc2DbAb2OkG+LRR3i5YwIIFCxYsWLBgwV6B7RYC04Z09znTAZHpPtoeYMGCBQsWLFiwYK/AxoMJw8Zx94CmAxzpftsHBxYsWLBgwYIFC/YKbDcRThPyacDT50/3V4YGCxYsWLBgwYIFewV2urY2VL3v6X1WC4S1RjdYsGDBggULFizYCHbaWE4T+q2D6AJNB0Ie4wILFixYsGDBggV7FXZrcCNtXG9fvz2QUY4TLFiwYMGCBQsW7Cuw44GFh/91G9fjhL0Yz1YjHCxYsGDBggULFuzvgK1uOG1gT0HTg0/jAAsWLFiwYMGCBfs7YLsN7+naanSnB/y4D7BgwYIFCxYsWLCvwE4fNA00bURvFTbdAqVcIIAFCxYsWLBgwYI9Antrw2lhsVWwbP8OFixYsGDBggUL9h1Ya3eBBQvWAgsWrAX26PoDoObS50l2NXIAAAAASUVORK5CYII=">
+          </div>
+        </div>
+      
     
+      
+        <a class="-mob-share-telegram" title="" rel="external nofollow noopener noreferrer noopener"
+          
+            target="_blank" href="https://t.me/share/url?url=http://rainvex.com/categories/%E5%90%8E%E7%AB%AF/Spring5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html&text=Spring框架笔记 - 夜雨声烦"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/telegram.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/telegram.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
       
     
   </div>
@@ -5761,7 +5751,7 @@ Linux学习笔记学习架构：
   
 
 
-  <article class="post white-box shadow floatable blur" id="comments">
+  <article class="post white-box shadow floatable" id="comments">
     <span hidden>
       <meta itemprop="discussionUrl" content="/categories/%E5%90%8E%E7%AB%AF/Spring5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html#comments">
     </span>
@@ -5788,50 +5778,6 @@ Linux学习笔记学习架构：
     
   
 
-  
-    
-    
-      
-<section class="widget desktop pjax">
-  
-  <header>
-    
-      <i class="fa-light fa-award SUNFLOWER faa-vertical fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>9 篇</div>
-        </div>
-      
-
-      
-
-
-      
-
-      
-
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          <div id="last-update-show">2022-08-22 日</div>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
-    
-  
-
 
 <div class="widget-sticky pjax">
 
@@ -5839,17 +5785,17 @@ Linux学习笔记学习架构：
   
 
 
-  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+  <section class="widget toc-wrapper mobile " id="toc-div" >
     
   <header>
     
-      <i class="fa-light fa-list SUNFLOWER faa-vertical fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Spring5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0"><span class="toc-text">Spring5学习笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%A6%82%E8%BF%B0"><span class="toc-text">一、概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Spring5%E6%A1%86%E6%9E%B6%E6%A6%82%E8%BF%B0"><span class="toc-text">1.Spring5框架概述</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%85%A5%E9%97%A8%E6%A1%88%E4%BE%8B"><span class="toc-text">二、入门案例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E4%B8%8B%E8%BD%BD"><span class="toc-text">1.下载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA"><span class="toc-text">2.项目构建</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81IOC"><span class="toc-text">三、IOC</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-IOC-%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86"><span class="toc-text">3.1 IOC 底层原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-IOC%E6%8E%A5%E5%8F%A3"><span class="toc-text">3.2 IOC接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-IOC%E6%93%8D%E4%BD%9CBean%E7%AE%A1%E7%90%86"><span class="toc-text">3.3 IOC操作Bean管理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-1-%E5%9F%BA%E4%BA%8EXML%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%96%B9%E5%BC%8F"><span class="toc-text">3.3.1 基于XML配置文件方式</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E5%9F%BA%E4%BA%8Exml%E6%96%B9%E5%BC%8F%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1"><span class="toc-text">1.基于xml方式创建对象</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E5%9F%BA%E4%BA%8Exml%E6%96%B9%E5%BC%8F%E6%B3%A8%E5%85%A5%E5%B1%9E%E6%80%A7"><span class="toc-text">2.基于xml方式注入属性</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A0%E7%AC%AC%E4%B8%80%E7%A7%8D%E6%B3%A8%E5%85%A5%E6%96%B9%E5%BC%8F%EF%BC%9A%E4%BD%BF%E7%94%A8set%E6%96%B9%E6%B3%95%E8%BF%9B%E8%A1%8C%E6%B3%A8%E5%85%A5"><span class="toc-text">①第一种注入方式：使用set方法进行注入</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A1%E7%AC%AC%E4%BA%8C%E7%A7%8D%E6%B3%A8%E5%85%A5%E6%96%B9%E5%BC%8F%EF%BC%9A%E4%BD%BF%E7%94%A8%E6%9C%89%E5%8F%82%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E8%BF%9B%E8%A1%8C%E6%B3%A8%E5%85%A5"><span class="toc-text">②第二种注入方式：使用有参构造函数进行注入</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A2%E4%BD%BF%E7%94%A8p%E5%90%8D%E7%A7%B0%E7%A9%BA%E9%97%B4%E6%B3%A8%E5%85%A5-%E4%BA%86%E8%A7%A3"><span class="toc-text">③使用p名称空间注入(了解)</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E5%9F%BA%E4%BA%8Exml%E6%96%B9%E5%BC%8F%E6%B3%A8%E5%85%A5%E5%B1%9E%E6%80%A7-%E5%AD%97%E9%9D%A2%E9%87%8F"><span class="toc-text">3.基于xml方式注入属性-字面量</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A0%E6%B3%A8%E5%85%A5null%E5%80%BC"><span class="toc-text">①注入null值</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A1%E6%B3%A8%E5%85%A5%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7"><span class="toc-text">②注入特殊符号</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-%E5%9F%BA%E4%BA%8Exml%E6%96%B9%E5%BC%8F%E6%B3%A8%E5%85%A5%E5%B1%9E%E6%80%A7-%E5%A4%96%E9%83%A8bean"><span class="toc-text">4.基于xml方式注入属性-外部bean</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-%E5%9F%BA%E4%BA%8Exml%E6%96%B9%E5%BC%8F%E6%B3%A8%E5%85%A5%E5%B1%9E%E6%80%A7-%E5%86%85%E9%83%A8bean"><span class="toc-text">5.基于xml方式注入属性-内部bean</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#6-%E5%9F%BA%E4%BA%8Exml%E6%96%B9%E5%BC%8F%E6%B3%A8%E5%85%A5%E5%B1%9E%E6%80%A7-%E7%BA%A7%E8%81%94%E8%B5%8B%E5%80%BC"><span class="toc-text">6.基于xml方式注入属性-级联赋值</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A0%E7%AC%AC%E4%B8%80%E7%A7%8D%E6%96%B9%E5%BC%8F%EF%BC%9A%E4%B8%8E%E5%A4%96%E9%83%A8bean%E7%9A%84%E5%86%99%E6%B3%95%E7%9B%B8%E5%90%8C"><span class="toc-text">①第一种方式：与外部bean的写法相同</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A1%E7%AC%AC%E4%BA%8C%E7%A7%8D%E6%96%B9%E5%BC%8F%EF%BC%9A"><span class="toc-text">②第二种方式：</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#7-%E5%9F%BA%E4%BA%8Exml%E6%96%B9%E5%BC%8F%E6%B3%A8%E5%85%A5%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B%E5%B1%9E%E6%80%A7"><span class="toc-text">7.基于xml方式注入集合类型属性</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A0%E6%B3%A8%E5%85%A5%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B%E5%B1%9E%E6%80%A7"><span class="toc-text">①注入集合类型属性</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A1%E5%9C%A8%E9%9B%86%E5%90%88%E5%B1%9E%E6%80%A7%E4%B8%AD%E8%AE%BE%E7%BD%AE%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B"><span class="toc-text">②在集合属性中设置对象类型</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A2%E6%8F%90%E5%8F%96%E9%9B%86%E5%90%88%E5%B1%9E%E6%80%A7%E5%85%AC%E5%85%B1%E9%83%A8%E5%88%86"><span class="toc-text">③提取集合属性公共部分</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-2-Bean%E7%AE%A1%E7%90%86"><span class="toc-text">3.3.2 Bean管理</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E5%B7%A5%E5%8E%82Bean"><span class="toc-text">1.工厂Bean</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-Bean%E7%9A%84%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-text">2.Bean的作用域</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-Bean%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="toc-text">3.Bean的生命周期</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-xml%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D"><span class="toc-text">4.xml自动装配</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A0%E6%A0%B9%E6%8D%AE%E5%B1%9E%E6%80%A7%E5%90%8D%E8%87%AA%E5%8A%A8%E6%B3%A8%E5%85%A5"><span class="toc-text">①根据属性名自动注入</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A1%E6%A0%B9%E6%8D%AE%E5%B1%9E%E6%80%A7%E7%B1%BB%E5%9E%8B%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D"><span class="toc-text">②根据属性类型自动装配</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-%E5%BC%95%E5%85%A5%E5%A4%96%E9%83%A8%E5%B1%9E%E6%80%A7%E6%96%87%E4%BB%B6"><span class="toc-text">5.引入外部属性文件</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-3-%E5%9F%BA%E4%BA%8E%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F"><span class="toc-text">3.3.3 基于注解方式</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E5%9F%BA%E4%BA%8E%E6%B3%A8%E8%A7%A3%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1"><span class="toc-text">1.基于注解创建对象</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A0%E5%BC%95%E5%85%A5spring-aop%E4%BE%9D%E8%B5%96%EF%BC%88%E6%88%96%E4%BD%BF%E7%94%A8maven%E8%87%AA%E5%8A%A8%E5%AF%BC%E5%85%A5%EF%BC%89"><span class="toc-text">①引入spring-aop依赖（或使用maven自动导入）</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A1%E5%9C%A8Spring%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE%E5%BC%80%E5%90%AF%E7%BB%84%E4%BB%B6%E6%89%AB%E6%8F%8F"><span class="toc-text">②在Spring配置文件配置开启组件扫描</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A2%E5%88%9B%E5%BB%BA%E7%B1%BB%EF%BC%8C%E6%B7%BB%E5%8A%A0%E6%B3%A8%E8%A7%A3%E4%BE%BF%E4%BA%8E%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1"><span class="toc-text">③创建类，添加注解便于创建对象</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E7%BB%84%E4%BB%B6%E6%89%AB%E6%8F%8F%E9%85%8D%E7%BD%AE%E7%BB%86%E8%8A%82"><span class="toc-text">2.组件扫描配置细节</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E5%9F%BA%E4%BA%8E%E6%B3%A8%E8%A7%A3%E5%AE%9E%E7%8E%B0%E5%B1%9E%E6%80%A7%E6%B3%A8%E5%85%A5"><span class="toc-text">3.基于注解实现属性注入</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A0-Autowire%E6%B3%A8%E8%A7%A3"><span class="toc-text">①@Autowire注解</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A1-Qualifier%E6%B3%A8%E8%A7%A3"><span class="toc-text">②@Qualifier注解</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A2-Resource%E6%B3%A8%E8%A7%A3"><span class="toc-text">③@Resource注解</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A3-Value%E6%B3%A8%E8%A7%A3"><span class="toc-text">④@Value注解</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-%E5%AE%8C%E5%85%A8%E6%B3%A8%E8%A7%A3%E5%BC%80%E5%8F%91"><span class="toc-text">4.完全注解开发</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81AOP"><span class="toc-text">四、AOP</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text">4.1 基本概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86"><span class="toc-text">4.2 底层原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-JDK%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86"><span class="toc-text">4.3 JDK动态代理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-%E6%93%8D%E4%BD%9C%E6%9C%AF%E8%AF%AD"><span class="toc-text">4.4 操作术语</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-5-AOP%E6%93%8D%E4%BD%9C"><span class="toc-text">4.5 AOP操作</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#4-5-1-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-text">4.5.1 准备工作</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-5-2-%E5%9F%BA%E4%BA%8Easpectj%E7%9A%84%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F"><span class="toc-text">4.5.2 基于aspectj的注解方式</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0AOP"><span class="toc-text">1.注解方式实现AOP</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-%E6%8F%90%E5%8F%96%E5%85%AC%E5%85%B1%E5%88%87%E5%85%A5%E7%82%B9"><span class="toc-text">2.提取公共切入点</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-%E5%A4%9A%E4%B8%AA%E5%A2%9E%E5%BC%BA%E7%B1%BB%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7"><span class="toc-text">3.多个增强类的优先级</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4-%E5%AE%8C%E5%85%A8%E6%B3%A8%E8%A7%A3%E5%BC%80%E5%8F%91-1"><span class="toc-text">4.完全注解开发</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-5-3-%E5%9F%BA%E4%BA%8Easpectj%E7%9A%84xml%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%96%B9%E5%BC%8F"><span class="toc-text">4.5.3 基于aspectj的xml配置文件方式</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81JdbcTemplate"><span class="toc-text">五、JdbcTemplate</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-%E6%A6%82%E8%BF%B0%E5%92%8C%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-text">5.1 概述和准备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-1-1-%E6%A6%82%E8%BF%B0"><span class="toc-text">5.1.1 概述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-2-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-text">5.2.2 准备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E5%BC%95%E5%85%A5jar%E5%8C%85"><span class="toc-text">1.引入jar包</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E5%9C%A8Spring%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%B8%AD%E9%85%8D%E7%BD%AE%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0"><span class="toc-text">2.在Spring配置文件中配置数据库连接池</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E9%85%8D%E7%BD%AEJdbcTemplate%E5%AF%B9%E8%B1%A1%EF%BC%8C%E6%B3%A8%E5%85%A5DataSource"><span class="toc-text">3.配置JdbcTemplate对象，注入DataSource</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-%E5%88%9B%E5%BB%BA-service-%E7%B1%BB%EF%BC%8Cdao-%E7%B1%BB%EF%BC%8C%E5%9C%A8-dao-%E6%B3%A8%E5%85%A5-jdbcTemplate-%E5%AF%B9%E8%B1%A1"><span class="toc-text">4.创建 service 类，dao 类，在 dao 注入 jdbcTemplate 对象</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A0%E9%85%8D%E7%BD%AE%E5%BC%80%E5%90%AF%E7%BB%84%E4%BB%B6%E6%89%AB%E6%8F%8F"><span class="toc-text">①配置开启组件扫描</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A1%E5%88%9B%E5%BB%BAService%E5%92%8CDao"><span class="toc-text">②创建Service和Dao</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-JdbcTemplate%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-text">5.2 JdbcTemplate操作数据库</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-1-%E6%B7%BB%E5%8A%A0%E6%93%8D%E4%BD%9C"><span class="toc-text">5.2.1 添加操作</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E5%88%9B%E5%BB%BA%E5%AE%9E%E4%BD%93%E7%B1%BB"><span class="toc-text">1.创建实体类</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E7%BC%96%E5%86%99service%E5%92%8Cdao%E5%B1%82%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7%E7%9A%84%E6%93%8D%E4%BD%9C"><span class="toc-text">2.编写service和dao层添加用户的操作</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E6%B5%8B%E8%AF%95"><span class="toc-text">3.测试</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-2-%E4%BF%AE%E6%94%B9%E5%88%A0%E9%99%A4%E6%93%8D%E4%BD%9C"><span class="toc-text">5.2.2 修改删除操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-3-%E6%9F%A5%E8%AF%A2%E6%93%8D%E4%BD%9C"><span class="toc-text">5.2.3 查询操作</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E6%9F%A5%E8%AF%A2%E8%BF%94%E5%9B%9E%E6%9F%90%E4%B8%AA%E5%80%BC"><span class="toc-text">1.查询返回某个值</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E6%9F%A5%E8%AF%A2%E8%BF%94%E5%9B%9E%E5%AF%B9%E8%B1%A1"><span class="toc-text">2.查询返回对象</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E6%9F%A5%E8%AF%A2%E8%BF%94%E5%9B%9E%E5%88%97%E8%A1%A8"><span class="toc-text">3.查询返回列表</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-3-JdbcTemplate%E6%89%B9%E9%87%8F%E6%93%8D%E4%BD%9C"><span class="toc-text">5.3 JdbcTemplate批量操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-3-1-%E6%89%B9%E9%87%8F%E6%B7%BB%E5%8A%A0%E6%93%8D%E4%BD%9C"><span class="toc-text">5.3.1 批量添加操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-3-2-%E6%89%B9%E9%87%8F%E4%BF%AE%E6%94%B9%E6%93%8D%E4%BD%9C"><span class="toc-text">5.3.2 批量修改操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-3-3-%E6%89%B9%E9%87%8F%E5%88%A0%E9%99%A4%E6%93%8D%E4%BD%9C"><span class="toc-text">5.3.3 批量删除操作</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E4%BA%8B%E5%8A%A1"><span class="toc-text">六、事务</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1-%E4%BA%8B%E5%8A%A1%E6%A6%82%E5%BF%B5"><span class="toc-text">6.1 事务概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2-%E6%90%AD%E5%BB%BA%E4%BA%8B%E5%8A%A1%E6%93%8D%E4%BD%9C%E7%8E%AF%E5%A2%83"><span class="toc-text">6.2 搭建事务操作环境</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%8C%E6%B7%BB%E5%8A%A0%E8%AE%B0%E5%BD%95"><span class="toc-text">1.创建数据库，添加记录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E9%85%8D%E7%BD%AE%E7%BB%84%E4%BB%B6%E6%89%AB%E6%8F%8F%E3%80%81DataSource%E5%92%8CJdbcTemplate%E5%AF%B9%E8%B1%A1"><span class="toc-text">2.配置组件扫描、DataSource和JdbcTemplate对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%88%9B%E5%BB%BAservice%EF%BC%8Cdao%E5%B1%82%EF%BC%8C%E5%AE%8C%E6%88%90%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E3%80%81%E6%B3%A8%E5%85%A5%E5%85%B3%E7%B3%BB%E5%8F%8A%E6%96%B9%E6%B3%95%E5%88%9B%E5%BB%BA"><span class="toc-text">3.创建service，dao层，完成对象创建、注入关系及方法创建</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E6%B5%8B%E8%AF%95"><span class="toc-text">4.测试</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-%E6%A8%A1%E6%8B%9F%E5%BC%82%E5%B8%B8"><span class="toc-text">5.模拟异常</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-3-%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86"><span class="toc-text">6.3 事务管理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#6-3-1-%E5%A3%B0%E6%98%8E%E5%BC%8F%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86"><span class="toc-text">6.3.1 声明式事务管理</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0%E5%A3%B0%E6%98%8E%E5%BC%8F%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86"><span class="toc-text">1.注解方式实现声明式事务管理</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A0%E5%BC%80%E5%90%AF%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86"><span class="toc-text">①开启注解方式事务管理</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A1%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86%E5%8F%82%E6%95%B0%E9%85%8D%E7%BD%AE"><span class="toc-text">②事务管理参数配置</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-xml%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0%E5%A3%B0%E6%98%8E%E5%BC%8F%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86"><span class="toc-text">2.xml配置文件方式实现声明式事务管理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E5%AE%8C%E5%85%A8%E6%B3%A8%E8%A7%A3%E5%AE%9E%E7%8E%B0%E5%A3%B0%E6%98%8E%E5%BC%8F%E4%BA%8B%E5%8A%A1"><span class="toc-text">3.完全注解实现声明式事务</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E3%80%81Spring5%E6%96%B0%E5%8A%9F%E8%83%BD"><span class="toc-text">七、Spring5新功能</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#7-1-%E6%95%B4%E5%90%88%E6%97%A5%E5%BF%97%E6%A1%86%E6%9E%B6"><span class="toc-text">7.1 整合日志框架</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#7-1-1-Spring5-%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88-Log4j2"><span class="toc-text">7.1.1 Spring5 框架整合 Log4j2</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-2-%E6%94%AF%E6%8C%81-Nullable%E6%B3%A8%E8%A7%A3"><span class="toc-text">7.2 支持@Nullable注解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-3-%E5%87%BD%E6%95%B0%E5%BC%8F%E9%A3%8E%E6%A0%BC"><span class="toc-text">7.3 函数式风格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-4-%E6%95%B4%E5%90%88JUnit5%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6"><span class="toc-text">7.4 整合JUnit5单元测试框架</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#7-4-1-JUnit4"><span class="toc-text">7.4.1 JUnit4</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-4-2-JUnit5"><span class="toc-text">7.4.2 JUnit5</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-5-Webflux"><span class="toc-text">7.5 Webflux</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#7-5-1-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text">7.5.1 基本概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-5-2-%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BC%96%E7%A8%8B"><span class="toc-text">7.5.2 响应式编程</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-Java%E5%AE%9E%E7%8E%B0%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BC%96%E7%A8%8B"><span class="toc-text">1.Java实现响应式编程</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-Reactor%E5%AE%9E%E7%8E%B0%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BC%96%E7%A8%8B"><span class="toc-text">2.Reactor实现响应式编程</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E6%93%8D%E4%BD%9C%E7%AC%A6"><span class="toc-text">3.操作符</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-5-3-%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B%E5%92%8C%E6%A0%B8%E5%BF%83API"><span class="toc-text">7.5.3 执行流程和核心API</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-5-4-%E6%B3%A8%E8%A7%A3%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B"><span class="toc-text">7.5.4 注解编程模型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-5-5-%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B"><span class="toc-text">7.5.5 函数式编程模型</span></a></li></ol></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%A6%82%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">一、概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Spring5%E6%A1%86%E6%9E%B6%E6%A6%82%E8%BF%B0"><span class="toc-number">1.1.</span> <span class="toc-text">1.Spring5框架概述</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%85%A5%E9%97%A8%E6%A1%88%E4%BE%8B"><span class="toc-number">2.</span> <span class="toc-text">二、入门案例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E4%B8%8B%E8%BD%BD"><span class="toc-number">2.1.</span> <span class="toc-text">1.下载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA"><span class="toc-number">2.2.</span> <span class="toc-text">2.项目构建</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81IOC"><span class="toc-number">3.</span> <span class="toc-text">三、IOC</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-IOC-%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86"><span class="toc-number">3.1.</span> <span class="toc-text">3.1 IOC 底层原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-IOC%E6%8E%A5%E5%8F%A3"><span class="toc-number">3.2.</span> <span class="toc-text">3.2 IOC接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-IOC%E6%93%8D%E4%BD%9CBean%E7%AE%A1%E7%90%86"><span class="toc-number">3.3.</span> <span class="toc-text">3.3 IOC操作Bean管理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-1-%E5%9F%BA%E4%BA%8EXML%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%96%B9%E5%BC%8F"><span class="toc-number">3.3.1.</span> <span class="toc-text">3.3.1 基于XML配置文件方式</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E5%9F%BA%E4%BA%8Exml%E6%96%B9%E5%BC%8F%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1"><span class="toc-number">3.3.1.1.</span> <span class="toc-text">1.基于xml方式创建对象</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E5%9F%BA%E4%BA%8Exml%E6%96%B9%E5%BC%8F%E6%B3%A8%E5%85%A5%E5%B1%9E%E6%80%A7"><span class="toc-number">3.3.1.2.</span> <span class="toc-text">2.基于xml方式注入属性</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A0%E7%AC%AC%E4%B8%80%E7%A7%8D%E6%B3%A8%E5%85%A5%E6%96%B9%E5%BC%8F%EF%BC%9A%E4%BD%BF%E7%94%A8set%E6%96%B9%E6%B3%95%E8%BF%9B%E8%A1%8C%E6%B3%A8%E5%85%A5"><span class="toc-number">3.3.1.2.1.</span> <span class="toc-text">①第一种注入方式：使用set方法进行注入</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A1%E7%AC%AC%E4%BA%8C%E7%A7%8D%E6%B3%A8%E5%85%A5%E6%96%B9%E5%BC%8F%EF%BC%9A%E4%BD%BF%E7%94%A8%E6%9C%89%E5%8F%82%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E8%BF%9B%E8%A1%8C%E6%B3%A8%E5%85%A5"><span class="toc-number">3.3.1.2.2.</span> <span class="toc-text">②第二种注入方式：使用有参构造函数进行注入</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A2%E4%BD%BF%E7%94%A8p%E5%90%8D%E7%A7%B0%E7%A9%BA%E9%97%B4%E6%B3%A8%E5%85%A5-%E4%BA%86%E8%A7%A3"><span class="toc-number">3.3.1.2.3.</span> <span class="toc-text">③使用p名称空间注入(了解)</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E5%9F%BA%E4%BA%8Exml%E6%96%B9%E5%BC%8F%E6%B3%A8%E5%85%A5%E5%B1%9E%E6%80%A7-%E5%AD%97%E9%9D%A2%E9%87%8F"><span class="toc-number">3.3.1.3.</span> <span class="toc-text">3.基于xml方式注入属性-字面量</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A0%E6%B3%A8%E5%85%A5null%E5%80%BC"><span class="toc-number">3.3.1.3.1.</span> <span class="toc-text">①注入null值</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A1%E6%B3%A8%E5%85%A5%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7"><span class="toc-number">3.3.1.3.2.</span> <span class="toc-text">②注入特殊符号</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-%E5%9F%BA%E4%BA%8Exml%E6%96%B9%E5%BC%8F%E6%B3%A8%E5%85%A5%E5%B1%9E%E6%80%A7-%E5%A4%96%E9%83%A8bean"><span class="toc-number">3.3.1.4.</span> <span class="toc-text">4.基于xml方式注入属性-外部bean</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-%E5%9F%BA%E4%BA%8Exml%E6%96%B9%E5%BC%8F%E6%B3%A8%E5%85%A5%E5%B1%9E%E6%80%A7-%E5%86%85%E9%83%A8bean"><span class="toc-number">3.3.1.5.</span> <span class="toc-text">5.基于xml方式注入属性-内部bean</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#6-%E5%9F%BA%E4%BA%8Exml%E6%96%B9%E5%BC%8F%E6%B3%A8%E5%85%A5%E5%B1%9E%E6%80%A7-%E7%BA%A7%E8%81%94%E8%B5%8B%E5%80%BC"><span class="toc-number">3.3.1.6.</span> <span class="toc-text">6.基于xml方式注入属性-级联赋值</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A0%E7%AC%AC%E4%B8%80%E7%A7%8D%E6%96%B9%E5%BC%8F%EF%BC%9A%E4%B8%8E%E5%A4%96%E9%83%A8bean%E7%9A%84%E5%86%99%E6%B3%95%E7%9B%B8%E5%90%8C"><span class="toc-number">3.3.1.6.1.</span> <span class="toc-text">①第一种方式：与外部bean的写法相同</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A1%E7%AC%AC%E4%BA%8C%E7%A7%8D%E6%96%B9%E5%BC%8F%EF%BC%9A"><span class="toc-number">3.3.1.6.2.</span> <span class="toc-text">②第二种方式：</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#7-%E5%9F%BA%E4%BA%8Exml%E6%96%B9%E5%BC%8F%E6%B3%A8%E5%85%A5%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B%E5%B1%9E%E6%80%A7"><span class="toc-number">3.3.1.7.</span> <span class="toc-text">7.基于xml方式注入集合类型属性</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A0%E6%B3%A8%E5%85%A5%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B%E5%B1%9E%E6%80%A7"><span class="toc-number">3.3.1.7.1.</span> <span class="toc-text">①注入集合类型属性</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A1%E5%9C%A8%E9%9B%86%E5%90%88%E5%B1%9E%E6%80%A7%E4%B8%AD%E8%AE%BE%E7%BD%AE%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B"><span class="toc-number">3.3.1.7.2.</span> <span class="toc-text">②在集合属性中设置对象类型</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A2%E6%8F%90%E5%8F%96%E9%9B%86%E5%90%88%E5%B1%9E%E6%80%A7%E5%85%AC%E5%85%B1%E9%83%A8%E5%88%86"><span class="toc-number">3.3.1.7.3.</span> <span class="toc-text">③提取集合属性公共部分</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-2-Bean%E7%AE%A1%E7%90%86"><span class="toc-number">3.3.2.</span> <span class="toc-text">3.3.2 Bean管理</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E5%B7%A5%E5%8E%82Bean"><span class="toc-number">3.3.2.1.</span> <span class="toc-text">1.工厂Bean</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-Bean%E7%9A%84%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">3.3.2.2.</span> <span class="toc-text">2.Bean的作用域</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-Bean%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="toc-number">3.3.2.3.</span> <span class="toc-text">3.Bean的生命周期</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-xml%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D"><span class="toc-number">3.3.2.4.</span> <span class="toc-text">4.xml自动装配</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A0%E6%A0%B9%E6%8D%AE%E5%B1%9E%E6%80%A7%E5%90%8D%E8%87%AA%E5%8A%A8%E6%B3%A8%E5%85%A5"><span class="toc-number">3.3.2.4.1.</span> <span class="toc-text">①根据属性名自动注入</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A1%E6%A0%B9%E6%8D%AE%E5%B1%9E%E6%80%A7%E7%B1%BB%E5%9E%8B%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D"><span class="toc-number">3.3.2.4.2.</span> <span class="toc-text">②根据属性类型自动装配</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-%E5%BC%95%E5%85%A5%E5%A4%96%E9%83%A8%E5%B1%9E%E6%80%A7%E6%96%87%E4%BB%B6"><span class="toc-number">3.3.2.5.</span> <span class="toc-text">5.引入外部属性文件</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-3-%E5%9F%BA%E4%BA%8E%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F"><span class="toc-number">3.3.3.</span> <span class="toc-text">3.3.3 基于注解方式</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E5%9F%BA%E4%BA%8E%E6%B3%A8%E8%A7%A3%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1"><span class="toc-number">3.3.3.1.</span> <span class="toc-text">1.基于注解创建对象</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A0%E5%BC%95%E5%85%A5spring-aop%E4%BE%9D%E8%B5%96%EF%BC%88%E6%88%96%E4%BD%BF%E7%94%A8maven%E8%87%AA%E5%8A%A8%E5%AF%BC%E5%85%A5%EF%BC%89"><span class="toc-number">3.3.3.1.1.</span> <span class="toc-text">①引入spring-aop依赖（或使用maven自动导入）</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A1%E5%9C%A8Spring%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE%E5%BC%80%E5%90%AF%E7%BB%84%E4%BB%B6%E6%89%AB%E6%8F%8F"><span class="toc-number">3.3.3.1.2.</span> <span class="toc-text">②在Spring配置文件配置开启组件扫描</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A2%E5%88%9B%E5%BB%BA%E7%B1%BB%EF%BC%8C%E6%B7%BB%E5%8A%A0%E6%B3%A8%E8%A7%A3%E4%BE%BF%E4%BA%8E%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1"><span class="toc-number">3.3.3.1.3.</span> <span class="toc-text">③创建类，添加注解便于创建对象</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E7%BB%84%E4%BB%B6%E6%89%AB%E6%8F%8F%E9%85%8D%E7%BD%AE%E7%BB%86%E8%8A%82"><span class="toc-number">3.3.3.2.</span> <span class="toc-text">2.组件扫描配置细节</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E5%9F%BA%E4%BA%8E%E6%B3%A8%E8%A7%A3%E5%AE%9E%E7%8E%B0%E5%B1%9E%E6%80%A7%E6%B3%A8%E5%85%A5"><span class="toc-number">3.3.3.3.</span> <span class="toc-text">3.基于注解实现属性注入</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A0-Autowire%E6%B3%A8%E8%A7%A3"><span class="toc-number">3.3.3.3.1.</span> <span class="toc-text">①@Autowire注解</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A1-Qualifier%E6%B3%A8%E8%A7%A3"><span class="toc-number">3.3.3.3.2.</span> <span class="toc-text">②@Qualifier注解</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A2-Resource%E6%B3%A8%E8%A7%A3"><span class="toc-number">3.3.3.3.3.</span> <span class="toc-text">③@Resource注解</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A3-Value%E6%B3%A8%E8%A7%A3"><span class="toc-number">3.3.3.3.4.</span> <span class="toc-text">④@Value注解</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-%E5%AE%8C%E5%85%A8%E6%B3%A8%E8%A7%A3%E5%BC%80%E5%8F%91"><span class="toc-number">3.3.3.4.</span> <span class="toc-text">4.完全注解开发</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81AOP"><span class="toc-number">4.</span> <span class="toc-text">四、AOP</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">4.1.</span> <span class="toc-text">4.1 基本概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86"><span class="toc-number">4.2.</span> <span class="toc-text">4.2 底层原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-JDK%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86"><span class="toc-number">4.3.</span> <span class="toc-text">4.3 JDK动态代理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-%E6%93%8D%E4%BD%9C%E6%9C%AF%E8%AF%AD"><span class="toc-number">4.4.</span> <span class="toc-text">4.4 操作术语</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-5-AOP%E6%93%8D%E4%BD%9C"><span class="toc-number">4.5.</span> <span class="toc-text">4.5 AOP操作</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#4-5-1-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-number">4.5.0.1.</span> <span class="toc-text">4.5.1 准备工作</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-5-2-%E5%9F%BA%E4%BA%8Easpectj%E7%9A%84%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F"><span class="toc-number">4.5.0.2.</span> <span class="toc-text">4.5.2 基于aspectj的注解方式</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0AOP"><span class="toc-number">4.5.0.2.1.</span> <span class="toc-text">1.注解方式实现AOP</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-%E6%8F%90%E5%8F%96%E5%85%AC%E5%85%B1%E5%88%87%E5%85%A5%E7%82%B9"><span class="toc-number">4.5.0.2.2.</span> <span class="toc-text">2.提取公共切入点</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-%E5%A4%9A%E4%B8%AA%E5%A2%9E%E5%BC%BA%E7%B1%BB%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7"><span class="toc-number">4.5.0.2.3.</span> <span class="toc-text">3.多个增强类的优先级</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4-%E5%AE%8C%E5%85%A8%E6%B3%A8%E8%A7%A3%E5%BC%80%E5%8F%91-1"><span class="toc-number">4.5.0.2.4.</span> <span class="toc-text">4.完全注解开发</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-5-3-%E5%9F%BA%E4%BA%8Easpectj%E7%9A%84xml%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%96%B9%E5%BC%8F"><span class="toc-number">4.5.0.3.</span> <span class="toc-text">4.5.3 基于aspectj的xml配置文件方式</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81JdbcTemplate"><span class="toc-number">5.</span> <span class="toc-text">五、JdbcTemplate</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-%E6%A6%82%E8%BF%B0%E5%92%8C%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-number">5.1.</span> <span class="toc-text">5.1 概述和准备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-1-1-%E6%A6%82%E8%BF%B0"><span class="toc-number">5.1.1.</span> <span class="toc-text">5.1.1 概述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-2-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-number">5.1.2.</span> <span class="toc-text">5.2.2 准备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E5%BC%95%E5%85%A5jar%E5%8C%85"><span class="toc-number">5.1.2.1.</span> <span class="toc-text">1.引入jar包</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E5%9C%A8Spring%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%B8%AD%E9%85%8D%E7%BD%AE%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0"><span class="toc-number">5.1.2.2.</span> <span class="toc-text">2.在Spring配置文件中配置数据库连接池</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E9%85%8D%E7%BD%AEJdbcTemplate%E5%AF%B9%E8%B1%A1%EF%BC%8C%E6%B3%A8%E5%85%A5DataSource"><span class="toc-number">5.1.2.3.</span> <span class="toc-text">3.配置JdbcTemplate对象，注入DataSource</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-%E5%88%9B%E5%BB%BA-service-%E7%B1%BB%EF%BC%8Cdao-%E7%B1%BB%EF%BC%8C%E5%9C%A8-dao-%E6%B3%A8%E5%85%A5-jdbcTemplate-%E5%AF%B9%E8%B1%A1"><span class="toc-number">5.1.2.4.</span> <span class="toc-text">4.创建 service 类，dao 类，在 dao 注入 jdbcTemplate 对象</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A0%E9%85%8D%E7%BD%AE%E5%BC%80%E5%90%AF%E7%BB%84%E4%BB%B6%E6%89%AB%E6%8F%8F"><span class="toc-number">5.1.2.4.1.</span> <span class="toc-text">①配置开启组件扫描</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A1%E5%88%9B%E5%BB%BAService%E5%92%8CDao"><span class="toc-number">5.1.2.4.2.</span> <span class="toc-text">②创建Service和Dao</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-JdbcTemplate%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">5.2.</span> <span class="toc-text">5.2 JdbcTemplate操作数据库</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-1-%E6%B7%BB%E5%8A%A0%E6%93%8D%E4%BD%9C"><span class="toc-number">5.2.1.</span> <span class="toc-text">5.2.1 添加操作</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E5%88%9B%E5%BB%BA%E5%AE%9E%E4%BD%93%E7%B1%BB"><span class="toc-number">5.2.1.1.</span> <span class="toc-text">1.创建实体类</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E7%BC%96%E5%86%99service%E5%92%8Cdao%E5%B1%82%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7%E7%9A%84%E6%93%8D%E4%BD%9C"><span class="toc-number">5.2.1.2.</span> <span class="toc-text">2.编写service和dao层添加用户的操作</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E6%B5%8B%E8%AF%95"><span class="toc-number">5.2.1.3.</span> <span class="toc-text">3.测试</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-2-%E4%BF%AE%E6%94%B9%E5%88%A0%E9%99%A4%E6%93%8D%E4%BD%9C"><span class="toc-number">5.2.2.</span> <span class="toc-text">5.2.2 修改删除操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-3-%E6%9F%A5%E8%AF%A2%E6%93%8D%E4%BD%9C"><span class="toc-number">5.2.3.</span> <span class="toc-text">5.2.3 查询操作</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E6%9F%A5%E8%AF%A2%E8%BF%94%E5%9B%9E%E6%9F%90%E4%B8%AA%E5%80%BC"><span class="toc-number">5.2.3.1.</span> <span class="toc-text">1.查询返回某个值</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E6%9F%A5%E8%AF%A2%E8%BF%94%E5%9B%9E%E5%AF%B9%E8%B1%A1"><span class="toc-number">5.2.3.2.</span> <span class="toc-text">2.查询返回对象</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E6%9F%A5%E8%AF%A2%E8%BF%94%E5%9B%9E%E5%88%97%E8%A1%A8"><span class="toc-number">5.2.3.3.</span> <span class="toc-text">3.查询返回列表</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-3-JdbcTemplate%E6%89%B9%E9%87%8F%E6%93%8D%E4%BD%9C"><span class="toc-number">5.3.</span> <span class="toc-text">5.3 JdbcTemplate批量操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-3-1-%E6%89%B9%E9%87%8F%E6%B7%BB%E5%8A%A0%E6%93%8D%E4%BD%9C"><span class="toc-number">5.3.1.</span> <span class="toc-text">5.3.1 批量添加操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-3-2-%E6%89%B9%E9%87%8F%E4%BF%AE%E6%94%B9%E6%93%8D%E4%BD%9C"><span class="toc-number">5.3.2.</span> <span class="toc-text">5.3.2 批量修改操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-3-3-%E6%89%B9%E9%87%8F%E5%88%A0%E9%99%A4%E6%93%8D%E4%BD%9C"><span class="toc-number">5.3.3.</span> <span class="toc-text">5.3.3 批量删除操作</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E4%BA%8B%E5%8A%A1"><span class="toc-number">6.</span> <span class="toc-text">六、事务</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1-%E4%BA%8B%E5%8A%A1%E6%A6%82%E5%BF%B5"><span class="toc-number">6.1.</span> <span class="toc-text">6.1 事务概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2-%E6%90%AD%E5%BB%BA%E4%BA%8B%E5%8A%A1%E6%93%8D%E4%BD%9C%E7%8E%AF%E5%A2%83"><span class="toc-number">6.2.</span> <span class="toc-text">6.2 搭建事务操作环境</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%8C%E6%B7%BB%E5%8A%A0%E8%AE%B0%E5%BD%95"><span class="toc-number">6.2.1.</span> <span class="toc-text">1.创建数据库，添加记录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E9%85%8D%E7%BD%AE%E7%BB%84%E4%BB%B6%E6%89%AB%E6%8F%8F%E3%80%81DataSource%E5%92%8CJdbcTemplate%E5%AF%B9%E8%B1%A1"><span class="toc-number">6.2.2.</span> <span class="toc-text">2.配置组件扫描、DataSource和JdbcTemplate对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%88%9B%E5%BB%BAservice%EF%BC%8Cdao%E5%B1%82%EF%BC%8C%E5%AE%8C%E6%88%90%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA%E3%80%81%E6%B3%A8%E5%85%A5%E5%85%B3%E7%B3%BB%E5%8F%8A%E6%96%B9%E6%B3%95%E5%88%9B%E5%BB%BA"><span class="toc-number">6.2.3.</span> <span class="toc-text">3.创建service，dao层，完成对象创建、注入关系及方法创建</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E6%B5%8B%E8%AF%95"><span class="toc-number">6.2.4.</span> <span class="toc-text">4.测试</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-%E6%A8%A1%E6%8B%9F%E5%BC%82%E5%B8%B8"><span class="toc-number">6.2.5.</span> <span class="toc-text">5.模拟异常</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-3-%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86"><span class="toc-number">6.3.</span> <span class="toc-text">6.3 事务管理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#6-3-1-%E5%A3%B0%E6%98%8E%E5%BC%8F%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86"><span class="toc-number">6.3.1.</span> <span class="toc-text">6.3.1 声明式事务管理</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0%E5%A3%B0%E6%98%8E%E5%BC%8F%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86"><span class="toc-number">6.3.1.1.</span> <span class="toc-text">1.注解方式实现声明式事务管理</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A0%E5%BC%80%E5%90%AF%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8F%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86"><span class="toc-number">6.3.1.1.1.</span> <span class="toc-text">①开启注解方式事务管理</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E2%91%A1%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86%E5%8F%82%E6%95%B0%E9%85%8D%E7%BD%AE"><span class="toc-number">6.3.1.1.2.</span> <span class="toc-text">②事务管理参数配置</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-xml%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0%E5%A3%B0%E6%98%8E%E5%BC%8F%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86"><span class="toc-number">6.3.1.2.</span> <span class="toc-text">2.xml配置文件方式实现声明式事务管理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E5%AE%8C%E5%85%A8%E6%B3%A8%E8%A7%A3%E5%AE%9E%E7%8E%B0%E5%A3%B0%E6%98%8E%E5%BC%8F%E4%BA%8B%E5%8A%A1"><span class="toc-number">6.3.1.3.</span> <span class="toc-text">3.完全注解实现声明式事务</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E3%80%81Spring5%E6%96%B0%E5%8A%9F%E8%83%BD"><span class="toc-number">7.</span> <span class="toc-text">七、Spring5新功能</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#7-1-%E6%95%B4%E5%90%88%E6%97%A5%E5%BF%97%E6%A1%86%E6%9E%B6"><span class="toc-number">7.1.</span> <span class="toc-text">7.1 整合日志框架</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#7-1-1-Spring5-%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88-Log4j2"><span class="toc-number">7.1.1.</span> <span class="toc-text">7.1.1 Spring5 框架整合 Log4j2</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-2-%E6%94%AF%E6%8C%81-Nullable%E6%B3%A8%E8%A7%A3"><span class="toc-number">7.2.</span> <span class="toc-text">7.2 支持@Nullable注解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-3-%E5%87%BD%E6%95%B0%E5%BC%8F%E9%A3%8E%E6%A0%BC"><span class="toc-number">7.3.</span> <span class="toc-text">7.3 函数式风格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-4-%E6%95%B4%E5%90%88JUnit5%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6"><span class="toc-number">7.4.</span> <span class="toc-text">7.4 整合JUnit5单元测试框架</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#7-4-1-JUnit4"><span class="toc-number">7.4.1.</span> <span class="toc-text">7.4.1 JUnit4</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-4-2-JUnit5"><span class="toc-number">7.4.2.</span> <span class="toc-text">7.4.2 JUnit5</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-5-Webflux"><span class="toc-number">7.5.</span> <span class="toc-text">7.5 Webflux</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#7-5-1-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">7.5.1.</span> <span class="toc-text">7.5.1 基本概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-5-2-%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BC%96%E7%A8%8B"><span class="toc-number">7.5.2.</span> <span class="toc-text">7.5.2 响应式编程</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-Java%E5%AE%9E%E7%8E%B0%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BC%96%E7%A8%8B"><span class="toc-number">7.5.2.1.</span> <span class="toc-text">1.Java实现响应式编程</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-Reactor%E5%AE%9E%E7%8E%B0%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BC%96%E7%A8%8B"><span class="toc-number">7.5.2.2.</span> <span class="toc-text">2.Reactor实现响应式编程</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E6%93%8D%E4%BD%9C%E7%AC%A6"><span class="toc-number">7.5.2.3.</span> <span class="toc-text">3.操作符</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-5-3-%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B%E5%92%8C%E6%A0%B8%E5%BF%83API"><span class="toc-number">7.5.3.</span> <span class="toc-text">7.5.3 执行流程和核心API</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-5-4-%E6%B3%A8%E8%A7%A3%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B"><span class="toc-number">7.5.4.</span> <span class="toc-text">7.5.4 注解编程模型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-5-5-%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9E%8B"><span class="toc-number">7.5.5.</span> <span class="toc-text">7.5.5 函数式编程模型</span></a></li></ol></li></ol></li></ol>
     </div>
   </section>
 
@@ -5967,44 +5913,18 @@ Linux学习笔记学习架构：
           
             
               <a href="/atom.xml"
-                class="social  flat-btn"
+                class="social fas fa-rss flat-btn"
                 target="_blank"
                 rel="external nofollow noopener noreferrer" itemprop="url">
-                
-                  <img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5199/static/icon/020-rss.svg" class="lazyload" data-srcset="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5199/static/icon/020-rss.svg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
                 
               </a>
             
           
             
-              <a href="https://github.com/sakurasep"
-                class="social  flat-btn"
+              <a href="https://github.com/rainvex"
+                class="social fab fa-github flat-btn"
                 target="_blank"
                 rel="external nofollow noopener noreferrer" itemprop="url">
-                
-                  <img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5199/static/icon/029-github.svg" class="lazyload" data-srcset="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5199/static/icon/029-github.svg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-                
-              </a>
-            
-          
-            
-              <a href="https://blog.sakurasep.club"
-                class="social  flat-btn"
-                target="_blank"
-                rel="external nofollow noopener noreferrer" itemprop="url">
-                
-                  <img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5199/static/icon/012-blogger.svg" class="lazyload" data-srcset="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5199/static/icon/012-blogger.svg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-                
-              </a>
-            
-          
-            
-              <a href="https://www.youtube.com/channel/UCTJn92N-puJAJj82Kn05wpw"
-                class="social  flat-btn"
-                target="_blank"
-                rel="external nofollow noopener noreferrer" itemprop="url">
-                
-                  <img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5199/static/icon/006-youtube.svg" class="lazyload" data-srcset="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5199/static/icon/006-youtube.svg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
                 
               </a>
             
@@ -6051,7 +5971,7 @@ Linux学习笔记学习架构：
 
 <script>
   
-  volantis.css("https://cdn.sakurasep.top/fontawesome/css/all.min.css");
+  volantis.css("https://unpkg.com/@fortawesome/fontawesome-free@6.1/css/all.min.css");
   
   
   volantis.css("https://unpkg.com/volantis-static@0.0.1654736714924/libs/font-awesome-animation/font-awesome-animation.min.css");
@@ -6092,23 +6012,23 @@ Linux学习笔记学习架构：
   <li class='navigation menuNavigation-Content'>
 
 
-    <a class="nav icon-only fix-cursor-default" onclick="history.back()"><i class="fa-duotone fa-arrow-left PETERRIVE fa-fw"></i></a>
+    <a class="nav icon-only fix-cursor-default" onclick="history.back()"><i class="fa-solid fa-arrow-left fa-fw"></i></a>
 
 
 
-    <a class="nav icon-only fix-cursor-default" onclick="history.forward()"><i class="fa-duotone fa-arrow-right PETERRIVE fa-fw"></i></a>
+    <a class="nav icon-only fix-cursor-default" onclick="history.forward()"><i class="fa-solid fa-arrow-right fa-fw"></i></a>
 
 
 
-    <a class="nav icon-only fix-cursor-default" onclick="window.location.reload()"><i class="fa-duotone fa-redo PETERRIVE fa-fw"></i></a>
+    <a class="nav icon-only fix-cursor-default" onclick="window.location.reload()"><i class="fa-solid fa-redo fa-fw"></i></a>
 
 
 
-    <a class="nav icon-only fix-cursor-default" onclick="VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)"><i class="fa-duotone fa-arrow-up PETERRIVE fa-fw"></i></a>
+    <a class="nav icon-only fix-cursor-default" onclick="VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)"><i class="fa-solid fa-arrow-up fa-fw"></i></a>
 
 
 
-    <a class="nav icon-only fix-cursor-default" href="/"><i class="fa-duotone fa-home PETERRIVE fa-fw"></i></a>
+    <a class="nav icon-only fix-cursor-default" href="/"><i class="fa-solid fa-home fa-fw"></i></a>
 
 
   </li>
@@ -6120,7 +6040,7 @@ Linux学习笔记学习架构：
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="copyPaste" data-event="copyPaste" data-group="inputBox">
-      <i class="fa-duotone PETERRIVE fa-paste fa-fw"></i>
+      <i class="fa-solid fa-paste fa-fw"></i>
       粘贴文本
     </span>
   </li>
@@ -6129,7 +6049,7 @@ Linux学习笔记学习架构：
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="copyAll" data-event="copyAll" data-group="inputBox">
-      <i class="fa-duotone PETERRIVE fa-object-ungroup fa-fw"></i>
+      <i class="fa-solid fa-object-ungroup fa-fw"></i>
       全选文本
     </span>
   </li>
@@ -6138,7 +6058,7 @@ Linux学习笔记学习架构：
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="copyCut" data-event="copyCut" data-group="inputBox">
-      <i class="fa-duotone PETERRIVE fa-cut fa-fw"></i>
+      <i class="fa-solid fa-cut fa-fw"></i>
       剪切文本
     </span>
   </li>
@@ -6147,7 +6067,7 @@ Linux学习笔记学习架构：
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="copyText" data-event="copyText" data-group="seletctText">
-      <i class="fa-duotone PETERRIVE fa-copy fa-fw"></i>
+      <i class="fa-solid fa-copy fa-fw"></i>
       复制文本
     </span>
   </li>
@@ -6156,7 +6076,7 @@ Linux学习笔记学习架构：
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="searchWord" data-event="OpenSearch(__text__)" data-group="seletctText">
-      <i class="fa-duotone PETERRIVE fa-search fa-fw"></i>
+      <i class="fa-solid fa-search fa-fw"></i>
       站内搜索
     </span>
   </li>
@@ -6165,7 +6085,7 @@ Linux学习笔记学习架构：
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="bingSearch" data-event="window.open(`https://cn.bing.com/search?q=${__text__}`)" data-group="seletctText">
-      <i class="fa-duotone PETERRIVE fa-search fa-fw"></i>
+      <i class="fa-solid fa-search fa-fw"></i>
       必应搜索
     </span>
   </li>
@@ -6173,8 +6093,17 @@ Linux学习笔记学习架构：
 
 
   <li class="menuLoad-Content">
+    <span class="vlts-menu fix-cursor-default event" id="googleSearch" data-event="window.open(`https://www.google.com/search?q=${__text__}`)" data-group="seletctText">
+      <i class="fa-solid fa-search fa-fw"></i>
+      谷歌搜索
+    </span>
+  </li>
+
+
+
+  <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="openTab" data-event="window.open(__link__)" data-group="elementCheck">
-      <i class="fa-duotone PETERRIVE fa-external-link-square-alt fa-fw"></i>
+      <i class="fa-solid fa-external-link-square-alt fa-fw"></i>
       新标签页打开
     </span>
   </li>
@@ -6183,17 +6112,8 @@ Linux学习笔记学习架构：
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="copyLink" data-event="copyLink" data-group="elementCheck">
-      <i class="fa-duotone PETERRIVE fa-link fa-fw"></i>
+      <i class="fa-solid fa-link fa-fw"></i>
       复制链接地址
-    </span>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="copyImg" data-event="copyImg" data-group="elementCheck">
-      <i class="fa-duotone PETERRIVE fa-image fa-fw"></i>
-      复制图片文件
     </span>
   </li>
 
@@ -6218,8 +6138,17 @@ Linux学习笔记学习架构：
 
 
   <li class="menuLoad-Content">
-    <a class="vlts-menu fix-cursor-default" id="friends" href="/friends/" data-group="link">
-      <i class="fa-duotone fa-flower-daffodil AMETHYST fa-fw"></i>
+    <a class="vlts-menu fix-cursor-default" id="github" target="_blank" rel="noopener" href="https://github.com/rainvex" data-group="link">
+      <i class="fa-solid fa-code-branch SUNFLOWER fa-fw"></i>
+      本站源码
+    </a>
+  </li>
+
+
+
+  <li class="menuLoad-Content">
+    <a class="vlts-menu fix-cursor-default" id="friends" href="friends/" data-group="link">
+      <i class="fa-solid fa-flower-daffodil AMETHYST fa-fw"></i>
       我的朋友们
     </a>
   </li>
@@ -6227,8 +6156,8 @@ Linux学习笔记学习架构：
 
 
   <li class="menuLoad-Content">
-    <a class="vlts-menu fix-cursor-default" id="archive" href="/archives/" data-group="link">
-      <i class="fa-duotone fa-globe-asia CONCRETE fa-fw"></i>
+    <a class="vlts-menu fix-cursor-default" id="archive" href="archives/" data-group="link">
+      <i class="fa-solid fa-globe-asia CONCRETE fa-fw"></i>
       文章归档
     </a>
   </li>
@@ -6236,8 +6165,8 @@ Linux学习笔记学习架构：
 
 
   <li class="menuLoad-Content">
-    <a class="vlts-menu fix-cursor-default" id="about" href="/about/" data-group="link">
-      <i class="fa-duotone fa-gingerbread-man WISTERIA fa-fw"></i>
+    <a class="vlts-menu fix-cursor-default" id="about" href="about/" data-group="link">
+      <i class="fa-solid fa-gingerbread-man WISTERIA fa-fw"></i>
       关于我
     </a>
   </li>
@@ -6250,7 +6179,7 @@ Linux学习笔记学习架构：
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="darkMode" data-event="volantis.dark.toggle()" data-group="darkMode">
-      <i class="fa-duotone fa-eclipse-alt WISTERIA fa-fw"></i>
+      <i class="fa-solid fa-eclipse-alt WISTERIA fa-fw"></i>
       暗黑模式
     </span>
   </li>
@@ -6259,7 +6188,7 @@ Linux学习笔记学习架构：
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="printMode" data-event="printMode" data-group="articlePage">
-      <i class="fa-duotone fa-print TURQUOISE fa-fw"></i>
+      <i class="fa-solid fa-print fa-fw"></i>
       打印页面
     </span>
   </li>
@@ -6268,7 +6197,7 @@ Linux学习笔记学习架构：
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="readMode" data-event="readMode" data-group="articlePage">
-      <i class="fa-duotone fa-book-open EMERALD fa-fw"></i>
+      <i class="fa-solid fa-book-open fa-fw"></i>
       阅读模式
     </span>
   </li>
@@ -6280,13 +6209,13 @@ Linux学习笔记学习架构：
   </li>
   <li class='music ctrl'>
     <a class='nav icon-only backward fix-cursor-default' href="/" onclick="return false;" title="backward">
-      <i class='fa-duotone PETERRIVE fa-step-backward fa-fw'></i>
+      <i class='fa-solid fa-step-backward fa-fw'></i>
     </a>
     <a class='nav icon-only toggle fix-cursor-default' href="/" onclick="return false;" title="toggle">
-      <i class='fa-duotone PETERRIVE fa-play fa-fw'></i>
+      <i class='fa-solid fa-play fa-fw'></i>
     </a>
     <a class='nav icon-only forward fix-cursor-default' href="/" onclick="return false;" title="forward">
-      <i class='fa-duotone PETERRIVE fa-step-forward fa-fw'></i>
+      <i class='fa-solid fa-step-forward fa-fw'></i>
     </a>
   </li>
   <li class='music volume'>
@@ -6294,8 +6223,8 @@ Linux学习笔记学习架构：
       <div class="aplayer-volume-bar-wrap">
         <div class="aplayer-volume-bar fix-cursor-pointer">
           <div class="aplayer-volume"></div>
-          <i class='left fa-duotone PETERRIVE fa-volume-off fa-fw'></i>
-          <i class='right fa-duotone PETERRIVE fa-volume-up fa-fw'></i>
+          <i class='left fa-solid fa-volume-off fa-fw'></i>
+          <i class='right fa-solid fa-volume-up fa-fw'></i>
         </div>
       </div>
     </div>
@@ -6304,7 +6233,7 @@ Linux学习笔记学习架构：
 
   </ul>
 </div>
-<script src="https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/rightMenus.js?time=1661141841236"></script>
+<script src="/js/plugins/rightMenus.1aa99ff1.js"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -6358,6 +6287,12 @@ Linux学习笔记学习架构：
 
 
 
+  RightMenusFunction['googleSearch'] = (__text__) => {window.open(`https://www.google.com/search?q=${__text__}`)}
+
+
+
+
+
   RightMenusFunction['openTab'] = (__link__) => {window.open(__link__)}
 
 
@@ -6376,13 +6311,9 @@ Linux学习笔记学习架构：
 
 
 
-  //RightMenusFunction['copyImg'] = (fun) => {fun()}
-
-
-
-
-
   RightMenusFunction['googleImg'] = (__link__) => {window.open(`https://www.google.com.hk/searchbyimage?image_url=${__link__}`)}
+
+
 
 
 
@@ -6543,19 +6474,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/sites.js?time=1661141841236")
+        volantis.js("/js/plugins/tags/sites.76bf19b8.js")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/friends.js?time=1661141841236")
+        volantis.js("/js/plugins/tags/friends.f372da57.js")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/contributors.js?time=1661141841236")
+        volantis.js("/js/plugins/tags/contributors.aec80453.js")
       }
     
   };
@@ -6600,7 +6531,15 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   
 
-<script async src="https://unpkg.com/volantis-static@0.0.1654736714924/libs/instant_page/instant_page.js" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<script>
+  window.FPConfig = {
+	delay: 0,
+	ignoreKeywords: ["#"],
+	maxRPS: 6,
+	hoverDelay: 0
+  };
+</script>
+<script defer src="https://unpkg.com/volantis-static@0.0.1654736714924/libs/flying-pages/flying-pages.min.js"></script>
 
 
 
@@ -6643,7 +6582,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/aplayer.js?time=1661141841236')
+    await volantis.js('/js/plugins/aplayer.dbe5eea9.js')
   
   })();
 
@@ -6714,46 +6653,51 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
       <script>
-  volantis.layoutHelper("comments",`<div id="twikoo_container"><i class="fa-solid fa-cog fa-spin fa-fw fa-2x"></i></div>`)
-  function load_twikoo() {
-    if(!document.querySelectorAll("#twikoo_container")[0])return;
-    volantis.js("https://cdn.staticfile.org/twikoo/1.5.11/twikoo.all.min.js", pjax_twikoo)
-  }
-  function pjax_twikoo() {
-    if(!document.querySelectorAll("#twikoo_container")[0])return;
+  volantis.layoutHelper("comments",`<div id="waline"><i class="fa-solid fa-cog fa-spin fa-fw fa-2x"></i></div>`)
+  
+  function pjax_waline() {
+    if(!document.querySelector("#waline"))return;
+    let locale = {};
     let path = pdata.commentPath;
-    let placeholder = pdata.commentPlaceholder || "期待你的评论" || "";
+    let pagePlaceholder = pdata.commentPlaceholder || "期待你的评论😆";
     if (path.length == 0) {
       let defaultPath = '';
       path = defaultPath || decodeURI(window.location.pathname);
     }
-    twikoo.init(Object.assign(Object.assign({"js":"https://cdn.staticfile.org/twikoo/1.5.11/twikoo.all.min.js","path":null,"envId":"twikoo-8g109qz0365c3388","placeholder":"期待你的评论"}, {
-      el: '#twikoo_container',
-      path: path,
-      placeholder: placeholder,
-      onCommentLoaded: function() {
-        if(typeof VolantisFancyBox === "undefined") {
-          const checkFancyBox = setInterval(() => {
-            if(typeof VolantisFancyBox === "undefined") return;
-            clearInterval(checkFancyBox);
-            VolantisFancyBox.groupBind('.tk-content img:not([class*="emo"])', 'Comments');
-          })
-        } else {
-          VolantisFancyBox.groupBind('.tk-content img:not([class*="emo"])', 'Comments');
-        }
-      }
-    }),pdata.commentConfig))
-  }
-  load_twikoo();
-  volantis.pjax.push(()=>{
-    if (typeof twikoo == "undefined") {
-      load_twikoo();
-    } else {
-      pjax_twikoo();
+    if(pagePlaceholder.length != 0) {
+      locale.placeholder = pagePlaceholder;
     }
-  },'twikoo');
-</script>
 
+    try {
+      Waline.init(Object.assign(Object.assign({"js":"https://unpkg.com/@waline/client@v2/dist/waline.js","css":"https://unpkg.com/@waline/client@v2/dist/waline.css","path":null,"placeholder":"期待你的评论😆","serverURL":"https://waline-comment-coral.vercel.app/","imageUploader":false,"pageview":true,"comment":true,"emoji":["//unpkg.com/@waline/emojis@1.0.1/tw-emoji"],"dark":"auto","requiredMeta":["nick","mail"],"login":"force","copyright":false}, {
+        el: '#waline',
+        path: path,
+        // https://github.com/volantis-x/hexo-theme-volantis/issues/713
+        
+        locale,
+      }),pdata.commentConfig));
+    } catch (error) {
+      alert(`Waline ${error}`)
+    }
+    fancybox_waline()
+  }
+
+  function fancybox_waline() {
+    if(typeof VolantisFancyBox === "undefined") {
+      const checkFancyBox = setInterval(() => {
+        if(typeof VolantisFancyBox === "undefined") return;
+        clearInterval(checkFancyBox);
+        VolantisFancyBox.bind('#waline .wl-content img:not(.wl-emoji)');
+      })
+    } else {
+      VolantisFancyBox.bind('#waline .wl-content img:not(.wl-emoji)');
+    }
+  }
+
+  volantis.css('https://unpkg.com/@waline/client@v2/dist/waline.css')
+  volantis.js('https://unpkg.com/@waline/client@v2/dist/waline.js').then(pjax_waline)
+  volantis.pjax.push(pjax_waline);
+</script>
     
 
 
@@ -6770,7 +6714,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/search/hexo.js?time=1661141841236");
+    return volantis.js("/js/search/hexo.0e52f222.js");
   }
 
   function loadSearchService() {
@@ -6840,6 +6784,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   <script>
 
+  volantis.css("https://unpkg.com/@highlightjs/cdn-assets@11.5.1/styles/atom-one-dark.min.css");
+
+
+  volantis.js("https://unpkg.com/@highlightjs/cdn-assets@11.5.1/highlight.min.js").then(()=>{
+    volantis.requestAnimationFrame(hljs.highlightAll)
+  })
+  volantis.pjax.push(()=>{
+    document.querySelectorAll('pre code').forEach((block) => {
+      hljs.highlightElement(block);
+    });
+  },"highlightjs")
 
 
   function pjax_highlightjs_copyCode(){
@@ -6855,215 +6810,6 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 
-
-
-  <script defer>
-
-  const LCCounter = {
-    app_id: 'qVqqbsCeflqS5kWNGj9PG6vj-gzGzoHsz',
-    app_key: 'ay3rK2tO7yUmvc9jC4ufdYv8',
-    custom_api_server: '',
-
-    // 查询存储的记录
-    getRecord(Counter, url, title) {
-      return new Promise(function (resolve, reject) {
-        Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({url})))
-          .then(resp => resp.json())
-          .then(({results, code, error}) => {
-            if (code === 401) {
-              throw error;
-            }
-            if (results && results.length > 0) {
-              var record = results[0];
-              resolve(record);
-            } else {
-              Counter('post', '/classes/Counter', {url, title: title, times: 0})
-                .then(resp => resp.json())
-                .then((record, error) => {
-                  if (error) {
-                    throw error;
-                  }
-                  resolve(record);
-                }).catch(error => {
-                console.error('Failed to create', error);
-                reject(error);
-              });
-            }
-          }).catch((error) => {
-          console.error('LeanCloud Counter Error:', error);
-          reject(error);
-        });
-      })
-    },
-
-    // 发起自增请求
-    increment(Counter, incrArr) {
-      return new Promise(function (resolve, reject) {
-        Counter('post', '/batch', {
-          "requests": incrArr
-        }).then((res) => {
-          res = res.json();
-          if (res.error) {
-            throw res.error;
-          }
-          resolve(res);
-        }).catch((error) => {
-          console.error('Failed to save visitor count', error);
-          reject(error);
-        });
-      });
-    },
-
-    // 构建自增请求体
-    buildIncrement(objectId) {
-      return {
-        "method": "PUT",
-        "path": `/1.1/classes/Counter/${ objectId }`,
-        "body": {
-          "times": {
-            '__op': 'Increment',
-            'amount': 1
-          }
-        }
-      }
-    },
-
-    // 校验是否为有效的 UV
-    validUV() {
-      var key = 'LeanCloudUVTimestamp';
-      var flag = localStorage.getItem(key);
-      if (flag) {
-        // 距离标记小于 24 小时则不计为 UV
-        if (new Date().getTime() - parseInt(flag) <= 86400000) {
-          return false;
-        }
-      }
-      localStorage.setItem(key, new Date().getTime().toString());
-      return true;
-    },
-
-    addCount(Counter) {
-      var enableIncr = '' === 'true' && window.location.hostname !== 'localhost';
-      enableIncr = true;
-      var getterArr = [];
-      var incrArr = [];
-      // 请求 PV 并自增
-      var pvCtn = document.querySelector('#lc-sv');
-      if (pvCtn || enableIncr) {
-        var pvGetter = this.getRecord(Counter, 'http://rainvex.com' + '/#lc-sv', 'Visits').then((record) => {
-          incrArr.push(this.buildIncrement(record.objectId))
-          var eles = document.querySelectorAll('#lc-sv #number');
-          if (eles.length > 0) {
-            eles.forEach((el,index,array)=>{
-              el.innerText = record.times + 1;
-              if (pvCtn) {
-                pvCtn.style.display = 'inline';
-              }
-            })
-          }
-        });
-        getterArr.push(pvGetter);
-      }
-
-      // 请求 UV 并自增
-      var uvCtn = document.querySelector('#lc-uv');
-      if (uvCtn || enableIncr) {
-        var uvGetter = this.getRecord(Counter, 'http://rainvex.com' + '/#lc-uv', 'Visitors').then((record) => {
-          var vuv = this.validUV();
-          vuv && incrArr.push(this.buildIncrement(record.objectId))
-          var eles = document.querySelectorAll('#lc-uv #number');
-          if (eles.length > 0) {
-            eles.forEach((el,index,array)=>{
-              el.innerText = record.times + (vuv ? 1 : 0);
-              if (uvCtn) {
-                uvCtn.style.display = 'inline';
-              }
-            })
-          }
-        });
-        getterArr.push(uvGetter);
-      }
-
-      // 请求文章的浏览数，如果是当前页面就自增
-      var allPV = document.querySelectorAll('#lc-pv');
-      if (allPV.length > 0 || enableIncr) {
-        for (i = 0; i < allPV.length; i++) {
-          let pv = allPV[i];
-          let title = pv.getAttribute('data-title');
-          var url = 'http://rainvex.com' + pv.getAttribute('data-path');
-          if (url) {
-            var viewGetter = this.getRecord(Counter, url, title).then((record) => {
-              // 是当前页面就自增
-              let curPath = window.location.pathname;
-              if (curPath.includes('index.html')) {
-                curPath = curPath.substring(0, curPath.lastIndexOf('index.html'));
-              }
-              if (pv.getAttribute('data-path') == curPath) {
-                incrArr.push(this.buildIncrement(record.objectId));
-              }
-              if (pv) {
-                var ele = pv.querySelector('#lc-pv #number');
-                if (ele) {
-                  if (pv.getAttribute('data-path') == curPath) {
-                    ele.innerText = (record.times || 0) + 1;
-                  } else {
-                    ele.innerText = record.times || 0;
-                  }
-                  pv.style.display = 'inline';
-                }
-              }
-            });
-            getterArr.push(viewGetter);
-          }
-        }
-      }
-
-      // 如果启动计数自增，批量发起自增请求
-      if (enableIncr) {
-        Promise.all(getterArr).then(() => {
-          incrArr.length > 0 && this.increment(Counter, incrArr);
-        })
-      }
-
-    },
-
-
-    fetchData(api_server) {
-      var Counter = (method, url, data) => {
-        return fetch(`${ api_server }/1.1${ url }`, {
-          method,
-          headers: {
-            'X-LC-Id': this.app_id,
-            'X-LC-Key': this.app_key,
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data)
-        });
-      };
-      this.addCount(Counter);
-    },
-
-    refreshCounter() {
-      var api_server = this.app_id.slice(-9) !== '-MdYXbMMI' ? this.custom_api_server : `https://${ this.app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
-      if (api_server) {
-        this.fetchData(api_server);
-      } else {
-        fetch('https://app-router.leancloud.cn/2/route?appId=' + this.app_id)
-          .then(resp => resp.json())
-          .then(({api_server}) => {
-            this.fetchData('https://' + api_server);
-          });
-      }
-    }
-
-  };
-
-  LCCounter.refreshCounter();
-
-  document.addEventListener('pjax:complete', function () {
-    LCCounter.refreshCounter();
-  });
-</script>
 
 
 
@@ -7097,7 +6843,7 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
 
 
   <script>
-  let imgs = ["https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/bg9.jpg"];
+  let imgs = ["https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/image/bg9.jpg"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -7138,7 +6884,7 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/parallax.js?time=1661141841236').then(()=>{
+    volantis.js('/js/plugins/parallax.8bf0ab10.js').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -7307,96 +7053,6 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
 </script>
 
 
-  <script>
-  try {
-    // https://web.dev/content-visibility/
-    // https://www.caniuse.com/?search=content-visibility
-    // https://infrequently.org/2020/12/content-visibility-scroll-fix/
-    // https://infrequently.org/2020/12/resize-resilient-deferred-rendering/
-
-    // 备注 目前已知的问题:
-    // 动态修改导致的内容高度变化(例如评论框异步渲染的外部盒子高度变化) 无法提前获知, 进而导致的首次滚动条跳动无法去除 (wontfix) 事实上不使用 content-visibility 也会有跳动, 不过是比使用 content-visibility 跳动提前
-    // scrollreveal 插件潜在问题 目前尚不明确
-
-    let eqIsh = (a, b, fuzz = 2) => {
-      return Math.abs(a - b) <= fuzz;
-    };
-
-    let rectNotEQ = (a, b) => {
-      return !eqIsh(a.width, b.width) || !eqIsh(a.height, b.height);
-    };
-
-    // Keep a map of elements and the dimensions of
-    // their place-holders, re-setting the element's
-    // intrinsic size when we get updated measurements
-    // from observers.
-    let spaced = new WeakMap();
-
-    // Only call this when known cheap, post layout
-    let reserveSpace = (el, rect = el.getClientBoundingRect()) => {
-      let old = spaced.get(el);
-      // Set intrinsic size to prevent jumping on un-painting:
-      //    https://drafts.csswg.org/css-sizing-4/#intrinsic-size-override
-      if (!old || rectNotEQ(old, rect)) {
-        spaced.set(el, rect);
-        el.style["contain-intrinsic-size"] = `${rect.width}px ${rect.height}px`;
-      }
-    };
-
-    let iObs = new IntersectionObserver(
-      (entries, o) => {
-        entries.forEach((entry) => {
-          // We don't care if the element is intersecting or
-          // has been laid out as our page structure ensures
-          // they'll get the right width.
-          reserveSpace(entry.target, entry.boundingClientRect);
-        });
-      },
-      { rootMargin: "500px 0px 500px 0px" }
-    );
-
-    let rObs = new ResizeObserver((entries, o) => {
-      entries.forEach((entry) => {
-        reserveSpace(entry.target, entry.contentRect);
-      });
-    });
-
-    let resizeResilientDeferredRendering = (Selector) => {
-      let articles = document.querySelectorAll(Selector);
-
-      if (articles.length) {
-        articles.forEach((el) => {
-          iObs.observe(el);
-          rObs.observe(el);
-        });
-
-        // Workaround for Chrome bug, part 2.
-        //
-        // Re-enable browser management of rendering for the
-        // first article after the first paint. Double-rAF
-        // to ensure we get called after a layout.
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            articles[0].style["content-visibility"] = "auto";
-          });
-        });
-      }
-    };
-
-    let contentVisibilityScrollFix = () => {
-      if (!("content-visibility" in document.documentElement.style)) {
-        return;
-      }
-      resizeResilientDeferredRendering(".post-story");
-    };
-    contentVisibilityScrollFix();
-    volantis.pjax.push(contentVisibilityScrollFix);
-  } catch (error) {
-    console.log(error);
-  }
-</script>
-
-
 
 <script>
   document.onreadystatechange = function () {
@@ -7414,7 +7070,7 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"夜雨声烦","url":"http://rainvex.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"夜雨声烦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://rainvex.com/","sameAs":["https://github.com/volantis-x"],"description":"夜雨声烦的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://rainvex.com/","name":"夜雨声烦"}},{"@type":"ListItem","position":2,"item":{"@id":"http://rainvex.com/categories/后端/","name":"后端"}},{"@type":"ListItem","position":3,"item":{"@id":"http://rainvex.com/categories/后端/Spring5学习笔记.html","name":"Spring框架笔记"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"夜雨声烦","url":"http://rainvex.com/","keywords":"rainvex,blog,夜雨声烦","description":"夜雨声烦的个人博客","author":{"@type":"Person","name":"夜雨声烦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://rainvex.com/","description":"夜雨声烦的个人博客"},"publisher":{"@type":"Organization","name":"夜雨声烦","url":"http://rainvex.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://rainvex.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Spring框架笔记","description":"夜雨声烦的个人博客","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://rainvex.com/categories/%E5%90%8E%E7%AB%AF/Spring5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html"},"author":{"@type":"Person","name":"夜雨声烦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://rainvex.com/"},"publisher":{"@type":"Organization","name":"夜雨声烦","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://rainvex.com/categories/%E5%90%8E%E7%AB%AF/Spring5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html","wordCount":0,"datePublished":"2022-03-27T14:10:43.000Z","dateModified":"2022-05-18T07:37:01.607Z","articleSection":"后端","keywords":"笔记,Java,Spring5","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"夜雨声烦","url":"http://rainvex.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"夜雨声烦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://rainvex.com/","sameAs":["https://github.com/volantis-x"],"description":"夜雨声烦的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://rainvex.com/","name":"夜雨声烦"}},{"@type":"ListItem","position":2,"item":{"@id":"http://rainvex.com/categories/后端/","name":"后端"}},{"@type":"ListItem","position":3,"item":{"@id":"http://rainvex.com/categories/后端/Spring5学习笔记.html","name":"Spring框架笔记"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"夜雨声烦","url":"http://rainvex.com/","keywords":"rainvex,blog,夜雨声烦","description":"夜雨声烦的个人博客","author":{"@type":"Person","name":"夜雨声烦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://rainvex.com/","description":"夜雨声烦的个人博客"},"publisher":{"@type":"Organization","name":"夜雨声烦","url":"http://rainvex.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://rainvex.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Spring框架笔记","description":"夜雨声烦的个人博客","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://rainvex.com/categories/%E5%90%8E%E7%AB%AF/Spring5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html"},"author":{"@type":"Person","name":"夜雨声烦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://rainvex.com/"},"publisher":{"@type":"Organization","name":"夜雨声烦","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://rainvex.com/categories/%E5%90%8E%E7%AB%AF/Spring5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html","wordCount":0,"datePublished":"2022-03-27T14:10:43.000Z","dateModified":"2022-08-22T05:38:01.552Z","articleSection":"后端","keywords":"笔记,Java,Spring5","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
@@ -7460,7 +7116,7 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
       try {
         var currentUrl = window.location.pathname;
         var targetUrl = e.triggerElement.href;
-        var banUrl = ["/bb/", "/artitalk/"];
+        var banUrl = [""];
         if (banUrl[0] != "") {
           banUrl.forEach(item => {
             if(currentUrl.indexOf(item) != -1 || targetUrl.indexOf(item) != -1) {

@@ -26,9 +26,9 @@
   
   <!-- Custom Files headBegin end-->
     <link rel="shortcut icon" type='image/x-icon' href="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/avatar.jpg">
-  <link rel="preload" href="/css/style.89a78c16.css" as="style">
-  <link rel="preload" href="https://cdn.sakurasep.top/fonts-cdn/canva/MaShanZheng-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="https://cdn.sakurasep.top/fonts-cdn/MiSans/MiSans-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="/css/style.659c7404.css" as="style">
+  <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="夜雨声烦" type="application/atom+xml">
@@ -45,7 +45,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-05-28T09:27:34.000Z">
-<meta property="article:modified_time" content="2022-06-07T09:40:47.831Z">
+<meta property="article:modified_time" content="2022-08-22T05:37:51.141Z">
 <meta property="article:author" content="夜雨声烦">
 <meta property="article:tag" content="Linux">
 <meta property="article:tag" content="Ubuntu">
@@ -57,15 +57,11 @@
     #safearea {
   display: none;
 }
-.post-story + .post-story {
-  content-visibility: auto;
-  contain-intrinsic-size: 10px 500px;
-}
 :root {
-  --color-site-body: #f7f9fe;
-  --color-site-bg: #f7f9fe;
-  --color-site-inner: #fff;
-  --color-site-footer: #fff;
+  --color-site-body: #f4f4f4;
+  --color-site-bg: #f4f4f4;
+  --color-site-inner: #787878;
+  --color-site-footer: #787878;
   --color-card: #fff;
   --color-text: #444;
   --color-block: #f6f6f6;
@@ -79,8 +75,8 @@
   --color-h6: #666;
   --color-p: #444;
   --color-list: #666;
-  --color-list-hl: #30ad91;
-  --color-meta: #666;
+  --color-list-hl: #6e08c2;
+  --color-meta: #888;
   --color-read-bkg: #e0d8c8;
   --color-read-post: #f8f1e2;
   --color-copyright-bkg: #f5f5f5;
@@ -101,7 +97,7 @@
   background: transparent;
 }
 *::-webkit-scrollbar-thumb {
-  background: #3dd9b6;
+  background: #8a0af3;
   cursor: pointer;
   border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -113,21 +109,21 @@ html {
   color: var(--color-text);
   width: 100%;
   height: 100%;
-  font-family: MiSans, Menlo, Monaco, monospace, sans-serif;
+  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
   font-size: 16px;
 }
 html >::-webkit-scrollbar {
-  height: 5px;
-  width: 5px;
+  height: 4px;
+  width: 4px;
 }
 html >::-webkit-scrollbar-track-piece {
   background: transparent;
 }
 html >::-webkit-scrollbar-thumb {
-  background: #3dd9b6;
+  background: #8a0af3;
   cursor: pointer;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
 }
 html >::-webkit-scrollbar-thumb:hover {
   background: #ff5722;
@@ -153,7 +149,7 @@ body.modal-active {
   }
 }
 a {
-  color: #2092ec;
+  color: #4dec1c;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.28s ease;
@@ -435,7 +431,7 @@ button {
   margin-top: 32px;
 }
 .cover-wrapper .cover-body .title {
-  font-family: MaShanZheng, Helvetica, monospace;
+  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
   font-size: 3.125rem;
   line-height: 1.2;
   text-shadow: 0 1px 2px rgba(0,0,0,0.1);
@@ -689,7 +685,7 @@ button {
 .cover-wrapper.dock .menu .list-h a.active i+p,
 .cover-wrapper.featured .menu .list-h a.active i+p,
 .cover-wrapper.focus .menu .list-h a.active i+p {
-  color: #3dd9b6;
+  color: #8a0af3;
 }
 .cover-wrapper.dock .menu .list-h a.active img+p,
 .cover-wrapper.featured .menu .list-h a.active img+p,
@@ -734,7 +730,7 @@ button {
     background: transparent;
   }
   .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb {
-    background: #3dd9b6;
+    background: #8a0af3;
     cursor: pointer;
     border-radius: 0;
     -webkit-border-radius: 0;
@@ -819,26 +815,26 @@ button {
     --color-mode: 'dark';
   }
   :root:not([color-scheme]) {
-    --color-site-body: #121212;
-    --color-read-bkg: #21252b;
-    --color-read-post: #282c34;
-    --color-site-bg: #21252b;
+    --color-site-body: #1f1f1f;
+    --color-read-bkg: #1f1f1f;
+    --color-read-post: #262626;
+    --color-site-bg: #1f1f1f;
     --color-site-inner: rgba(238,238,238,0.871);
-    --color-site-footer: #abb2bf;
-    --color-card: #282c34;
-    --color-text: #abb2bf;
-    --color-block: #21252b;
+    --color-site-footer: rgba(170,170,170,0.871);
+    --color-card: #262626;
+    --color-text: rgba(238,238,238,0.871);
+    --color-block: #434343;
     --color-codeblock: #1f1f1f;
     --color-inlinecode: #d56d28;
-    --color-h1: #979 a-duotone;
-    --color-h2: #979 a-duotone;
-    --color-h3: #979 a-duotone;
-    --color-h4: #979 a-duotone;
-    --color-h5: #979 a-duotone;
-    --color-h6: #979 a-duotone;
-    --color-p: #abb2bf;
+    --color-h1: rgba(255,255,255,0.871);
+    --color-h2: rgba(255,255,255,0.871);
+    --color-h3: rgba(255,255,255,0.6);
+    --color-h4: rgba(255,255,255,0.6);
+    --color-h5: rgba(255,255,255,0.6);
+    --color-h6: rgba(255,255,255,0.6);
+    --color-p: rgba(217,217,217,0.871);
     --color-list: rgba(217,217,217,0.871);
-    --color-list-hl: #63e0c4;
+    --color-list-hl: #a13af5;
     --color-meta: rgba(191,191,191,0.871);
     --color-link: rgba(191,191,191,0.871);
     --color-copyright-bkg: #21252b;
@@ -847,10 +843,10 @@ button {
     filter: brightness(70%) !important;
   }
   :root:not([color-scheme]) .blur {
-    background: rgba(33,37,43,0.9) !important;
+    background: rgba(31,31,31,0.9) !important;
   }
   :root:not([color-scheme]) .white-box.blur {
-    background: rgba(40,44,52,0.9) !important;
+    background: rgba(38,38,38,0.9) !important;
   }
   :root:not([color-scheme]) .nav-main .u-search-input {
     background: var(--color-card) !important;
@@ -891,26 +887,26 @@ button {
   }
 }
 [color-scheme='dark'] {
-  --color-site-body: #121212;
-  --color-read-bkg: #21252b;
-  --color-read-post: #282c34;
-  --color-site-bg: #21252b;
+  --color-site-body: #1f1f1f;
+  --color-read-bkg: #1f1f1f;
+  --color-read-post: #262626;
+  --color-site-bg: #1f1f1f;
   --color-site-inner: rgba(238,238,238,0.871);
-  --color-site-footer: #abb2bf;
-  --color-card: #282c34;
-  --color-text: #abb2bf;
-  --color-block: #21252b;
+  --color-site-footer: rgba(170,170,170,0.871);
+  --color-card: #262626;
+  --color-text: rgba(238,238,238,0.871);
+  --color-block: #434343;
   --color-codeblock: #1f1f1f;
   --color-inlinecode: #d56d28;
-  --color-h1: #979 a-duotone;
-  --color-h2: #979 a-duotone;
-  --color-h3: #979 a-duotone;
-  --color-h4: #979 a-duotone;
-  --color-h5: #979 a-duotone;
-  --color-h6: #979 a-duotone;
-  --color-p: #abb2bf;
+  --color-h1: rgba(255,255,255,0.871);
+  --color-h2: rgba(255,255,255,0.871);
+  --color-h3: rgba(255,255,255,0.6);
+  --color-h4: rgba(255,255,255,0.6);
+  --color-h5: rgba(255,255,255,0.6);
+  --color-h6: rgba(255,255,255,0.6);
+  --color-p: rgba(217,217,217,0.871);
   --color-list: rgba(217,217,217,0.871);
-  --color-list-hl: #63e0c4;
+  --color-list-hl: #a13af5;
   --color-meta: rgba(191,191,191,0.871);
   --color-link: rgba(191,191,191,0.871);
   --color-copyright-bkg: #21252b;
@@ -919,10 +915,10 @@ button {
   filter: brightness(70%) !important;
 }
 [color-scheme='dark'] .blur {
-  background: rgba(33,37,43,0.9) !important;
+  background: rgba(31,31,31,0.9) !important;
 }
 [color-scheme='dark'] .white-box.blur {
-  background: rgba(40,44,52,0.9) !important;
+  background: rgba(38,38,38,0.9) !important;
 }
 [color-scheme='dark'] .nav-main .u-search-input {
   background: var(--color-card) !important;
@@ -967,15 +963,15 @@ button {
   }
 }
 @font-face {
-  font-family: 'MiSans';
-  src: url("https://cdn.sakurasep.top/fonts-cdn/MiSans/MiSans-Regular.woff");
+  font-family: 'UbuntuMono';
+  src: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
 }
 @font-face {
-  font-family: 'MaShanZheng';
-  src: url("https://cdn.sakurasep.top/fonts-cdn/canva/MaShanZheng-Regular.woff2");
+  font-family: 'Varela Round';
+  src: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/VarelaRound/VarelaRound-Regular.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
@@ -1098,7 +1094,7 @@ button {
   line-height: 64px;
   padding: 0 24px;
   font-size: 1.25rem;
-  font-family: MaShanZheng, Helvetica, monospace;
+  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
 }
 .l_header #wrapper .nav-main .title img {
   height: 64px;
@@ -1109,7 +1105,7 @@ button {
 }
 .l_header .nav-sub .title {
   font-weight: bold;
-  font-family: MiSans, Menlo, Monaco, monospace, sans-serif;
+  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
   line-height: 1.2;
   max-height: 64px;
   white-space: normal;
@@ -1179,7 +1175,7 @@ button {
   -moz-transition: all 0.28s ease;
   -o-transition: all 0.28s ease;
   -ms-transition: all 0.28s ease;
-  color: #3dd9b6;
+  color: #8a0af3;
 }
 .l_header .switcher >li >a:hover {
   border: none;
@@ -1359,7 +1355,7 @@ ul.m-pc >li>a {
 }
 ul.m-pc >li>a:active,
 ul.m-pc >li>a.active {
-  border-bottom: 2px solid #3dd9b6;
+  border-bottom: 2px solid #8a0af3;
 }
 ul.m-pc li:hover >ul.list-v,
 ul.list-v li:hover >ul.list-v {
@@ -1498,7 +1494,7 @@ ul.list-v >li>a:hover {
 }
 .l_header ul.nav-list-h>li >a:active,
 .l_header ul.nav-list-h>li >a.active {
-  color: #3dd9b6;
+  color: #8a0af3;
 }
 .l_header ul.nav-list-h>li:hover>a {
   color: var(--color-list-hl);
@@ -1809,8 +1805,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.89a78c16.css" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.89a78c16.css"></noscript>
+  <link rel="stylesheet" href="/css/style.659c7404.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.659c7404.css"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1888,19 +1884,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/parallax.js?time=1661141841236","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/rightMenu.js?time=1661141841236","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/rightMenus.js?time=1661141841236","sites":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/sites.js?time=1661141841236","friends":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/friends.js?time=1661141841236","contributors":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/contributors.js?time=1661141841236","search":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/search/hexo.js?time=1661141841236"},"css":{"style":"/css/style.89a78c16.css"}},
-    default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1661141841236),
+    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.1aa99ff1.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.659c7404.css"}},
+    default: {"avatar":null,"link":null,"cover":null,"image":null},
+    lastupdate: new Date(1661171524429),
     sidebar: {
-      for_page: ["blogger","notice","navigation","webinfo","lastupdate"],
-      for_post: ["toc","webinfo"],
+      for_page: ["blogger","navigation","music","webinfo","category","tagcloud","lastupdate"],
+      for_post: ["toc"],
       webinfo: {
         lastupd: {
           enable: true,
           friendlyShow: true
         },
         runtime: {
-          data: "2019/07/27",
+          data: "2020/08/22",
           unit: "天"
         }
       }
@@ -1916,7 +1912,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
       
       
-      rightmenus: {"enable":true,"order":["plugins.navigation","hr","plugins.inputBox","plugins.seletctText","plugins.elementCheck","plugins.elementImage","menus.link","hr","menus.darkMode","plugins.articlePage","music"],"options":{"iconPrefix":"fa-duotone PETERRIVE","articleShowLink":true,"musicAlwaysShow":true},"plugins":{"navigation":[{"id":"left","name":"转到上一页","icon":"fa-duotone fa-arrow-left PETERRIVE","event":"history.back()","group":"navigation"},{"id":"right","name":"转到下一页","icon":"fa-duotone fa-arrow-right PETERRIVE","event":"history.forward()","group":"navigation"},{"id":"redo","name":"刷新当前页面","icon":"fa-duotone fa-redo PETERRIVE","event":"window.location.reload()","group":"navigation"},{"id":"up","name":"回到顶部","icon":"fa-duotone fa-arrow-up PETERRIVE","event":"VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)","group":"navigation"},{"id":"home","name":"回到首页","icon":"fa-duotone fa-home PETERRIVE","link":"/","group":"navigation"}],"inputBox":[{"id":"copyPaste","name":"粘贴文本","icon":"fa-duotone PETERRIVE fa-paste","event":"copyPaste","group":"inputBox"},{"id":"copyAll","name":"全选文本","icon":"fa-duotone PETERRIVE fa-object-ungroup","event":"copyAll","group":"inputBox"},{"id":"copyCut","name":"剪切文本","icon":"fa-duotone PETERRIVE fa-cut","event":"copyCut","group":"inputBox"}],"seletctText":[{"id":"copyText","name":"复制文本","icon":"fa-duotone PETERRIVE fa-copy","event":"copyText","group":"seletctText"},{"id":"searchWord","name":"站内搜索","icon":"fa-duotone PETERRIVE fa-search","event":"OpenSearch(__text__)","group":"seletctText"},{"id":"bingSearch","name":"必应搜索","icon":"fa-duotone PETERRIVE fa-search","event":"window.open(`https://cn.bing.com/search?q=${__text__}`)","group":"seletctText"}],"elementCheck":[{"id":"openTab","name":"新标签页打开","icon":"fa-duotone PETERRIVE fa-external-link-square-alt","event":"window.open(__link__)","group":"elementCheck"},{"id":"copyLink","name":"复制链接地址","icon":"fa-duotone PETERRIVE fa-link","event":"copyLink","group":"elementCheck"},{"id":"copyImg","name":"复制图片文件","icon":"fa-duotone PETERRIVE fa-image","event":"copyImg","group":"elementCheck"}],"elementImage":[{"id":"copyImg","name":"复制图片","icon":"fa-solid fa-image","event":"copyImg","group":"elementImage"},{"id":"googleImg","name":"谷歌识图","icon":"fa-solid fa-images","event":"window.open(`https://www.google.com.hk/searchbyimage?image_url=${__link__}`)","group":"elementImage"}],"articlePage":[{"id":"printMode","name":"打印页面","icon":"fa-duotone fa-print TURQUOISE","event":"printMode","group":"articlePage"},{"id":"readMode","name":"阅读模式","icon":"fa-duotone fa-book-open EMERALD","event":"readMode","group":"articlePage"}]},"menus":{"link":[{"id":"friends","name":"我的朋友们","icon":"fa-duotone fa-flower-daffodil AMETHYST","link":"/friends/","group":"link"},{"id":"archive","name":"文章归档","icon":"fa-duotone fa-globe-asia CONCRETE","link":"/archives/","group":"link"},{"id":"about","name":"关于我","icon":"fa-duotone fa-gingerbread-man WISTERIA","link":"/about/","group":"link"}],"darkMode":[{"id":"darkMode","name":"暗黑模式","icon":"fa-duotone fa-eclipse-alt WISTERIA","event":"volantis.dark.toggle()","group":"darkMode"}]}}
+      rightmenus: {"enable":true,"order":["plugins.navigation","hr","plugins.inputBox","plugins.seletctText","plugins.elementCheck","plugins.elementImage","menus.link","hr","menus.darkMode","plugins.articlePage","music"],"options":{"iconPrefix":"fa-solid","articleShowLink":true,"musicAlwaysShow":true},"plugins":{"navigation":[{"id":"left","name":"转到上一页","icon":"fa-solid fa-arrow-left","event":"history.back()","group":"navigation"},{"id":"right","name":"转到下一页","icon":"fa-solid fa-arrow-right","event":"history.forward()","group":"navigation"},{"id":"redo","name":"刷新当前页面","icon":"fa-solid fa-redo","event":"window.location.reload()","group":"navigation"},{"id":"up","name":"回到顶部","icon":"fa-solid fa-arrow-up","event":"VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)","group":"navigation"},{"id":"home","name":"回到首页","icon":"fa-solid fa-home","link":"/","group":"navigation"}],"inputBox":[{"id":"copyPaste","name":"粘贴文本","icon":"fa-solid fa-paste","event":"copyPaste","group":"inputBox"},{"id":"copyAll","name":"全选文本","icon":"fa-solid fa-object-ungroup","event":"copyAll","group":"inputBox"},{"id":"copyCut","name":"剪切文本","icon":"fa-solid fa-cut","event":"copyCut","group":"inputBox"}],"seletctText":[{"id":"copyText","name":"复制文本","icon":"fa-solid fa-copy","event":"copyText","group":"seletctText"},{"id":"searchWord","name":"站内搜索","icon":"fa-solid fa-search","event":"OpenSearch(__text__)","group":"seletctText"},{"id":"bingSearch","name":"必应搜索","icon":"fa-solid fa-search","event":"window.open(`https://cn.bing.com/search?q=${__text__}`)","group":"seletctText"},{"id":"googleSearch","name":"谷歌搜索","icon":"fa-solid fa-search","event":"window.open(`https://www.google.com/search?q=${__text__}`)","group":"seletctText"}],"elementCheck":[{"id":"openTab","name":"新标签页打开","icon":"fa-solid fa-external-link-square-alt","event":"window.open(__link__)","group":"elementCheck"},{"id":"copyLink","name":"复制链接地址","icon":"fa-solid fa-link","event":"copyLink","group":"elementCheck"}],"elementImage":[{"id":"copyImg","name":"复制图片","icon":"fa-solid fa-image","event":"copyImg","group":"elementImage"},{"id":"googleImg","name":"谷歌识图","icon":"fa-solid fa-images","event":"window.open(`https://www.google.com.hk/searchbyimage?image_url=${__link__}`)","group":"elementImage"}],"articlePage":[{"id":"printMode","name":"打印页面","icon":"fa-solid fa-print","event":"printMode","group":"articlePage"},{"id":"readMode","name":"阅读模式","icon":"fa-solid fa-book-open","event":"readMode","group":"articlePage"}]},"menus":{"link":[{"id":"github","name":"本站源码","icon":"fa-solid fa-code-branch SUNFLOWER","link":"https://github.com/rainvex","group":"link"},{"id":"friends","name":"我的朋友们","icon":"fa-solid fa-flower-daffodil AMETHYST","link":"friends/","group":"link"},{"id":"archive","name":"文章归档","icon":"fa-solid fa-globe-asia CONCRETE","link":"archives/","group":"link"},{"id":"about","name":"关于我","icon":"fa-solid fa-gingerbread-man WISTERIA","link":"about/","group":"link"}],"darkMode":[{"id":"darkMode","name":"暗黑模式","icon":"fa-solid fa-eclipse-alt WISTERIA","event":"volantis.dark.toggle()","group":"darkMode"}]}}
       
     }
   }
@@ -2293,11 +2289,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   /******************************************************************************/
   //图像加载出错时的处理
   function errorImgAvatar(img) {
-    img.src = "https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg";
+    img.src = "";
     img.onerror = null;
   }
   function errorImgCover(img) {
-    img.src = "https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg";
+    img.src = "";
     img.onerror = null;
   }
   /******************************************************************************/
@@ -2354,7 +2350,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-home"
                   >
-                  <i class='fa-light fa-home SUNFLOWER faa-vertical fa-fw'></i>主页
+                  <i class='fa-light fa-house fa-fw'></i>主页
                 </a>
                 
               </li>
@@ -2369,7 +2365,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                   
                   >
-                  <i class='fa-light fa-book-reader GREENSEA faa-vertical fa-fw'></i>文章
+                  <i class='fa-light fa-book-open-reader fa-fw'></i>文章
                 </a>
                 
                   <ul class="list-v">
@@ -2384,7 +2380,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-categories"
                   >
-                  <i class='fa-light fa-folder-open TURQUOISE faa-vertical fa-fw'></i>分类
+                  <i class='fa-light fa-folder-open fa-fw'></i>分类
                 </a>
                 
               </li>
@@ -2401,7 +2397,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-tags"
                   >
-                  <i class='fa-light fa-tags PETERRIVE faa-vertical fa-fw'></i>标签
+                  <i class='fa-light fa-tags fa-fw'></i>标签
                 </a>
                 
               </li>
@@ -2418,7 +2414,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-archives"
                   >
-                  <i class='fa-light fa-archive GREENSEA faa-vertical fa-fw'></i>归档
+                  <i class='fa-light fa-box-archive fa-fw'></i>归档
                 </a>
                 
               </li>
@@ -2439,7 +2435,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                   
                   >
-                  <i class='fa-light fa-cube NEPHRITIS faa-vertical fa-fw'></i>导航
+                  <i class='fa-light fa-cube fa-fw'></i>导航
                 </a>
                 
                   <ul class="list-v">
@@ -2454,7 +2450,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-friends"
                   >
-                  <i class='fa-light fa-link POMEGRANATE faa-vertical fa-fw'></i>友链
+                  <i class='fa-light fa-link fa-fw'></i>友链
                 </a>
                 
               </li>
@@ -2471,7 +2467,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-info"
                   >
-                  <i class='fa-light fa-comment-alt-dots GREENSEA faa-vertical fa-fw'></i>留言板
+                  <i class='fa-light fa-message-dots fa-fw'></i>留言板
                 </a>
                 
               </li>
@@ -2488,7 +2484,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-about"
                   >
-                  <i class='fa-light fa-info-circle SUNFLOWER faa-vertical fa-fw'></i>关于
+                  <i class='fa-light fa-circle-info fa-fw'></i>关于
                 </a>
                 
               </li>
@@ -2505,13 +2501,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/bangumis/" title="追番"
+                href="/anime/" title="番剧"
                   
                   
                   
-                    active-action="action-bangumis"
+                    active-action="action-anime"
                   >
-                  <i class='fa-light fa-video EMERALD faa-vertical fa-fw'></i>追番
+                  <i class='fa-light fa-video fa-spin fa-fw'></i>番剧
                 </a>
                 
               </li>
@@ -2532,7 +2528,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                   
                   >
-                  <i class='fa-light fa-tools ALIZARIN faa-vertical fa-fw'></i>功能
+                  <i class='fa-light fa-screwdriver-wrench fa-fw'></i>功能
                 </a>
                 
                   <ul class="list-v">
@@ -2541,15 +2537,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box header toggle-mode-btn">
-                  <i class='fa-light fa-moon POMEGRANATE faa-vertical fa-fw'></i>深色模式
+                  <i class='fa-light fa-moon fa-fw'></i>深色模式
                 </a>
               <li>
-            
-          
-                    
-                      
-            
-              <hr>
             
           
                     
@@ -2558,7 +2548,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
                 <li>
                   <a class="menuitem flat-box">
-                    <i class='fa-light fa-compact-disc EMERALD faa-vertical fa-fw music'></i>背景音乐
+                    <i class='fa-light fa-compact-disc fa-fw music'></i>背景音乐
                   </a>
                   <ul class="list-v">
                     <li>
@@ -2592,14 +2582,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                     
                       
             
-              <li class='header'>
-                <i class='fa-solid fa-info-circle fa-fw'></i>番剧
-              </li>
-            
-          
-                    
-                      
-            
               <hr>
             
           
@@ -2614,7 +2596,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-atomxml"
                   >
-                  <i class='fa-light fa-rss SUNFLOWER faa-vertical fa-fw'></i>RSS 订阅
+                  <i class='fa-light fa-rss fa-fw'></i>RSS 订阅
                 </a>
                 
               </li>
@@ -2656,7 +2638,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-home"
                   >
-                  <i class='fa-light fa-home SUNFLOWER faa-vertical fa-fw'></i>主页
+                  <i class='fa-light fa-house fa-fw'></i>主页
                 </a>
                 
               </li>
@@ -2671,7 +2653,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                   
                   >
-                  <i class='fa-light fa-book-reader GREENSEA faa-vertical fa-fw'></i>文章
+                  <i class='fa-light fa-book-open-reader fa-fw'></i>文章
                 </a>
                 
                   <ul class="list-v">
@@ -2686,7 +2668,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-categories"
                   >
-                  <i class='fa-light fa-folder-open TURQUOISE faa-vertical fa-fw'></i>分类
+                  <i class='fa-light fa-folder-open fa-fw'></i>分类
                 </a>
                 
               </li>
@@ -2703,7 +2685,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-tags"
                   >
-                  <i class='fa-light fa-tags PETERRIVE faa-vertical fa-fw'></i>标签
+                  <i class='fa-light fa-tags fa-fw'></i>标签
                 </a>
                 
               </li>
@@ -2720,7 +2702,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-archives"
                   >
-                  <i class='fa-light fa-archive GREENSEA faa-vertical fa-fw'></i>归档
+                  <i class='fa-light fa-box-archive fa-fw'></i>归档
                 </a>
                 
               </li>
@@ -2741,7 +2723,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                   
                   >
-                  <i class='fa-light fa-cube NEPHRITIS faa-vertical fa-fw'></i>导航
+                  <i class='fa-light fa-cube fa-fw'></i>导航
                 </a>
                 
                   <ul class="list-v">
@@ -2756,7 +2738,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-friends"
                   >
-                  <i class='fa-light fa-link POMEGRANATE faa-vertical fa-fw'></i>友链
+                  <i class='fa-light fa-link fa-fw'></i>友链
                 </a>
                 
               </li>
@@ -2773,7 +2755,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-info"
                   >
-                  <i class='fa-light fa-comment-alt-dots GREENSEA faa-vertical fa-fw'></i>留言板
+                  <i class='fa-light fa-message-dots fa-fw'></i>留言板
                 </a>
                 
               </li>
@@ -2790,7 +2772,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-about"
                   >
-                  <i class='fa-light fa-info-circle SUNFLOWER faa-vertical fa-fw'></i>关于
+                  <i class='fa-light fa-circle-info fa-fw'></i>关于
                 </a>
                 
               </li>
@@ -2807,13 +2789,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/bangumis/" title="追番"
+                href="/anime/" title="番剧"
                   
                   
                   
-                    active-action="action-bangumis"
+                    active-action="action-anime"
                   >
-                  <i class='fa-light fa-video EMERALD faa-vertical fa-fw'></i>追番
+                  <i class='fa-light fa-video fa-spin fa-fw'></i>番剧
                 </a>
                 
               </li>
@@ -2834,7 +2816,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                   
                   >
-                  <i class='fa-light fa-tools ALIZARIN faa-vertical fa-fw'></i>功能
+                  <i class='fa-light fa-screwdriver-wrench fa-fw'></i>功能
                 </a>
                 
                   <ul class="list-v">
@@ -2843,7 +2825,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box header toggle-mode-btn">
-                  <i class='fa-light fa-moon POMEGRANATE faa-vertical fa-fw'></i>深色模式
+                  <i class='fa-light fa-moon fa-fw'></i>深色模式
                 </a>
               <li>
             
@@ -2851,21 +2833,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                     
                       
             
-              <hr>
-            
-          
-                    
-                      
-            
               
-            
-          
-                    
-                      
-            
-              <li class='header'>
-                <i class='fa-solid fa-info-circle fa-fw'></i>番剧
-              </li>
             
           
                     
@@ -2885,7 +2853,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-atomxml"
                   >
-                  <i class='fa-light fa-rss SUNFLOWER faa-vertical fa-fw'></i>RSS 订阅
+                  <i class='fa-light fa-rss fa-fw'></i>RSS 订阅
                 </a>
                 
               </li>
@@ -2923,7 +2891,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='top'>
     
     
-      <p class="title">夜雨声烦的博客</p>
+      <p class="title">夜雨声烦</p>
     
     
       <p class="subtitle">Rainvex</p>
@@ -2952,14 +2920,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               
               active-action="action-tags">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f396.svg'><p>标签</p>
+              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f5d2.svg'><p>标签</p>
             </a>
           
             <a href="/archives/"
               
               
               active-action="action-archives">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f389.svg'><p>归档</p>
+              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f5de.svg'><p>归档</p>
             </a>
           
             <a href="/friends/"
@@ -2992,7 +2960,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable article-type-post" id="post" itemscope itemprop="blogPost">
   <link itemprop="mainEntityOfPage" href="http://rainvex.com/categories/教程/云计算与大数据实验.html">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="夜雨声烦">
@@ -3022,7 +2990,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
 <div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
   <a itemprop="url" class='author' href="/" rel="nofollow">
-    <img itemprop="image" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/avatar.jpg" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/avatar.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <img itemprop="image" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/image/avatar.jpg" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/image/avatar.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
     <p itemprop="name">夜雨声烦</p>
   </a>
 </div>
@@ -3033,13 +3001,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
   <div class="new-meta-item wordcount">
     <a class='notlink'>
-      <i class="fa-light fa-keyboard EMERALD fa-fw" aria-hidden="true"></i>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
       <p>字数：7.6k 字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
     <a class='notlink'>
-      <i class="fa-light fa-hourglass-half EMERALD fa-fw" aria-hidden="true"></i>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
       <p>时长：33 分钟</p>
     </a>
   </div>
@@ -3050,7 +3018,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
             
   <div class='new-meta-item category'>
-    <i class="fa-light fa-folder-open EMERALD faa-vertical fa-fw" aria-hidden="true"></i>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
     <a class="category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
     
       <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -3063,10 +3031,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateModified" datetime="2022-06-07T17:40:47+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-05-28T17:27:34+08:00">
   <a class='notlink'>
-    <i class="fa-light fa-edit WISTERIA faa-vertical fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年6月7日</p>
+    <i class="fa-solid fa-calendar-days fa-fw" aria-hidden="true"></i>
+    <p>发布于：2022年5月28日</p>
   </a>
 </div>
 
@@ -3079,10 +3047,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <div class="new-meta-item browse">
   <a class='notlink'>
     <p>
-      <i class="fa-light fa-eye SUNFLOWER faa-vertical fa-fw" aria-hidden="true"></i>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
       
-      <span id="lc-pv" data-title="云计算与大数据实验" data-path="/categories/%E6%95%99%E7%A8%8B/%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AE%9E%E9%AA%8C">
-        <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
+      <span data-path="/categories/%E6%95%99%E7%A8%8B/%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AE%9E%E9%AA%8C" class="waline-pageview-count">
+        <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
       </span>
       
       <span>次浏览</span>
@@ -3105,7 +3073,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div id="post-body" itemprop="articleBody">
     <h1 id="云计算与大数据实验"><a href="#云计算与大数据实验" class="headerlink" title="云计算与大数据实验"></a>云计算与大数据实验</h1><p>该教程是本学期大数据与云计算课程的课程实验，希望能帮助到不知道如何下手的同学，同样也是对自己学习过程的记录，方便以后的学习</p>
 <p><strong>声明：该教程只是为了帮助大家完成本学期的实验，请不要直接将教程中的内容直接复制作为实验报告，务必按照自己的实际情况进行操作和编写，如若出现因复制教程内容导致实验报告雷同被查的情况，一概不负责</strong></p>
-<div class="story post-story"><h2 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h2><p>开始之前，需要先完成Ubuntu系统下的Hadoop分布式集群安装，如果还未完成，可以先参考之前的<a target="_blank" rel="noopener" href="https://rainvex.cn/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4.html">这篇文章</a>；如果一开始就使用的是单机版Hadoop，可以直接做实验，不用管前面这些配置，也不用跑去虚拟机上搭建一个分布式Hadoop集群</p>
+<h2 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h2><p>开始之前，需要先完成Ubuntu系统下的Hadoop分布式集群安装，如果还未完成，可以先参考之前的<a target="_blank" rel="noopener" href="https://rainvex.cn/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4.html">这篇文章</a>；如果一开始就使用的是单机版Hadoop，可以直接做实验，不用管前面这些配置，也不用跑去虚拟机上搭建一个分布式Hadoop集群</p>
 <p>如果一开始就自己搭建了分布式Hadoop集群，那么在Windows上也要完成Hadoop环境的配置，因为在后续实验中我们需要在Windows上使用IDEA编写测试类来对Ubuntu中Hadoop的HDFS文件系统进行操作，所以Windows也要配置好Hadoop环境，不然会报<code>HADOOP_HOME</code>找不到之类的错误（Hadoop需要依赖JDK，就默认大家都已经安装了JDK）</p>
 <h3 id="1-1-Windows中安装Hadoop"><a href="#1-1-Windows中安装Hadoop" class="headerlink" title="1.1 Windows中安装Hadoop"></a>1.1 Windows中安装Hadoop</h3><p>如果是直接使用老师发的配置好的hadoop压缩包则只需要查看如何配置好环境变量即可，另外，<strong>建议</strong>Windows中安装的Hadoop和Ubuntu中安装的Hadoop<strong>版本一样</strong>，以免引起不必要的麻烦或是可能因版本不同引起造成的冲突问题</p>
 <h4 id="1-1-1-下载Hadoop"><a href="#1-1-1-下载Hadoop" class="headerlink" title="1.1.1 下载Hadoop"></a>1.1.1 下载Hadoop</h4><p>这个在之前的<a target="_blank" rel="noopener" href="https://rainvex.cn/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4.html">Ubuntu下搭建Hadoop分布式集群</a>教程中已经提到过，就不再赘述了</p>
@@ -3254,7 +3222,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>到此，Windows上配置Hadoop环境就完成了，这其实也算是一个hadoop单机版的安装步骤了</p>
 <h3 id="1-2-Ping"><a href="#1-2-Ping" class="headerlink" title="1.2 Ping"></a>1.2 Ping</h3><p>请确保Windows和Ubuntu能够互相<code>ping</code>通</p>
 <p>然后，正式开始实验内容</p>
-</div><div class="story post-story"><h2 id="二、实验一：HDFS的文件操作命令及API编程"><a href="#二、实验一：HDFS的文件操作命令及API编程" class="headerlink" title="二、实验一：HDFS的文件操作命令及API编程"></a>二、实验一：HDFS的文件操作命令及API编程</h2><h3 id="2-1-HDFS的基本文件操作命令"><a href="#2-1-HDFS的基本文件操作命令" class="headerlink" title="2.1 HDFS的基本文件操作命令"></a>2.1 HDFS的基本文件操作命令</h3><p>该小节在Ubuntu中进行操作，如果只安装了单机版当我没说🙄，直接在Windows上操作，把操作的目录名和路径改为windows上的习惯即可</p>
+<h2 id="二、实验一：HDFS的文件操作命令及API编程"><a href="#二、实验一：HDFS的文件操作命令及API编程" class="headerlink" title="二、实验一：HDFS的文件操作命令及API编程"></a>二、实验一：HDFS的文件操作命令及API编程</h2><h3 id="2-1-HDFS的基本文件操作命令"><a href="#2-1-HDFS的基本文件操作命令" class="headerlink" title="2.1 HDFS的基本文件操作命令"></a>2.1 HDFS的基本文件操作命令</h3><p>该小节在Ubuntu中进行操作，如果只安装了单机版当我没说🙄，直接在Windows上操作，把操作的目录名和路径改为windows上的习惯即可</p>
 <p>这一小节是书上实验要求的</p>
 <p>① 使用<code>start-all.sh</code>启动 hadoop，通过<code>jps</code>命令查看启动进程，下面所有操作都建立在Ubuntu中的Hadoop启动成功的条件下；通过web方式查看namenode和jobtracker，在浏览器输入<code>master:50070</code>和<code>master:18088</code>即可访问，这儿不再赘述</p>
 <p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205272112426.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205272112426.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220527211236064"></p>
@@ -3608,7 +3576,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>⑦ 查询hdfs下指定目录下<strong>文件和文件夹</strong>的信息，执行<code>hdfsLs2()</code>方法</p>
 <p>执行完成后，会打印出hdfs中指定目录下的文件和文件夹相关信息</p>
 <p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205281550563.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205281550563.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220528155054407"></p>
-</div><div class="story post-story"><h2 id="三、实验二：IDEA下的MapReduce编程"><a href="#三、实验二：IDEA下的MapReduce编程" class="headerlink" title="三、实验二：IDEA下的MapReduce编程"></a>三、实验二：IDEA下的MapReduce编程</h2><h3 id="3-1-WordCount"><a href="#3-1-WordCount" class="headerlink" title="3.1 WordCount"></a>3.1 WordCount</h3><p>这是书上的实验</p>
+<h2 id="三、实验二：IDEA下的MapReduce编程"><a href="#三、实验二：IDEA下的MapReduce编程" class="headerlink" title="三、实验二：IDEA下的MapReduce编程"></a>三、实验二：IDEA下的MapReduce编程</h2><h3 id="3-1-WordCount"><a href="#3-1-WordCount" class="headerlink" title="3.1 WordCount"></a>3.1 WordCount</h3><p>这是书上的实验</p>
 <p>在开始这个实验之前需要上传一个新的文件到HDFS上，并且里面要包含一些内容，这个实验的目的就是为了统计这个文件中各个单词的个数</p>
 <p>准备工作操作参考：</p>
 <p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205281601434.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205281601434.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20220528160147121"></p>
@@ -3783,7 +3751,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>到此，本学期所有的课程实验就都完成了，其实这些实验都很简单，毕竟代码都是现成的，我们只需要能运行出来就行，就是配置环境麻烦</p>
 <p>最后，希望大家都能准确无误地运行出来，有问题和疑惑可以QQ私聊我或在下面评论</p>
 
-</div>
   </div>
   
   
@@ -3793,22 +3760,27 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
        <!-- 相关文章 -->
       
+        
+  <div class="related_posts">
+    <section class='header'>
+      <i class="fa-solid fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
+    </section>
+    <section class='body'>
+      <div class="vlts-rps"><a class="item" href="\categories\教程\Ubuntu下搭建Hadoop分布式集群.html" title="Ubuntu下搭建Hadoop分布式集群" rel="bookmark "><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205011514184.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205011514184.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><span class="title">Ubuntu下搭建Hadoop分布式集群</span></a><a class="item" href="\categories\Linux\Linux学习笔记.html" title="Linux学习笔记（上）" rel="bookmark "><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201712064.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201712064.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><span class="title">Linux学习笔记（上）</span></a><a class="item" href="\categories\教程\Typora-PicGo-腾讯云COS搭建图床.html" title="Typora+PicGo+腾讯云COS搭建图床" rel="bookmark "><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041625484.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202204041625484.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><span class="title">Typora+PicGo+腾讯云COS搭建图床</span></a></div></section></div>
+      
       <!-- 版权声明组件 -->
       
-        
-          <div class='copyright'>
-            <blockquote>
-              
-                
-                  <p>博客内容遵循 <a href="/page/cc">署名-相同方式共享 4.0 国际 (CC BY-SA 4.0)</a> 协议。</p>
-
-                
-              
-            </blockquote>
-          </div>
-        
-      
       <!-- 打赏组件 -->
+      
+        <div class='donate'>
+          <div class='imgs'>
+            
+              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/qrcode/github@volantis.png'>
+            
+              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/qrcode/github@volantis.png'>
+            
+          </div>
+        </div>
       
     </div>
   
@@ -3822,7 +3794,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
   <div class='new-meta-item category'>
-    <i class="fa-light fa-folder-open EMERALD faa-vertical fa-fw" aria-hidden="true"></i>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
     <a class="category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
     
       <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -3837,17 +3809,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Linux/" rel="nofollow"><i class="fa-light fa-hashtag EMERALD fa-fw" aria-hidden="true"></i><p>Linux</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Ubuntu/" rel="nofollow"><i class="fa-light fa-hashtag EMERALD fa-fw" aria-hidden="true"></i><p>Ubuntu</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Hadoop/" rel="nofollow"><i class="fa-light fa-hashtag EMERALD fa-fw" aria-hidden="true"></i><p>Hadoop</p></a></div>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Linux/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Linux</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Ubuntu/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Ubuntu</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Hadoop/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Hadoop</p></a></div>
   <span hidden itemprop="keywords">Linux Ubuntu Hadoop</span>
 
 
         
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-06-07T17:40:47+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-08-22T13:37:51+08:00">
   <a class='notlink'>
-    <i class="fa-light fa-edit WISTERIA faa-vertical fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年6月7日</p>
+    <i class="fa-solid fa-pen-to-square fa-fw" aria-hidden="true"></i>
+    <p>更新于：2022年8月22日</p>
   </a>
 </div>
 
@@ -3895,7 +3867,25 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     
       
+        
+        <div class='hoverbox'>
+          <a class='share'><img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/wechat.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
+          <div class='target'>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZgAAAGYCAAAAABaUKuJAAAGCElEQVR42u3dQW7kMAwEwPn/p7MPCAZSN+nJYFG6JZBtiaVLg0Ly+jG+cryUAIwBBowBBowBxjjCvMpx/MDl/Hfzbn+ervv2+6f1b60LDBgwYMCAAQMGDBgw9zDXAeiwwdt56YZO87YLN53f1hMMGDBgwIABAwYMGDA5TPrhreCWbugp6K3v1vUEAwYMGDBgwIABAwbMx2BugbYC2fTAtIG0DdpgwIABAwYMGDBgwID5/oCZNtpuQdPRFrgNoGDAgAEDBgwYMGDAgPk8zNaH0+DZbqwt5LSxNj14YMCAAQMGDBgwYMCAmcNMg5ufl+oJBgwYMGBAgAEDBgyYI8x0tMHvNnhuNbZuv5v+Pg2Ux3qCAQMGDBgwYMCAAQPmCLPV+Lp9XwvcBrYUvJ23Vj8wYMCAAQMGDBgwYMCMYeqLa2XQa9d1u97tg5IG6LWACQYMGDBgwIABAwYMmLig00DXfn8Lrn1fe6Cu54MBAwYMGDBgwIABA+YI077wNC9d0DSAbjfWpoEyPbhgwIABAwYMGDBgwIDpYeIXLTW+0gA4bXxN508vQh4bZWDAgAEDBgwYMGDAgHkL0za0WrinAt7P5Zg+lwbrtJ5gwIABAwYMGDBgwIDpYdILb+2GtwNjewDaRuH2PsGAAQMGDBgwYMCAAXMPkwasNli2hZg+P/3O1vuP3wMDBgwYMGDAgAEDBkwMM73gNr0Yt92guy3wNGi3wfzYKAMDBgwYMGDAgAEDBswvmDoIlQ2ttKBpo+ypANiuK64zGDBgwIABAwYMGDBgYpg0QLYBbivgToPuFnDbyHvbKAMDBgwYMGDAgAEDBswRpm381At4aGNbDbDpwWgPMhgwYMCAAQMGDBgwYPb+AMPahbZh8Nu6kDcNjm0djs+DAQMGDBgwYMCAAQPmOmBuX4xLN9ReQLwNcG0w3G6g1Rf+wIABAwYMGDBgwIABMw5EbbBLn5sG0TboTg9cvQ4wYMCAAQMGDBgwYMDEMN8SxE7BcWs9032mhT/+HgwYMGDAgAEDBgwYMEeY9AVpMJtucBpon2oATtfz9vdgwIABAwYMGDBgwIC5htkKXluNpzSwtQG0DoKfCphgwIABAwYMGDBgwIA5NsrSYNUGzjQIbl30mzbC/uzCHxgwYMCAAQMGDBgwYNYutr2WxrRBl8JvBcU2qMeNMjBgwIABAwYMGDBgwNT/iGc7WG4dgDZAbhW2Dah1owwMGDBgwIABAwYMGDDjBk974S3deBtwpwF6K4gf6wUGDBgwYMCAAQMGDJg4YKYBadoQS4PubYMrDXbTg7TVoAMDBgwYMGDAgAEDBsw9zHZh2kJNQdMG1fQgtYHy7XNgwIABAwYMGDBgwIA5wmw3ttICPdWgS4NregDTAHtdHzBgwIABAwYMGDBgwFzDpIFxC2QK0F4YTANkup+1gAkGDBgwYMCAAQMGDJj1gPnUgm/BpwdnK/C2B+Gx5A8GDBgwYMCAAQMGzH8MM93w7cbS90+DbAu7/VxcPzBgwIABAwYMGDBgwFzDpIVPG0tbG/jzwg0vKB73AwYMGDBgwIABAwYMmCPMFGgr4E0bUlvA0wNxG6Tf1gEMGDBgwIABAwYMGDBjmLQw7Qamhd5uvE0PWB1AwYABAwYMGDBgwIABE8NsNZ62Aml7MNrCp4219vm4UQYGDBgwYMCAAQMGDJj1PzjwVGNqCjINpC1020gDAwYMGDBgwIABAwbMGWY6thc2bYw9fVC21wMGDBgwYMCAAQMGDJgcZivATRtFbWMqLdh0XY+vBwwYMGDAgAEDBgwYMNcwadB7Kpg9VahPH4C00QYGDBgwYMCAAQMGDJge5umG0m2h04bX7fvaee2+4kYiGDBgwIABAwYMGDBgPgaTBtZp4y0NctPCt0E2DsRgwIABAwYMGDBgwID5M5hpgVqwtBEWB8DL9/2UAwwYMGDAgAEDBgwYMDlMG/S2guYUJA50w0K29YkDJhgwYMCAAQMGDBgwYNb/YU5b8DaYtQBPBce0kXd94Q8MGDBgwIABAwYMGDC/YIzvGmDAGGDAGGDAGGCMt+MfMMV7WhQ70LQAAAAASUVORK5CYII=">
+          </div>
+        </div>
+      
     
+      
+        <a class="-mob-share-telegram" title="" rel="external nofollow noopener noreferrer noopener"
+          
+            target="_blank" href="https://t.me/share/url?url=http://rainvex.com/categories/%E6%95%99%E7%A8%8B/%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AE%9E%E9%AA%8C.html&text=云计算与大数据实验 - 夜雨声烦"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/telegram.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/telegram.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
       
     
   </div>
@@ -3944,7 +3934,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
 
-  <article class="post white-box shadow floatable blur" id="comments">
+  <article class="post white-box shadow floatable" id="comments">
     <span hidden>
       <meta itemprop="discussionUrl" content="/categories/%E6%95%99%E7%A8%8B/%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AE%9E%E9%AA%8C.html#comments">
     </span>
@@ -3971,50 +3961,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   
 
-  
-    
-    
-      
-<section class="widget desktop pjax">
-  
-  <header>
-    
-      <i class="fa-light fa-award SUNFLOWER faa-vertical fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>9 篇</div>
-        </div>
-      
-
-      
-
-
-      
-
-      
-
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          <div id="last-update-show">2022-08-22 日</div>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
-    
-  
-
 
 <div class="widget-sticky pjax">
 
@@ -4022,17 +3968,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
 
-  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+  <section class="widget toc-wrapper mobile " id="toc-div" >
     
   <header>
     
-      <i class="fa-light fa-list SUNFLOWER faa-vertical fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AE%9E%E9%AA%8C"><span class="toc-text">云计算与大数据实验</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-text">一、准备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-Windows%E4%B8%AD%E5%AE%89%E8%A3%85Hadoop"><span class="toc-text">1.1 Windows中安装Hadoop</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-1-%E4%B8%8B%E8%BD%BDHadoop"><span class="toc-text">1.1.1 下载Hadoop</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-2-%E8%A7%A3%E5%8E%8BHadoop"><span class="toc-text">1.1.2 解压Hadoop</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-3-%E8%AE%BE%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-text">1.1.3 设置环境变量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-4-%E4%B8%8B%E8%BD%BDwinutils"><span class="toc-text">1.1.4 下载winutils</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-5-%E4%BF%AE%E6%94%B9Hadoop%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-text">1.1.5 修改Hadoop配置文件</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E2%91%A0-%E9%85%8D%E7%BD%AE%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6core-site-xml"><span class="toc-text">① 配置核心组件core-site.xml</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E2%91%A1-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9Fhdfs-site-xml"><span class="toc-text">② 配置文件系统hdfs-site.xml</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E2%91%A2-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9Fyarn-site-xml"><span class="toc-text">③ 配置文件系统yarn-site.xml</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E2%91%A3-%E9%85%8D%E7%BD%AE%E8%AE%A1%E7%AE%97%E6%A1%86%E6%9E%B6mapred-site-xml"><span class="toc-text">④ 配置计算框架mapred-site.xml</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-6-%E6%A0%BC%E5%BC%8F%E5%8C%96HDFS"><span class="toc-text">1.1.6 格式化HDFS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-7-%E5%90%AF%E5%8A%A8Hadoop"><span class="toc-text">1.1.7 启动Hadoop</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-Ping"><span class="toc-text">1.2 Ping</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AE%9E%E9%AA%8C%E4%B8%80%EF%BC%9AHDFS%E7%9A%84%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4%E5%8F%8AAPI%E7%BC%96%E7%A8%8B"><span class="toc-text">二、实验一：HDFS的文件操作命令及API编程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-HDFS%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4"><span class="toc-text">2.1 HDFS的基本文件操作命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-HDFS-API%E7%BC%96%E7%A8%8B%E5%AE%9E%E9%AA%8C"><span class="toc-text">2.2 HDFS API编程实验</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-1-ResultFilter"><span class="toc-text">2.2.1 ResultFilter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-2-CreateDirectory"><span class="toc-text">2.2.2 CreateDirectory</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-3-HdfsClient"><span class="toc-text">2.2.3 HdfsClient</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%AE%9E%E9%AA%8C%E4%BA%8C%EF%BC%9AIDEA%E4%B8%8B%E7%9A%84MapReduce%E7%BC%96%E7%A8%8B"><span class="toc-text">三、实验二：IDEA下的MapReduce编程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-WordCount"><span class="toc-text">3.1 WordCount</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-InvertedIndex"><span class="toc-text">3.2 InvertedIndex</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-number">1.</span> <span class="toc-text">一、准备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-Windows%E4%B8%AD%E5%AE%89%E8%A3%85Hadoop"><span class="toc-number">1.1.</span> <span class="toc-text">1.1 Windows中安装Hadoop</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-1-%E4%B8%8B%E8%BD%BDHadoop"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.1.1 下载Hadoop</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-2-%E8%A7%A3%E5%8E%8BHadoop"><span class="toc-number">1.1.2.</span> <span class="toc-text">1.1.2 解压Hadoop</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-3-%E8%AE%BE%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-number">1.1.3.</span> <span class="toc-text">1.1.3 设置环境变量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-4-%E4%B8%8B%E8%BD%BDwinutils"><span class="toc-number">1.1.4.</span> <span class="toc-text">1.1.4 下载winutils</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-5-%E4%BF%AE%E6%94%B9Hadoop%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">1.1.5.</span> <span class="toc-text">1.1.5 修改Hadoop配置文件</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E2%91%A0-%E9%85%8D%E7%BD%AE%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6core-site-xml"><span class="toc-number">1.1.5.1.</span> <span class="toc-text">① 配置核心组件core-site.xml</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E2%91%A1-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9Fhdfs-site-xml"><span class="toc-number">1.1.5.2.</span> <span class="toc-text">② 配置文件系统hdfs-site.xml</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E2%91%A2-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9Fyarn-site-xml"><span class="toc-number">1.1.5.3.</span> <span class="toc-text">③ 配置文件系统yarn-site.xml</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E2%91%A3-%E9%85%8D%E7%BD%AE%E8%AE%A1%E7%AE%97%E6%A1%86%E6%9E%B6mapred-site-xml"><span class="toc-number">1.1.5.4.</span> <span class="toc-text">④ 配置计算框架mapred-site.xml</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-6-%E6%A0%BC%E5%BC%8F%E5%8C%96HDFS"><span class="toc-number">1.1.6.</span> <span class="toc-text">1.1.6 格式化HDFS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-7-%E5%90%AF%E5%8A%A8Hadoop"><span class="toc-number">1.1.7.</span> <span class="toc-text">1.1.7 启动Hadoop</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-Ping"><span class="toc-number">1.2.</span> <span class="toc-text">1.2 Ping</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AE%9E%E9%AA%8C%E4%B8%80%EF%BC%9AHDFS%E7%9A%84%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4%E5%8F%8AAPI%E7%BC%96%E7%A8%8B"><span class="toc-number">2.</span> <span class="toc-text">二、实验一：HDFS的文件操作命令及API编程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-HDFS%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 HDFS的基本文件操作命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-HDFS-API%E7%BC%96%E7%A8%8B%E5%AE%9E%E9%AA%8C"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 HDFS API编程实验</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-1-ResultFilter"><span class="toc-number">2.2.1.</span> <span class="toc-text">2.2.1 ResultFilter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-2-CreateDirectory"><span class="toc-number">2.2.2.</span> <span class="toc-text">2.2.2 CreateDirectory</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-3-HdfsClient"><span class="toc-number">2.2.3.</span> <span class="toc-text">2.2.3 HdfsClient</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%AE%9E%E9%AA%8C%E4%BA%8C%EF%BC%9AIDEA%E4%B8%8B%E7%9A%84MapReduce%E7%BC%96%E7%A8%8B"><span class="toc-number">3.</span> <span class="toc-text">三、实验二：IDEA下的MapReduce编程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-WordCount"><span class="toc-number">3.1.</span> <span class="toc-text">3.1 WordCount</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-InvertedIndex"><span class="toc-number">3.2.</span> <span class="toc-text">3.2 InvertedIndex</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -4150,44 +4096,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
             
               <a href="/atom.xml"
-                class="social  flat-btn"
+                class="social fas fa-rss flat-btn"
                 target="_blank"
                 rel="external nofollow noopener noreferrer" itemprop="url">
-                
-                  <img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5199/static/icon/020-rss.svg" class="lazyload" data-srcset="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5199/static/icon/020-rss.svg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
                 
               </a>
             
           
             
-              <a href="https://github.com/sakurasep"
-                class="social  flat-btn"
+              <a href="https://github.com/rainvex"
+                class="social fab fa-github flat-btn"
                 target="_blank"
                 rel="external nofollow noopener noreferrer" itemprop="url">
-                
-                  <img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5199/static/icon/029-github.svg" class="lazyload" data-srcset="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5199/static/icon/029-github.svg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-                
-              </a>
-            
-          
-            
-              <a href="https://blog.sakurasep.club"
-                class="social  flat-btn"
-                target="_blank"
-                rel="external nofollow noopener noreferrer" itemprop="url">
-                
-                  <img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5199/static/icon/012-blogger.svg" class="lazyload" data-srcset="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5199/static/icon/012-blogger.svg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-                
-              </a>
-            
-          
-            
-              <a href="https://www.youtube.com/channel/UCTJn92N-puJAJj82Kn05wpw"
-                class="social  flat-btn"
-                target="_blank"
-                rel="external nofollow noopener noreferrer" itemprop="url">
-                
-                  <img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5199/static/icon/006-youtube.svg" class="lazyload" data-srcset="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5199/static/icon/006-youtube.svg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
                 
               </a>
             
@@ -4234,7 +4154,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   
-  volantis.css("https://cdn.sakurasep.top/fontawesome/css/all.min.css");
+  volantis.css("https://unpkg.com/@fortawesome/fontawesome-free@6.1/css/all.min.css");
   
   
   volantis.css("https://unpkg.com/volantis-static@0.0.1654736714924/libs/font-awesome-animation/font-awesome-animation.min.css");
@@ -4275,23 +4195,23 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <li class='navigation menuNavigation-Content'>
 
 
-    <a class="nav icon-only fix-cursor-default" onclick="history.back()"><i class="fa-duotone fa-arrow-left PETERRIVE fa-fw"></i></a>
+    <a class="nav icon-only fix-cursor-default" onclick="history.back()"><i class="fa-solid fa-arrow-left fa-fw"></i></a>
 
 
 
-    <a class="nav icon-only fix-cursor-default" onclick="history.forward()"><i class="fa-duotone fa-arrow-right PETERRIVE fa-fw"></i></a>
+    <a class="nav icon-only fix-cursor-default" onclick="history.forward()"><i class="fa-solid fa-arrow-right fa-fw"></i></a>
 
 
 
-    <a class="nav icon-only fix-cursor-default" onclick="window.location.reload()"><i class="fa-duotone fa-redo PETERRIVE fa-fw"></i></a>
+    <a class="nav icon-only fix-cursor-default" onclick="window.location.reload()"><i class="fa-solid fa-redo fa-fw"></i></a>
 
 
 
-    <a class="nav icon-only fix-cursor-default" onclick="VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)"><i class="fa-duotone fa-arrow-up PETERRIVE fa-fw"></i></a>
+    <a class="nav icon-only fix-cursor-default" onclick="VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)"><i class="fa-solid fa-arrow-up fa-fw"></i></a>
 
 
 
-    <a class="nav icon-only fix-cursor-default" href="/"><i class="fa-duotone fa-home PETERRIVE fa-fw"></i></a>
+    <a class="nav icon-only fix-cursor-default" href="/"><i class="fa-solid fa-home fa-fw"></i></a>
 
 
   </li>
@@ -4303,7 +4223,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="copyPaste" data-event="copyPaste" data-group="inputBox">
-      <i class="fa-duotone PETERRIVE fa-paste fa-fw"></i>
+      <i class="fa-solid fa-paste fa-fw"></i>
       粘贴文本
     </span>
   </li>
@@ -4312,7 +4232,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="copyAll" data-event="copyAll" data-group="inputBox">
-      <i class="fa-duotone PETERRIVE fa-object-ungroup fa-fw"></i>
+      <i class="fa-solid fa-object-ungroup fa-fw"></i>
       全选文本
     </span>
   </li>
@@ -4321,7 +4241,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="copyCut" data-event="copyCut" data-group="inputBox">
-      <i class="fa-duotone PETERRIVE fa-cut fa-fw"></i>
+      <i class="fa-solid fa-cut fa-fw"></i>
       剪切文本
     </span>
   </li>
@@ -4330,7 +4250,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="copyText" data-event="copyText" data-group="seletctText">
-      <i class="fa-duotone PETERRIVE fa-copy fa-fw"></i>
+      <i class="fa-solid fa-copy fa-fw"></i>
       复制文本
     </span>
   </li>
@@ -4339,7 +4259,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="searchWord" data-event="OpenSearch(__text__)" data-group="seletctText">
-      <i class="fa-duotone PETERRIVE fa-search fa-fw"></i>
+      <i class="fa-solid fa-search fa-fw"></i>
       站内搜索
     </span>
   </li>
@@ -4348,7 +4268,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="bingSearch" data-event="window.open(`https://cn.bing.com/search?q=${__text__}`)" data-group="seletctText">
-      <i class="fa-duotone PETERRIVE fa-search fa-fw"></i>
+      <i class="fa-solid fa-search fa-fw"></i>
       必应搜索
     </span>
   </li>
@@ -4356,8 +4276,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <li class="menuLoad-Content">
+    <span class="vlts-menu fix-cursor-default event" id="googleSearch" data-event="window.open(`https://www.google.com/search?q=${__text__}`)" data-group="seletctText">
+      <i class="fa-solid fa-search fa-fw"></i>
+      谷歌搜索
+    </span>
+  </li>
+
+
+
+  <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="openTab" data-event="window.open(__link__)" data-group="elementCheck">
-      <i class="fa-duotone PETERRIVE fa-external-link-square-alt fa-fw"></i>
+      <i class="fa-solid fa-external-link-square-alt fa-fw"></i>
       新标签页打开
     </span>
   </li>
@@ -4366,17 +4295,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="copyLink" data-event="copyLink" data-group="elementCheck">
-      <i class="fa-duotone PETERRIVE fa-link fa-fw"></i>
+      <i class="fa-solid fa-link fa-fw"></i>
       复制链接地址
-    </span>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="copyImg" data-event="copyImg" data-group="elementCheck">
-      <i class="fa-duotone PETERRIVE fa-image fa-fw"></i>
-      复制图片文件
     </span>
   </li>
 
@@ -4401,8 +4321,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <li class="menuLoad-Content">
-    <a class="vlts-menu fix-cursor-default" id="friends" href="/friends/" data-group="link">
-      <i class="fa-duotone fa-flower-daffodil AMETHYST fa-fw"></i>
+    <a class="vlts-menu fix-cursor-default" id="github" target="_blank" rel="noopener" href="https://github.com/rainvex" data-group="link">
+      <i class="fa-solid fa-code-branch SUNFLOWER fa-fw"></i>
+      本站源码
+    </a>
+  </li>
+
+
+
+  <li class="menuLoad-Content">
+    <a class="vlts-menu fix-cursor-default" id="friends" href="friends/" data-group="link">
+      <i class="fa-solid fa-flower-daffodil AMETHYST fa-fw"></i>
       我的朋友们
     </a>
   </li>
@@ -4410,8 +4339,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <li class="menuLoad-Content">
-    <a class="vlts-menu fix-cursor-default" id="archive" href="/archives/" data-group="link">
-      <i class="fa-duotone fa-globe-asia CONCRETE fa-fw"></i>
+    <a class="vlts-menu fix-cursor-default" id="archive" href="archives/" data-group="link">
+      <i class="fa-solid fa-globe-asia CONCRETE fa-fw"></i>
       文章归档
     </a>
   </li>
@@ -4419,8 +4348,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <li class="menuLoad-Content">
-    <a class="vlts-menu fix-cursor-default" id="about" href="/about/" data-group="link">
-      <i class="fa-duotone fa-gingerbread-man WISTERIA fa-fw"></i>
+    <a class="vlts-menu fix-cursor-default" id="about" href="about/" data-group="link">
+      <i class="fa-solid fa-gingerbread-man WISTERIA fa-fw"></i>
       关于我
     </a>
   </li>
@@ -4433,7 +4362,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="darkMode" data-event="volantis.dark.toggle()" data-group="darkMode">
-      <i class="fa-duotone fa-eclipse-alt WISTERIA fa-fw"></i>
+      <i class="fa-solid fa-eclipse-alt WISTERIA fa-fw"></i>
       暗黑模式
     </span>
   </li>
@@ -4442,7 +4371,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="printMode" data-event="printMode" data-group="articlePage">
-      <i class="fa-duotone fa-print TURQUOISE fa-fw"></i>
+      <i class="fa-solid fa-print fa-fw"></i>
       打印页面
     </span>
   </li>
@@ -4451,7 +4380,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="readMode" data-event="readMode" data-group="articlePage">
-      <i class="fa-duotone fa-book-open EMERALD fa-fw"></i>
+      <i class="fa-solid fa-book-open fa-fw"></i>
       阅读模式
     </span>
   </li>
@@ -4463,13 +4392,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   </li>
   <li class='music ctrl'>
     <a class='nav icon-only backward fix-cursor-default' href="/" onclick="return false;" title="backward">
-      <i class='fa-duotone PETERRIVE fa-step-backward fa-fw'></i>
+      <i class='fa-solid fa-step-backward fa-fw'></i>
     </a>
     <a class='nav icon-only toggle fix-cursor-default' href="/" onclick="return false;" title="toggle">
-      <i class='fa-duotone PETERRIVE fa-play fa-fw'></i>
+      <i class='fa-solid fa-play fa-fw'></i>
     </a>
     <a class='nav icon-only forward fix-cursor-default' href="/" onclick="return false;" title="forward">
-      <i class='fa-duotone PETERRIVE fa-step-forward fa-fw'></i>
+      <i class='fa-solid fa-step-forward fa-fw'></i>
     </a>
   </li>
   <li class='music volume'>
@@ -4477,8 +4406,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div class="aplayer-volume-bar-wrap">
         <div class="aplayer-volume-bar fix-cursor-pointer">
           <div class="aplayer-volume"></div>
-          <i class='left fa-duotone PETERRIVE fa-volume-off fa-fw'></i>
-          <i class='right fa-duotone PETERRIVE fa-volume-up fa-fw'></i>
+          <i class='left fa-solid fa-volume-off fa-fw'></i>
+          <i class='right fa-solid fa-volume-up fa-fw'></i>
         </div>
       </div>
     </div>
@@ -4487,7 +4416,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   </ul>
 </div>
-<script src="https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/rightMenus.js?time=1661141841236"></script>
+<script src="/js/plugins/rightMenus.1aa99ff1.js"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -4541,6 +4470,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
+  RightMenusFunction['googleSearch'] = (__text__) => {window.open(`https://www.google.com/search?q=${__text__}`)}
+
+
+
+
+
   RightMenusFunction['openTab'] = (__link__) => {window.open(__link__)}
 
 
@@ -4559,13 +4494,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-  //RightMenusFunction['copyImg'] = (fun) => {fun()}
-
-
-
-
-
   RightMenusFunction['googleImg'] = (__link__) => {window.open(`https://www.google.com.hk/searchbyimage?image_url=${__link__}`)}
+
+
 
 
 
@@ -4726,19 +4657,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/sites.js?time=1661141841236")
+        volantis.js("/js/plugins/tags/sites.76bf19b8.js")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/friends.js?time=1661141841236")
+        volantis.js("/js/plugins/tags/friends.f372da57.js")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/contributors.js?time=1661141841236")
+        volantis.js("/js/plugins/tags/contributors.aec80453.js")
       }
     
   };
@@ -4783,7 +4714,15 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   
 
-<script async src="https://unpkg.com/volantis-static@0.0.1654736714924/libs/instant_page/instant_page.js" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<script>
+  window.FPConfig = {
+	delay: 0,
+	ignoreKeywords: ["#"],
+	maxRPS: 6,
+	hoverDelay: 0
+  };
+</script>
+<script defer src="https://unpkg.com/volantis-static@0.0.1654736714924/libs/flying-pages/flying-pages.min.js"></script>
 
 
 
@@ -4826,7 +4765,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/aplayer.js?time=1661141841236')
+    await volantis.js('/js/plugins/aplayer.dbe5eea9.js')
   
   })();
 
@@ -4897,46 +4836,51 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
       <script>
-  volantis.layoutHelper("comments",`<div id="twikoo_container"><i class="fa-solid fa-cog fa-spin fa-fw fa-2x"></i></div>`)
-  function load_twikoo() {
-    if(!document.querySelectorAll("#twikoo_container")[0])return;
-    volantis.js("https://cdn.staticfile.org/twikoo/1.5.11/twikoo.all.min.js", pjax_twikoo)
-  }
-  function pjax_twikoo() {
-    if(!document.querySelectorAll("#twikoo_container")[0])return;
+  volantis.layoutHelper("comments",`<div id="waline"><i class="fa-solid fa-cog fa-spin fa-fw fa-2x"></i></div>`)
+  
+  function pjax_waline() {
+    if(!document.querySelector("#waline"))return;
+    let locale = {};
     let path = pdata.commentPath;
-    let placeholder = pdata.commentPlaceholder || "期待你的评论" || "";
+    let pagePlaceholder = pdata.commentPlaceholder || "期待你的评论😆";
     if (path.length == 0) {
       let defaultPath = '';
       path = defaultPath || decodeURI(window.location.pathname);
     }
-    twikoo.init(Object.assign(Object.assign({"js":"https://cdn.staticfile.org/twikoo/1.5.11/twikoo.all.min.js","path":null,"envId":"twikoo-8g109qz0365c3388","placeholder":"期待你的评论"}, {
-      el: '#twikoo_container',
-      path: path,
-      placeholder: placeholder,
-      onCommentLoaded: function() {
-        if(typeof VolantisFancyBox === "undefined") {
-          const checkFancyBox = setInterval(() => {
-            if(typeof VolantisFancyBox === "undefined") return;
-            clearInterval(checkFancyBox);
-            VolantisFancyBox.groupBind('.tk-content img:not([class*="emo"])', 'Comments');
-          })
-        } else {
-          VolantisFancyBox.groupBind('.tk-content img:not([class*="emo"])', 'Comments');
-        }
-      }
-    }),pdata.commentConfig))
-  }
-  load_twikoo();
-  volantis.pjax.push(()=>{
-    if (typeof twikoo == "undefined") {
-      load_twikoo();
-    } else {
-      pjax_twikoo();
+    if(pagePlaceholder.length != 0) {
+      locale.placeholder = pagePlaceholder;
     }
-  },'twikoo');
-</script>
 
+    try {
+      Waline.init(Object.assign(Object.assign({"js":"https://unpkg.com/@waline/client@v2/dist/waline.js","css":"https://unpkg.com/@waline/client@v2/dist/waline.css","path":null,"placeholder":"期待你的评论😆","serverURL":"https://waline-comment-coral.vercel.app/","imageUploader":false,"pageview":true,"comment":true,"emoji":["//unpkg.com/@waline/emojis@1.0.1/tw-emoji"],"dark":"auto","requiredMeta":["nick","mail"],"login":"force","copyright":false}, {
+        el: '#waline',
+        path: path,
+        // https://github.com/volantis-x/hexo-theme-volantis/issues/713
+        
+        locale,
+      }),pdata.commentConfig));
+    } catch (error) {
+      alert(`Waline ${error}`)
+    }
+    fancybox_waline()
+  }
+
+  function fancybox_waline() {
+    if(typeof VolantisFancyBox === "undefined") {
+      const checkFancyBox = setInterval(() => {
+        if(typeof VolantisFancyBox === "undefined") return;
+        clearInterval(checkFancyBox);
+        VolantisFancyBox.bind('#waline .wl-content img:not(.wl-emoji)');
+      })
+    } else {
+      VolantisFancyBox.bind('#waline .wl-content img:not(.wl-emoji)');
+    }
+  }
+
+  volantis.css('https://unpkg.com/@waline/client@v2/dist/waline.css')
+  volantis.js('https://unpkg.com/@waline/client@v2/dist/waline.js').then(pjax_waline)
+  volantis.pjax.push(pjax_waline);
+</script>
     
 
 
@@ -4953,7 +4897,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/search/hexo.js?time=1661141841236");
+    return volantis.js("/js/search/hexo.0e52f222.js");
   }
 
   function loadSearchService() {
@@ -5023,6 +4967,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   <script>
 
+  volantis.css("https://unpkg.com/@highlightjs/cdn-assets@11.5.1/styles/atom-one-dark.min.css");
+
+
+  volantis.js("https://unpkg.com/@highlightjs/cdn-assets@11.5.1/highlight.min.js").then(()=>{
+    volantis.requestAnimationFrame(hljs.highlightAll)
+  })
+  volantis.pjax.push(()=>{
+    document.querySelectorAll('pre code').forEach((block) => {
+      hljs.highlightElement(block);
+    });
+  },"highlightjs")
 
 
   function pjax_highlightjs_copyCode(){
@@ -5038,215 +4993,6 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 
-
-
-  <script defer>
-
-  const LCCounter = {
-    app_id: 'qVqqbsCeflqS5kWNGj9PG6vj-gzGzoHsz',
-    app_key: 'ay3rK2tO7yUmvc9jC4ufdYv8',
-    custom_api_server: '',
-
-    // 查询存储的记录
-    getRecord(Counter, url, title) {
-      return new Promise(function (resolve, reject) {
-        Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({url})))
-          .then(resp => resp.json())
-          .then(({results, code, error}) => {
-            if (code === 401) {
-              throw error;
-            }
-            if (results && results.length > 0) {
-              var record = results[0];
-              resolve(record);
-            } else {
-              Counter('post', '/classes/Counter', {url, title: title, times: 0})
-                .then(resp => resp.json())
-                .then((record, error) => {
-                  if (error) {
-                    throw error;
-                  }
-                  resolve(record);
-                }).catch(error => {
-                console.error('Failed to create', error);
-                reject(error);
-              });
-            }
-          }).catch((error) => {
-          console.error('LeanCloud Counter Error:', error);
-          reject(error);
-        });
-      })
-    },
-
-    // 发起自增请求
-    increment(Counter, incrArr) {
-      return new Promise(function (resolve, reject) {
-        Counter('post', '/batch', {
-          "requests": incrArr
-        }).then((res) => {
-          res = res.json();
-          if (res.error) {
-            throw res.error;
-          }
-          resolve(res);
-        }).catch((error) => {
-          console.error('Failed to save visitor count', error);
-          reject(error);
-        });
-      });
-    },
-
-    // 构建自增请求体
-    buildIncrement(objectId) {
-      return {
-        "method": "PUT",
-        "path": `/1.1/classes/Counter/${ objectId }`,
-        "body": {
-          "times": {
-            '__op': 'Increment',
-            'amount': 1
-          }
-        }
-      }
-    },
-
-    // 校验是否为有效的 UV
-    validUV() {
-      var key = 'LeanCloudUVTimestamp';
-      var flag = localStorage.getItem(key);
-      if (flag) {
-        // 距离标记小于 24 小时则不计为 UV
-        if (new Date().getTime() - parseInt(flag) <= 86400000) {
-          return false;
-        }
-      }
-      localStorage.setItem(key, new Date().getTime().toString());
-      return true;
-    },
-
-    addCount(Counter) {
-      var enableIncr = '' === 'true' && window.location.hostname !== 'localhost';
-      enableIncr = true;
-      var getterArr = [];
-      var incrArr = [];
-      // 请求 PV 并自增
-      var pvCtn = document.querySelector('#lc-sv');
-      if (pvCtn || enableIncr) {
-        var pvGetter = this.getRecord(Counter, 'http://rainvex.com' + '/#lc-sv', 'Visits').then((record) => {
-          incrArr.push(this.buildIncrement(record.objectId))
-          var eles = document.querySelectorAll('#lc-sv #number');
-          if (eles.length > 0) {
-            eles.forEach((el,index,array)=>{
-              el.innerText = record.times + 1;
-              if (pvCtn) {
-                pvCtn.style.display = 'inline';
-              }
-            })
-          }
-        });
-        getterArr.push(pvGetter);
-      }
-
-      // 请求 UV 并自增
-      var uvCtn = document.querySelector('#lc-uv');
-      if (uvCtn || enableIncr) {
-        var uvGetter = this.getRecord(Counter, 'http://rainvex.com' + '/#lc-uv', 'Visitors').then((record) => {
-          var vuv = this.validUV();
-          vuv && incrArr.push(this.buildIncrement(record.objectId))
-          var eles = document.querySelectorAll('#lc-uv #number');
-          if (eles.length > 0) {
-            eles.forEach((el,index,array)=>{
-              el.innerText = record.times + (vuv ? 1 : 0);
-              if (uvCtn) {
-                uvCtn.style.display = 'inline';
-              }
-            })
-          }
-        });
-        getterArr.push(uvGetter);
-      }
-
-      // 请求文章的浏览数，如果是当前页面就自增
-      var allPV = document.querySelectorAll('#lc-pv');
-      if (allPV.length > 0 || enableIncr) {
-        for (i = 0; i < allPV.length; i++) {
-          let pv = allPV[i];
-          let title = pv.getAttribute('data-title');
-          var url = 'http://rainvex.com' + pv.getAttribute('data-path');
-          if (url) {
-            var viewGetter = this.getRecord(Counter, url, title).then((record) => {
-              // 是当前页面就自增
-              let curPath = window.location.pathname;
-              if (curPath.includes('index.html')) {
-                curPath = curPath.substring(0, curPath.lastIndexOf('index.html'));
-              }
-              if (pv.getAttribute('data-path') == curPath) {
-                incrArr.push(this.buildIncrement(record.objectId));
-              }
-              if (pv) {
-                var ele = pv.querySelector('#lc-pv #number');
-                if (ele) {
-                  if (pv.getAttribute('data-path') == curPath) {
-                    ele.innerText = (record.times || 0) + 1;
-                  } else {
-                    ele.innerText = record.times || 0;
-                  }
-                  pv.style.display = 'inline';
-                }
-              }
-            });
-            getterArr.push(viewGetter);
-          }
-        }
-      }
-
-      // 如果启动计数自增，批量发起自增请求
-      if (enableIncr) {
-        Promise.all(getterArr).then(() => {
-          incrArr.length > 0 && this.increment(Counter, incrArr);
-        })
-      }
-
-    },
-
-
-    fetchData(api_server) {
-      var Counter = (method, url, data) => {
-        return fetch(`${ api_server }/1.1${ url }`, {
-          method,
-          headers: {
-            'X-LC-Id': this.app_id,
-            'X-LC-Key': this.app_key,
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data)
-        });
-      };
-      this.addCount(Counter);
-    },
-
-    refreshCounter() {
-      var api_server = this.app_id.slice(-9) !== '-MdYXbMMI' ? this.custom_api_server : `https://${ this.app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
-      if (api_server) {
-        this.fetchData(api_server);
-      } else {
-        fetch('https://app-router.leancloud.cn/2/route?appId=' + this.app_id)
-          .then(resp => resp.json())
-          .then(({api_server}) => {
-            this.fetchData('https://' + api_server);
-          });
-      }
-    }
-
-  };
-
-  LCCounter.refreshCounter();
-
-  document.addEventListener('pjax:complete', function () {
-    LCCounter.refreshCounter();
-  });
-</script>
 
 
 
@@ -5280,7 +5026,7 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
 
 
   <script>
-  let imgs = ["https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/bg9.jpg"];
+  let imgs = ["https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/image/bg9.jpg"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -5321,7 +5067,7 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/parallax.js?time=1661141841236').then(()=>{
+    volantis.js('/js/plugins/parallax.8bf0ab10.js').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -5490,96 +5236,6 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
 </script>
 
 
-  <script>
-  try {
-    // https://web.dev/content-visibility/
-    // https://www.caniuse.com/?search=content-visibility
-    // https://infrequently.org/2020/12/content-visibility-scroll-fix/
-    // https://infrequently.org/2020/12/resize-resilient-deferred-rendering/
-
-    // 备注 目前已知的问题:
-    // 动态修改导致的内容高度变化(例如评论框异步渲染的外部盒子高度变化) 无法提前获知, 进而导致的首次滚动条跳动无法去除 (wontfix) 事实上不使用 content-visibility 也会有跳动, 不过是比使用 content-visibility 跳动提前
-    // scrollreveal 插件潜在问题 目前尚不明确
-
-    let eqIsh = (a, b, fuzz = 2) => {
-      return Math.abs(a - b) <= fuzz;
-    };
-
-    let rectNotEQ = (a, b) => {
-      return !eqIsh(a.width, b.width) || !eqIsh(a.height, b.height);
-    };
-
-    // Keep a map of elements and the dimensions of
-    // their place-holders, re-setting the element's
-    // intrinsic size when we get updated measurements
-    // from observers.
-    let spaced = new WeakMap();
-
-    // Only call this when known cheap, post layout
-    let reserveSpace = (el, rect = el.getClientBoundingRect()) => {
-      let old = spaced.get(el);
-      // Set intrinsic size to prevent jumping on un-painting:
-      //    https://drafts.csswg.org/css-sizing-4/#intrinsic-size-override
-      if (!old || rectNotEQ(old, rect)) {
-        spaced.set(el, rect);
-        el.style["contain-intrinsic-size"] = `${rect.width}px ${rect.height}px`;
-      }
-    };
-
-    let iObs = new IntersectionObserver(
-      (entries, o) => {
-        entries.forEach((entry) => {
-          // We don't care if the element is intersecting or
-          // has been laid out as our page structure ensures
-          // they'll get the right width.
-          reserveSpace(entry.target, entry.boundingClientRect);
-        });
-      },
-      { rootMargin: "500px 0px 500px 0px" }
-    );
-
-    let rObs = new ResizeObserver((entries, o) => {
-      entries.forEach((entry) => {
-        reserveSpace(entry.target, entry.contentRect);
-      });
-    });
-
-    let resizeResilientDeferredRendering = (Selector) => {
-      let articles = document.querySelectorAll(Selector);
-
-      if (articles.length) {
-        articles.forEach((el) => {
-          iObs.observe(el);
-          rObs.observe(el);
-        });
-
-        // Workaround for Chrome bug, part 2.
-        //
-        // Re-enable browser management of rendering for the
-        // first article after the first paint. Double-rAF
-        // to ensure we get called after a layout.
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            articles[0].style["content-visibility"] = "auto";
-          });
-        });
-      }
-    };
-
-    let contentVisibilityScrollFix = () => {
-      if (!("content-visibility" in document.documentElement.style)) {
-        return;
-      }
-      resizeResilientDeferredRendering(".post-story");
-    };
-    contentVisibilityScrollFix();
-    volantis.pjax.push(contentVisibilityScrollFix);
-  } catch (error) {
-    console.log(error);
-  }
-</script>
-
-
 
 <script>
   document.onreadystatechange = function () {
@@ -5597,7 +5253,7 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"夜雨声烦","url":"http://rainvex.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"夜雨声烦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://rainvex.com/","sameAs":["https://github.com/volantis-x"],"description":"夜雨声烦的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://rainvex.com/","name":"夜雨声烦"}},{"@type":"ListItem","position":2,"item":{"@id":"http://rainvex.com/categories/教程/","name":"教程"}},{"@type":"ListItem","position":3,"item":{"@id":"http://rainvex.com/categories/教程/云计算与大数据实验.html","name":"云计算与大数据实验"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"夜雨声烦","url":"http://rainvex.com/","keywords":"rainvex,blog,夜雨声烦","description":"夜雨声烦的个人博客","author":{"@type":"Person","name":"夜雨声烦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://rainvex.com/","description":"夜雨声烦的个人博客"},"publisher":{"@type":"Organization","name":"夜雨声烦","url":"http://rainvex.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://rainvex.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"云计算与大数据实验","description":"夜雨声烦的个人博客","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://rainvex.com/categories/%E6%95%99%E7%A8%8B/%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AE%9E%E9%AA%8C.html"},"author":{"@type":"Person","name":"夜雨声烦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://rainvex.com/"},"publisher":{"@type":"Organization","name":"夜雨声烦","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://rainvex.com/categories/%E6%95%99%E7%A8%8B/%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AE%9E%E9%AA%8C.html","wordCount":0,"datePublished":"2022-05-28T09:27:34.000Z","dateModified":"2022-06-07T09:40:47.831Z","articleSection":"教程","keywords":"Linux,Ubuntu,Hadoop","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"夜雨声烦","url":"http://rainvex.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"夜雨声烦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://rainvex.com/","sameAs":["https://github.com/volantis-x"],"description":"夜雨声烦的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://rainvex.com/","name":"夜雨声烦"}},{"@type":"ListItem","position":2,"item":{"@id":"http://rainvex.com/categories/教程/","name":"教程"}},{"@type":"ListItem","position":3,"item":{"@id":"http://rainvex.com/categories/教程/云计算与大数据实验.html","name":"云计算与大数据实验"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"夜雨声烦","url":"http://rainvex.com/","keywords":"rainvex,blog,夜雨声烦","description":"夜雨声烦的个人博客","author":{"@type":"Person","name":"夜雨声烦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://rainvex.com/","description":"夜雨声烦的个人博客"},"publisher":{"@type":"Organization","name":"夜雨声烦","url":"http://rainvex.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://rainvex.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"云计算与大数据实验","description":"夜雨声烦的个人博客","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://rainvex.com/categories/%E6%95%99%E7%A8%8B/%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AE%9E%E9%AA%8C.html"},"author":{"@type":"Person","name":"夜雨声烦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://rainvex.com/"},"publisher":{"@type":"Organization","name":"夜雨声烦","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://rainvex.com/categories/%E6%95%99%E7%A8%8B/%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AE%9E%E9%AA%8C.html","wordCount":0,"datePublished":"2022-05-28T09:27:34.000Z","dateModified":"2022-08-22T05:37:51.141Z","articleSection":"教程","keywords":"Linux,Ubuntu,Hadoop","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
@@ -5643,7 +5299,7 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
       try {
         var currentUrl = window.location.pathname;
         var targetUrl = e.triggerElement.href;
-        var banUrl = ["/bb/", "/artitalk/"];
+        var banUrl = [""];
         if (banUrl[0] != "") {
           banUrl.forEach(item => {
             if(currentUrl.indexOf(item) != -1 || targetUrl.indexOf(item) != -1) {

@@ -26,9 +26,9 @@
   
   <!-- Custom Files headBegin end-->
     <link rel="shortcut icon" type='image/x-icon' href="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/avatar.jpg">
-  <link rel="preload" href="/css/style.89a78c16.css" as="style">
-  <link rel="preload" href="https://cdn.sakurasep.top/fonts-cdn/canva/MaShanZheng-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="https://cdn.sakurasep.top/fonts-cdn/MiSans/MiSans-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="/css/style.659c7404.css" as="style">
+  <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="夜雨声烦" type="application/atom+xml">
@@ -53,15 +53,11 @@
     #safearea {
   display: none;
 }
-.post-story + .post-story {
-  content-visibility: auto;
-  contain-intrinsic-size: 10px 500px;
-}
 :root {
-  --color-site-body: #f7f9fe;
-  --color-site-bg: #f7f9fe;
-  --color-site-inner: #fff;
-  --color-site-footer: #fff;
+  --color-site-body: #f4f4f4;
+  --color-site-bg: #f4f4f4;
+  --color-site-inner: #787878;
+  --color-site-footer: #787878;
   --color-card: #fff;
   --color-text: #444;
   --color-block: #f6f6f6;
@@ -75,8 +71,8 @@
   --color-h6: #666;
   --color-p: #444;
   --color-list: #666;
-  --color-list-hl: #30ad91;
-  --color-meta: #666;
+  --color-list-hl: #6e08c2;
+  --color-meta: #888;
   --color-read-bkg: #e0d8c8;
   --color-read-post: #f8f1e2;
   --color-copyright-bkg: #f5f5f5;
@@ -97,7 +93,7 @@
   background: transparent;
 }
 *::-webkit-scrollbar-thumb {
-  background: #3dd9b6;
+  background: #8a0af3;
   cursor: pointer;
   border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -109,21 +105,21 @@ html {
   color: var(--color-text);
   width: 100%;
   height: 100%;
-  font-family: MiSans, Menlo, Monaco, monospace, sans-serif;
+  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
   font-size: 16px;
 }
 html >::-webkit-scrollbar {
-  height: 5px;
-  width: 5px;
+  height: 4px;
+  width: 4px;
 }
 html >::-webkit-scrollbar-track-piece {
   background: transparent;
 }
 html >::-webkit-scrollbar-thumb {
-  background: #3dd9b6;
+  background: #8a0af3;
   cursor: pointer;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
 }
 html >::-webkit-scrollbar-thumb:hover {
   background: #ff5722;
@@ -149,7 +145,7 @@ body.modal-active {
   }
 }
 a {
-  color: #2092ec;
+  color: #4dec1c;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.28s ease;
@@ -431,7 +427,7 @@ button {
   margin-top: 32px;
 }
 .cover-wrapper .cover-body .title {
-  font-family: MaShanZheng, Helvetica, monospace;
+  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
   font-size: 3.125rem;
   line-height: 1.2;
   text-shadow: 0 1px 2px rgba(0,0,0,0.1);
@@ -685,7 +681,7 @@ button {
 .cover-wrapper.dock .menu .list-h a.active i+p,
 .cover-wrapper.featured .menu .list-h a.active i+p,
 .cover-wrapper.focus .menu .list-h a.active i+p {
-  color: #3dd9b6;
+  color: #8a0af3;
 }
 .cover-wrapper.dock .menu .list-h a.active img+p,
 .cover-wrapper.featured .menu .list-h a.active img+p,
@@ -730,7 +726,7 @@ button {
     background: transparent;
   }
   .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb {
-    background: #3dd9b6;
+    background: #8a0af3;
     cursor: pointer;
     border-radius: 0;
     -webkit-border-radius: 0;
@@ -815,26 +811,26 @@ button {
     --color-mode: 'dark';
   }
   :root:not([color-scheme]) {
-    --color-site-body: #121212;
-    --color-read-bkg: #21252b;
-    --color-read-post: #282c34;
-    --color-site-bg: #21252b;
+    --color-site-body: #1f1f1f;
+    --color-read-bkg: #1f1f1f;
+    --color-read-post: #262626;
+    --color-site-bg: #1f1f1f;
     --color-site-inner: rgba(238,238,238,0.871);
-    --color-site-footer: #abb2bf;
-    --color-card: #282c34;
-    --color-text: #abb2bf;
-    --color-block: #21252b;
+    --color-site-footer: rgba(170,170,170,0.871);
+    --color-card: #262626;
+    --color-text: rgba(238,238,238,0.871);
+    --color-block: #434343;
     --color-codeblock: #1f1f1f;
     --color-inlinecode: #d56d28;
-    --color-h1: #979 a-duotone;
-    --color-h2: #979 a-duotone;
-    --color-h3: #979 a-duotone;
-    --color-h4: #979 a-duotone;
-    --color-h5: #979 a-duotone;
-    --color-h6: #979 a-duotone;
-    --color-p: #abb2bf;
+    --color-h1: rgba(255,255,255,0.871);
+    --color-h2: rgba(255,255,255,0.871);
+    --color-h3: rgba(255,255,255,0.6);
+    --color-h4: rgba(255,255,255,0.6);
+    --color-h5: rgba(255,255,255,0.6);
+    --color-h6: rgba(255,255,255,0.6);
+    --color-p: rgba(217,217,217,0.871);
     --color-list: rgba(217,217,217,0.871);
-    --color-list-hl: #63e0c4;
+    --color-list-hl: #a13af5;
     --color-meta: rgba(191,191,191,0.871);
     --color-link: rgba(191,191,191,0.871);
     --color-copyright-bkg: #21252b;
@@ -843,10 +839,10 @@ button {
     filter: brightness(70%) !important;
   }
   :root:not([color-scheme]) .blur {
-    background: rgba(33,37,43,0.9) !important;
+    background: rgba(31,31,31,0.9) !important;
   }
   :root:not([color-scheme]) .white-box.blur {
-    background: rgba(40,44,52,0.9) !important;
+    background: rgba(38,38,38,0.9) !important;
   }
   :root:not([color-scheme]) .nav-main .u-search-input {
     background: var(--color-card) !important;
@@ -887,26 +883,26 @@ button {
   }
 }
 [color-scheme='dark'] {
-  --color-site-body: #121212;
-  --color-read-bkg: #21252b;
-  --color-read-post: #282c34;
-  --color-site-bg: #21252b;
+  --color-site-body: #1f1f1f;
+  --color-read-bkg: #1f1f1f;
+  --color-read-post: #262626;
+  --color-site-bg: #1f1f1f;
   --color-site-inner: rgba(238,238,238,0.871);
-  --color-site-footer: #abb2bf;
-  --color-card: #282c34;
-  --color-text: #abb2bf;
-  --color-block: #21252b;
+  --color-site-footer: rgba(170,170,170,0.871);
+  --color-card: #262626;
+  --color-text: rgba(238,238,238,0.871);
+  --color-block: #434343;
   --color-codeblock: #1f1f1f;
   --color-inlinecode: #d56d28;
-  --color-h1: #979 a-duotone;
-  --color-h2: #979 a-duotone;
-  --color-h3: #979 a-duotone;
-  --color-h4: #979 a-duotone;
-  --color-h5: #979 a-duotone;
-  --color-h6: #979 a-duotone;
-  --color-p: #abb2bf;
+  --color-h1: rgba(255,255,255,0.871);
+  --color-h2: rgba(255,255,255,0.871);
+  --color-h3: rgba(255,255,255,0.6);
+  --color-h4: rgba(255,255,255,0.6);
+  --color-h5: rgba(255,255,255,0.6);
+  --color-h6: rgba(255,255,255,0.6);
+  --color-p: rgba(217,217,217,0.871);
   --color-list: rgba(217,217,217,0.871);
-  --color-list-hl: #63e0c4;
+  --color-list-hl: #a13af5;
   --color-meta: rgba(191,191,191,0.871);
   --color-link: rgba(191,191,191,0.871);
   --color-copyright-bkg: #21252b;
@@ -915,10 +911,10 @@ button {
   filter: brightness(70%) !important;
 }
 [color-scheme='dark'] .blur {
-  background: rgba(33,37,43,0.9) !important;
+  background: rgba(31,31,31,0.9) !important;
 }
 [color-scheme='dark'] .white-box.blur {
-  background: rgba(40,44,52,0.9) !important;
+  background: rgba(38,38,38,0.9) !important;
 }
 [color-scheme='dark'] .nav-main .u-search-input {
   background: var(--color-card) !important;
@@ -963,15 +959,15 @@ button {
   }
 }
 @font-face {
-  font-family: 'MiSans';
-  src: url("https://cdn.sakurasep.top/fonts-cdn/MiSans/MiSans-Regular.woff");
+  font-family: 'UbuntuMono';
+  src: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
 }
 @font-face {
-  font-family: 'MaShanZheng';
-  src: url("https://cdn.sakurasep.top/fonts-cdn/canva/MaShanZheng-Regular.woff2");
+  font-family: 'Varela Round';
+  src: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/VarelaRound/VarelaRound-Regular.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
@@ -1094,7 +1090,7 @@ button {
   line-height: 64px;
   padding: 0 24px;
   font-size: 1.25rem;
-  font-family: MaShanZheng, Helvetica, monospace;
+  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
 }
 .l_header #wrapper .nav-main .title img {
   height: 64px;
@@ -1105,7 +1101,7 @@ button {
 }
 .l_header .nav-sub .title {
   font-weight: bold;
-  font-family: MiSans, Menlo, Monaco, monospace, sans-serif;
+  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
   line-height: 1.2;
   max-height: 64px;
   white-space: normal;
@@ -1175,7 +1171,7 @@ button {
   -moz-transition: all 0.28s ease;
   -o-transition: all 0.28s ease;
   -ms-transition: all 0.28s ease;
-  color: #3dd9b6;
+  color: #8a0af3;
 }
 .l_header .switcher >li >a:hover {
   border: none;
@@ -1355,7 +1351,7 @@ ul.m-pc >li>a {
 }
 ul.m-pc >li>a:active,
 ul.m-pc >li>a.active {
-  border-bottom: 2px solid #3dd9b6;
+  border-bottom: 2px solid #8a0af3;
 }
 ul.m-pc li:hover >ul.list-v,
 ul.list-v li:hover >ul.list-v {
@@ -1494,7 +1490,7 @@ ul.list-v >li>a:hover {
 }
 .l_header ul.nav-list-h>li >a:active,
 .l_header ul.nav-list-h>li >a.active {
-  color: #3dd9b6;
+  color: #8a0af3;
 }
 .l_header ul.nav-list-h>li:hover>a {
   color: var(--color-list-hl);
@@ -1805,8 +1801,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.89a78c16.css" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.89a78c16.css"></noscript>
+  <link rel="stylesheet" href="/css/style.659c7404.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.659c7404.css"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1884,19 +1880,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/parallax.js?time=1661141841236","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/rightMenu.js?time=1661141841236","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/rightMenus.js?time=1661141841236","sites":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/sites.js?time=1661141841236","friends":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/friends.js?time=1661141841236","contributors":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/contributors.js?time=1661141841236","search":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/search/hexo.js?time=1661141841236"},"css":{"style":"/css/style.89a78c16.css"}},
-    default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1661141841236),
+    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.1aa99ff1.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.659c7404.css"}},
+    default: {"avatar":null,"link":null,"cover":null,"image":null},
+    lastupdate: new Date(1661171524429),
     sidebar: {
-      for_page: ["blogger","notice","navigation","webinfo","lastupdate"],
-      for_post: ["toc","webinfo"],
+      for_page: ["blogger","navigation","music","webinfo","category","tagcloud","lastupdate"],
+      for_post: ["toc"],
       webinfo: {
         lastupd: {
           enable: true,
           friendlyShow: true
         },
         runtime: {
-          data: "2019/07/27",
+          data: "2020/08/22",
           unit: "天"
         }
       }
@@ -1912,7 +1908,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
       
       
-      rightmenus: {"enable":true,"order":["plugins.navigation","hr","plugins.inputBox","plugins.seletctText","plugins.elementCheck","plugins.elementImage","menus.link","hr","menus.darkMode","plugins.articlePage","music"],"options":{"iconPrefix":"fa-duotone PETERRIVE","articleShowLink":true,"musicAlwaysShow":true},"plugins":{"navigation":[{"id":"left","name":"转到上一页","icon":"fa-duotone fa-arrow-left PETERRIVE","event":"history.back()","group":"navigation"},{"id":"right","name":"转到下一页","icon":"fa-duotone fa-arrow-right PETERRIVE","event":"history.forward()","group":"navigation"},{"id":"redo","name":"刷新当前页面","icon":"fa-duotone fa-redo PETERRIVE","event":"window.location.reload()","group":"navigation"},{"id":"up","name":"回到顶部","icon":"fa-duotone fa-arrow-up PETERRIVE","event":"VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)","group":"navigation"},{"id":"home","name":"回到首页","icon":"fa-duotone fa-home PETERRIVE","link":"/","group":"navigation"}],"inputBox":[{"id":"copyPaste","name":"粘贴文本","icon":"fa-duotone PETERRIVE fa-paste","event":"copyPaste","group":"inputBox"},{"id":"copyAll","name":"全选文本","icon":"fa-duotone PETERRIVE fa-object-ungroup","event":"copyAll","group":"inputBox"},{"id":"copyCut","name":"剪切文本","icon":"fa-duotone PETERRIVE fa-cut","event":"copyCut","group":"inputBox"}],"seletctText":[{"id":"copyText","name":"复制文本","icon":"fa-duotone PETERRIVE fa-copy","event":"copyText","group":"seletctText"},{"id":"searchWord","name":"站内搜索","icon":"fa-duotone PETERRIVE fa-search","event":"OpenSearch(__text__)","group":"seletctText"},{"id":"bingSearch","name":"必应搜索","icon":"fa-duotone PETERRIVE fa-search","event":"window.open(`https://cn.bing.com/search?q=${__text__}`)","group":"seletctText"}],"elementCheck":[{"id":"openTab","name":"新标签页打开","icon":"fa-duotone PETERRIVE fa-external-link-square-alt","event":"window.open(__link__)","group":"elementCheck"},{"id":"copyLink","name":"复制链接地址","icon":"fa-duotone PETERRIVE fa-link","event":"copyLink","group":"elementCheck"},{"id":"copyImg","name":"复制图片文件","icon":"fa-duotone PETERRIVE fa-image","event":"copyImg","group":"elementCheck"}],"elementImage":[{"id":"copyImg","name":"复制图片","icon":"fa-solid fa-image","event":"copyImg","group":"elementImage"},{"id":"googleImg","name":"谷歌识图","icon":"fa-solid fa-images","event":"window.open(`https://www.google.com.hk/searchbyimage?image_url=${__link__}`)","group":"elementImage"}],"articlePage":[{"id":"printMode","name":"打印页面","icon":"fa-duotone fa-print TURQUOISE","event":"printMode","group":"articlePage"},{"id":"readMode","name":"阅读模式","icon":"fa-duotone fa-book-open EMERALD","event":"readMode","group":"articlePage"}]},"menus":{"link":[{"id":"friends","name":"我的朋友们","icon":"fa-duotone fa-flower-daffodil AMETHYST","link":"/friends/","group":"link"},{"id":"archive","name":"文章归档","icon":"fa-duotone fa-globe-asia CONCRETE","link":"/archives/","group":"link"},{"id":"about","name":"关于我","icon":"fa-duotone fa-gingerbread-man WISTERIA","link":"/about/","group":"link"}],"darkMode":[{"id":"darkMode","name":"暗黑模式","icon":"fa-duotone fa-eclipse-alt WISTERIA","event":"volantis.dark.toggle()","group":"darkMode"}]}}
+      rightmenus: {"enable":true,"order":["plugins.navigation","hr","plugins.inputBox","plugins.seletctText","plugins.elementCheck","plugins.elementImage","menus.link","hr","menus.darkMode","plugins.articlePage","music"],"options":{"iconPrefix":"fa-solid","articleShowLink":true,"musicAlwaysShow":true},"plugins":{"navigation":[{"id":"left","name":"转到上一页","icon":"fa-solid fa-arrow-left","event":"history.back()","group":"navigation"},{"id":"right","name":"转到下一页","icon":"fa-solid fa-arrow-right","event":"history.forward()","group":"navigation"},{"id":"redo","name":"刷新当前页面","icon":"fa-solid fa-redo","event":"window.location.reload()","group":"navigation"},{"id":"up","name":"回到顶部","icon":"fa-solid fa-arrow-up","event":"VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)","group":"navigation"},{"id":"home","name":"回到首页","icon":"fa-solid fa-home","link":"/","group":"navigation"}],"inputBox":[{"id":"copyPaste","name":"粘贴文本","icon":"fa-solid fa-paste","event":"copyPaste","group":"inputBox"},{"id":"copyAll","name":"全选文本","icon":"fa-solid fa-object-ungroup","event":"copyAll","group":"inputBox"},{"id":"copyCut","name":"剪切文本","icon":"fa-solid fa-cut","event":"copyCut","group":"inputBox"}],"seletctText":[{"id":"copyText","name":"复制文本","icon":"fa-solid fa-copy","event":"copyText","group":"seletctText"},{"id":"searchWord","name":"站内搜索","icon":"fa-solid fa-search","event":"OpenSearch(__text__)","group":"seletctText"},{"id":"bingSearch","name":"必应搜索","icon":"fa-solid fa-search","event":"window.open(`https://cn.bing.com/search?q=${__text__}`)","group":"seletctText"},{"id":"googleSearch","name":"谷歌搜索","icon":"fa-solid fa-search","event":"window.open(`https://www.google.com/search?q=${__text__}`)","group":"seletctText"}],"elementCheck":[{"id":"openTab","name":"新标签页打开","icon":"fa-solid fa-external-link-square-alt","event":"window.open(__link__)","group":"elementCheck"},{"id":"copyLink","name":"复制链接地址","icon":"fa-solid fa-link","event":"copyLink","group":"elementCheck"}],"elementImage":[{"id":"copyImg","name":"复制图片","icon":"fa-solid fa-image","event":"copyImg","group":"elementImage"},{"id":"googleImg","name":"谷歌识图","icon":"fa-solid fa-images","event":"window.open(`https://www.google.com.hk/searchbyimage?image_url=${__link__}`)","group":"elementImage"}],"articlePage":[{"id":"printMode","name":"打印页面","icon":"fa-solid fa-print","event":"printMode","group":"articlePage"},{"id":"readMode","name":"阅读模式","icon":"fa-solid fa-book-open","event":"readMode","group":"articlePage"}]},"menus":{"link":[{"id":"github","name":"本站源码","icon":"fa-solid fa-code-branch SUNFLOWER","link":"https://github.com/rainvex","group":"link"},{"id":"friends","name":"我的朋友们","icon":"fa-solid fa-flower-daffodil AMETHYST","link":"friends/","group":"link"},{"id":"archive","name":"文章归档","icon":"fa-solid fa-globe-asia CONCRETE","link":"archives/","group":"link"},{"id":"about","name":"关于我","icon":"fa-solid fa-gingerbread-man WISTERIA","link":"about/","group":"link"}],"darkMode":[{"id":"darkMode","name":"暗黑模式","icon":"fa-solid fa-eclipse-alt WISTERIA","event":"volantis.dark.toggle()","group":"darkMode"}]}}
       
     }
   }
@@ -2289,11 +2285,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   /******************************************************************************/
   //图像加载出错时的处理
   function errorImgAvatar(img) {
-    img.src = "https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg";
+    img.src = "";
     img.onerror = null;
   }
   function errorImgCover(img) {
-    img.src = "https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg";
+    img.src = "";
     img.onerror = null;
   }
   /******************************************************************************/
@@ -2350,7 +2346,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-home"
                   >
-                  <i class='fa-light fa-home SUNFLOWER faa-vertical fa-fw'></i>主页
+                  <i class='fa-light fa-house fa-fw'></i>主页
                 </a>
                 
               </li>
@@ -2365,7 +2361,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                   
                   >
-                  <i class='fa-light fa-book-reader GREENSEA faa-vertical fa-fw'></i>文章
+                  <i class='fa-light fa-book-open-reader fa-fw'></i>文章
                 </a>
                 
                   <ul class="list-v">
@@ -2380,7 +2376,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-categories"
                   >
-                  <i class='fa-light fa-folder-open TURQUOISE faa-vertical fa-fw'></i>分类
+                  <i class='fa-light fa-folder-open fa-fw'></i>分类
                 </a>
                 
               </li>
@@ -2397,7 +2393,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-tags"
                   >
-                  <i class='fa-light fa-tags PETERRIVE faa-vertical fa-fw'></i>标签
+                  <i class='fa-light fa-tags fa-fw'></i>标签
                 </a>
                 
               </li>
@@ -2414,7 +2410,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-archives"
                   >
-                  <i class='fa-light fa-archive GREENSEA faa-vertical fa-fw'></i>归档
+                  <i class='fa-light fa-box-archive fa-fw'></i>归档
                 </a>
                 
               </li>
@@ -2435,7 +2431,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                   
                   >
-                  <i class='fa-light fa-cube NEPHRITIS faa-vertical fa-fw'></i>导航
+                  <i class='fa-light fa-cube fa-fw'></i>导航
                 </a>
                 
                   <ul class="list-v">
@@ -2450,7 +2446,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-friends"
                   >
-                  <i class='fa-light fa-link POMEGRANATE faa-vertical fa-fw'></i>友链
+                  <i class='fa-light fa-link fa-fw'></i>友链
                 </a>
                 
               </li>
@@ -2467,7 +2463,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-info"
                   >
-                  <i class='fa-light fa-comment-alt-dots GREENSEA faa-vertical fa-fw'></i>留言板
+                  <i class='fa-light fa-message-dots fa-fw'></i>留言板
                 </a>
                 
               </li>
@@ -2484,7 +2480,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-about"
                   >
-                  <i class='fa-light fa-info-circle SUNFLOWER faa-vertical fa-fw'></i>关于
+                  <i class='fa-light fa-circle-info fa-fw'></i>关于
                 </a>
                 
               </li>
@@ -2501,13 +2497,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/bangumis/" title="追番"
+                href="/anime/" title="番剧"
                   
                   
                   
-                    active-action="action-bangumis"
+                    active-action="action-anime"
                   >
-                  <i class='fa-light fa-video EMERALD faa-vertical fa-fw'></i>追番
+                  <i class='fa-light fa-video fa-spin fa-fw'></i>番剧
                 </a>
                 
               </li>
@@ -2528,7 +2524,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                   
                   >
-                  <i class='fa-light fa-tools ALIZARIN faa-vertical fa-fw'></i>功能
+                  <i class='fa-light fa-screwdriver-wrench fa-fw'></i>功能
                 </a>
                 
                   <ul class="list-v">
@@ -2537,15 +2533,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box header toggle-mode-btn">
-                  <i class='fa-light fa-moon POMEGRANATE faa-vertical fa-fw'></i>深色模式
+                  <i class='fa-light fa-moon fa-fw'></i>深色模式
                 </a>
               <li>
-            
-          
-                    
-                      
-            
-              <hr>
             
           
                     
@@ -2554,7 +2544,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
                 <li>
                   <a class="menuitem flat-box">
-                    <i class='fa-light fa-compact-disc EMERALD faa-vertical fa-fw music'></i>背景音乐
+                    <i class='fa-light fa-compact-disc fa-fw music'></i>背景音乐
                   </a>
                   <ul class="list-v">
                     <li>
@@ -2588,14 +2578,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                     
                       
             
-              <li class='header'>
-                <i class='fa-solid fa-info-circle fa-fw'></i>番剧
-              </li>
-            
-          
-                    
-                      
-            
               <hr>
             
           
@@ -2610,7 +2592,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-atomxml"
                   >
-                  <i class='fa-light fa-rss SUNFLOWER faa-vertical fa-fw'></i>RSS 订阅
+                  <i class='fa-light fa-rss fa-fw'></i>RSS 订阅
                 </a>
                 
               </li>
@@ -2652,7 +2634,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-home"
                   >
-                  <i class='fa-light fa-home SUNFLOWER faa-vertical fa-fw'></i>主页
+                  <i class='fa-light fa-house fa-fw'></i>主页
                 </a>
                 
               </li>
@@ -2667,7 +2649,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                   
                   >
-                  <i class='fa-light fa-book-reader GREENSEA faa-vertical fa-fw'></i>文章
+                  <i class='fa-light fa-book-open-reader fa-fw'></i>文章
                 </a>
                 
                   <ul class="list-v">
@@ -2682,7 +2664,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-categories"
                   >
-                  <i class='fa-light fa-folder-open TURQUOISE faa-vertical fa-fw'></i>分类
+                  <i class='fa-light fa-folder-open fa-fw'></i>分类
                 </a>
                 
               </li>
@@ -2699,7 +2681,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-tags"
                   >
-                  <i class='fa-light fa-tags PETERRIVE faa-vertical fa-fw'></i>标签
+                  <i class='fa-light fa-tags fa-fw'></i>标签
                 </a>
                 
               </li>
@@ -2716,7 +2698,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-archives"
                   >
-                  <i class='fa-light fa-archive GREENSEA faa-vertical fa-fw'></i>归档
+                  <i class='fa-light fa-box-archive fa-fw'></i>归档
                 </a>
                 
               </li>
@@ -2737,7 +2719,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                   
                   >
-                  <i class='fa-light fa-cube NEPHRITIS faa-vertical fa-fw'></i>导航
+                  <i class='fa-light fa-cube fa-fw'></i>导航
                 </a>
                 
                   <ul class="list-v">
@@ -2752,7 +2734,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-friends"
                   >
-                  <i class='fa-light fa-link POMEGRANATE faa-vertical fa-fw'></i>友链
+                  <i class='fa-light fa-link fa-fw'></i>友链
                 </a>
                 
               </li>
@@ -2769,7 +2751,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-info"
                   >
-                  <i class='fa-light fa-comment-alt-dots GREENSEA faa-vertical fa-fw'></i>留言板
+                  <i class='fa-light fa-message-dots fa-fw'></i>留言板
                 </a>
                 
               </li>
@@ -2786,7 +2768,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-about"
                   >
-                  <i class='fa-light fa-info-circle SUNFLOWER faa-vertical fa-fw'></i>关于
+                  <i class='fa-light fa-circle-info fa-fw'></i>关于
                 </a>
                 
               </li>
@@ -2803,13 +2785,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/bangumis/" title="追番"
+                href="/anime/" title="番剧"
                   
                   
                   
-                    active-action="action-bangumis"
+                    active-action="action-anime"
                   >
-                  <i class='fa-light fa-video EMERALD faa-vertical fa-fw'></i>追番
+                  <i class='fa-light fa-video fa-spin fa-fw'></i>番剧
                 </a>
                 
               </li>
@@ -2830,7 +2812,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                   
                   >
-                  <i class='fa-light fa-tools ALIZARIN faa-vertical fa-fw'></i>功能
+                  <i class='fa-light fa-screwdriver-wrench fa-fw'></i>功能
                 </a>
                 
                   <ul class="list-v">
@@ -2839,7 +2821,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box header toggle-mode-btn">
-                  <i class='fa-light fa-moon POMEGRANATE faa-vertical fa-fw'></i>深色模式
+                  <i class='fa-light fa-moon fa-fw'></i>深色模式
                 </a>
               <li>
             
@@ -2847,21 +2829,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                     
                       
             
-              <hr>
-            
-          
-                    
-                      
-            
               
-            
-          
-                    
-                      
-            
-              <li class='header'>
-                <i class='fa-solid fa-info-circle fa-fw'></i>番剧
-              </li>
             
           
                     
@@ -2881,7 +2849,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-atomxml"
                   >
-                  <i class='fa-light fa-rss SUNFLOWER faa-vertical fa-fw'></i>RSS 订阅
+                  <i class='fa-light fa-rss fa-fw'></i>RSS 订阅
                 </a>
                 
               </li>
@@ -2919,7 +2887,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='top'>
     
     
-      <p class="title">夜雨声烦的博客</p>
+      <p class="title">夜雨声烦</p>
     
     
       <p class="subtitle">Rainvex</p>
@@ -2948,14 +2916,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               
               active-action="action-tags">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f396.svg'><p>标签</p>
+              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f5d2.svg'><p>标签</p>
             </a>
           
             <a href="/archives/"
               
               
               active-action="action-archives">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f389.svg'><p>归档</p>
+              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f5de.svg'><p>归档</p>
             </a>
           
             <a href="/friends/"
@@ -3004,7 +2972,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         
           <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+            <div class="post post-v3 white-box reveal shadow floatable"  itemscope itemtype="http://schema.org/Article" >
   <link itemprop="mainEntityOfPage" href="http://rainvex.com/categories/教程/Typora-PicGo-腾讯云COS搭建图床.html">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="夜雨声烦">
@@ -3031,13 +2999,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='md article-desc' itemprop="articleBody">
     
       
-        Typora+PicGo+腾讯云COS搭建图床就在前不久，Gitee图床废了！博客文章中使用到的所有图片全部变成了Gitee的图标，甚至很多使用Gitee作为图床的开源项目文档也受到了影响，还有一些作者引流、打赏的二维码图片都变成了Gitee图标，直接影响了他们的收入。如果图床中图片太多，要想转移、更改文章中图片的工作量也是非常巨大的。那么为什么Gitee图床会无缘无故废掉了呢？Gitee因...
-      
     
   </div>
   
     <div class='meta-v3' line_style='hidden'>
       <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/image/avatar.jpg'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/image/avatar.jpg">
+            <meta itemprop="name" content="夜雨声烦">
+            <meta itemprop="url" content="/">
+          </span>
         
         <time itemprop="dateCreated datePublished" datetime="2022-04-04T14:29:40+08:00">2022-04-04</time>
         
@@ -3050,12 +3024,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
       </div>
-      
-        <div>
-          <a class='readmore' href='/categories/%E6%95%99%E7%A8%8B/Typora-PicGo-%E8%85%BE%E8%AE%AF%E4%BA%91COS%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A.html' itemprop="url">
-            阅读全文
-          </a>
-        </div>
       
     </div>
   
@@ -3087,7 +3055,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       
         <a class='avatar flat-box circle' href='/about/'>
-          <img no-lazy src='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/avatar.jpg'/>
+          <img no-lazy src='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/image/avatar.jpg'/>
         </a>
       
     
@@ -3097,45 +3065,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <h2>夜雨声烦</h2>
         
         
-          <p>Welcome to Rainvex Blog</p>
+          <p>Rainvex</p>
 
         
+        
+          <p><span id="jinrishici-sentence">夜雨声烦</span></p>
+          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
         
       </div>
     
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget text desktop pjax">
-  
-  <header>
-    
-      <i class="fa-light fa-ghost PETERRIVE faa-vertical fa-fw" aria-hidden="true"></i><span class='name'>本站公告</span>
-    
-  </header>
-
-
-  <div class='content'>
-    
-      <p>你好，欢迎访问我的个人博客</p>
-
-    
-      <p>本博客内容大多数为学习记录和科技向相关。</p>
-
-    
-      <p><a target="_blank" rel="noopener" href="https://blog.sakurasep.club/">上杉九月的博客-Typecho</a></p>
-
-    
-      <p><a target="_blank" rel="noopener" href="https://halo.sakurasep.club/">九月的生活-Halo</a></p>
-
     
   </div>
 </section>
@@ -3179,20 +3117,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           关于本站
         </a>
       
-        <a class="flat-box" href="/bb/"
+        <a class="flat-box" href="/anime/"
           
           
-          active-action="action-bb">
-          
-            <i class="fal fa-history POMEGRANATE faa-ring faa-slow fa-fw" aria-hidden="true"></i>
-          
-          博主说说
-        </a>
-      
-        <a class="flat-box" href="/bangumis/"
-          
-          
-          active-action="action-bangumis">
+          active-action="action-anime">
           
             <i class="fal fa-film-alt WISTERIA faa-ring faa-slow fa-fw" aria-hidden="true"></i>
           
@@ -3209,19 +3137,44 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           小伙伴们
         </a>
       
-        <a class="flat-box" target="_blank" rel="noopener" href="https://travellings.link"
-          
-          
-          active-action="action-https:travellingslink">
-          
-            <i class="fal fa-subway PETERRIVE faa-ring faa-slow fa-fw" aria-hidden="true"></i>
-          
-          开往
-        </a>
-      
     </div>
   </div>
 </section>
+
+    
+  
+
+  
+    
+    
+      
+
+  <section class='widget desktop  music'>
+    
+
+    <div class='content'>
+      
+
+  
+    <meting-js
+      theme='#1BCDFC'
+      autoplay='false'
+      volume='0.7'
+      loop='all'
+      order='random'
+      fixed='false'
+      list-max-height='200px'
+      server='tencent'
+      type='playlist'
+      id='8413384953'
+      list-folded='true'>
+    </meting-js>
+  
+
+
+    </div>
+  </section>
+
 
     
   
@@ -3234,7 +3187,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <header>
     
-      <i class="fa-light fa-award SUNFLOWER faa-vertical fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
+      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
     
   </header>
 
@@ -3249,8 +3202,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
 
       
+        <div class="webinfo-item">
+          <div>已运行时间：</div>
+          <div id="webinfo-runtime-count"></div>
+        </div>
+      
 
 
+      
+        <div class="webinfo-item">
+          <div>本站总字数：</div>
+          <div>187.8k 字</div>
+        </div>
       
 
       
@@ -3274,18 +3237,81 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
+  
+  <section class="widget category desktop pjax">
+    
+  <header>
+    
+      <a href='categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+    
+  </header>
 
-<section class="widget desktop mobile pjax">
+
+    <div class='content'>
+      <ul class="entry navigation">
+        
+          <li><a class="flat-box"
+            title="/categories/Linux/" href="/categories/Linux/"
+            active-action="action-categoriesLinux"
+            ><div class='name'>Linux</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E5%90%8E%E7%AB%AF/" href="/categories/%E5%90%8E%E7%AB%AF/"
+            active-action="action-categoriesE5908EE7ABAF"
+            ><div class='name'>后端</div><div class='badge'>(5)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E6%95%99%E7%A8%8B/" href="/categories/%E6%95%99%E7%A8%8B/"
+            active-action="action-categoriesE69599E7A88B"
+            ><div class='name'>教程</div><div class='badge'>(3)</div></a></li>
+        
+      </ul>
+    </div>
+  </section>
+
+
+    
+  
+
+  
+    
+    
+      
+  
+  <section class="widget tagcloud desktop pjax">
+    
+  <header>
+    
+      <a href='tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      <a href="/tags/CentOS/" style="font-size: 14px; color: #ff754f">CentOS</a> <a href="/tags/Hadoop/" style="font-size: 15.5px; color: #d1986c">Hadoop</a> <a href="/tags/Java/" style="font-size: 18.5px; color: #74dda5">Java</a> <a href="/tags/Linux/" style="font-size: 17px; color: #a2ba88">Linux</a> <a href="/tags/Mybatis/" style="font-size: 15.5px; color: #d1986c">Mybatis</a> <a href="/tags/PicGo/" style="font-size: 14px; color: #ff754f">PicGo</a> <a href="/tags/Spring5/" style="font-size: 14px; color: #ff754f">Spring5</a> <a href="/tags/SpringMVC/" style="font-size: 14px; color: #ff754f">SpringMVC</a> <a href="/tags/Typora/" style="font-size: 14px; color: #ff754f">Typora</a> <a href="/tags/Ubuntu/" style="font-size: 15.5px; color: #d1986c">Ubuntu</a> <a href="/tags/%E5%90%8E%E7%AB%AF/" style="font-size: 14px; color: #ff754f">后端</a> <a href="/tags/%E5%9B%BE%E5%BA%8A/" style="font-size: 14px; color: #ff754f">图床</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 20px; color: #45ffc1">笔记</a>
+    </div>
+  </section>
+
+
+    
+  
+
+  
+    
+    
+      
+
+<section class="widget desktop pjax">
   
   <header>
     
-      <i class="fa-light fa-clock WISTERIA faa-vertical fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
+      <i class="fa-solid fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
     
   </header>
 
 
   <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/categories/%E5%90%8E%E7%AB%AF/Mybatis-plus%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html"><div class="item"><time>2022-08-21</time><span>后端</span></div><span>Mybatis-plus学习笔记</span></a></li><li><a class="widget-last" href="/categories/Linux/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html"><div class="item"><time>2022-07-05</time><span>Linux</span></div><span>Linux学习笔记（上）</span></a></li><li><a class="widget-last" href="/categories/%E5%90%8E%E7%AB%AF/JavaSE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html"><div class="item"><time>2022-07-05</time><span>后端</span></div><span>JavaSE学习笔记</span></a></li><li><a class="widget-last" href="/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4.html"><div class="item"><time>2022-06-25</time><span>教程</span></div><span>Ubuntu下搭建Hadoop分布式集群</span></a></li><li><a class="widget-last" href="/categories/%E6%95%99%E7%A8%8B/%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AE%9E%E9%AA%8C.html"><div class="item"><time>2022-06-07</time><span>教程</span></div><span>云计算与大数据实验</span></a></li></ul>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/categories/%E5%90%8E%E7%AB%AF/Spring5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html"><div class="item"><time>2022-08-22</time><span>后端</span></div><span>Spring框架笔记</span></a></li><li><a class="widget-last" href="/categories/%E6%95%99%E7%A8%8B/%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AE%9E%E9%AA%8C.html"><div class="item"><time>2022-08-22</time><span>教程</span></div><span>云计算与大数据实验</span></a></li><li><a class="widget-last" href="/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4.html"><div class="item"><time>2022-08-22</time><span>教程</span></div><span>Ubuntu下搭建Hadoop分布式集群</span></a></li><li><a class="widget-last" href="/categories/%E6%95%99%E7%A8%8B/Typora-PicGo-%E8%85%BE%E8%AE%AF%E4%BA%91COS%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A.html"><div class="item"><time>2022-08-22</time><span>教程</span></div><span>Typora+PicGo+腾讯云COS搭建图床</span></a></li><li><a class="widget-last" href="/categories/%E5%90%8E%E7%AB%AF/SpringMVC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html"><div class="item"><time>2022-08-22</time><span>后端</span></div><span>SpringMVC笔记</span></a></li></ul>
   </div>
 </section>
 
@@ -3299,14 +3325,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3390,44 +3408,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
             
               <a href="/atom.xml"
-                class="social  flat-btn"
+                class="social fas fa-rss flat-btn"
                 target="_blank"
                 rel="external nofollow noopener noreferrer" itemprop="url">
-                
-                  <img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5199/static/icon/020-rss.svg" class="lazyload" data-srcset="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5199/static/icon/020-rss.svg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
                 
               </a>
             
           
             
-              <a href="https://github.com/sakurasep"
-                class="social  flat-btn"
+              <a href="https://github.com/rainvex"
+                class="social fab fa-github flat-btn"
                 target="_blank"
                 rel="external nofollow noopener noreferrer" itemprop="url">
-                
-                  <img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5199/static/icon/029-github.svg" class="lazyload" data-srcset="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5199/static/icon/029-github.svg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-                
-              </a>
-            
-          
-            
-              <a href="https://blog.sakurasep.club"
-                class="social  flat-btn"
-                target="_blank"
-                rel="external nofollow noopener noreferrer" itemprop="url">
-                
-                  <img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5199/static/icon/012-blogger.svg" class="lazyload" data-srcset="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5199/static/icon/012-blogger.svg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-                
-              </a>
-            
-          
-            
-              <a href="https://www.youtube.com/channel/UCTJn92N-puJAJj82Kn05wpw"
-                class="social  flat-btn"
-                target="_blank"
-                rel="external nofollow noopener noreferrer" itemprop="url">
-                
-                  <img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5199/static/icon/006-youtube.svg" class="lazyload" data-srcset="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/5199/static/icon/006-youtube.svg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
                 
               </a>
             
@@ -3474,7 +3466,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   
-  volantis.css("https://cdn.sakurasep.top/fontawesome/css/all.min.css");
+  volantis.css("https://unpkg.com/@fortawesome/fontawesome-free@6.1/css/all.min.css");
   
   
   volantis.css("https://unpkg.com/volantis-static@0.0.1654736714924/libs/font-awesome-animation/font-awesome-animation.min.css");
@@ -3515,23 +3507,23 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <li class='navigation menuNavigation-Content'>
 
 
-    <a class="nav icon-only fix-cursor-default" onclick="history.back()"><i class="fa-duotone fa-arrow-left PETERRIVE fa-fw"></i></a>
+    <a class="nav icon-only fix-cursor-default" onclick="history.back()"><i class="fa-solid fa-arrow-left fa-fw"></i></a>
 
 
 
-    <a class="nav icon-only fix-cursor-default" onclick="history.forward()"><i class="fa-duotone fa-arrow-right PETERRIVE fa-fw"></i></a>
+    <a class="nav icon-only fix-cursor-default" onclick="history.forward()"><i class="fa-solid fa-arrow-right fa-fw"></i></a>
 
 
 
-    <a class="nav icon-only fix-cursor-default" onclick="window.location.reload()"><i class="fa-duotone fa-redo PETERRIVE fa-fw"></i></a>
+    <a class="nav icon-only fix-cursor-default" onclick="window.location.reload()"><i class="fa-solid fa-redo fa-fw"></i></a>
 
 
 
-    <a class="nav icon-only fix-cursor-default" onclick="VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)"><i class="fa-duotone fa-arrow-up PETERRIVE fa-fw"></i></a>
+    <a class="nav icon-only fix-cursor-default" onclick="VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)"><i class="fa-solid fa-arrow-up fa-fw"></i></a>
 
 
 
-    <a class="nav icon-only fix-cursor-default" href="/"><i class="fa-duotone fa-home PETERRIVE fa-fw"></i></a>
+    <a class="nav icon-only fix-cursor-default" href="/"><i class="fa-solid fa-home fa-fw"></i></a>
 
 
   </li>
@@ -3543,7 +3535,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="copyPaste" data-event="copyPaste" data-group="inputBox">
-      <i class="fa-duotone PETERRIVE fa-paste fa-fw"></i>
+      <i class="fa-solid fa-paste fa-fw"></i>
       粘贴文本
     </span>
   </li>
@@ -3552,7 +3544,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="copyAll" data-event="copyAll" data-group="inputBox">
-      <i class="fa-duotone PETERRIVE fa-object-ungroup fa-fw"></i>
+      <i class="fa-solid fa-object-ungroup fa-fw"></i>
       全选文本
     </span>
   </li>
@@ -3561,7 +3553,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="copyCut" data-event="copyCut" data-group="inputBox">
-      <i class="fa-duotone PETERRIVE fa-cut fa-fw"></i>
+      <i class="fa-solid fa-cut fa-fw"></i>
       剪切文本
     </span>
   </li>
@@ -3570,7 +3562,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="copyText" data-event="copyText" data-group="seletctText">
-      <i class="fa-duotone PETERRIVE fa-copy fa-fw"></i>
+      <i class="fa-solid fa-copy fa-fw"></i>
       复制文本
     </span>
   </li>
@@ -3579,7 +3571,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="searchWord" data-event="OpenSearch(__text__)" data-group="seletctText">
-      <i class="fa-duotone PETERRIVE fa-search fa-fw"></i>
+      <i class="fa-solid fa-search fa-fw"></i>
       站内搜索
     </span>
   </li>
@@ -3588,7 +3580,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="bingSearch" data-event="window.open(`https://cn.bing.com/search?q=${__text__}`)" data-group="seletctText">
-      <i class="fa-duotone PETERRIVE fa-search fa-fw"></i>
+      <i class="fa-solid fa-search fa-fw"></i>
       必应搜索
     </span>
   </li>
@@ -3596,8 +3588,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <li class="menuLoad-Content">
+    <span class="vlts-menu fix-cursor-default event" id="googleSearch" data-event="window.open(`https://www.google.com/search?q=${__text__}`)" data-group="seletctText">
+      <i class="fa-solid fa-search fa-fw"></i>
+      谷歌搜索
+    </span>
+  </li>
+
+
+
+  <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="openTab" data-event="window.open(__link__)" data-group="elementCheck">
-      <i class="fa-duotone PETERRIVE fa-external-link-square-alt fa-fw"></i>
+      <i class="fa-solid fa-external-link-square-alt fa-fw"></i>
       新标签页打开
     </span>
   </li>
@@ -3606,17 +3607,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="copyLink" data-event="copyLink" data-group="elementCheck">
-      <i class="fa-duotone PETERRIVE fa-link fa-fw"></i>
+      <i class="fa-solid fa-link fa-fw"></i>
       复制链接地址
-    </span>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="copyImg" data-event="copyImg" data-group="elementCheck">
-      <i class="fa-duotone PETERRIVE fa-image fa-fw"></i>
-      复制图片文件
     </span>
   </li>
 
@@ -3641,8 +3633,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <li class="menuLoad-Content">
-    <a class="vlts-menu fix-cursor-default" id="friends" href="/friends/" data-group="link">
-      <i class="fa-duotone fa-flower-daffodil AMETHYST fa-fw"></i>
+    <a class="vlts-menu fix-cursor-default" id="github" target="_blank" rel="noopener" href="https://github.com/rainvex" data-group="link">
+      <i class="fa-solid fa-code-branch SUNFLOWER fa-fw"></i>
+      本站源码
+    </a>
+  </li>
+
+
+
+  <li class="menuLoad-Content">
+    <a class="vlts-menu fix-cursor-default" id="friends" href="friends/" data-group="link">
+      <i class="fa-solid fa-flower-daffodil AMETHYST fa-fw"></i>
       我的朋友们
     </a>
   </li>
@@ -3650,8 +3651,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <li class="menuLoad-Content">
-    <a class="vlts-menu fix-cursor-default" id="archive" href="/archives/" data-group="link">
-      <i class="fa-duotone fa-globe-asia CONCRETE fa-fw"></i>
+    <a class="vlts-menu fix-cursor-default" id="archive" href="archives/" data-group="link">
+      <i class="fa-solid fa-globe-asia CONCRETE fa-fw"></i>
       文章归档
     </a>
   </li>
@@ -3659,8 +3660,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <li class="menuLoad-Content">
-    <a class="vlts-menu fix-cursor-default" id="about" href="/about/" data-group="link">
-      <i class="fa-duotone fa-gingerbread-man WISTERIA fa-fw"></i>
+    <a class="vlts-menu fix-cursor-default" id="about" href="about/" data-group="link">
+      <i class="fa-solid fa-gingerbread-man WISTERIA fa-fw"></i>
       关于我
     </a>
   </li>
@@ -3673,7 +3674,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="darkMode" data-event="volantis.dark.toggle()" data-group="darkMode">
-      <i class="fa-duotone fa-eclipse-alt WISTERIA fa-fw"></i>
+      <i class="fa-solid fa-eclipse-alt WISTERIA fa-fw"></i>
       暗黑模式
     </span>
   </li>
@@ -3682,7 +3683,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="printMode" data-event="printMode" data-group="articlePage">
-      <i class="fa-duotone fa-print TURQUOISE fa-fw"></i>
+      <i class="fa-solid fa-print fa-fw"></i>
       打印页面
     </span>
   </li>
@@ -3691,7 +3692,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="readMode" data-event="readMode" data-group="articlePage">
-      <i class="fa-duotone fa-book-open EMERALD fa-fw"></i>
+      <i class="fa-solid fa-book-open fa-fw"></i>
       阅读模式
     </span>
   </li>
@@ -3703,13 +3704,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   </li>
   <li class='music ctrl'>
     <a class='nav icon-only backward fix-cursor-default' href="/" onclick="return false;" title="backward">
-      <i class='fa-duotone PETERRIVE fa-step-backward fa-fw'></i>
+      <i class='fa-solid fa-step-backward fa-fw'></i>
     </a>
     <a class='nav icon-only toggle fix-cursor-default' href="/" onclick="return false;" title="toggle">
-      <i class='fa-duotone PETERRIVE fa-play fa-fw'></i>
+      <i class='fa-solid fa-play fa-fw'></i>
     </a>
     <a class='nav icon-only forward fix-cursor-default' href="/" onclick="return false;" title="forward">
-      <i class='fa-duotone PETERRIVE fa-step-forward fa-fw'></i>
+      <i class='fa-solid fa-step-forward fa-fw'></i>
     </a>
   </li>
   <li class='music volume'>
@@ -3717,8 +3718,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div class="aplayer-volume-bar-wrap">
         <div class="aplayer-volume-bar fix-cursor-pointer">
           <div class="aplayer-volume"></div>
-          <i class='left fa-duotone PETERRIVE fa-volume-off fa-fw'></i>
-          <i class='right fa-duotone PETERRIVE fa-volume-up fa-fw'></i>
+          <i class='left fa-solid fa-volume-off fa-fw'></i>
+          <i class='right fa-solid fa-volume-up fa-fw'></i>
         </div>
       </div>
     </div>
@@ -3727,7 +3728,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   </ul>
 </div>
-<script src="https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/rightMenus.js?time=1661141841236"></script>
+<script src="/js/plugins/rightMenus.1aa99ff1.js"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -3781,6 +3782,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
+  RightMenusFunction['googleSearch'] = (__text__) => {window.open(`https://www.google.com/search?q=${__text__}`)}
+
+
+
+
+
   RightMenusFunction['openTab'] = (__link__) => {window.open(__link__)}
 
 
@@ -3799,13 +3806,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-  //RightMenusFunction['copyImg'] = (fun) => {fun()}
-
-
-
-
-
   RightMenusFunction['googleImg'] = (__link__) => {window.open(`https://www.google.com.hk/searchbyimage?image_url=${__link__}`)}
+
+
 
 
 
@@ -3966,19 +3969,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/sites.js?time=1661141841236")
+        volantis.js("/js/plugins/tags/sites.76bf19b8.js")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/friends.js?time=1661141841236")
+        volantis.js("/js/plugins/tags/friends.f372da57.js")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/contributors.js?time=1661141841236")
+        volantis.js("/js/plugins/tags/contributors.aec80453.js")
       }
     
   };
@@ -4023,7 +4026,15 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   
 
-<script async src="https://unpkg.com/volantis-static@0.0.1654736714924/libs/instant_page/instant_page.js" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<script>
+  window.FPConfig = {
+	delay: 0,
+	ignoreKeywords: ["#"],
+	maxRPS: 6,
+	hoverDelay: 0
+  };
+</script>
+<script defer src="https://unpkg.com/volantis-static@0.0.1654736714924/libs/flying-pages/flying-pages.min.js"></script>
 
 
 
@@ -4066,7 +4077,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/aplayer.js?time=1661141841236')
+    await volantis.js('/js/plugins/aplayer.dbe5eea9.js')
   
   })();
 
@@ -4137,46 +4148,51 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
       <script>
-  volantis.layoutHelper("comments",`<div id="twikoo_container"><i class="fa-solid fa-cog fa-spin fa-fw fa-2x"></i></div>`)
-  function load_twikoo() {
-    if(!document.querySelectorAll("#twikoo_container")[0])return;
-    volantis.js("https://cdn.staticfile.org/twikoo/1.5.11/twikoo.all.min.js", pjax_twikoo)
-  }
-  function pjax_twikoo() {
-    if(!document.querySelectorAll("#twikoo_container")[0])return;
+  volantis.layoutHelper("comments",`<div id="waline"><i class="fa-solid fa-cog fa-spin fa-fw fa-2x"></i></div>`)
+  
+  function pjax_waline() {
+    if(!document.querySelector("#waline"))return;
+    let locale = {};
     let path = pdata.commentPath;
-    let placeholder = pdata.commentPlaceholder || "期待你的评论" || "";
+    let pagePlaceholder = pdata.commentPlaceholder || "期待你的评论😆";
     if (path.length == 0) {
       let defaultPath = '';
       path = defaultPath || decodeURI(window.location.pathname);
     }
-    twikoo.init(Object.assign(Object.assign({"js":"https://cdn.staticfile.org/twikoo/1.5.11/twikoo.all.min.js","path":null,"envId":"twikoo-8g109qz0365c3388","placeholder":"期待你的评论"}, {
-      el: '#twikoo_container',
-      path: path,
-      placeholder: placeholder,
-      onCommentLoaded: function() {
-        if(typeof VolantisFancyBox === "undefined") {
-          const checkFancyBox = setInterval(() => {
-            if(typeof VolantisFancyBox === "undefined") return;
-            clearInterval(checkFancyBox);
-            VolantisFancyBox.groupBind('.tk-content img:not([class*="emo"])', 'Comments');
-          })
-        } else {
-          VolantisFancyBox.groupBind('.tk-content img:not([class*="emo"])', 'Comments');
-        }
-      }
-    }),pdata.commentConfig))
-  }
-  load_twikoo();
-  volantis.pjax.push(()=>{
-    if (typeof twikoo == "undefined") {
-      load_twikoo();
-    } else {
-      pjax_twikoo();
+    if(pagePlaceholder.length != 0) {
+      locale.placeholder = pagePlaceholder;
     }
-  },'twikoo');
-</script>
 
+    try {
+      Waline.init(Object.assign(Object.assign({"js":"https://unpkg.com/@waline/client@v2/dist/waline.js","css":"https://unpkg.com/@waline/client@v2/dist/waline.css","path":null,"placeholder":"期待你的评论😆","serverURL":"https://waline-comment-coral.vercel.app/","imageUploader":false,"pageview":true,"comment":true,"emoji":["//unpkg.com/@waline/emojis@1.0.1/tw-emoji"],"dark":"auto","requiredMeta":["nick","mail"],"login":"force","copyright":false}, {
+        el: '#waline',
+        path: path,
+        // https://github.com/volantis-x/hexo-theme-volantis/issues/713
+        
+        locale,
+      }),pdata.commentConfig));
+    } catch (error) {
+      alert(`Waline ${error}`)
+    }
+    fancybox_waline()
+  }
+
+  function fancybox_waline() {
+    if(typeof VolantisFancyBox === "undefined") {
+      const checkFancyBox = setInterval(() => {
+        if(typeof VolantisFancyBox === "undefined") return;
+        clearInterval(checkFancyBox);
+        VolantisFancyBox.bind('#waline .wl-content img:not(.wl-emoji)');
+      })
+    } else {
+      VolantisFancyBox.bind('#waline .wl-content img:not(.wl-emoji)');
+    }
+  }
+
+  volantis.css('https://unpkg.com/@waline/client@v2/dist/waline.css')
+  volantis.js('https://unpkg.com/@waline/client@v2/dist/waline.js').then(pjax_waline)
+  volantis.pjax.push(pjax_waline);
+</script>
     
 
 
@@ -4193,7 +4209,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/search/hexo.js?time=1661141841236");
+    return volantis.js("/js/search/hexo.0e52f222.js");
   }
 
   function loadSearchService() {
@@ -4263,6 +4279,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   <script>
 
+  volantis.css("https://unpkg.com/@highlightjs/cdn-assets@11.5.1/styles/atom-one-dark.min.css");
+
+
+  volantis.js("https://unpkg.com/@highlightjs/cdn-assets@11.5.1/highlight.min.js").then(()=>{
+    volantis.requestAnimationFrame(hljs.highlightAll)
+  })
+  volantis.pjax.push(()=>{
+    document.querySelectorAll('pre code').forEach((block) => {
+      hljs.highlightElement(block);
+    });
+  },"highlightjs")
 
 
   function pjax_highlightjs_copyCode(){
@@ -4278,215 +4305,6 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 
-
-
-  <script defer>
-
-  const LCCounter = {
-    app_id: 'qVqqbsCeflqS5kWNGj9PG6vj-gzGzoHsz',
-    app_key: 'ay3rK2tO7yUmvc9jC4ufdYv8',
-    custom_api_server: '',
-
-    // 查询存储的记录
-    getRecord(Counter, url, title) {
-      return new Promise(function (resolve, reject) {
-        Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({url})))
-          .then(resp => resp.json())
-          .then(({results, code, error}) => {
-            if (code === 401) {
-              throw error;
-            }
-            if (results && results.length > 0) {
-              var record = results[0];
-              resolve(record);
-            } else {
-              Counter('post', '/classes/Counter', {url, title: title, times: 0})
-                .then(resp => resp.json())
-                .then((record, error) => {
-                  if (error) {
-                    throw error;
-                  }
-                  resolve(record);
-                }).catch(error => {
-                console.error('Failed to create', error);
-                reject(error);
-              });
-            }
-          }).catch((error) => {
-          console.error('LeanCloud Counter Error:', error);
-          reject(error);
-        });
-      })
-    },
-
-    // 发起自增请求
-    increment(Counter, incrArr) {
-      return new Promise(function (resolve, reject) {
-        Counter('post', '/batch', {
-          "requests": incrArr
-        }).then((res) => {
-          res = res.json();
-          if (res.error) {
-            throw res.error;
-          }
-          resolve(res);
-        }).catch((error) => {
-          console.error('Failed to save visitor count', error);
-          reject(error);
-        });
-      });
-    },
-
-    // 构建自增请求体
-    buildIncrement(objectId) {
-      return {
-        "method": "PUT",
-        "path": `/1.1/classes/Counter/${ objectId }`,
-        "body": {
-          "times": {
-            '__op': 'Increment',
-            'amount': 1
-          }
-        }
-      }
-    },
-
-    // 校验是否为有效的 UV
-    validUV() {
-      var key = 'LeanCloudUVTimestamp';
-      var flag = localStorage.getItem(key);
-      if (flag) {
-        // 距离标记小于 24 小时则不计为 UV
-        if (new Date().getTime() - parseInt(flag) <= 86400000) {
-          return false;
-        }
-      }
-      localStorage.setItem(key, new Date().getTime().toString());
-      return true;
-    },
-
-    addCount(Counter) {
-      var enableIncr = '' === 'true' && window.location.hostname !== 'localhost';
-      enableIncr = true;
-      var getterArr = [];
-      var incrArr = [];
-      // 请求 PV 并自增
-      var pvCtn = document.querySelector('#lc-sv');
-      if (pvCtn || enableIncr) {
-        var pvGetter = this.getRecord(Counter, 'http://rainvex.com' + '/#lc-sv', 'Visits').then((record) => {
-          incrArr.push(this.buildIncrement(record.objectId))
-          var eles = document.querySelectorAll('#lc-sv #number');
-          if (eles.length > 0) {
-            eles.forEach((el,index,array)=>{
-              el.innerText = record.times + 1;
-              if (pvCtn) {
-                pvCtn.style.display = 'inline';
-              }
-            })
-          }
-        });
-        getterArr.push(pvGetter);
-      }
-
-      // 请求 UV 并自增
-      var uvCtn = document.querySelector('#lc-uv');
-      if (uvCtn || enableIncr) {
-        var uvGetter = this.getRecord(Counter, 'http://rainvex.com' + '/#lc-uv', 'Visitors').then((record) => {
-          var vuv = this.validUV();
-          vuv && incrArr.push(this.buildIncrement(record.objectId))
-          var eles = document.querySelectorAll('#lc-uv #number');
-          if (eles.length > 0) {
-            eles.forEach((el,index,array)=>{
-              el.innerText = record.times + (vuv ? 1 : 0);
-              if (uvCtn) {
-                uvCtn.style.display = 'inline';
-              }
-            })
-          }
-        });
-        getterArr.push(uvGetter);
-      }
-
-      // 请求文章的浏览数，如果是当前页面就自增
-      var allPV = document.querySelectorAll('#lc-pv');
-      if (allPV.length > 0 || enableIncr) {
-        for (i = 0; i < allPV.length; i++) {
-          let pv = allPV[i];
-          let title = pv.getAttribute('data-title');
-          var url = 'http://rainvex.com' + pv.getAttribute('data-path');
-          if (url) {
-            var viewGetter = this.getRecord(Counter, url, title).then((record) => {
-              // 是当前页面就自增
-              let curPath = window.location.pathname;
-              if (curPath.includes('index.html')) {
-                curPath = curPath.substring(0, curPath.lastIndexOf('index.html'));
-              }
-              if (pv.getAttribute('data-path') == curPath) {
-                incrArr.push(this.buildIncrement(record.objectId));
-              }
-              if (pv) {
-                var ele = pv.querySelector('#lc-pv #number');
-                if (ele) {
-                  if (pv.getAttribute('data-path') == curPath) {
-                    ele.innerText = (record.times || 0) + 1;
-                  } else {
-                    ele.innerText = record.times || 0;
-                  }
-                  pv.style.display = 'inline';
-                }
-              }
-            });
-            getterArr.push(viewGetter);
-          }
-        }
-      }
-
-      // 如果启动计数自增，批量发起自增请求
-      if (enableIncr) {
-        Promise.all(getterArr).then(() => {
-          incrArr.length > 0 && this.increment(Counter, incrArr);
-        })
-      }
-
-    },
-
-
-    fetchData(api_server) {
-      var Counter = (method, url, data) => {
-        return fetch(`${ api_server }/1.1${ url }`, {
-          method,
-          headers: {
-            'X-LC-Id': this.app_id,
-            'X-LC-Key': this.app_key,
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data)
-        });
-      };
-      this.addCount(Counter);
-    },
-
-    refreshCounter() {
-      var api_server = this.app_id.slice(-9) !== '-MdYXbMMI' ? this.custom_api_server : `https://${ this.app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
-      if (api_server) {
-        this.fetchData(api_server);
-      } else {
-        fetch('https://app-router.leancloud.cn/2/route?appId=' + this.app_id)
-          .then(resp => resp.json())
-          .then(({api_server}) => {
-            this.fetchData('https://' + api_server);
-          });
-      }
-    }
-
-  };
-
-  LCCounter.refreshCounter();
-
-  document.addEventListener('pjax:complete', function () {
-    LCCounter.refreshCounter();
-  });
-</script>
 
 
 
@@ -4520,7 +4338,7 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
 
 
   <script>
-  let imgs = ["https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/bg9.jpg"];
+  let imgs = ["https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/image/bg9.jpg"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -4561,7 +4379,7 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/parallax.js?time=1661141841236').then(()=>{
+    volantis.js('/js/plugins/parallax.8bf0ab10.js').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4730,96 +4548,6 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
 </script>
 
 
-  <script>
-  try {
-    // https://web.dev/content-visibility/
-    // https://www.caniuse.com/?search=content-visibility
-    // https://infrequently.org/2020/12/content-visibility-scroll-fix/
-    // https://infrequently.org/2020/12/resize-resilient-deferred-rendering/
-
-    // 备注 目前已知的问题:
-    // 动态修改导致的内容高度变化(例如评论框异步渲染的外部盒子高度变化) 无法提前获知, 进而导致的首次滚动条跳动无法去除 (wontfix) 事实上不使用 content-visibility 也会有跳动, 不过是比使用 content-visibility 跳动提前
-    // scrollreveal 插件潜在问题 目前尚不明确
-
-    let eqIsh = (a, b, fuzz = 2) => {
-      return Math.abs(a - b) <= fuzz;
-    };
-
-    let rectNotEQ = (a, b) => {
-      return !eqIsh(a.width, b.width) || !eqIsh(a.height, b.height);
-    };
-
-    // Keep a map of elements and the dimensions of
-    // their place-holders, re-setting the element's
-    // intrinsic size when we get updated measurements
-    // from observers.
-    let spaced = new WeakMap();
-
-    // Only call this when known cheap, post layout
-    let reserveSpace = (el, rect = el.getClientBoundingRect()) => {
-      let old = spaced.get(el);
-      // Set intrinsic size to prevent jumping on un-painting:
-      //    https://drafts.csswg.org/css-sizing-4/#intrinsic-size-override
-      if (!old || rectNotEQ(old, rect)) {
-        spaced.set(el, rect);
-        el.style["contain-intrinsic-size"] = `${rect.width}px ${rect.height}px`;
-      }
-    };
-
-    let iObs = new IntersectionObserver(
-      (entries, o) => {
-        entries.forEach((entry) => {
-          // We don't care if the element is intersecting or
-          // has been laid out as our page structure ensures
-          // they'll get the right width.
-          reserveSpace(entry.target, entry.boundingClientRect);
-        });
-      },
-      { rootMargin: "500px 0px 500px 0px" }
-    );
-
-    let rObs = new ResizeObserver((entries, o) => {
-      entries.forEach((entry) => {
-        reserveSpace(entry.target, entry.contentRect);
-      });
-    });
-
-    let resizeResilientDeferredRendering = (Selector) => {
-      let articles = document.querySelectorAll(Selector);
-
-      if (articles.length) {
-        articles.forEach((el) => {
-          iObs.observe(el);
-          rObs.observe(el);
-        });
-
-        // Workaround for Chrome bug, part 2.
-        //
-        // Re-enable browser management of rendering for the
-        // first article after the first paint. Double-rAF
-        // to ensure we get called after a layout.
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            articles[0].style["content-visibility"] = "auto";
-          });
-        });
-      }
-    };
-
-    let contentVisibilityScrollFix = () => {
-      if (!("content-visibility" in document.documentElement.style)) {
-        return;
-      }
-      resizeResilientDeferredRendering(".post-story");
-    };
-    contentVisibilityScrollFix();
-    volantis.pjax.push(contentVisibilityScrollFix);
-  } catch (error) {
-    console.log(error);
-  }
-</script>
-
-
 
 <script>
   document.onreadystatechange = function () {
@@ -4883,7 +4611,7 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
       try {
         var currentUrl = window.location.pathname;
         var targetUrl = e.triggerElement.href;
-        var banUrl = ["/bb/", "/artitalk/"];
+        var banUrl = [""];
         if (banUrl[0] != "") {
           banUrl.forEach(item => {
             if(currentUrl.indexOf(item) != -1 || targetUrl.indexOf(item) != -1) {
