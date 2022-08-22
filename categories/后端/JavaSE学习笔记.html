@@ -45,7 +45,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-03-27T13:38:17.000Z">
-<meta property="article:modified_time" content="2022-08-22T05:36:58.299Z">
+<meta property="article:modified_time" content="2022-03-27T13:38:17.000Z">
 <meta property="article:author" content="夜雨声烦">
 <meta property="article:tag" content="笔记">
 <meta property="article:tag" content="Java">
@@ -1886,7 +1886,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.1aa99ff1.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.0e52f222.js"},"css":{"style":"/css/style.659c7404.css"}},
     default: {"avatar":null,"link":null,"cover":null,"image":null},
-    lastupdate: new Date(1661171524429),
+    lastupdate: new Date(1661184425764),
     sidebar: {
       for_page: ["blogger","navigation","music","webinfo","category","tagcloud","lastupdate"],
       for_post: ["toc"],
@@ -1896,7 +1896,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           friendlyShow: true
         },
         runtime: {
-          data: "2020/08/22",
+          data: "2022/08/22",
           unit: "天"
         }
       }
@@ -2973,11 +2973,29 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
+    <div class='headimg-div'>
+      <a class='headimg-a'>
+        <img itemprop="image" class='headimg' src='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/image/Java.png'/>
+      </a>
+    </div>
   
   <div class="article-meta" id="top">
+    
+      
+
+  
+    <meting-js
+      mini='true'
+      volume='0.7'
+      loop='all'
+      order='random'
+      server='tencent'
+      type='playlist'
+      id='8413384953'>
+    </meting-js>
+  
+
+
     
     
     
@@ -3049,8 +3067,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <p>
       <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
       
-      <span data-path="/categories/%E5%90%8E%E7%AB%AF/JavaSE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0" class="waline-pageview-count">
-        <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
+      <span id="lc-pv" data-title="JavaSE学习笔记" data-path="/categories/%E5%90%8E%E7%AB%AF/JavaSE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0">
+        <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
       </span>
       
       <span>次浏览</span>
@@ -3605,14 +3623,15 @@ class B &#123;
 <p><strong>值传递：</strong></p>
 <ul>
 <li>指的是在方法的调用中，传递的参数是按照值的拷贝传递</li>
-<li>特点：传递的是值的拷贝，传递后就互不相关了<br><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201633185.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201633185.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210722170825089"></li>
+<li>特点：传递的是值的拷贝，传递后就互不相关了<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201633185.png' data-fancybox='default' data-caption='image-20210722170825089'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201633185.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201633185.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210722170825089"></a><span class='image-caption'>image-20210722170825089</span></div></div></li>
 </ul>
 <p><strong>引用传递：</strong></p>
 <ul>
 <li>指的是在方法调用时，传递的参数是按引用进行传递，其实传递的是引用的地址，也就是变量所对应的内存空间的地址。</li>
 <li>特点：传递的是参数的引用值，也就是传递前和传递后都指向同一个引用（即同一个内存空间）</li>
 </ul>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201633282.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201633282.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210722172443947"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201633282.png' data-fancybox='default' data-caption='image-20210722172443947'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201633282.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201633282.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210722172443947"></a><span class='image-caption'>image-20210722172443947</span></div></div>
+
 <p>Tips：</p>
 <ul>
 <li><p><strong>“在Java里面参数传递都是按值传递”这句话的意思是：按值传递是传递的值的拷贝，按引用传递其实传递的是引用的地址值，所以统称按值传递</strong></p>
@@ -3620,7 +3639,8 @@ class B &#123;
 <li><p>在Java里面只有基本类型和按照直接使用双引号定义字符串方式：String str = “Java私塾”这种定义方式的String是按值传递，其它的都是按引用传递</p>
 </li>
 </ul>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201633598.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201633598.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210711171056907"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201633598.png' data-fancybox='default' data-caption='image-20210711171056907'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201633598.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201633598.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210711171056907"></a><span class='image-caption'>image-20210711171056907</span></div></div>
+
 <h3 id="3-2-方法的重载"><a href="#3-2-方法的重载" class="headerlink" title="3.2 方法的重载"></a>3.2 方法的重载</h3><p><strong>重载就是在一个类中，有相同的函数名称，但形参不同的函数</strong></p>
 <p>方法的重载的规则:</p>
 <ul>
@@ -3671,7 +3691,8 @@ public static void main(String[] args) &#123;
     &#125;
 </code></pre>
 <p>如图：</p>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201633597.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201633597.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210711182627099"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201633597.png' data-fancybox='default' data-caption='image-20210711182627099'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201633597.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201633597.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210711182627099"></a><span class='image-caption'>image-20210711182627099</span></div></div>
+
 <h2 id="四、Java数组"><a href="#四、Java数组" class="headerlink" title="四、Java数组"></a>四、Java数组</h2><p>数组是<strong>相同类型数据的有序集合</strong></p>
 <p>数组描述的是<strong>相同类型的若干个数据</strong>,按照一定的先后次序排列组合而成</p>
 <p>其中,每一个数据称作一个数组元素,每个数组元素可以通过一个下标来访问它们</p>
@@ -3684,10 +3705,13 @@ dataType[] arrayRefVar = new dataType[arraySize];
 </code></pre>
 <p>数组元素通过索引访问，数组索引从0开始</p>
 <p>获取数组长度：<code>arrays.length</code></p>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201634738.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201634738.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210712112802160"></p>
-<h3 id="4-2-Java内存分析及三种初始化"><a href="#4-2-Java内存分析及三种初始化" class="headerlink" title="4.2 Java内存分析及三种初始化"></a>4.2 Java内存分析及三种初始化</h3><h4 id="4-2-1-Java内存分析"><a href="#4-2-1-Java内存分析" class="headerlink" title="4.2.1 Java内存分析"></a>4.2.1 Java内存分析</h4><p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201634043.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201634043.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210712113429404"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201634738.png' data-fancybox='default' data-caption='image-20210712112802160'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201634738.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201634738.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210712112802160"></a><span class='image-caption'>image-20210712112802160</span></div></div>
+
+<h3 id="4-2-Java内存分析及三种初始化"><a href="#4-2-Java内存分析及三种初始化" class="headerlink" title="4.2 Java内存分析及三种初始化"></a>4.2 Java内存分析及三种初始化</h3><h4 id="4-2-1-Java内存分析"><a href="#4-2-1-Java内存分析" class="headerlink" title="4.2.1 Java内存分析"></a>4.2.1 Java内存分析</h4><div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201634043.png' data-fancybox='default' data-caption='image-20210712113429404'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201634043.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201634043.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210712113429404"></a><span class='image-caption'>image-20210712113429404</span></div></div>
+
 <p>先申请再创建</p>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201634817.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201634817.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210712113741570"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201634817.png' data-fancybox='default' data-caption='image-20210712113741570'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201634817.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201634817.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210712113741570"></a><span class='image-caption'>image-20210712113741570</span></div></div>
+
 <h4 id="4-2-2-三种初始化方式"><a href="#4-2-2-三种初始化方式" class="headerlink" title="4.2.2 三种初始化方式"></a>4.2.2 三种初始化方式</h4><p><strong>静态初始化</strong></p>
 <pre><code class="java">int[] a = &#123;1,2,3&#125;;
 Man[] mans = &#123;new Man(1,1),new Man(2,2)&#125;;
@@ -3742,7 +3766,8 @@ public static void main(String[] args) &#123;
 </code></pre>
 <h3 id="4-4-多维数组"><a href="#4-4-多维数组" class="headerlink" title="4.4 多维数组"></a>4.4 多维数组</h3><p>多维数组可以看成是数组的数组，比如二维数组是一个特殊的一维数组，其每一个元素都是一个一维数组</p>
 <p>如，二维数组：<code>int[][] a = new int[2][5]; </code>可以看成一个二行五列的数组</p>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201634508.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201634508.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210712140511164"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201634508.png' data-fancybox='default' data-caption='image-20210712140511164'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201634508.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201634508.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210712140511164"></a><span class='image-caption'>image-20210712140511164</span></div></div>
+
 <p>二维数组的arrays.length输出的是第一层数组的长度，比如<code>new int[2][5]</code>的长度就是2；如果要得到第二层数组的长度，应表示为<code>arrays[0].length</code></p>
 <h3 id="4-5-Arrays工具类"><a href="#4-5-Arrays工具类" class="headerlink" title="4.5 Arrays工具类"></a>4.5 Arrays工具类</h3><p>由于数组对象本身并没有什么方法可以供我们调用,但API中提供了一个数组的工具类java.util.Arrays供我们使用,从而可以对数据对象进行一些基本的操作（查看JDK帮助文档）</p>
 <p>Arrays类中的方法都是static修饰的静态方法,在使用的时候可以直接使用类名进行调用,而”不用”使用对象来调用(注意:是”不用”而不是”不能”)</p>
@@ -3788,7 +3813,8 @@ for(int i=0;i&lt;a.length;i++) &#123; //第i+1轮排序
     &#125;
 &#125;
 </code></pre>
-<h3 id="4-7-稀疏数组"><a href="#4-7-稀疏数组" class="headerlink" title="4.7 稀疏数组"></a>4.7 稀疏数组</h3><p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201635838.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201635838.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210712152206816"></p>
+<h3 id="4-7-稀疏数组"><a href="#4-7-稀疏数组" class="headerlink" title="4.7 稀疏数组"></a>4.7 稀疏数组</h3><div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201635838.png' data-fancybox='default' data-caption='image-20210712152206816'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201635838.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201635838.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210712152206816"></a><span class='image-caption'>image-20210712152206816</span></div></div>
+
 <p>例子：</p>
 <pre><code class="java">private static int sum = 0; //统计原始数组中有多少个非0数
 private static int[][] primary; //声明定义原始数组
@@ -3878,7 +3904,8 @@ public static void RecoverArrays() &#123;
 <p><strong>三大特性：封装、继承、多态</strong></p>
 <p><strong>从认识论角度考虑是先有对象后有类。对象，是具体的事物。类，是抽象的，是对对象的抽象</strong></p>
 <p><strong>从代码运行角度考虑是先有类后有对象。类是对象的模板</strong></p>
-<h3 id="5-2-方法回顾和加深"><a href="#5-2-方法回顾和加深" class="headerlink" title="5.2 方法回顾和加深"></a>5.2 方法回顾和加深</h3><p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201636775.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201636775.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210712210504188"></p>
+<h3 id="5-2-方法回顾和加深"><a href="#5-2-方法回顾和加深" class="headerlink" title="5.2 方法回顾和加深"></a>5.2 方法回顾和加深</h3><div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201636775.png' data-fancybox='default' data-caption='image-20210712210504188'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201636775.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201636775.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210712210504188"></a><span class='image-caption'>image-20210712210504188</span></div></div>
+
 <p><strong>方法的调用和参数传递见3.1.2和3.1.3</strong></p>
 <p>静态方法在类加载时随类一起加载，而非静态方法只有在类被实例化之后才存在</p>
 <h3 id="5-3-对象的创建分析"><a href="#5-3-对象的创建分析" class="headerlink" title="5.3 对象的创建分析"></a>5.3 对象的创建分析</h3><h4 id="5-3-1-类与对象的关系"><a href="#5-3-1-类与对象的关系" class="headerlink" title="5.3.1 类与对象的关系"></a>5.3.1 类与对象的关系</h4><p>类是一种抽象的数据类型，它是对某一类事物整体描述/定义，但是并不能代表某一个具体的事物</p>
@@ -3923,7 +3950,8 @@ public class Pet &#123;
     &#125;
 &#125;
 </code></pre>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201636541.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201636541.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210713105310543"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201636541.png' data-fancybox='default' data-caption='image-20210713105310543'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201636541.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201636541.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210713105310543"></a><span class='image-caption'>image-20210713105310543</span></div></div>
+
 <p><strong>tip：JDK1.8方法区叫做元数据区，方法区（non-heap，非堆）不是在堆中（画图有误）</strong></p>
 <p>什么是引用类型：除了8大基本类型都可以叫做引用类型，对象是通过引用来操作的</p>
 <p>new的实例对象存放在堆中，而我们操作的是存放在栈中的对象引用，其值就是实例对象在堆中的地址</p>
@@ -5067,7 +5095,8 @@ int num1 = Integer.parseInt(Str3);
 <p><strong>错误(ERROR)</strong>:错误不是异常, 而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢<br>出时，一个错误就发生了，它们在编译也检查不到的</p>
 <h4 id="6-1-2-异常体系结构"><a href="#6-1-2-异常体系结构" class="headerlink" title="6.1.2 异常体系结构"></a>6.1.2 异常体系结构</h4><p>Java把异常当作对象来处理，并定义一个基类java.lang.Throwable作为所有异常的超类</p>
 <p>在Java API中已经定义了许多异常类，这些异常类分为两大类，错误Error和异常Exception</p>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201636198.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201636198.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210717185030151"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201636198.png' data-fancybox='default' data-caption='image-20210717185030151'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201636198.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201636198.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210717185030151"></a><span class='image-caption'>image-20210717185030151</span></div></div>
+
 <h4 id="6-2-3-Error"><a href="#6-2-3-Error" class="headerlink" title="6.2.3 Error"></a>6.2.3 Error</h4><p>Error类对象由Java虚拟机生成并抛出，大多数错误与代码编写者所执行的操作无关</p>
 <p>Java虚拟机运行错误(Virtual MachineError) , 当JVM不再有继续执行操作所需的内存资源<br>时，将出现OutOfMemoryError。这些异常发生时，Java虚拟机(JVM) - -般会选择线程终<br>止</p>
 <p>还有发生在虚拟机试图执行应用时，如类定义错误(NoClassDefFoundError) 、链接错误<br>(LinkageError)。这些错误是不可查的，因为它们在应用程序的控制和处理能力之外,而且<br>绝大多数是程序运行时不允许出现的状况</p>
@@ -5177,7 +5206,8 @@ public class test06 &#123;
 <li>一个进程中的多个线程共享相同的内存单元/内存地址空间-&gt;它们从同一堆中分配对象，可以访问相同的变量和对象。这就使得线程间通信更简便、高效。但多个线程操作共享的系统资源可能就会带来<strong>安全的隐患</strong></li>
 </ul>
 <p><strong>JVM结构：</strong></p>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201637101.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201637101.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210724213734378"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201637101.png' data-fancybox='default' data-caption='image-20210724213734378'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201637101.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201637101.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210724213734378"></a><span class='image-caption'>image-20210724213734378</span></div></div>
+
 <h4 id="7-1-1-CPU、并行与并发的理解"><a href="#7-1-1-CPU、并行与并发的理解" class="headerlink" title="7.1.1 CPU、并行与并发的理解"></a>7.1.1 CPU、并行与并发的理解</h4><p><strong>单核CPU和多核CPU的理解</strong></p>
 <ul>
 <li>单核CPU，其实是一种假的多线程，因为在一个时间单元内，也只能执行一个线程的任务。例如：虽然有多车道，但是收费站只有一个工作人员在收费，只有收了费才能通过，那么CPU就好比收费人员。如果有某个人不想交钱，那么收费人员可以把他“挂起”(晾着他，等他想通了，准备好了钱，再去收费）。但是因为CPU时间单元特别短，因此感觉不出来</li>
@@ -5404,15 +5434,18 @@ public class ThreadTest02 &#123;
 <li>阻塞：在某种特殊情况下，被人为挂起或执行输入输出操作时，<strong>让出CPU并临时中止自己的执行，进入阻塞状态</strong></li>
 <li>死亡：线程<strong>完成了它的全部工作或线程被提前强制性地中止或出现异常导致结束</strong></li>
 </ul>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201637238.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201637238.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210726120906987"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201637238.png' data-fancybox='default' data-caption='image-20210726120906987'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201637238.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201637238.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210726120906987"></a><span class='image-caption'>image-20210726120906987</span></div></div>
+
 <h3 id="7-4-线程的同步"><a href="#7-4-线程的同步" class="headerlink" title="7.4 线程的同步"></a>7.4 线程的同步</h3><h4 id="7-4-1-线程的安全问题"><a href="#7-4-1-线程的安全问题" class="headerlink" title="7.4.1 线程的安全问题"></a>7.4.1 线程的安全问题</h4><p>问题提出：</p>
 <ul>
 <li>多个线程执行的<strong>不确定性</strong>引起执行结果的不稳定</li>
 <li>多个线程对账本的共享，会造成操作的<strong>不完整性</strong>，会破坏数据</li>
 </ul>
 <p><strong>如，7.2.2中多窗口卖票实例若run()中加了sleep()的可能会出现：</strong></p>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201637531.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201637531.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210726152643935"></p>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201637008.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201637008.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210726152750501"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201637531.png' data-fancybox='default' data-caption='image-20210726152643935'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201637531.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201637531.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210726152643935"></a><span class='image-caption'>image-20210726152643935</span></div></div>
+
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201637008.png' data-fancybox='default' data-caption='image-20210726152750501'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201637008.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201637008.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210726152750501"></a><span class='image-caption'>image-20210726152750501</span></div></div>
+
 <h4 id="7-4-2-线程安全问题的解决办法-同步和Lock"><a href="#7-4-2-线程安全问题的解决办法-同步和Lock" class="headerlink" title="7.4.2 线程安全问题的解决办法(同步和Lock)"></a>7.4.2 线程安全问题的解决办法(同步和Lock)</h4><p>7.2.2实例出现的问题：<strong>卖票过程中，出现了重票、错票</strong>–&gt;出现了线程的安全问题</p>
 <p><strong>问题出现的原因</strong>：当某个线程操作车票的过程中，尚未操作完成时，其他线程参与进来，也操作车票</p>
 <p><strong>如何解决</strong>：当一个线程a在操作ticket的时候，其他线程不能参与进来。直到线程a操作完ticket时，其他线程才可以开始操作ticket。这种情况即使线程a出现了阻塞，ticket也不能被改变</p>
@@ -6045,7 +6078,8 @@ System.out.println(p1.name.equals(p2.name));//true
 System.out.println(p1.name == p2.name);//true
 //如果想改变名字，如p1.name = &quot;Jerry&quot;,还在常量池中又新开辟一个空间存储&quot;Jerry&quot;
 </code></pre>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201638158.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201638158.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210729172439917"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201638158.png' data-fancybox='default' data-caption='image-20210729172439917'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201638158.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201638158.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210729172439917"></a><span class='image-caption'>image-20210729172439917</span></div></div>
+
 <h5 id="3-String不同拼接操作的比较"><a href="#3-String不同拼接操作的比较" class="headerlink" title="3.String不同拼接操作的比较"></a>3.String不同拼接操作的比较</h5><pre><code class="java">String s1 = &quot;javaEE&quot;;
 String s2 = &quot;hadoop&quot;;
 String s3 = &quot;javaEEhadoop&quot; ;
@@ -6068,7 +6102,8 @@ String s8 = s5.intern();//返回值得到的s8使用的是常量池中已经存�
 //str5调用intern()方法时，Java查找常量池中是否有相同Unicode的字符串常量，如果有，则返回其的引用，如果没有，则在常量池中增加一个Unicode等于str的字符串并返回它的引用
 System.out.println(s3 == s8);//true
 </code></pre>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201638514.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201638514.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210729173652497"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201638514.png' data-fancybox='default' data-caption='image-20210729173652497'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201638514.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201638514.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210729173652497"></a><span class='image-caption'>image-20210729173652497</span></div></div>
+
 <p><strong>结论：</strong></p>
 <ul>
 <li><strong>常量与常量的拼接结果在常量池</strong>。且常量池中不会存在相同内容的常量</li>
@@ -7240,7 +7275,8 @@ class Generic&lt;@MyAnnotation1 T&gt;&#123;
 </li>
 </ul>
 <p>Java集合类可以用于<strong>存储数量不等的多个对象</strong>，还可用于<strong>保存具有映射关系的关联数组</strong></p>
-<h4 id="10-1-1-集合框架的使用场景"><a href="#10-1-1-集合框架的使用场景" class="headerlink" title="10.1.1 集合框架的使用场景"></a>10.1.1 集合框架的使用场景</h4><p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201639409.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201639409.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210802145115189"></p>
+<h4 id="10-1-1-集合框架的使用场景"><a href="#10-1-1-集合框架的使用场景" class="headerlink" title="10.1.1 集合框架的使用场景"></a>10.1.1 集合框架的使用场景</h4><div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201639409.png' data-fancybox='default' data-caption='image-20210802145115189'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201639409.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201639409.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210802145115189"></a><span class='image-caption'>image-20210802145115189</span></div></div>
+
 <h4 id="10-1-2-Java集合可分为Collection和Map两种体系"><a href="#10-1-2-Java集合可分为Collection和Map两种体系" class="headerlink" title="10.1.2 Java集合可分为Collection和Map两种体系"></a>10.1.2 Java集合可分为Collection和Map两种体系</h4><ul>
 <li>Collection接口：<strong>单列数据</strong>，定义了存取一组对象的方法的集合<ul>
 <li>List：<strong>元素有序、可重复</strong>的集合  —&gt;”动态”数组<ul>
@@ -7259,9 +7295,11 @@ class Generic&lt;@MyAnnotation1 T&gt;&#123;
 </li>
 </ul>
 <p><strong>1.Collection接口继承树：</strong></p>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201639220.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201639220.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210802145632177"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201639220.png' data-fancybox='default' data-caption='image-20210802145632177'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201639220.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201639220.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210802145632177"></a><span class='image-caption'>image-20210802145632177</span></div></div>
+
 <p><strong>2.Map接口继承树：</strong></p>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201641823.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201641823.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210802145827415"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201641823.png' data-fancybox='default' data-caption='image-20210802145827415'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201641823.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201641823.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210802145827415"></a><span class='image-caption'>image-20210802145827415</span></div></div>
+
 <h3 id="10-2-Collection接口"><a href="#10-2-Collection接口" class="headerlink" title="10.2 Collection接口"></a>10.2 Collection接口</h3><h4 id="10-2-1-Collection接口中常用方法的使用"><a href="#10-2-1-Collection接口中常用方法的使用" class="headerlink" title="10.2.1 Collection接口中常用方法的使用"></a>10.2.1 Collection接口中常用方法的使用</h4><p><strong>添加元素</strong>：add(Object obj)、addAlI(Collection coll)</p>
 <p><strong>获取有效元素的个数</strong>：int size()</p>
 <p><strong>清空集合</strong>：void clear()</p>
@@ -7380,7 +7418,8 @@ System.out.println(integers.size());//2
 <p>Collection接口继承了java.lang.lterable接口，该接口有一个iterator()方法，那么所有实现了Collection接口的集合类都有一个<strong>iterator()方法， 用以返回一个实现了iterator接口的对象</strong></p>
 <p>Iterator<strong>仅用于遍历集合</strong>，Iterator 本身并<strong>不提供承装对象的能力</strong>。如果需要<strong>创建terator对象，则必须有一个被迭代的集合</strong></p>
 <p>集合对象<strong>每次调用</strong>iterator()方法都<strong>得到一个全新的迭代器对象</strong>，默认游标都在集合的<strong>第一个元素之前</strong></p>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201641040.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201641040.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210803100049690"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201641040.png' data-fancybox='default' data-caption='image-20210803100049690'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201641040.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201641040.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210803100049690"></a><span class='image-caption'>image-20210803100049690</span></div></div>
+
 <pre><code class="java">//集合元素的遍历操作，使用迭代器Iterator接口
 Collection collection = new ArrayList();
 collection.add(123);
@@ -7680,7 +7719,8 @@ while(iterator.hasNext())&#123;
     jdk8:原来的元素在数组中，指向元素d
 总结：七上八下（JDK7：新元素以头插法放在所有链表数据前面，即数组中；JDK8：新元素以尾插法放在链表数据后面，即链表尾部）
 </code></pre>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201641735.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201641735.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210803204939848"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201641735.png' data-fancybox='default' data-caption='image-20210803204939848'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201641735.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201641735.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210803204939848"></a><span class='image-caption'>image-20210803204939848</span></div></div>
+
 <h5 id="2-LinkedHashSet类"><a href="#2-LinkedHashSet类" class="headerlink" title="2.LinkedHashSet类"></a>2.LinkedHashSet类</h5><p><strong>LinkedHashSet是HashSet的子类</strong></p>
 <p>LinkedHashSet根据元素的<strong>hashCode值来决定元素的存储位置</strong>，但它同时<strong>使用双向链表维护元素的次序</strong>，这使得元素看起来是以插入顺序保存的</p>
 <p><strong>LinkedHashSet插入性能略低于HashSet</strong>, 但<strong>在迭代访问Set里的全部元素时有很好的性能</strong></p>
@@ -7696,11 +7736,13 @@ while(iterator.hasNext())&#123;
     System.out.println(iterator.next());//456 AA User&#123;name=&#39;Tom&#39;, age=30&#125;
 &#125;
 </code></pre>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201642753.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201642753.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210804101418488"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201642753.png' data-fancybox='default' data-caption='image-20210804101418488'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201642753.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201642753.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210804101418488"></a><span class='image-caption'>image-20210804101418488</span></div></div>
+
 <h5 id="3-TreeSet类"><a href="#3-TreeSet类" class="headerlink" title="3.TreeSet类"></a>3.TreeSet类</h5><p><strong>TreeSet是SortedSet接口的实现类</strong>，TreeSet可以<strong>确保集合元素处于排序状态</strong></p>
 <p>TreeSet<strong>两种排序方法：自然排序(Comparable)和定制排序(Comparator)<strong>。</strong>默认情况下，TreeSet采用自然排序</strong></p>
 <p>TreeSet底层<strong>使用红黑树结构存储数据</strong>，向TreeSet中<strong>添加的数据要求必须是相同类的对象</strong></p>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201642570.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201642570.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210804113159347"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201642570.png' data-fancybox='default' data-caption='image-20210804113159347'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201642570.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201642570.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210804113159347"></a><span class='image-caption'>image-20210804113159347</span></div></div>
+
 <p><strong>新增的方法</strong>如下：(了解)</p>
 <ul>
 <li>Comparator comparator()</li>
@@ -7848,7 +7890,8 @@ System.out.println(set);//1002,&quot;BB&quot;  1001,&quot;CC&quot;  1001,&quot;C
 <p>Map中的value：<strong>无序的、可重复</strong>的，使用Collection存储所有的value —&gt;value所在的类要重写equals()，因为以后可能会<strong>涉及到value的比较</strong></p>
 <p>一个键值对：<strong>key-value构成了一个Entry对象</strong>，key和value相当于Entry的两个属性</p>
 <p>Map中的entry：<strong>无序的、不可重复</strong>的，使用Set存储所有的entry</p>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201642180.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201642180.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210804175628724"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201642180.png' data-fancybox='default' data-caption='image-20210804175628724'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201642180.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201642180.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210804175628724"></a><span class='image-caption'>image-20210804175628724</span></div></div>
+
 <h4 id="10-3-1-Map接口中的常用方法"><a href="#10-3-1-Map接口中的常用方法" class="headerlink" title="10.3.1 Map接口中的常用方法"></a>10.3.1 Map接口中的常用方法</h4><p><strong>添加、删除、修改操作：</strong></p>
 <ul>
 <li>Object put(Object key,Object value)：将指定<strong>key-value添加到(或修改)当前map对象</strong>中</li>
@@ -8084,7 +8127,8 @@ void createEntry(int hash, K key, V value, int bucketIndex) &#123;
     size++;//key-value对的个数加1
 &#125;
 </code></pre>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201643610.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201643610.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210804211433602"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201643610.png' data-fancybox='default' data-caption='image-20210804211433602'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201643610.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201643610.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210804211433602"></a><span class='image-caption'>image-20210804211433602</span></div></div>
+
 <p><strong>JDK8</strong></p>
 <pre><code class="java">//无参构造器
 public HashMap() &#123;
@@ -8253,7 +8297,8 @@ final void treeifyBin(Node&lt;K,V&gt;[] tab, int hash) &#123;//传入HashMap对�
     &#125;
 &#125;
 </code></pre>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201643558.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201643558.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210804211515316"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201643558.png' data-fancybox='default' data-caption='image-20210804211515316'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201643558.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201643558.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210804211515316"></a><span class='image-caption'>image-20210804211515316</span></div></div>
+
 <h4 id="10-3-3-LinkedHashMap类"><a href="#10-3-3-LinkedHashMap类" class="headerlink" title="10.3.3 LinkedHashMap类"></a>10.3.3 LinkedHashMap类</h4><h5 id="底层实现原理"><a href="#底层实现原理" class="headerlink" title="底层实现原理"></a>底层实现原理</h5><pre><code class="java">Map map = new HashMap();
 Map map1 = new LinkedHashMap();
 map.put(123,&quot;AA&quot;);
@@ -8573,7 +8618,8 @@ while(scanner.hasNext())&#123;
 <p>所谓泛型，就是允许<strong>在定义类、接口时通过一个标识表示类中某个属性的类型或者是某个方法的返回值及参数类型</strong>。<strong>这个类型参数将在使用时（例如，继承或实现这个接口，用这个类型声明变量、创建对象时）确定（即传入实际的类型参数，也称为类型实参)</strong></p>
 <p>从JDK1.5以后，Java引入了“参数化类型( Parameterized type)”的概念，允许我们在创建集合时再指定集合元素的类型，正如：List<String>，这表明该List只能保存字符串类型的对象</p>
 <p>JDK1.5改写了集合框架中的全部接口和类，为这些接口、类增加了泛型支持从而<strong>可以在声明集合变量、创建集合对象时传入类型实参</strong></p>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201643333.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201643333.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210806095515537"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201643333.png' data-fancybox='default' data-caption='image-20210806095515537'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201643333.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201643333.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210806095515537"></a><span class='image-caption'>image-20210806095515537</span></div></div>
+
 <h3 id="11-1-泛型的使用"><a href="#11-1-泛型的使用" class="headerlink" title="11.1 泛型的使用"></a>11.1 泛型的使用</h3><pre><code class="java">泛型的使用
 1.jdk 5.0新增的特性
 2.在集合中使用泛型:
@@ -9029,7 +9075,8 @@ public void delete(String id):删除指定id 对象
 <p>File<strong>能新建、删除、重命名文件和目录</strong>，但File<strong>不能访问文件内容本身</strong>。如果需要<strong>访问文件内容本身，则需要使用输入/输出流（Input/Output）</strong>，到时<strong>File对象会经常作为参数传递给流的构造器</strong></p>
 <p>想要在<strong>Java程序中</strong>表示<strong>一个真实存在的文件或目录，那么必须有一个File对象</strong>，但是Java程序中的<strong>一个File对象，可能没有一个真实存在的文件或目录</strong></p>
 <p>当一个File对象是否有在硬件中对应的文件或文件目录存在或不存在时：</p>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201643400.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201643400.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210807161256849"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201643400.png' data-fancybox='default' data-caption='image-20210807161256849'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201643400.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201643400.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210807161256849"></a><span class='image-caption'>image-20210807161256849</span></div></div>
+
 <h4 id="12-1-1-常用构造器"><a href="#12-1-1-常用构造器" class="headerlink" title="12.1.1 常用构造器"></a>12.1.1 常用构造器</h4><p>public File(String pathname)：<strong>以pathname为路径创建File对象</strong>，可以是绝对路径或者相对路径，<strong>如果pathname是相对路径，则默认的当前路径在系统属性user.dir中存储</strong></p>
 <ul>
 <li>绝对路径：是一个固定的路径，从盘符开始</li>
@@ -9212,10 +9259,14 @@ if(mkdir1)&#123;
 <h3 id="12-2-IO流原理及流的分类"><a href="#12-2-IO流原理及流的分类" class="headerlink" title="12.2 IO流原理及流的分类"></a>12.2 IO流原理及流的分类</h3><p>I/O是Input/Output的缩写，I/O技术是非常实用的技术，<strong>用于处理设备之间的数据传输</strong>。如读/写文件，网络通讯等</p>
 <p>Java程序中，对于<strong>数据的输入/输出操作以“流(stream)”的方式进行</strong></p>
 <p>java.io包下提供了<strong>各种“流”类和接口，用以获取不同种类的数据</strong>，并<strong>通过标准的方法输入或输出数据</strong></p>
-<h4 id="12-2-1-IO流的原理"><a href="#12-2-1-IO流的原理" class="headerlink" title="12.2.1 IO流的原理"></a>12.2.1 IO流的原理</h4><p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201644370.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201644370.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210807170244977"></p>
-<h4 id="12-2-2-流的分类"><a href="#12-2-2-流的分类" class="headerlink" title="12.2.2 流的分类"></a>12.2.2 流的分类</h4><p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201644853.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201644853.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210807170938002"></p>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201644344.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201644344.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210807171355287"></p>
-<h4 id="12-2-3-IO流的体系结构"><a href="#12-2-3-IO流的体系结构" class="headerlink" title="12.2.3 IO流的体系结构"></a>12.2.3 IO流的体系结构</h4><p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201645856.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201645856.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210807172114754"></p>
+<h4 id="12-2-1-IO流的原理"><a href="#12-2-1-IO流的原理" class="headerlink" title="12.2.1 IO流的原理"></a>12.2.1 IO流的原理</h4><div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201644370.png' data-fancybox='default' data-caption='image-20210807170244977'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201644370.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201644370.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210807170244977"></a><span class='image-caption'>image-20210807170244977</span></div></div>
+
+<h4 id="12-2-2-流的分类"><a href="#12-2-2-流的分类" class="headerlink" title="12.2.2 流的分类"></a>12.2.2 流的分类</h4><div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201644853.png' data-fancybox='default' data-caption='image-20210807170938002'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201644853.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201644853.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210807170938002"></a><span class='image-caption'>image-20210807170938002</span></div></div>
+
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201644344.png' data-fancybox='default' data-caption='image-20210807171355287'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201644344.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201644344.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210807171355287"></a><span class='image-caption'>image-20210807171355287</span></div></div>
+
+<h4 id="12-2-3-IO流的体系结构"><a href="#12-2-3-IO流的体系结构" class="headerlink" title="12.2.3 IO流的体系结构"></a>12.2.3 IO流的体系结构</h4><div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201645856.png' data-fancybox='default' data-caption='image-20210807172114754'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201645856.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201645856.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210807172114754"></a><span class='image-caption'>image-20210807172114754</span></div></div>
+
 <h3 id="12-3-节点流-或文件流"><a href="#12-3-节点流-或文件流" class="headerlink" title="12.3 节点流(或文件流)"></a>12.3 节点流(或文件流)</h3><h4 id="12-3-1-FileReader类"><a href="#12-3-1-FileReader类" class="headerlink" title="12.3.1 FileReader类"></a>12.3.1 FileReader类</h4><p>从硬盘读入数据到内存</p>
 <h5 id="1-使用FileReader类read-实现数据的读入"><a href="#1-使用FileReader类read-实现数据的读入" class="headerlink" title="1.使用FileReader类read()实现数据的读入"></a>1.使用FileReader类read()实现数据的读入</h5><pre><code class="java">//说明点:
 //1. read()的理解:返回读入的一个字符。如果达到文件末尾，返回-1
@@ -9632,7 +9683,8 @@ while((b = fis.read()) != -1)&#123;
 </ul>
 <p>字节流中的数据都是字符时，转成字符流操作更高效</p>
 <p>很多时候我们使用<strong>转换流来处理文件乱码</strong>问题。<strong>实现编码和解码的功能</strong></p>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201645264.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201645264.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210808140840759"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201645264.png' data-fancybox='default' data-caption='image-20210808140840759'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201645264.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201645264.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210808140840759"></a><span class='image-caption'>image-20210808140840759</span></div></div>
+
 <h4 id="12-5-1-InputStreamReader"><a href="#12-5-1-InputStreamReader" class="headerlink" title="12.5.1 InputStreamReader"></a>12.5.1 InputStreamReader</h4><pre><code class="java">//处理流之二:转换流的使用
 //1.转换流:属于字符流
 //  InputStreamReader:将一个字节的输入流转换为字符的输入流
@@ -9713,11 +9765,13 @@ public void TestOutputStreamWriter()&#123;
 <li>Unicode：<strong>国际标准码</strong>，融合了<strong>目前人类使用的所有字符</strong>。为每个字符分配唯一的字符码。<strong>所有的文字都用两个字节来表示</strong></li>
 <li>UTF-8：<strong>变长的编码方式</strong>，<strong>可用1-4个字节来表示一个字符</strong></li>
 </ul>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201645521.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201645521.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210808152050497"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201645521.png' data-fancybox='default' data-caption='image-20210808152050497'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201645521.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201645521.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210808152050497"></a><span class='image-caption'>image-20210808152050497</span></div></div>
+
 <p>Unicode不完美，这里就有三个问题，一个是，我们已经知道，<strong>英文字母只用一个字节表示就够了</strong>，第二个问题是如何才能<strong>区别Unicode和ASCII</strong>?计算机<strong>怎么知道两个字节表示一个符号，而不是分别表示两个符号</strong>呢?第三个，<strong>如果和GBK等双字节编码方式一样，用最高位是1或0表示两个字节和一个字节，就少了很多值无法用于表示字符</strong>，不够表示所有字符。Unicode在很长一段时间内无法推广，直到互联网的出现</p>
 <p>面向传输的众多UTF（UCS Transfer Format）标准出现了，顾名思义，<strong>UTF-8就是每次8个位传输数据</strong>，而<strong>UTF-16就是每次16个位</strong>。这是为传输而设计的编码，并使编码无国界，这样就可以显示全世界上所有文化的字符了</p>
 <p><strong>Unicode只是定义了一个庞大的、全球通用的字符集</strong>，并为每个字符规定了唯一确定的编号，具体<strong>存储成什么样的字节流，取决于字符编码方案</strong>。<strong>推荐的Unicode编码是UTF-8和UTF-16</strong></p>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201645177.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201645177.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210808151906856"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201645177.png' data-fancybox='default' data-caption='image-20210808151906856'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201645177.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201645177.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210808151906856"></a><span class='image-caption'>image-20210808151906856</span></div></div>
+
 <p>说明：在标准UTF-8编码中，超出基本多语言范围(BMP-Basic Multilinqual Plane)的字符被编码为4字节格式，但在修正的UTF-8编码中，他们由代理编码对( surrogatepairs )表示，然后这些代理编码对在序列中分别重新编码。结果标准UTF-8编码中需要4个字节的字符，在修正后的UTF-8编码中将需要6个字节</p>
 <h3 id="12-6-标准输入、输出流（处理流之三）"><a href="#12-6-标准输入、输出流（处理流之三）" class="headerlink" title="12.6 标准输入、输出流（处理流之三）"></a>12.6 标准输入、输出流（处理流之三）</h3><p>System.in和System.out<strong>分别代表了系统标准的输入和输出设备</strong></p>
 <p>默认输入设备是：键盘，输出设备是：显示器</p>
@@ -10205,7 +10259,8 @@ public void TestRandomAccessFileInsert() throws FileNotFoundException &#123;
 <li><strong>OSI参考模型：模型过于理想化</strong>，未能在因特网上进行广泛推广</li>
 <li>**TCP/IP参考模型(或TCP/IP协议)**：事实上的国际标准</li>
 </ul>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646631.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646631.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210809110936920"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646631.png' data-fancybox='default' data-caption='image-20210809110936920'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646631.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646631.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210809110936920"></a><span class='image-caption'>image-20210809110936920</span></div></div>
+
 <h5 id="1-TCP-IP参考模型各层的作用"><a href="#1-TCP-IP参考模型各层的作用" class="headerlink" title="1.TCP/IP参考模型各层的作用"></a>1.TCP/IP参考模型各层的作用</h5><p><strong>应用层：提供应用程序的网络接口</strong></p>
 <p><strong>传输层：</strong>为<strong>两台主机间的应用程序提供端到端的通信</strong>。传输层<strong>从应用层接受数据</strong>，并且在必要的时候<strong>把它分成较小的单元</strong>，<strong>传递给网络层</strong>，并<strong>确保到达对方的各段信息正确无误</strong></p>
 <p><strong>网络层：</strong>主要协议有IP (Internet protocol) 、ICMP (Internet Control Message Protocol ，互联网控制报文协议)、IGMP ( Internet Group Management Protocol，互联网组管理协议)、ARP (Address Resolution Protocol ,地址解析协议)和RARP (Reverse Address Resolution Protocol ，反向地址解析协议)等。<strong>涉及寻址和路由选择</strong></p>
@@ -10291,7 +10346,8 @@ public void TestRandomAccessFileInsert() throws FileNotFoundException &#123;
 <td>PPTP用于私人网络之间的连接(隧道)</td>
 </tr>
 </tbody></table>
-<h5 id="3-网络通信示例图"><a href="#3-网络通信示例图" class="headerlink" title="3.网络通信示例图"></a>3.网络通信示例图</h5><p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646935.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646935.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210809114126991"></p>
+<h5 id="3-网络通信示例图"><a href="#3-网络通信示例图" class="headerlink" title="3.网络通信示例图"></a>3.网络通信示例图</h5><div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646935.png' data-fancybox='default' data-caption='image-20210809114126991'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646935.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646935.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210809114126991"></a><span class='image-caption'>image-20210809114126991</span></div></div>
+
 <h3 id="13-2-通信要素1：IP和端口号"><a href="#13-2-通信要素1：IP和端口号" class="headerlink" title="13.2 通信要素1：IP和端口号"></a>13.2 通信要素1：IP和端口号</h3><h4 id="13-2-1-IP地址"><a href="#13-2-1-IP地址" class="headerlink" title="13.2.1 IP地址"></a>13.2.1 IP地址</h4><p>IP地址：InetAddress（Java中一个InetAddress对象就代表一个IP地址）</p>
 <ul>
 <li><strong>唯一的标识Internet上的计算机</strong>(通信实体)</li>
@@ -10304,7 +10360,8 @@ public void TestRandomAccessFileInsert() throws FileNotFoundException &#123;
 <li>IP地址分类方式2：**公网地址(万维网使用)<strong>和</strong>私有地址(局域网使用)**。192.168.开头的就是私有址址，范围即为192.168.0.0——192.168.255.255，专门为组织机构内部使用</li>
 <li>特点：不易记忆</li>
 </ul>
-<h5 id="1-通过域名访问对应的IP地址的网址"><a href="#1-通过域名访问对应的IP地址的网址" class="headerlink" title="1.通过域名访问对应的IP地址的网址"></a>1.通过域名访问对应的IP地址的网址</h5><p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646648.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646648.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210809144629029"></p>
+<h5 id="1-通过域名访问对应的IP地址的网址"><a href="#1-通过域名访问对应的IP地址的网址" class="headerlink" title="1.通过域名访问对应的IP地址的网址"></a>1.通过域名访问对应的IP地址的网址</h5><div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646648.png' data-fancybox='default' data-caption='image-20210809144629029'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646648.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646648.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210809144629029"></a><span class='image-caption'>image-20210809144629029</span></div></div>
+
 <h5 id="2-InetAddress类的使用"><a href="#2-InetAddress类的使用" class="headerlink" title="2.InetAddress类的使用"></a>2.InetAddress类的使用</h5><pre><code class="java">//如何实例化InetAddress:两个方法getByName(String host)、getLocalHost()
 //两个常用方法:getHostName()、getHostAddress()
 InetAddress address = InetAddress.getByName(&quot;192.168.9.59&quot;);//通过字符串生成一个IP地址
@@ -10331,7 +10388,8 @@ System.out.println(address3);
 </li>
 </ul>
 <p><strong>端口号与IP地址的组合得出一个网络套接字：Socket</strong></p>
-<h5 id="1-两台主机间同一应用的通信："><a href="#1-两台主机间同一应用的通信：" class="headerlink" title="1.两台主机间同一应用的通信："></a>1.两台主机间同一应用的通信：</h5><p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646269.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646269.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210809150824749"></p>
+<h5 id="1-两台主机间同一应用的通信："><a href="#1-两台主机间同一应用的通信：" class="headerlink" title="1.两台主机间同一应用的通信："></a>1.两台主机间同一应用的通信：</h5><div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646269.png' data-fancybox='default' data-caption='image-20210809150824749'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646269.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646269.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210809150824749"></a><span class='image-caption'>image-20210809150824749</span></div></div>
+
 <h3 id="13-3-通信要素2：网络通信协议"><a href="#13-3-通信要素2：网络通信协议" class="headerlink" title="13.3 通信要素2：网络通信协议"></a>13.3 通信要素2：网络通信协议</h3><p>网络通信协议：计算机网络中实现通信必须有一些约定，即通信协议，<strong>对速率、传输代码、代码结构、传输控制步骤、出错控制等制定标准</strong></p>
 <p>计算机网络通信涉及内容很多，比如指定源地址和目标地址，加密解密，压缩解压缩，差错控制，流量控制，路由控制，这就产生了如何实现如此复杂的网络协议的问题</p>
 <p><strong>通信协议分层的思想</strong>：在制定协议时，把<strong>复杂成份分解成一些简单的成份，再将它们复合起来</strong>。最常用的复合方式是层次方式，即<strong>同层间可以通信、上一层可以调用下一层，而与再下一层不发生关系</strong>。<strong>各层互不影响，利于系统的开发和扩展</strong></p>
@@ -10363,11 +10421,13 @@ System.out.println(address3);
 <li>发送数据结束时<strong>无需释放资源，开销小，速度快</strong></li>
 </ul>
 <p>TCP生活案例：打电话<br>UDP生活案例：发送短信、发电报</p>
-<h5 id="1-TCP三次握手和四次挥手"><a href="#1-TCP三次握手和四次挥手" class="headerlink" title="1.TCP三次握手和四次挥手"></a>1.TCP三次握手和四次挥手</h5><p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646649.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646649.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h5 id="1-TCP三次握手和四次挥手"><a href="#1-TCP三次握手和四次挥手" class="headerlink" title="1.TCP三次握手和四次挥手"></a>1.TCP三次握手和四次挥手</h5><div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646649.png' data-fancybox='default' data-caption='undefined'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646649.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646649.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a><span></span></div></div>
+
 <p>第一次握手：建立连接时，客户端发送SYN包（seq=x）到服务器，并进入SYN_SENT状态，等待服务器确认；SYN：同步序列编号（Synchronize Sequence Numbers）</p>
 <p>第二次握手：服务器收到SYN包，必须确认客户端的SYN（ack=x+1），同时自己也发送一个SYN包（seq=y），即SYN+ACK包，此时服务器进入SYN_RECV状态</p>
 <p>第三次握手：客户端收到服务器的SYN+ACK包，向服务器发送确认包ACK(ack=k+1)，此包发送完毕，客户端和服务器进入ESTABLISHED（TCP连接成功）状态，完成三次握手</p>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646957.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646957.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210809153742315"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646957.png' data-fancybox='default' data-caption='image-20210809153742315'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646957.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201646957.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210809153742315"></a><span class='image-caption'>image-20210809153742315</span></div></div>
+
 <p>客户端或服务器均可主动发起挥手动作，在socket编程中，任何一方执行close0操作即可产生挥手操作</p>
 <p>(1)客户端A发送个FIN，用来关闭客户A到服务器B的数据传送</p>
 <p>(2)服务器B收到这个FIN，它发回个ACK，确认序号为收到序号加1和SYN一样，一个FIN将占用一个序号</p>
@@ -10957,7 +11017,8 @@ public void Test()&#123;
     System.out.println(c10 == c11);//true
 &#125;
 </code></pre>
-<h3 id="14-3-类的加载与ClassLoader的理解"><a href="#14-3-类的加载与ClassLoader的理解" class="headerlink" title="14.3 类的加载与ClassLoader的理解"></a>14.3 类的加载与ClassLoader的理解</h3><h4 id="14-3-1-类的加载过程"><a href="#14-3-1-类的加载过程" class="headerlink" title="14.3.1 类的加载过程"></a>14.3.1 类的加载过程</h4><p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201647502.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201647502.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210810202245961"></p>
+<h3 id="14-3-类的加载与ClassLoader的理解"><a href="#14-3-类的加载与ClassLoader的理解" class="headerlink" title="14.3 类的加载与ClassLoader的理解"></a>14.3 类的加载与ClassLoader的理解</h3><h4 id="14-3-1-类的加载过程"><a href="#14-3-1-类的加载过程" class="headerlink" title="14.3.1 类的加载过程"></a>14.3.1 类的加载过程</h4><div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201647502.png' data-fancybox='default' data-caption='image-20210810202245961'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201647502.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201647502.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210810202245961"></a><span class='image-caption'>image-20210810202245961</span></div></div>
+
 <p>加载：</p>
 <ul>
 <li><strong>将class文件字节码内容加载到内存中</strong>，并将这些<strong>静态数据转换成方法区的运行时数据结构</strong>，然后<strong>生成一个代表这个类的java.lang.Class对象</strong>，<strong>作为方法区中类数据的访问入口</strong>（即引用地址）。所有需要访问和使用类数据只能通过这个Class对象。这个加载的过程需要类加载器参与</li>
@@ -10974,13 +11035,16 @@ public void Test()&#123;
 <li>当初始化一个类的时候，如果发现其<strong>父类还没有进行初始化</strong>，则需要<strong>先触发其父类的初始化</strong></li>
 <li>虚拟机会****</li>
 </ul>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201647317.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201647317.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210810203452201"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201647317.png' data-fancybox='default' data-caption='image-20210810203452201'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201647317.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201647317.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210810203452201"></a><span class='image-caption'>image-20210810203452201</span></div></div>
+
 <h4 id="14-3-2-理解类加载器ClassLoader"><a href="#14-3-2-理解类加载器ClassLoader" class="headerlink" title="14.3.2 理解类加载器ClassLoader"></a>14.3.2 理解类加载器ClassLoader</h4><h5 id="1-类加载器的作用："><a href="#1-类加载器的作用：" class="headerlink" title="1.类加载器的作用："></a>1.类加载器的作用：</h5><ul>
 <li><strong>类加载的作用</strong>：<strong>将class文件字节码内容加载到内存中</strong>，并将这些<strong>静态数据转换成方法区的运行时数据结构</strong>，然后<strong>在堆中生成一个代表这个类的java.lang.Class对象</strong>，作为方法区中类数据的访问入口</li>
 <li><strong>类缓存：</strong>标准的JavaSE类加载器可以按要求查找类，但一旦某<strong>个类被加载到类加载器中，它将维持加载（缓存）一段时间</strong>。不过JVM垃圾回收机制可以回收这些Class对象</li>
 </ul>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201647633.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201647633.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210810204715392"></p>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201647211.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201647211.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210810205237266"></p>
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201647633.png' data-fancybox='default' data-caption='image-20210810204715392'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201647633.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201647633.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210810204715392"></a><span class='image-caption'>image-20210810204715392</span></div></div>
+
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201647211.png' data-fancybox='default' data-caption='image-20210810205237266'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201647211.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201647211.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210810205237266"></a><span class='image-caption'>image-20210810205237266</span></div></div>
+
 <h5 id="2-获取三种类加载器"><a href="#2-获取三种类加载器" class="headerlink" title="2.获取三种类加载器"></a>2.获取三种类加载器</h5><pre><code class="java">@Test
 public void TestClassLoader()&#123;
     //对于自定义类，使用系统类加载器进行加载
@@ -11534,9 +11598,11 @@ class MyInvocationHandler implements InvocationHandler&#123;
     &#125;
 &#125;
 </code></pre>
-<h4 id="14-7-4-动态代理与AOP"><a href="#14-7-4-动态代理与AOP" class="headerlink" title="14.7.4 动态代理与AOP"></a>14.7.4 动态代理与AOP</h4><p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201648255.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201648255.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210812132140133"></p>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201648307.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201648307.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210812132406550"></p>
-<p><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201648947.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201648947.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210812132428676"></p>
+<h4 id="14-7-4-动态代理与AOP"><a href="#14-7-4-动态代理与AOP" class="headerlink" title="14.7.4 动态代理与AOP"></a>14.7.4 动态代理与AOP</h4><div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201648255.png' data-fancybox='default' data-caption='image-20210812132140133'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201648255.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201648255.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210812132140133"></a><span class='image-caption'>image-20210812132140133</span></div></div>
+
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201648307.png' data-fancybox='default' data-caption='image-20210812132406550'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201648307.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201648307.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210812132406550"></a><span class='image-caption'>image-20210812132406550</span></div></div>
+
+<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201648947.png' data-fancybox='default' data-caption='image-20210812132428676'><img fancybox itemprop="contentUrl" src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201648947.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202109201648947.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20210812132428676"></a><span class='image-caption'>image-20210812132428676</span></div></div>
 
   </div>
   
@@ -11553,21 +11619,11 @@ class MyInvocationHandler implements InvocationHandler&#123;
       <i class="fa-solid fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
     </section>
     <section class='body'>
-      <div class="vlts-rps"><a class="item" href="\categories\后端\Mybatis学习笔记.html" title="Mybatis学习笔记" rel="bookmark "><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205052130167.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202205052130167.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><span class="title">Mybatis学习笔记</span></a><a class="item" href="\categories\后端\Spring5学习笔记.html" title="Spring框架笔记" rel="bookmark "><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202203082023865.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202203082023865.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><span class="title">Spring框架笔记</span></a><a class="item" href="\categories\后端\Mybatis-plus学习笔记.html" title="Mybatis-plus学习笔记" rel="bookmark "><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202207031603695.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/images/202207031603695.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><span class="title">Mybatis-plus学习笔记</span></a></div></section></div>
+      <div class="vlts-rps"><a class="item" href="\categories\后端\Mybatis学习笔记.html" title="Mybatis学习笔记" rel="bookmark "><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/image/Mybatis.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/image/Mybatis.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><span class="title">Mybatis学习笔记</span></a><a class="item" href="\categories\后端\SpringMVC学习笔记.html" title="SpringMVC笔记" rel="bookmark "><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/image/SpringMVC.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/image/SpringMVC.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><span class="title">SpringMVC笔记</span></a><a class="item" href="\categories\后端\Mybatis-plus学习笔记.html" title="Mybatis-plus学习笔记" rel="bookmark "><img src="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/image/Mybatis-plus.png" class="lazyload" data-srcset="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/image/Mybatis-plus.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><span class="title">Mybatis-plus学习笔记</span></a></div></section></div>
       
       <!-- 版权声明组件 -->
       
       <!-- 打赏组件 -->
-      
-        <div class='donate'>
-          <div class='imgs'>
-            
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/qrcode/github@volantis.png'>
-            
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/qrcode/github@volantis.png'>
-            
-          </div>
-        </div>
       
     </div>
   
@@ -11603,10 +11659,10 @@ class MyInvocationHandler implements InvocationHandler&#123;
         
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-08-22T13:36:58+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-03-27T21:38:17+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-pen-to-square fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年8月22日</p>
+    <p>更新于：2022年3月27日</p>
   </a>
 </div>
 
@@ -11748,7 +11804,7 @@ class MyInvocationHandler implements InvocationHandler&#123;
   
 
 
-  <section class="widget toc-wrapper mobile " id="toc-div" >
+  <section class="widget toc-wrapper desktop " id="toc-div" >
     
   <header>
     
@@ -12632,7 +12688,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     }
 
     try {
-      Waline.init(Object.assign(Object.assign({"js":"https://unpkg.com/@waline/client@v2/dist/waline.js","css":"https://unpkg.com/@waline/client@v2/dist/waline.css","path":null,"placeholder":"期待你的评论😆","serverURL":"https://waline-comment-coral.vercel.app/","imageUploader":false,"pageview":true,"comment":true,"emoji":["//unpkg.com/@waline/emojis@1.0.1/tw-emoji"],"dark":"auto","requiredMeta":["nick","mail"],"login":"force","copyright":false}, {
+      Waline.init(Object.assign(Object.assign({"js":"https://unpkg.com/@waline/client@v2/dist/waline.js","css":"https://unpkg.com/@waline/client@v2/dist/waline.css","path":null,"placeholder":"期待你的评论😆","serverURL":"https://waline-comment-coral.vercel.app/","imageUploader":false,"pageview":true,"comment":true,"emoji":["//unpkg.com/@waline/emojis@1.0.1/tw-emoji"],"dark":"auto","requiredMeta":["nick","mail"],"copyright":false}, {
         el: '#waline',
         path: path,
         // https://github.com/volantis-x/hexo-theme-volantis/issues/713
@@ -12773,6 +12829,215 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 
+
+
+  <script defer>
+
+  const LCCounter = {
+    app_id: 'feD0Tuc86XvFVWdNoOX3PxFD-MdYXbMMI',
+    app_key: '5d0fVvMLecbMACPBq7cqcEpz',
+    custom_api_server: '',
+
+    // 查询存储的记录
+    getRecord(Counter, url, title) {
+      return new Promise(function (resolve, reject) {
+        Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({url})))
+          .then(resp => resp.json())
+          .then(({results, code, error}) => {
+            if (code === 401) {
+              throw error;
+            }
+            if (results && results.length > 0) {
+              var record = results[0];
+              resolve(record);
+            } else {
+              Counter('post', '/classes/Counter', {url, title: title, times: 0})
+                .then(resp => resp.json())
+                .then((record, error) => {
+                  if (error) {
+                    throw error;
+                  }
+                  resolve(record);
+                }).catch(error => {
+                console.error('Failed to create', error);
+                reject(error);
+              });
+            }
+          }).catch((error) => {
+          console.error('LeanCloud Counter Error:', error);
+          reject(error);
+        });
+      })
+    },
+
+    // 发起自增请求
+    increment(Counter, incrArr) {
+      return new Promise(function (resolve, reject) {
+        Counter('post', '/batch', {
+          "requests": incrArr
+        }).then((res) => {
+          res = res.json();
+          if (res.error) {
+            throw res.error;
+          }
+          resolve(res);
+        }).catch((error) => {
+          console.error('Failed to save visitor count', error);
+          reject(error);
+        });
+      });
+    },
+
+    // 构建自增请求体
+    buildIncrement(objectId) {
+      return {
+        "method": "PUT",
+        "path": `/1.1/classes/Counter/${ objectId }`,
+        "body": {
+          "times": {
+            '__op': 'Increment',
+            'amount': 1
+          }
+        }
+      }
+    },
+
+    // 校验是否为有效的 UV
+    validUV() {
+      var key = 'LeanCloudUVTimestamp';
+      var flag = localStorage.getItem(key);
+      if (flag) {
+        // 距离标记小于 24 小时则不计为 UV
+        if (new Date().getTime() - parseInt(flag) <= 86400000) {
+          return false;
+        }
+      }
+      localStorage.setItem(key, new Date().getTime().toString());
+      return true;
+    },
+
+    addCount(Counter) {
+      var enableIncr = '' === 'true' && window.location.hostname !== 'localhost';
+      enableIncr = true;
+      var getterArr = [];
+      var incrArr = [];
+      // 请求 PV 并自增
+      var pvCtn = document.querySelector('#lc-sv');
+      if (pvCtn || enableIncr) {
+        var pvGetter = this.getRecord(Counter, 'http://rainvex.com' + '/#lc-sv', 'Visits').then((record) => {
+          incrArr.push(this.buildIncrement(record.objectId))
+          var eles = document.querySelectorAll('#lc-sv #number');
+          if (eles.length > 0) {
+            eles.forEach((el,index,array)=>{
+              el.innerText = record.times + 1;
+              if (pvCtn) {
+                pvCtn.style.display = 'inline';
+              }
+            })
+          }
+        });
+        getterArr.push(pvGetter);
+      }
+
+      // 请求 UV 并自增
+      var uvCtn = document.querySelector('#lc-uv');
+      if (uvCtn || enableIncr) {
+        var uvGetter = this.getRecord(Counter, 'http://rainvex.com' + '/#lc-uv', 'Visitors').then((record) => {
+          var vuv = this.validUV();
+          vuv && incrArr.push(this.buildIncrement(record.objectId))
+          var eles = document.querySelectorAll('#lc-uv #number');
+          if (eles.length > 0) {
+            eles.forEach((el,index,array)=>{
+              el.innerText = record.times + (vuv ? 1 : 0);
+              if (uvCtn) {
+                uvCtn.style.display = 'inline';
+              }
+            })
+          }
+        });
+        getterArr.push(uvGetter);
+      }
+
+      // 请求文章的浏览数，如果是当前页面就自增
+      var allPV = document.querySelectorAll('#lc-pv');
+      if (allPV.length > 0 || enableIncr) {
+        for (i = 0; i < allPV.length; i++) {
+          let pv = allPV[i];
+          let title = pv.getAttribute('data-title');
+          var url = 'http://rainvex.com' + pv.getAttribute('data-path');
+          if (url) {
+            var viewGetter = this.getRecord(Counter, url, title).then((record) => {
+              // 是当前页面就自增
+              let curPath = window.location.pathname;
+              if (curPath.includes('index.html')) {
+                curPath = curPath.substring(0, curPath.lastIndexOf('index.html'));
+              }
+              if (pv.getAttribute('data-path') == curPath) {
+                incrArr.push(this.buildIncrement(record.objectId));
+              }
+              if (pv) {
+                var ele = pv.querySelector('#lc-pv #number');
+                if (ele) {
+                  if (pv.getAttribute('data-path') == curPath) {
+                    ele.innerText = (record.times || 0) + 1;
+                  } else {
+                    ele.innerText = record.times || 0;
+                  }
+                  pv.style.display = 'inline';
+                }
+              }
+            });
+            getterArr.push(viewGetter);
+          }
+        }
+      }
+
+      // 如果启动计数自增，批量发起自增请求
+      if (enableIncr) {
+        Promise.all(getterArr).then(() => {
+          incrArr.length > 0 && this.increment(Counter, incrArr);
+        })
+      }
+
+    },
+
+
+    fetchData(api_server) {
+      var Counter = (method, url, data) => {
+        return fetch(`${ api_server }/1.1${ url }`, {
+          method,
+          headers: {
+            'X-LC-Id': this.app_id,
+            'X-LC-Key': this.app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+      this.addCount(Counter);
+    },
+
+    refreshCounter() {
+      var api_server = this.app_id.slice(-9) !== '-MdYXbMMI' ? this.custom_api_server : `https://${ this.app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
+      if (api_server) {
+        this.fetchData(api_server);
+      } else {
+        fetch('https://app-router.leancloud.cn/2/route?appId=' + this.app_id)
+          .then(resp => resp.json())
+          .then(({api_server}) => {
+            this.fetchData('https://' + api_server);
+          });
+      }
+    }
+
+  };
+
+  LCCounter.refreshCounter();
+
+  document.addEventListener('pjax:complete', function () {
+    LCCounter.refreshCounter();
+  });
+</script>
 
 
 
@@ -13033,7 +13298,7 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"夜雨声烦","url":"http://rainvex.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"夜雨声烦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://rainvex.com/","sameAs":["https://github.com/volantis-x"],"description":"夜雨声烦的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://rainvex.com/","name":"夜雨声烦"}},{"@type":"ListItem","position":2,"item":{"@id":"http://rainvex.com/categories/后端/","name":"后端"}},{"@type":"ListItem","position":3,"item":{"@id":"http://rainvex.com/categories/后端/JavaSE学习笔记.html","name":"JavaSE学习笔记"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"夜雨声烦","url":"http://rainvex.com/","keywords":"rainvex,blog,夜雨声烦","description":"夜雨声烦的个人博客","author":{"@type":"Person","name":"夜雨声烦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://rainvex.com/","description":"夜雨声烦的个人博客"},"publisher":{"@type":"Organization","name":"夜雨声烦","url":"http://rainvex.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://rainvex.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"JavaSE学习笔记","description":"夜雨声烦的个人博客","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://rainvex.com/categories/%E5%90%8E%E7%AB%AF/JavaSE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html"},"author":{"@type":"Person","name":"夜雨声烦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://rainvex.com/"},"publisher":{"@type":"Organization","name":"夜雨声烦","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://rainvex.com/categories/%E5%90%8E%E7%AB%AF/JavaSE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html","wordCount":0,"datePublished":"2022-03-27T13:38:17.000Z","dateModified":"2022-08-22T05:36:58.299Z","articleSection":"后端","keywords":"笔记,Java,后端","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"夜雨声烦","url":"http://rainvex.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"夜雨声烦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://rainvex.com/","sameAs":["https://github.com/volantis-x"],"description":"夜雨声烦的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://rainvex.com/","name":"夜雨声烦"}},{"@type":"ListItem","position":2,"item":{"@id":"http://rainvex.com/categories/后端/","name":"后端"}},{"@type":"ListItem","position":3,"item":{"@id":"http://rainvex.com/categories/后端/JavaSE学习笔记.html","name":"JavaSE学习笔记"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"夜雨声烦","url":"http://rainvex.com/","keywords":"rainvex,blog,夜雨声烦","description":"夜雨声烦的个人博客","author":{"@type":"Person","name":"夜雨声烦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://rainvex.com/","description":"夜雨声烦的个人博客"},"publisher":{"@type":"Organization","name":"夜雨声烦","url":"http://rainvex.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://rainvex.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"JavaSE学习笔记","description":"夜雨声烦的个人博客","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://rainvex.com/categories/%E5%90%8E%E7%AB%AF/JavaSE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html"},"author":{"@type":"Person","name":"夜雨声烦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://rainvex.com/"},"publisher":{"@type":"Organization","name":"夜雨声烦","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://rainvex.com/categories/%E5%90%8E%E7%AB%AF/JavaSE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html","wordCount":0,"datePublished":"2022-03-27T13:38:17.000Z","dateModified":"2022-03-27T13:38:17.000Z","articleSection":"后端","keywords":"笔记,Java,后端","image":{"@type":"ImageObject","url":"https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/image/Java.png","width":1024,"height":768}}]</script>
 
 
 
