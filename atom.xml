@@ -23,12 +23,12 @@
     <published>2022-08-22T15:28:01.000Z</published>
     <updated>2022-08-22T15:28:01.000Z</updated>
     
-    <content type="html"><![CDATA[<p>刚换主题，还有很多地方没配置，慢慢完善</p>]]></content>
+    <content type="html"><![CDATA[<p>最近心血来潮新换了一个主题，对着官方文档和一些大佬做的成品进行模仿、改动，但是还有很多这个主题集成的功能没配置，也有很多想加上的页面还没有做。考虑到最近时间的原因只能先做这么多，勉勉强强能用吧，以后再慢慢完善😫</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;刚换主题，还有很多地方没配置，慢慢完善&lt;/p&gt;
+    <summary type="html">&lt;p&gt;最近心血来潮新换了一个主题，对着官方文档和一些大佬做的成品进行模仿、改动，但是还有很多这个主题集成的功能没配置，也有很多想加上的页面还没有做。考虑到最近时间的原因只能先做这么多，勉勉强强能用吧，以后再慢慢完善😫&lt;/p&gt;
 </summary>
       
     
@@ -63,9 +63,9 @@
     
     <category term="笔记" scheme="http://rainvex.com/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="Java" scheme="http://rainvex.com/tags/Java/"/>
-    
     <category term="Mybatis" scheme="http://rainvex.com/tags/Mybatis/"/>
+    
+    <category term="Java" scheme="http://rainvex.com/tags/Java/"/>
     
   </entry>
   
@@ -119,9 +119,9 @@
     
     <category term="笔记" scheme="http://rainvex.com/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="Java" scheme="http://rainvex.com/tags/Java/"/>
-    
     <category term="Mybatis" scheme="http://rainvex.com/tags/Mybatis/"/>
+    
+    <category term="Java" scheme="http://rainvex.com/tags/Java/"/>
     
   </entry>
   
