@@ -908,14 +908,14 @@ button {
 }
 @font-face {
   font-family: 'MiSans';
-  src: url("https://cdn.jsdelivr.net/gh/rainvex/rainvex-cdn@1.1/fonts/MiSans-Demibold.ttf");
+  src: url("https://cdn.jsdelivr.net/gh/rainvex/rainvex-cdn/fonts/MiSans-Demibold.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
 }
 @font-face {
   font-family: '站酷快乐体';
-  src: url("https://cdn.jsdelivr.net/gh/rainvex/rainvex-cdn@1.1/fonts/站酷快乐体.ttf");
+  src: url("https://cdn.jsdelivr.net/gh/rainvex/rainvex-cdn/fonts/站酷快乐体.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
