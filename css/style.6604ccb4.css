@@ -255,7 +255,7 @@ th {
 }
 @font-face {
   font-family: 'JetBrainsMono';
-  src: url("https://cdn.jsdelivr.net/gh/rainvex/rainvex-cdn/fonts/jetbrainsmono-bold.ttf");
+  src: url("https://cdn.jsdelivr.net/gh/rainvex/rainvex-cdn@1.1/fonts/jetbrainsmono-bold.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
@@ -6948,23 +6948,23 @@ p,
 input,
 pre>span,
 textarea {
-  cursor: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/cursor/text.png"), text;
+  cursor: url("https://unpkg.com/volantis-static/media/cursor/text.png"), text;
 }
 .fancybox-container .fancybox-stage,
 .fancybox__carousel .is-draggable {
-  cursor: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/cursor/zoom-out.png"), zoom-out;
+  cursor: url("https://unpkg.com/volantis-static/media/cursor/zoom-out.png"), zoom-out;
 }
 .fancybox a,
 .fancybox-can-zoomIn .fancybox-content,
 .fancybox__carousel .fancybox__slide.can-zoom_in .fancybox__content {
-  cursor: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/cursor/zoom-in.png"), zoom-in;
+  cursor: url("https://unpkg.com/volantis-static/media/cursor/zoom-in.png"), zoom-in;
 }
 span.btn>a:not([href]):hover,
 .fancybox-button[disabled],
 .fancybox-button[disabled]:hover,
 .gt-container .gt-btn.is--disable,
 span.not-select {
-  cursor: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/cursor/circle.png"), not-allowed;
+  cursor: url("https://unpkg.com/volantis-static/media/cursor/circle.png"), not-allowed;
 }
 html,
 a:not([href]),
@@ -6989,7 +6989,7 @@ kbd,
 p > img,
 p > svg,
 .fix-cursor-default {
-  cursor: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/cursor/left_ptr.png"), default;
+  cursor: url("https://unpkg.com/volantis-static/media/cursor/left_ptr.png"), default;
 }
 a,
 psw,
@@ -7050,31 +7050,31 @@ a.result.search-result-fix,
 .tk-action-icon,
 .fancybox,
 .fix-cursor-pointer {
-  cursor: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/cursor/pointer.png"), pointer;
+  cursor: url("https://unpkg.com/volantis-static/media/cursor/pointer.png"), pointer;
 }
 .cur-default {
-  cursor: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/cursor/left_ptr.png"), default !important;
+  cursor: url("https://unpkg.com/volantis-static/media/cursor/left_ptr.png"), default !important;
 }
 .cur-pointer,
 .carousel__button,
 .fancybox__slide {
-  cursor: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/cursor/pointer.png"), pointer !important;
+  cursor: url("https://unpkg.com/volantis-static/media/cursor/pointer.png"), pointer !important;
 }
 .cur-not-allowed {
-  cursor: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/cursor/circle.png"), not-allowed !important;
+  cursor: url("https://unpkg.com/volantis-static/media/cursor/circle.png"), not-allowed !important;
 }
 .cur-zoom-in,
 .fancybox__carousel .fancybox__slide.can-zoom_in .fancybox__content,
 .has-image[data-image-fit=contain].can-zoom_in .fancybox__image {
-  cursor: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/cursor/zoom-in.png"), zoom-in !important;
+  cursor: url("https://unpkg.com/volantis-static/media/cursor/zoom-in.png"), zoom-in !important;
 }
 .cur-zoom-out,
 .fancybox__carousel .is-draggable,
 .has-image[data-image-fit=contain].is-draggable .fancybox__image {
-  cursor: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/cursor/zoom-out.png"), zoom-out !important;
+  cursor: url("https://unpkg.com/volantis-static/media/cursor/zoom-out.png"), zoom-out !important;
 }
 .cur-text {
-  cursor: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/cursor/text.png"), text !important;
+  cursor: url("https://unpkg.com/volantis-static/media/cursor/text.png"), text !important;
 }
 .common_read {
   z-index: auto !important;
@@ -7650,7 +7650,7 @@ ul.list-v.rightmenu li.music .nav.volume .aplayer-volume-bar .aplayer-volume {
   margin: 0;
   font-family: "站酷快乐体", "庞门正道粗书体", Helvetica, monospace;
 }
-.widget.blogger .content .text :first-child {
+.widget.blogger .content .text {
   margin-top: 0;
   font-family: "站酷快乐体", "庞门正道粗书体", Helvetica, monospace;
 }
@@ -7664,6 +7664,10 @@ ul.list-v.rightmenu li.music .nav.volume .aplayer-volume-bar .aplayer-volume {
 .article-title {
   margin-bottom: 10px;
   text-align: center;
+}
+.meta-v3 {
+  margin-top: 0;
+  padding-top: 10px;
 }
 article#post > h1,
 article#post h2,
@@ -7679,9 +7683,6 @@ article#post h3 {
 article#post > h3 {
   font-weight: 500;
   position: initial;
-}
-.post.post-v3.white-box {
-  text-align: center;
 }
 .post.post-v3.white-box a {
   font-weight: 600 !important;
@@ -7701,4 +7702,10 @@ article#post > h3 {
 }
 .md h1 {
   margin-bottom: 40px;
+}
+footer.footer a.social:first-child img {
+  height: 26px !important;
+}
+footer.footer a.social img {
+  height: 28px;
 }

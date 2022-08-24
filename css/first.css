@@ -57,8 +57,8 @@ html {
   font-size: 16px;
 }
 html >::-webkit-scrollbar {
-  height: 4px;
-  width: 4px;
+  height: 6px;
+  width: 6px;
 }
 html >::-webkit-scrollbar-track-piece {
   background: transparent;
@@ -66,8 +66,8 @@ html >::-webkit-scrollbar-track-piece {
 html >::-webkit-scrollbar-thumb {
   background: #8a0af3;
   cursor: pointer;
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
 }
 html >::-webkit-scrollbar-thumb:hover {
   background: #ff5722;
@@ -908,14 +908,14 @@ button {
 }
 @font-face {
   font-family: 'MiSans';
-  src: url("https://cdn.jsdelivr.net/gh/rainvex/rainvex-cdn/fonts/MiSans-Demibold.ttf");
+  src: url("https://cdn.jsdelivr.net/gh/rainvex/rainvex-cdn@1.1/fonts/MiSans-Demibold.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
 }
 @font-face {
   font-family: '站酷快乐体';
-  src: url("https://cdn.jsdelivr.net/gh/rainvex/rainvex-cdn/fonts/站酷快乐体.ttf");
+  src: url("https://cdn.jsdelivr.net/gh/rainvex/rainvex-cdn@1.1/fonts/站酷快乐体.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
