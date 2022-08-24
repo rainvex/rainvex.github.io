@@ -255,7 +255,7 @@ th {
 }
 @font-face {
   font-family: 'JetBrainsMono';
-  src: url("https://cdn.jsdelivr.net/gh/rainvex/rainvex-cdn/fonts/jetbrainsmono-bold.ttf");
+  src: url("https://cdn.jsdelivr.net/gh/rainvex/rainvex-cdn@1.0.202208/fonts/jetbrainsmono-bold.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
