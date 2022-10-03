@@ -4,8 +4,8 @@
 :root {
   --color-site-body: #f4f4f4;
   --color-site-bg: #f4f4f4;
-  --color-site-inner: #595959;
-  --color-site-footer: #595959;
+  --color-site-inner: #f5f4e9;
+  --color-site-footer: #f5f4e9;
   --color-card: #fcfcfc;
   --color-text: #444;
   --color-block: #f6f6f6;
@@ -784,7 +784,7 @@ button {
     --color-copyright-bkg: #21252b;
   }
   :root:not([color-scheme]) img {
-    filter: brightness(80%) !important;
+    filter: brightness(90%) !important;
   }
   :root:not([color-scheme]) .blur {
     background: rgba(31,31,31,0.9) !important;
@@ -856,7 +856,7 @@ button {
   --color-copyright-bkg: #21252b;
 }
 [color-scheme='dark'] img {
-  filter: brightness(80%) !important;
+  filter: brightness(90%) !important;
 }
 [color-scheme='dark'] .blur {
   background: rgba(31,31,31,0.9) !important;
