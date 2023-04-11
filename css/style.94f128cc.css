@@ -2165,7 +2165,7 @@ img.lazyload:not(.placeholder).loaded {
   -o-justify-content: space-between;
   -ms-justify-content: space-between;
   align-items: baseline;
-  color: var(--color-meta);
+  color: #27ae60;
   margin: 0;
   font-weight: 600;
 }
@@ -2183,7 +2183,7 @@ img.lazyload:not(.placeholder).loaded {
   margin: 16px;
 }
 #l_main .prev-next section {
-  color: var(--color-meta);
+  color: #27ae60;
   padding: 16px;
   border-radius: 8px;
   -webkit-border-radius: 8px;
