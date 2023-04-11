@@ -1880,9 +1880,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/parallax.js?time=1681218914219","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/rightMenu.js?time=1681218914219","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/rightMenus.js?time=1681218914219","sites":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/sites.js?time=1681218914219","friends":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/friends.js?time=1681218914219","contributors":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/contributors.js?time=1681218914219","search":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/search/hexo.js?time=1681218914219"},"css":{"style":"/css/style.94f128cc.css"}},
+    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/parallax.js?time=1681221898926","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/rightMenu.js?time=1681221898926","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/rightMenus.js?time=1681221898926","sites":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/sites.js?time=1681221898926","friends":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/friends.js?time=1681221898926","contributors":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/contributors.js?time=1681221898926","search":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/search/hexo.js?time=1681221898926"},"css":{"style":"/css/style.94f128cc.css"}},
     default: {"avatar":null,"link":null,"cover":null,"image":null},
-    lastupdate: new Date(1681218914219),
+    lastupdate: new Date(1681221898926),
     sidebar: {
       for_page: ["blogger","webinfo","category","tagcloud","lastupdate"],
       for_post: ["toc"],
@@ -3691,7 +3691,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   </ul>
 </div>
-<script src="https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/rightMenus.js?time=1681218914219"></script>
+<script src="https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/rightMenus.js?time=1681221898926"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -3932,19 +3932,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/sites.js?time=1681218914219")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/sites.js?time=1681221898926")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/friends.js?time=1681218914219")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/friends.js?time=1681221898926")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/contributors.js?time=1681218914219")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/contributors.js?time=1681221898926")
       }
     
   };
@@ -4040,7 +4040,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://gcore.jsdelivr.net/gh/rainvex/rainvex-cdn@latest/js/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/aplayer.js?time=1681218914219')
+    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/aplayer.js?time=1681221898926')
   
   })();
 
@@ -4124,7 +4124,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
       let defaultPath = '';
       path = defaultPath || decodeURI(window.location.pathname);
     }
-    twikoo.init(Object.assign(Object.assign({"js":"https://gcore.jsdelivr.net/gh/rainvex/rainvex-cdn@latest/js/twikoo.all.min.js","path":null,"envId":"https://twikoo-rainvex.vercel.app/","placeholder":"期待你的评论😆","visitor":true}, {
+    twikoo.init(Object.assign(Object.assign({"js":"https://gcore.jsdelivr.net/gh/rainvex/rainvex-cdn@latest/js/twikoo.all.min.js","path":null,"envId":"https://rainvex-twikoo.up.railway.app/","placeholder":"期待你的评论😆","visitor":true}, {
       el: '#twikoo_container',
       path: path,
       placeholder: placeholder,
@@ -4169,7 +4169,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/search/hexo.js?time=1681218914219");
+    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/search/hexo.js?time=1681221898926");
   }
 
   function loadSearchService() {
@@ -4324,7 +4324,7 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/parallax.js?time=1681218914219').then(()=>{
+    volantis.js('https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/parallax.js?time=1681221898926').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
