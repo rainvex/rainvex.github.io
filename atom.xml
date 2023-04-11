@@ -3,11 +3,11 @@
   <title>夜雨声烦</title>
   
   <subtitle>Rainvex</subtitle>
-  <link href="http://rainvex.com/atom.xml" rel="self"/>
+  <link href="https://rainvex.cn/atom.xml" rel="self"/>
   
-  <link href="http://rainvex.com/"/>
+  <link href="https://rainvex.cn/"/>
   <updated>2022-09-11T07:20:23.000Z</updated>
-  <id>http://rainvex.com/</id>
+  <id>https://rainvex.cn/</id>
   
   <author>
     <name>夜雨声烦</name>
@@ -18,12 +18,12 @@
   
   <entry>
     <title>置顶</title>
-    <link href="http://rainvex.com/categories/%E7%BD%AE%E9%A1%B6/%E7%BD%AE%E9%A1%B6.html"/>
-    <id>http://rainvex.com/categories/%E7%BD%AE%E9%A1%B6/%E7%BD%AE%E9%A1%B6.html</id>
+    <link href="https://rainvex.cn/categories/%E7%BD%AE%E9%A1%B6/%E7%BD%AE%E9%A1%B6"/>
+    <id>https://rainvex.cn/categories/%E7%BD%AE%E9%A1%B6/%E7%BD%AE%E9%A1%B6</id>
     <published>2022-08-22T15:28:01.000Z</published>
     <updated>2022-09-11T07:20:23.000Z</updated>
     
-    <content type="html"><![CDATA[<p>心血来潮新换了一个主题，对着官方文档和一些大佬做的成品进行模仿和改动，但是还有很多主题集成的功能没完善配置，也有很多想加上的页面还没有做，并且因为这个主题所需要请求的资源比较多，访问起来比较慢，考虑到时间原因只能先做这么多，勉勉强强能用吧（太简陋了😭），以后再慢慢完善。</p><p>评论系统的使用说明：评论功能依托于<a href="https://twikoo.js.org/">twikoo</a>提供的相关服务，在发表评论前请先输入昵称和邮箱，评论系统会根据输入的邮箱显示你的头像。当然，如果你不想输入个人信息，也可以输入一个符合格式的邮箱即可（如，<a href="mailto:&#x78;&#x78;&#120;&#x40;&#x71;&#x71;&#46;&#99;&#111;&#109;">&#x78;&#x78;&#120;&#x40;&#x71;&#x71;&#46;&#99;&#111;&#109;</a>），以此通过匿名的方式发表评论，但也请规范发言，切勿发布广告或恶意内容等信息，希望互相尊重。由于评论系统是部署在国外的托管网站上，在国内访问起来很慢，比较影响正常使用，所以若想评论请先科学上网一下下🙄，等以后有钱了再部署到国内，谢谢理解😶</p>]]></content>
+    <content type="html"><![CDATA[<p>心血来潮新换了一个主题，对着官方文档和一些大佬做的成品进行模仿和改动，但是还有很多主题集成的功能没完善配置，也有很多想加上的页面还没有做，并且因为这个主题所需要请求的资源比较多，访问起来比较慢，考虑到时间原因只能先做这么多，勉勉强强能用吧（太简陋了😭），以后再慢慢完善。</p><p>评论系统的使用说明：评论功能依托于<a href="https://twikoo.js.org/">twikoo</a>提供的相关服务，在发表评论前请先输入昵称和邮箱，评论系统会根据输入的邮箱显示你的头像。当然，如果你不想输入个人信息，也可以输入一个符合格式的邮箱即可（如，<a href="mailto:&#120;&#120;&#120;&#x40;&#113;&#113;&#x2e;&#x63;&#111;&#x6d;">&#120;&#120;&#120;&#x40;&#113;&#113;&#x2e;&#x63;&#111;&#x6d;</a>），以此通过匿名的方式发表评论，但也请规范发言，切勿发布广告或恶意内容等信息，希望互相尊重。由于评论系统是部署在国外的托管网站上，在国内访问起来很慢，比较影响正常使用，所以若想评论请先科学上网一下下🙄，等以后有钱了再部署到国内，谢谢理解😶</p>]]></content>
     
     
       
@@ -33,17 +33,17 @@
     
     
     
-    <category term="置顶" scheme="http://rainvex.com/categories/%E7%BD%AE%E9%A1%B6/"/>
+    <category term="置顶" scheme="https://rainvex.cn/categories/%E7%BD%AE%E9%A1%B6/"/>
     
     
-    <category term="置顶" scheme="http://rainvex.com/tags/%E7%BD%AE%E9%A1%B6/"/>
+    <category term="置顶" scheme="https://rainvex.cn/tags/%E7%BD%AE%E9%A1%B6/"/>
     
   </entry>
   
   <entry>
     <title>Mybatis-plus学习笔记</title>
-    <link href="http://rainvex.com/categories/%E5%90%8E%E7%AB%AF/Mybatis-plus%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html"/>
-    <id>http://rainvex.com/categories/%E5%90%8E%E7%AB%AF/Mybatis-plus%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html</id>
+    <link href="https://rainvex.cn/categories/%E5%90%8E%E7%AB%AF/Mybatis-plus%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0"/>
+    <id>https://rainvex.cn/categories/%E5%90%8E%E7%AB%AF/Mybatis-plus%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0</id>
     <published>2022-07-05T07:00:35.000Z</published>
     <updated>2022-07-05T07:00:35.000Z</updated>
     
@@ -57,21 +57,21 @@
     
     
     
-    <category term="后端" scheme="http://rainvex.com/categories/%E5%90%8E%E7%AB%AF/"/>
+    <category term="后端" scheme="https://rainvex.cn/categories/%E5%90%8E%E7%AB%AF/"/>
     
     
-    <category term="笔记" scheme="http://rainvex.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://rainvex.cn/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="Mybatis" scheme="http://rainvex.com/tags/Mybatis/"/>
+    <category term="Mybatis" scheme="https://rainvex.cn/tags/Mybatis/"/>
     
-    <category term="Java" scheme="http://rainvex.com/tags/Java/"/>
+    <category term="Java" scheme="https://rainvex.cn/tags/Java/"/>
     
   </entry>
   
   <entry>
     <title>云计算与大数据实验</title>
-    <link href="http://rainvex.com/categories/%E6%95%99%E7%A8%8B/%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AE%9E%E9%AA%8C.html"/>
-    <id>http://rainvex.com/categories/%E6%95%99%E7%A8%8B/%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AE%9E%E9%AA%8C.html</id>
+    <link href="https://rainvex.cn/categories/%E6%95%99%E7%A8%8B/%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AE%9E%E9%AA%8C"/>
+    <id>https://rainvex.cn/categories/%E6%95%99%E7%A8%8B/%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AE%9E%E9%AA%8C</id>
     <published>2022-05-28T09:27:34.000Z</published>
     <updated>2022-05-28T09:27:34.000Z</updated>
     
@@ -86,21 +86,21 @@
     
     
     
-    <category term="教程" scheme="http://rainvex.com/categories/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://rainvex.cn/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-    <category term="Linux" scheme="http://rainvex.com/tags/Linux/"/>
+    <category term="Linux" scheme="https://rainvex.cn/tags/Linux/"/>
     
-    <category term="Ubuntu" scheme="http://rainvex.com/tags/Ubuntu/"/>
+    <category term="Ubuntu" scheme="https://rainvex.cn/tags/Ubuntu/"/>
     
-    <category term="Hadoop" scheme="http://rainvex.com/tags/Hadoop/"/>
+    <category term="Hadoop" scheme="https://rainvex.cn/tags/Hadoop/"/>
     
   </entry>
   
   <entry>
     <title>Mybatis学习笔记</title>
-    <link href="http://rainvex.com/categories/%E5%90%8E%E7%AB%AF/Mybatis%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html"/>
-    <id>http://rainvex.com/categories/%E5%90%8E%E7%AB%AF/Mybatis%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html</id>
+    <link href="https://rainvex.cn/categories/%E5%90%8E%E7%AB%AF/Mybatis%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0"/>
+    <id>https://rainvex.cn/categories/%E5%90%8E%E7%AB%AF/Mybatis%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0</id>
     <published>2022-05-10T14:54:33.000Z</published>
     <updated>2022-05-10T14:54:33.000Z</updated>
     
@@ -114,21 +114,21 @@
     
     
     
-    <category term="后端" scheme="http://rainvex.com/categories/%E5%90%8E%E7%AB%AF/"/>
+    <category term="后端" scheme="https://rainvex.cn/categories/%E5%90%8E%E7%AB%AF/"/>
     
     
-    <category term="笔记" scheme="http://rainvex.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://rainvex.cn/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="Mybatis" scheme="http://rainvex.com/tags/Mybatis/"/>
+    <category term="Mybatis" scheme="https://rainvex.cn/tags/Mybatis/"/>
     
-    <category term="Java" scheme="http://rainvex.com/tags/Java/"/>
+    <category term="Java" scheme="https://rainvex.cn/tags/Java/"/>
     
   </entry>
   
   <entry>
     <title>SpringMVC笔记</title>
-    <link href="http://rainvex.com/categories/%E5%90%8E%E7%AB%AF/SpringMVC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html"/>
-    <id>http://rainvex.com/categories/%E5%90%8E%E7%AB%AF/SpringMVC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html</id>
+    <link href="https://rainvex.cn/categories/%E5%90%8E%E7%AB%AF/SpringMVC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0"/>
+    <id>https://rainvex.cn/categories/%E5%90%8E%E7%AB%AF/SpringMVC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0</id>
     <published>2022-05-04T13:02:33.000Z</published>
     <updated>2022-05-04T13:02:33.000Z</updated>
     
@@ -142,21 +142,21 @@
     
     
     
-    <category term="后端" scheme="http://rainvex.com/categories/%E5%90%8E%E7%AB%AF/"/>
+    <category term="后端" scheme="https://rainvex.cn/categories/%E5%90%8E%E7%AB%AF/"/>
     
     
-    <category term="笔记" scheme="http://rainvex.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://rainvex.cn/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="Java" scheme="http://rainvex.com/tags/Java/"/>
+    <category term="Java" scheme="https://rainvex.cn/tags/Java/"/>
     
-    <category term="SpringMVC" scheme="http://rainvex.com/tags/SpringMVC/"/>
+    <category term="SpringMVC" scheme="https://rainvex.cn/tags/SpringMVC/"/>
     
   </entry>
   
   <entry>
     <title>Ubuntu下搭建Hadoop分布式集群</title>
-    <link href="http://rainvex.com/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4.html"/>
-    <id>http://rainvex.com/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4.html</id>
+    <link href="https://rainvex.cn/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4"/>
+    <id>https://rainvex.cn/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4</id>
     <published>2022-04-30T10:37:34.000Z</published>
     <updated>2022-04-30T10:37:34.000Z</updated>
     
@@ -170,21 +170,21 @@
     
     
     
-    <category term="教程" scheme="http://rainvex.com/categories/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://rainvex.cn/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-    <category term="Linux" scheme="http://rainvex.com/tags/Linux/"/>
+    <category term="Linux" scheme="https://rainvex.cn/tags/Linux/"/>
     
-    <category term="Ubuntu" scheme="http://rainvex.com/tags/Ubuntu/"/>
+    <category term="Ubuntu" scheme="https://rainvex.cn/tags/Ubuntu/"/>
     
-    <category term="Hadoop" scheme="http://rainvex.com/tags/Hadoop/"/>
+    <category term="Hadoop" scheme="https://rainvex.cn/tags/Hadoop/"/>
     
   </entry>
   
   <entry>
     <title>Typora+PicGo+腾讯云COS搭建图床</title>
-    <link href="http://rainvex.com/categories/%E6%95%99%E7%A8%8B/Typora-PicGo-%E8%85%BE%E8%AE%AF%E4%BA%91COS%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A.html"/>
-    <id>http://rainvex.com/categories/%E6%95%99%E7%A8%8B/Typora-PicGo-%E8%85%BE%E8%AE%AF%E4%BA%91COS%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A.html</id>
+    <link href="https://rainvex.cn/categories/%E6%95%99%E7%A8%8B/Typora-PicGo-%E8%85%BE%E8%AE%AF%E4%BA%91COS%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A"/>
+    <id>https://rainvex.cn/categories/%E6%95%99%E7%A8%8B/Typora-PicGo-%E8%85%BE%E8%AE%AF%E4%BA%91COS%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A</id>
     <published>2022-04-04T06:29:40.000Z</published>
     <updated>2022-04-04T06:29:40.000Z</updated>
     
@@ -198,21 +198,21 @@
     
     
     
-    <category term="教程" scheme="http://rainvex.com/categories/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://rainvex.cn/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-    <category term="Typora" scheme="http://rainvex.com/tags/Typora/"/>
+    <category term="Typora" scheme="https://rainvex.cn/tags/Typora/"/>
     
-    <category term="PicGo" scheme="http://rainvex.com/tags/PicGo/"/>
+    <category term="PicGo" scheme="https://rainvex.cn/tags/PicGo/"/>
     
-    <category term="图床" scheme="http://rainvex.com/tags/%E5%9B%BE%E5%BA%8A/"/>
+    <category term="图床" scheme="https://rainvex.cn/tags/%E5%9B%BE%E5%BA%8A/"/>
     
   </entry>
   
   <entry>
     <title>Linux学习笔记（上）</title>
-    <link href="http://rainvex.com/categories/Linux/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html"/>
-    <id>http://rainvex.com/categories/Linux/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html</id>
+    <link href="https://rainvex.cn/categories/Linux/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0"/>
+    <id>https://rainvex.cn/categories/Linux/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0</id>
     <published>2022-03-27T14:14:34.000Z</published>
     <updated>2022-03-27T14:14:34.000Z</updated>
     
@@ -228,21 +228,21 @@
     
     
     
-    <category term="Linux" scheme="http://rainvex.com/categories/Linux/"/>
+    <category term="Linux" scheme="https://rainvex.cn/categories/Linux/"/>
     
     
-    <category term="Linux" scheme="http://rainvex.com/tags/Linux/"/>
+    <category term="Linux" scheme="https://rainvex.cn/tags/Linux/"/>
     
-    <category term="CentOS" scheme="http://rainvex.com/tags/CentOS/"/>
+    <category term="CentOS" scheme="https://rainvex.cn/tags/CentOS/"/>
     
-    <category term="笔记" scheme="http://rainvex.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://rainvex.cn/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>Spring框架笔记</title>
-    <link href="http://rainvex.com/categories/%E5%90%8E%E7%AB%AF/Spring5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html"/>
-    <id>http://rainvex.com/categories/%E5%90%8E%E7%AB%AF/Spring5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html</id>
+    <link href="https://rainvex.cn/categories/%E5%90%8E%E7%AB%AF/Spring5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0"/>
+    <id>https://rainvex.cn/categories/%E5%90%8E%E7%AB%AF/Spring5%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0</id>
     <published>2022-03-27T14:10:43.000Z</published>
     <updated>2022-03-27T14:10:43.000Z</updated>
     
@@ -256,21 +256,21 @@
     
     
     
-    <category term="后端" scheme="http://rainvex.com/categories/%E5%90%8E%E7%AB%AF/"/>
+    <category term="后端" scheme="https://rainvex.cn/categories/%E5%90%8E%E7%AB%AF/"/>
     
     
-    <category term="笔记" scheme="http://rainvex.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://rainvex.cn/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="Java" scheme="http://rainvex.com/tags/Java/"/>
+    <category term="Java" scheme="https://rainvex.cn/tags/Java/"/>
     
-    <category term="Spring5" scheme="http://rainvex.com/tags/Spring5/"/>
+    <category term="Spring5" scheme="https://rainvex.cn/tags/Spring5/"/>
     
   </entry>
   
   <entry>
     <title>JavaSE学习笔记</title>
-    <link href="http://rainvex.com/categories/%E5%90%8E%E7%AB%AF/JavaSE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html"/>
-    <id>http://rainvex.com/categories/%E5%90%8E%E7%AB%AF/JavaSE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html</id>
+    <link href="https://rainvex.cn/categories/%E5%90%8E%E7%AB%AF/JavaSE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0"/>
+    <id>https://rainvex.cn/categories/%E5%90%8E%E7%AB%AF/JavaSE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0</id>
     <published>2022-03-27T13:38:17.000Z</published>
     <updated>2022-03-27T13:38:17.000Z</updated>
     
@@ -285,14 +285,14 @@
     
     
     
-    <category term="后端" scheme="http://rainvex.com/categories/%E5%90%8E%E7%AB%AF/"/>
+    <category term="后端" scheme="https://rainvex.cn/categories/%E5%90%8E%E7%AB%AF/"/>
     
     
-    <category term="笔记" scheme="http://rainvex.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://rainvex.cn/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="Java" scheme="http://rainvex.com/tags/Java/"/>
+    <category term="Java" scheme="https://rainvex.cn/tags/Java/"/>
     
-    <category term="后端" scheme="http://rainvex.com/tags/%E5%90%8E%E7%AB%AF/"/>
+    <category term="后端" scheme="https://rainvex.cn/tags/%E5%90%8E%E7%AB%AF/"/>
     
   </entry>
   

@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://rainvex.com/categories/教程/ubuntu下搭建hadoop分布式集群.html"/>
+  <link rel="canonical" href="https://rainvex.cn/categories/教程/ubuntu下搭建hadoop分布式集群.html"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -25,7 +25,7 @@
   <!-- Custom Files headBegin begin-->
   
   <!-- Custom Files headBegin end-->
-    <link rel="shortcut icon" type='image/x-icon' href="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/avatar.jpg">
+    <link rel="shortcut icon" type='image/x-icon' href="https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/image/avatar1.jpg">
   <link rel="preload" href="/css/style.aa36f0c6.css" as="style">
   <link rel="preload" href="https://gcore.jsdelivr.net/gh/rainvex/rainvex-cdn@latest/fonts/站酷快乐体.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://gcore.jsdelivr.net/gh/rainvex/rainvex-cdn@latest/fonts/MiSans-Demibold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
@@ -34,12 +34,12 @@
       <link rel="alternate" href="/atom.xml" title="夜雨声烦" type="application/atom+xml">
   <!-- 页面元数据 -->
   <title>Ubuntu下搭建Hadoop分布式集群 - 夜雨声烦</title>
-  <meta name="keywords" content="Linux,Ubuntu,Hadoop,rainvex,blog,夜雨声烦">
+  <meta name="keywords" content="Linux,Ubuntu,Hadoop,rainvex,blog,夜雨声烦,夜雨声烦个人博客">
   <meta desc name="description" content="夜雨声烦的个人博客 - 夜雨声烦 - 夜雨声烦">
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ubuntu下搭建Hadoop分布式集群">
-<meta property="og:url" content="http://rainvex.com/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4.html">
+<meta property="og:url" content="https://rainvex.cn/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4">
 <meta property="og:site_name" content="夜雨声烦">
 <meta property="og:description" content="应课程要求，这学期学习到了云计算与大数据，这次实验就是让我们在ubuntu中配置好hadoop分布式集群，这两天就从网上一边搜寻教程并结合课本（课本上是使用的centos，而且版本较老，不太适用）一边自己动手做，顺便自己也写一篇教程记录一下，其中也包含一些遇到的问题及解决方法。因为第一次接触到这方面所以有很多不足的地方，也有写的不清楚的地方，见谅！ 在搭建的过程中，发现几篇写得很详细且文章排版清晰">
 <meta property="og:locale" content="zh_CN">
@@ -1884,9 +1884,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/parallax.js?time=1664866648858","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/rightMenu.js?time=1664866648858","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/rightMenus.js?time=1664866648858","sites":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/sites.js?time=1664866648858","friends":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/friends.js?time=1664866648858","contributors":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/contributors.js?time=1664866648858","search":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/search/hexo.js?time=1664866648858"},"css":{"style":"/css/style.aa36f0c6.css"}},
+    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/parallax.js?time=1681214932691","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/rightMenu.js?time=1681214932691","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/rightMenus.js?time=1681214932691","sites":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/sites.js?time=1681214932691","friends":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/friends.js?time=1681214932691","contributors":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/contributors.js?time=1681214932691","search":"https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/search/hexo.js?time=1681214932691"},"css":{"style":"/css/style.aa36f0c6.css"}},
     default: {"avatar":null,"link":null,"cover":null,"image":null},
-    lastupdate: new Date(1664866648858),
+    lastupdate: new Date(1681214932691),
     sidebar: {
       for_page: ["blogger","webinfo","category","tagcloud","lastupdate"],
       for_post: ["toc"],
@@ -2311,7 +2311,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin begin-->
     
     <!-- Custom Files bodyBegin end-->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2501,11 +2501,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/anime/" title="番剧"
+                href="/bangumis/" title="番剧"
                   
                   
                   
-                    active-action="action-anime"
+                    active-action="action-bangumis"
                   >
                   <i class='fa-light fa-video NEPHRITIS faa-vertical fa-fw fa-fw'></i>番剧
                 </a>
@@ -2789,11 +2789,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/anime/" title="番剧"
+                href="/bangumis/" title="番剧"
                   
                   
                   
-                    active-action="action-anime"
+                    active-action="action-bangumis"
                   >
                   <i class='fa-light fa-video NEPHRITIS faa-vertical fa-fw fa-fw'></i>番剧
                 </a>
@@ -2961,7 +2961,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md floatable article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://rainvex.com/categories/教程/Ubuntu下搭建Hadoop分布式集群.html">
+  <link itemprop="mainEntityOfPage" href="https://rainvex.cn/categories/教程/Ubuntu下搭建Hadoop分布式集群">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="夜雨声烦">
   </span>
@@ -3425,7 +3425,7 @@ export HADOOP_OPTS=&quot;-Djava.library.path=$&#123;HADOOP_HOME&#125;/lib/native
                 
               
                 
-                  <p>本文链接：<a href="http://rainvex.com/categories/教程/Ubuntu下搭建Hadoop分布式集群.html">http://rainvex.com/categories/教程/Ubuntu下搭建Hadoop分布式集群.html</a></p>
+                  <p>本文链接：<a href="https://rainvex.cn/categories/教程/Ubuntu下搭建Hadoop分布式集群">https://rainvex.cn/categories/教程/Ubuntu下搭建Hadoop分布式集群</a></p>
                 
               
             </blockquote>
@@ -3485,7 +3485,7 @@ export HADOOP_OPTS=&quot;-Djava.library.path=$&#123;HADOOP_HOME&#125;/lib/native
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://rainvex.com/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4.html&title=Ubuntu下搭建Hadoop分布式集群 - 夜雨声烦&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://rainvex.cn/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4&title=Ubuntu下搭建Hadoop分布式集群 - 夜雨声烦&summary="
           
           >
           
@@ -3497,7 +3497,7 @@ export HADOOP_OPTS=&quot;-Djava.library.path=$&#123;HADOOP_HOME&#125;/lib/native
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://rainvex.com/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4.html&title=Ubuntu下搭建Hadoop分布式集群 - 夜雨声烦&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://rainvex.cn/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4&title=Ubuntu下搭建Hadoop分布式集群 - 夜雨声烦&summary="
           
           >
           
@@ -3509,7 +3509,7 @@ export HADOOP_OPTS=&quot;-Djava.library.path=$&#123;HADOOP_HOME&#125;/lib/native
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://rainvex.com/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4.html&title=Ubuntu下搭建Hadoop分布式集群 - 夜雨声烦&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://rainvex.cn/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4&title=Ubuntu下搭建Hadoop分布式集群 - 夜雨声烦&summary="
           
           >
           
@@ -3523,7 +3523,7 @@ export HADOOP_OPTS=&quot;-Djava.library.path=$&#123;HADOOP_HOME&#125;/lib/native
         <div class='hoverbox'>
           <a class='share'><img src="https://unpkg.com/volantis-static/media/org.volantis/logo/128/wechat.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static/media/org.volantis/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
           <div class='target'>
-            <img src="data:image/png;base64,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">
+            <img src="data:image/png;base64,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">
           </div>
         </div>
       
@@ -3531,7 +3531,7 @@ export HADOOP_OPTS=&quot;-Djava.library.path=$&#123;HADOOP_HOME&#125;/lib/native
       
         <a class="-mob-share-telegram" title="" rel="external nofollow noopener noreferrer noopener"
           
-            target="_blank" href="https://t.me/share/url?url=http://rainvex.com/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4.html&text=Ubuntu下搭建Hadoop分布式集群 - 夜雨声烦"
+            target="_blank" href="https://t.me/share/url?url=https://rainvex.cn/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4&text=Ubuntu下搭建Hadoop分布式集群 - 夜雨声烦"
           
           >
           
@@ -3560,13 +3560,13 @@ export HADOOP_OPTS=&quot;-Djava.library.path=$&#123;HADOOP_HOME&#125;/lib/native
   
     <div class="prev-next">
       
-        <a class='prev' href='/categories/%E5%90%8E%E7%AB%AF/SpringMVC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html'>
+        <a class='prev' href='/categories/%E5%90%8E%E7%AB%AF/SpringMVC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0'>
           <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>SpringMVC笔记</p>
           <p class='content'>前段时间以课程设计项目为借口偷了两三个星期的懒没有继续看视频学习😂，最近终于把SpringMVC看完了。这篇笔记的话我是直接用的视频配套的笔记，因为我觉得写的挺清楚的，就是有很多地方不太详细，...</p>
         </a>
       
       
-        <a class='next' href='/categories/%E6%95%99%E7%A8%8B/Typora-PicGo-%E8%85%BE%E8%AE%AF%E4%BA%91COS%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A.html'>
+        <a class='next' href='/categories/%E6%95%99%E7%A8%8B/Typora-PicGo-%E8%85%BE%E8%AE%AF%E4%BA%91COS%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A'>
           <p class='title'>Typora+PicGo+腾讯云COS搭建图床<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
           <p class='content'>就在前不久，Gitee图床废了！博客文章中使用到的所有图片全部变成了Gitee的图标，甚至很多使用Gitee作为图床的开源项目文档也受到了影响，还有一些作者引流、打赏的二维码图片都变成了Gite...</p>
         </a>
@@ -3584,7 +3584,7 @@ export HADOOP_OPTS=&quot;-Djava.library.path=$&#123;HADOOP_HOME&#125;/lib/native
 
   <article class="post white-box floatable" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4.html#comments">
+      <meta itemprop="discussionUrl" content="/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -4090,7 +4090,7 @@ export HADOOP_OPTS=&quot;-Djava.library.path=$&#123;HADOOP_HOME&#125;/lib/native
 
   </ul>
 </div>
-<script src="https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/rightMenus.js?time=1664866648858"></script>
+<script src="https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/rightMenus.js?time=1681214932691"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -4331,19 +4331,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/sites.js?time=1664866648858")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/sites.js?time=1681214932691")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/friends.js?time=1664866648858")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/friends.js?time=1681214932691")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/contributors.js?time=1664866648858")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/tags/contributors.js?time=1681214932691")
       }
     
   };
@@ -4439,7 +4439,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://gcore.jsdelivr.net/gh/rainvex/rainvex-cdn@latest/js/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/aplayer.js?time=1664866648858')
+    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/aplayer.js?time=1681214932691')
   
   })();
 
@@ -4568,7 +4568,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/search/hexo.js?time=1664866648858");
+    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/search/hexo.js?time=1681214932691");
   }
 
   function loadSearchService() {
@@ -4723,7 +4723,7 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/parallax.js?time=1664866648858').then(()=>{
+    volantis.js('https://unpkg.com/hexo-theme-volantis@5.7.4/source/js/plugins/parallax.js?time=1681214932691').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4909,7 +4909,7 @@ volantis.pjax.push(()=>{_hmt.push(['_trackPageview', document.location.pathname]
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"夜雨声烦","url":"http://rainvex.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"夜雨声烦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://rainvex.com/","sameAs":["https://github.com/volantis-x"],"description":"夜雨声烦的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://rainvex.com/","name":"夜雨声烦"}},{"@type":"ListItem","position":2,"item":{"@id":"http://rainvex.com/categories/教程/","name":"教程"}},{"@type":"ListItem","position":3,"item":{"@id":"http://rainvex.com/categories/教程/Ubuntu下搭建Hadoop分布式集群.html","name":"Ubuntu下搭建Hadoop分布式集群"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"夜雨声烦","url":"http://rainvex.com/","keywords":"rainvex,blog,夜雨声烦","description":"夜雨声烦的个人博客","author":{"@type":"Person","name":"夜雨声烦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://rainvex.com/","description":"夜雨声烦的个人博客"},"publisher":{"@type":"Organization","name":"夜雨声烦","url":"http://rainvex.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://rainvex.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Ubuntu下搭建Hadoop分布式集群","description":"夜雨声烦的个人博客","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://rainvex.com/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4.html"},"author":{"@type":"Person","name":"夜雨声烦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://rainvex.com/"},"publisher":{"@type":"Organization","name":"夜雨声烦","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://rainvex.com/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4.html","wordCount":0,"datePublished":"2022-04-30T10:37:34.000Z","dateModified":"2022-04-30T10:37:34.000Z","articleSection":"教程","keywords":"Linux,Ubuntu,Hadoop","image":{"@type":"ImageObject","url":"https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/image/Ubuntu.png","width":1024,"height":768}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"夜雨声烦","url":"https://rainvex.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"夜雨声烦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://rainvex.cn/","sameAs":["https://github.com/volantis-x"],"description":"夜雨声烦的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://rainvex.cn/","name":"夜雨声烦"}},{"@type":"ListItem","position":2,"item":{"@id":"https://rainvex.cn/categories/教程/","name":"教程"}},{"@type":"ListItem","position":3,"item":{"@id":"https://rainvex.cn/categories/教程/Ubuntu下搭建Hadoop分布式集群.html","name":"Ubuntu下搭建Hadoop分布式集群"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"夜雨声烦","url":"https://rainvex.cn/","keywords":"rainvex,blog,夜雨声烦,夜雨声烦个人博客","description":"夜雨声烦的个人博客","author":{"@type":"Person","name":"夜雨声烦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://rainvex.cn/","description":"夜雨声烦的个人博客"},"publisher":{"@type":"Organization","name":"夜雨声烦","url":"https://rainvex.cn/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://rainvex.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Ubuntu下搭建Hadoop分布式集群","description":"夜雨声烦的个人博客","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://rainvex.cn/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4"},"author":{"@type":"Person","name":"夜雨声烦","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://rainvex.cn/"},"publisher":{"@type":"Organization","name":"夜雨声烦","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://rainvex.cn/categories/%E6%95%99%E7%A8%8B/Ubuntu%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4","wordCount":0,"datePublished":"2022-04-30T10:37:34.000Z","dateModified":"2022-04-30T10:37:34.000Z","articleSection":"教程","keywords":"Linux,Ubuntu,Hadoop","image":{"@type":"ImageObject","url":"https://rainvex-1305747533.cos.ap-chengdu.myqcloud.com/blog/image/Ubuntu.png","width":1024,"height":768}}]</script>
 
 
 
